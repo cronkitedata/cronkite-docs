@@ -1,8 +1,15 @@
 ---
 title: "Arizona population exercise"
 parent: Excel practice
+grand_parent: Excel
 nav_order: 2
 ---
+
+1. TOC
+{: toc}
+
+
+## Instructions
 
 [This spreadsheet contains figures for the estimated population of Arizona counties from 2012 through 2017]({{site.baseurl}}/assets/data/arizona_popchange_2017.xlsx). It also contains the components of change.
 

@@ -16,7 +16,7 @@ Original file downloaded as a xx-page PDF from the Phoenix city budget site at h
 The key tables were on pages 182-183 -- that is listed as the "Expenditures" by program.
 
 Using Acrobat, extracted out those pages into a new file, ~/Documents/examples/ phx_budget_2017_table.pdf
-
+  
 I tried to extract the tables using different programs: Able2Extract, Adobe Acrobat, Tabula. Then I realized that it is an image, not a text, pdf. Went back and OCR'd it using Adobe Acrobat, but when I sent it to a csv, it was a mess.
 
 I decided to type in the numbers myself rather than try to clean it up.

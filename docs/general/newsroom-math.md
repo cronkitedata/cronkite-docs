@@ -1,7 +1,10 @@
 ---
-parent: Math and stats
+parent: General resources
 title: "Newsroom math and stats review"
 ---
+
+# Numbers in the newsroom
+{: .no_toc}
 
 >*Statistics are people with the tears washed off*
 >
@@ -11,8 +14,11 @@ Jo Craven McGinty, then of The New York Times, used simple rates and ratios to d
 
 To do this story, McGinty only needed to know the volume of the procedures reported by the government and the total amount each hospital charged. Dividing those to find an average price, then ranking the most common procedures, led to this surprising result.
 
+1. TOC
+{: toc}
 
-## The basics
+
+## Why numbers?
 
 Using averages, percentages and percent change is the bread and butter of data journalism, leading to stories ranging from home price comparisons to school reports and crime trends. It may have been charming at one time for reporters to announce that they didn't "do" math, but no longer. Instead, it is now an announcement that the reporter can only do some of the job. You will never be able to tackle complicated, in-depth stories without reviewing basic math.
 

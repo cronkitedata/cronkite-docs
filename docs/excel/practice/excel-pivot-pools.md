@@ -1,7 +1,18 @@
 ---
 title: Swimming pool inspections
 parent: Excel practice
+grand_parent: Excel
+nav_order: 3
 ---
+
+# Getting ready for grouping
+{: .no_toc}
+
+
+This exercise shows you what to look for in a database before you start counting and summing.
+
+1. TOC
+{: toc}
 
 This excercises uses a [database of swimming pool inspections]({{site.baseurl}}/assets/data/swimmingpool_inspections_mces.xlsx) obtained by Courtland Jeffrey at ABC15 through a public records request to the Maricopa County Environmental Services department. [This website reviews exactly which pools must be inspected](https://www.maricopa.gov/2584/Public-Swimming-Pools).
 

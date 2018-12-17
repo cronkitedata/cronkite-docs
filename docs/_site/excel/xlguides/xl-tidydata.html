@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Tidy data - </title>
+  <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000/cronkite-docs" class="site-title fs-6 lh-tight"></a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav>
+  <ul class="navigation-list">
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/general" class="navigation-list-link">General resources</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/math-stats/math-stats.html" class="navigation-list-link">Math and stats</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/general/math-stats/newsroom-math.html" class="navigation-list-link">Newsroom math and stats review</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/data-diary.html" class="navigation-list-link">Data diaries</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/cronkite-docs/excel" class="navigation-list-link">Excel</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/excel/xlguides" class="navigation-list-link">Excel guides</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html" class="navigation-list-link">Excel refresher</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-mathreview.html" class="navigation-list-link">Excel math review</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html" class="navigation-list-link active">Tidy data</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/excel/xlpractice" class="navigation-list-link">Excel practice</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/excel-pivot-pools.html" class="navigation-list-link">Swimming pool inspections</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/excel-azpop-exercise.html" class="navigation-list-link">Arizona population exercise</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/r-stats/rstats.html" class="navigation-list-link">R for journalism</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/cronkite-mayo.html" class="navigation-list-link">Cronkite-Mayo</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" placeholder="Search " aria-label="Search " autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="//github.com/pmarsceill/just-the-docs">Just the Docs on GitHub</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/excel">Excel</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/excel/xlguides">Excel guides</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Tidy data</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div class="page-content">
+          <ol id="markdown-toc">
+  <li><a href="#tidy-data" id="markdown-toc-tidy-data">Tidy data</a>    <ol>
+      <li><a href="#tidy-example" id="markdown-toc-tidy-example">Tidy example</a></li>
+      <li><a href="#not-so-tidy" id="markdown-toc-not-so-tidy">Not so tidy</a></li>
+    </ol>
+  </li>
+  <li><a href="#understanding-data-types" id="markdown-toc-understanding-data-types">Understanding data types</a></li>
+</ol>
+
+<h2 id="tidy-data">Tidy data</h2>
+
+<blockquote>
+“Like families, tidy datasets are all alike but every messy dataset is messy in its own way..” – Hadley Wickham, with apologies to Leo Tolstoy
+</blockquote>
+
+<p>Hadley Wickham, who has done more to popularize the R programming language than almost anyone, wrote <a href="http://vita.had.co.nz/papers/tidy-data.html">a seminal paper in 2014 called “<em>Tidy Data</em>”</a>, which tackled the unspoken problem in data analysis: what does “clean” data mean, and what does “dirty” data mean?</p>
+
+<p>In it, he defined tidy data in this way:</p>
+<ul>
+  <li>
+    <p>Every column is labeled and represents a <em>variable</em>, or something that differs from case to case. Examples include peoples’ names, counties, zip codes, height, age, income, or year.</p>
+  </li>
+  <li>
+    <p>Every row, which may or may not be labeled, represents an <em>observation</em>, or an instance of each of the variables. An example might be your name, the county and zip code you live in, your height, age, income, and what year it is today.</p>
+  </li>
+  <li>
+    <p>Each <em>type</em> of observational unit is in its own table, such as a page in an Excel file or a data frame in the R language. This suggests that every observation should be a the same unit of analysis. For example, there can be information about every student at your school in one table, and information about every department in your school in another.</p>
+  </li>
+</ul>
+
+<p>In other words, each column means one thing, each row is an instance of that thing. It means you’d rarely type two separate things into one cell, such as two names or two addresses. It also means you’ll often have a tall, narrow dataset – one with a few columns but many rows – rather than the short and wide datasets you often see. This makes it easy to sort, filter, and group your data into other information.</p>
+
+<p>It’s always easy to turn these tidy datasets into another form. It’s often difficult to turn messy datasets into something tidy.</p>
+
+<p>This sometimes looks repetitive. That’s good – it give you something consistent to summarize.</p>
+
+<h3 id="tidy-example">Tidy example</h3>
+
+<p>Here’s an example, showing the beginning of a file obtained from New York State showing the names, locations and salaries of judges in the state’s Supreme Court (the main trial court in New York):</p>
+
+<p><img src="/cronkite-docs/assets/images/xltidy-nycjudges-start.png" alt="judges" /></p>
+
+<p>It follows the simple rule that every column always means one and only one thing, and every row is an instance of that thing at the same level of analysis – the employee.</p>
+
+<p>It’s not perfect. The position titles don’t really show their level, but instead are sometimes used to show districts. In this sense, it’s not quite tidy: separating the title from the district would make it more useful.
+<img src="/cronkite-docs/assets/images/xltidy-nycjudges-titles.png" alt="titles" /></p>
+
+<h3 id="not-so-tidy">Not so tidy</h3>
+
+<p>When you request data from the government, or seek out data on the Internet, you should look for tidy data. It is often the most pure form of the information available – it hasn’t been compiled into a report, or put together to make a nice printout. Instead, it is usually close to the way it’s been stored in the underlying database.</p>
+
+<p>Think of this when you see forms in the wild. They are often pretty tidy! A parking ticket is one instance of a thing, and each box filled out or left blank on the ticket is a characteristic of that thing.</p>
+
+<p>Sadly, the information and datasets you receive from others will often NOT adhere to tidy principles. Government “datasets” often have a lot of extra verbiage at the top and bottom, or are done in a hierarchical fashion, mixing detail and total at the same time. In this example, the Census Bureau seems to anticipate that you will print this data, not use it:</p>
+
+<p><img src="/cronkite-docs/assets/images/xltidy-healthins-census.png" alt="printout" /></p>
+
+<p>If you just needed a few numbers from the release, this table is perfectly adequate. But if you wanted to combine it with other data or sort it in any way, it’s nearly useless.  When you come across data that looks like this – with subtotals and different topics broken down the side, and many figures going across the top – look for other formats that might have been released, or talk with the agency to get something more useful. In this case, we’d look for the underlying data that created these tables.</p>
+
+<p><a href="https://www.sos.state.oh.us/globalassets/elections/2016/gen/precinct.xlsx">Here’s another example</a>, this time from the Ohio Secretary of State, that lists the results of the 2016 election. Each page is one type of race – Congress, president, etc. – and each column shows the result for a candidate within a race. The rows are sometimes the precinct, and sometimes the total.</p>
+
+<p><img src="/cronkite-docs/assets/images/xltidy-ohsos-precinct.png" alt="OHSOS" /></p>
+
+<p>There are totals mixed in with the precincts, and each of the candidates are listed left to right for every Congressional race. This makes it easy to read if you want to see who won. But each precinct would only have one race for U.S. Senate and one for the House, meaning that most of the values listed in this very, very wide spreadsheet are zero.</p>
+
+<p>Take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like – what are the column headings, what does each row represent, and how might it be put together? It’s actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together.</p>
+
+<p>(Computer scientists shouldn’t confuse this with the “3rd normal form”. This is much less rigid about breaking out tables whenever there is repetition, but it does adhere to the idea of a single unit of analysis in each table.)</p>
+
+<p><img src="/cronkite-docs/assets/images/xltidy-envision.jpg" alt="envision success" /></p>
+
+<p>This is an excellent exercise for you to do whenever you are working on data: <strong><em>envision success</em></strong>. If you had what you wanted, what might that look like?</p>
+
+<p><a href="/cronkite-docs/assets/data/bad-spreadsheet-examples.xlsx">Here is an example spreadsheet</a> of a series of ways that governments have provided data when it was requested. Go through them and think about how they might be useful – what might they look like? How could you use them to sort and filter? How could you add or count them effectively?</p>
+
+<p>Here’s a video that goes through what is wrong with them and how we fixed it.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ndkHwNE8LBs" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="understanding-data-types">Understanding data types</h2>
+
+<p>When you start working with tidy data, there is also an unspoken rule: Each column should contain the same <em>type</em> of data, often broken into three categories: text, numbers and dates.</p>
+
+<p>This video goes through the basic types of data that you’ll find within a table, like an Excel worksheet. As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of “data frame” is used in R and Python to act like a data table. A json object can define a whole database in nested text. For now, though, just understanding exactly what numbers, text and dates are will make things clearer – including what happens if you don’t pay attention to them.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYLwi-XNck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

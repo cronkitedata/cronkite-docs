@@ -11,7 +11,7 @@ This site is replacing a lot of the other sites I've made over the years to coll
 
 The sections are:
 
-### [General resources](reporting)
+### [General resources](general)
 
 A collection of data reporting resources, including re-introductions to math and stats, some best practices and links to stories and projects that can exemplify the data reporting genre, especially in investigative and enterprise journalism.
 

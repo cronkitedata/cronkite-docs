@@ -2,6 +2,7 @@
 title: R for journalism
 has_children: true
 nav_order: 4
+permalink: /r-stats
 ---
 
 ## R resources

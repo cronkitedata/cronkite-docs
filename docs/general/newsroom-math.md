@@ -1,6 +1,6 @@
 ---
 parent: General resources
-title: "Newsroom math and stats review"
+title: "Newsroom math"
 ---
 
 # Numbers in the newsroom

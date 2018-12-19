@@ -1,5 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
-theme:        "just-the-docs"
+#theme:        "just-the-docs"
 base_url:    "/cronkite-docs/"
 url:         "https://cronkitedata.github.io"
 
@@ -32,5 +32,5 @@ aux_links:
 # Enable or disable the site search
 search_enabled: true
 
-title: Cronkite School data reporting
+title: Data reporting @ Cronkite
 description: A collection of materials used in the data reporting class at ASU's Cronkite School of Journalism

@@ -28,20 +28,20 @@ Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You sho
 
 ### The spreadsheet grid
 
+
+ <img src="{{site.baseurl}}/assets/images/xldayone-battleship.png" style="float: right; padding-left: 10px">
 When you start up a spreadsheet, you'll see letters across the top and numbers down the side. If you ever played Battleship, you'll recognize the idea -- every little square, or cell, is referenced by the intersection of its column letter and row number:  
 
-![grid]({{site.baseurl}}/assets/images/xldayone-battleship.png)
+ B2 is the cell that is currently active. You can tell because it's outlined in the sheet and it's shown on the upper left corner.
 
-B2 is the cell that is currently active. You can tell because it's outlined in the sheet and it's shown on the upper left corner.
+
 
 ### Mouse shapes
 
-* BFWPS: The Big Fat White Plus Sign. This is the default shape, and you can never get into trouble when you see it. ![BFwPS]({{site.baseurl}}/assets/images/xldayone-bfwps.png)
-
-
-* The Copy Tool, or the thin black cross. When you see this, you'll copy anything that's selected. This can be good or bad. ![copy]({{site.baseurl}}/assets/images/xldayone-copy.png)
-
-* The Evil Hand. (In Windows, this is the Evil Arrow). If you use this symbol, you will MOVE the selection to a new location. This is very rarely a good idea or something you intend. ![evil hand]({{site.baseurl}}/assets/images/xldayone-evilhand.png)
+----- | ----
+ BFWPS: The Big Fat White Plus Sign. This is the default shape, and you can never get into trouble when you see it. | ![BFwPS]({{site.baseurl}}/assets/images/xldayone-bfwps.png)
+The Copy Tool, or the thin black cross. When you see this, you'll copy anything that's selected. This can be good or bad. | ![copy]({{site.baseurl}}/assets/images/xldayone-copy.png)
+ The Evil Hand. (In Windows, this is the Evil Arrow). If you use this symbol, you will MOVE the selection to a new location. This is very rarely a good idea or something you intend. | ![evil hand]({{site.baseurl}}/assets/images/xldayone-evilhand.png)
 
 ### Selecting cells and areas
 
@@ -50,9 +50,11 @@ Spreadsheets act only on the cells or regions you have selected. If you begin ty
 To select: Hold the BFWPS over the cell and clice ONCE -- *not twice*. Check the formula bar to make sure you've selected what you think you've got. You can also look at the bottom right of your spreadsheet for more information.
 
 _To select a group of cells and act on them all at once_: Hover the BFWPS over one corner, click ONCE and drag to the diagonal corner. Make sure the Evil Hand is nowhere to be seen. The entire area will be shaded in except for the currently selected cell. Look at the upper right corner to see how many rows and columns you selected.  
-![select area]({{site.baseurl}}/assets/images/xldayone-select.gif)
 
-_To select a column or row_ : Hover the BFWPS over the letter at the top of the column. For a row, hover it over the row number in the margin ![column select]({{site.baseurl}}/assets/images/xldayone-columnselect.png).
+<img src="{{site.baseurl}}/assets/images/xldayone-select.gif" width="375">
+
+<img src="{{site.baseurl}}/assets/images/xldayone-columnselect.png" width="100" style="float: right; padding-left: 10px">
+_To select a column or row_ : Hover the BFWPS over the letter at the top of the column. For a row, hover it over the row number in the margin
 
 ### Entering data
 
@@ -80,7 +82,7 @@ Select the corner that you want frozen. For example, if you want the first three
 
 There are several best practices we'll be using throughout the course, and you're expected to follow them and catch errors that they might show you. All of this is related to interviewing your data the same way you'd interview a person.
 
-#### Open, don't double-click
+### Open, don't double-click
 
 Double-clicking on files to open them is never a great idea. We all do it and we all find some day that we regret it. Getting used to doing it the long way will help you in the future, not just in Excel but in other programs.
 
@@ -107,7 +109,7 @@ This video goes through the first steps you'll usually take when you have a new 
 
 For Mac users, it's much easier to use Excel if you override the action of function keys while you're in the program. In your Mac's System Preferences, choose Keyboard, and select the box that says, "Use F1, F2, etc. as standard function keys."
 
-![system option]({{site.baseurl}}/assets/images/xldayone-options.png)
+<img src="{{site.baseurl}}/assets/images/xldayone-options.png" width="300">
 
 Once you've done that, these keyboard shortcuts will work:
 

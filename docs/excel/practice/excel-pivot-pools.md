@@ -5,16 +5,15 @@ grand_parent: Excel
 nav_order: 3
 ---
 
-# Getting ready for grouping
+# Grouping from start to finish
 {: .no_toc}
 
-
-This exercise shows you what to look for in a database before you start counting and summing.
+This practice example goes through the kinds of work you have to do before you can even start filtering and grouping. It's the "reporting" side of data reporting, even if it often means exploring data and reading.
 
 1. TOC
 {: toc}
 
-This excercises uses a [database of swimming pool inspections]({{site.baseurl}}/assets/data/swimmingpool_inspections_mces.xlsx) obtained by Courtland Jeffrey at ABC15 through a public records request to the Maricopa County Environmental Services department. [This website reviews exactly which pools must be inspected](https://www.maricopa.gov/2584/Public-Swimming-Pools).
+This excercises uses a [database of swimming pool inspections]({{site.baseurl}}/assets/data/xlexamples/swimmingpool_inspections_mces.xlsx) obtained by Courtland Jeffrey at ABC15 through a public records request to the Maricopa County Environmental Services department. [This website reviews exactly which pools must be inspected](https://www.maricopa.gov/2584/Public-Swimming-Pools).
 
 ## Interviewing your database
 
@@ -92,5 +91,10 @@ To put two text fields together, use the & symbol:
        =[Permit ID]&TEXT([Inspection Date],"00000")
 
  Now you can create a Pivot Table to show a row for every inspection:
+
+## TK - Filtering your data
+
+## TK - Grouping with pivot tables
+
 
 Congratulations!  You're now a data reporter!

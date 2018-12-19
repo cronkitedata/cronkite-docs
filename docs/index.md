@@ -7,7 +7,7 @@ permalink: /
 
 Most of the materials for the Cronkite School's data journalism course taught by Knight Chair Sarah Cohen are kept here. It's also a holding center for some other presentations, like FOIA workshops.
 
-This site is replacing a lot of the other sites I've made over the years to collect data reporting and public records materials. I'm trying to get more organized. If you're looking for those, you've probably been redirected here. It's also an attempt to rein in dead links and outdated materials that no longer work.
+This site is replacing a lot of the other repos I've made over the years to collect data reporting and public records materials. I'm trying to get more organized. It's also an attempt to rein in dead links and outdated materials that no longer work.
 
 The sections are:
 
@@ -29,10 +29,10 @@ Some resources and markdown files for learning basic R to replace some of your E
 
 Anything that is used for one purpose, such as OpenRefine for data cleaning, or the Chrome Scraper for scraping.
 
+### [Public records](records)
+
+Resources to understand and acquire public records using U.S. federal and state laws. It also includes backgrounding tips and tricks.
+
 ### [Workshops](workshops)
 
 Where I stash my presentations for various workshops. Some are links to other repos
-
-### [Public records](records)
-
-Resources to understand and acquire public records using U.S. federal and state laws.

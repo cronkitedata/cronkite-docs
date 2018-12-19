@@ -39,6 +39,7 @@ Here's an example, showing the beginning of a file obtained from New York State 
 It follows the simple rule that every column always means one and only one thing, and every row is an instance of that thing at the same level of analysis -- the employee.
 
 It's not perfect. The position titles don't really show their level, but instead are sometimes used to show districts. In this sense, it's not quite tidy: separating the title from the district would make it more useful.
+
 ![titles]({{site.baseurl}}/assets/images/xltidy-nycjudges-titles.png)
 
 ### Not so tidy

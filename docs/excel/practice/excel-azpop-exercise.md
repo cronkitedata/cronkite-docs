@@ -11,7 +11,7 @@ nav_order: 2
 
 ## Instructions
 
-[This spreadsheet contains figures for the estimated population of Arizona counties from 2012 through 2017]({{site.baseurl}}/assets/data/arizona_popchange_2017.xlsx). It also contains the components of change.
+[This spreadsheet contains figures for the estimated population of Arizona counties from 2012 through 2017]({{site.baseurl}}/assets/data/xlexamples/arizona_popchange_2017.xlsx). It also contains the components of change.
 
 Your job is to find a story in this data by using change, percent change, percent of total to find something newsworthy. Consider looking up some stories written on similar data, either in Arizona or elsewhere, to see how reporters generally treat population data releases. One example, based on data released by the state, [is from Tucson.com](https://tucson.com/news/local/where-are-arizona-s-new-residents-living-look-to-the/article_08d309ef-8faa-5c15-9ae3-7e345b49e3a0.html).
 

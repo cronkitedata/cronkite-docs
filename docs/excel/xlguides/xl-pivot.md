@@ -24,8 +24,9 @@ Here are two excellent tutorials on pivot tables. There's no need to re-create t
 * [Mary Jo Webster's tutorial](http://mjwebster.github.io/DataJ/pivottables.html) is pretty comprehensive with lots of screen shots.
 
 
-Finding good practice datasets can take some practice. Here are a few that offer good potential.  
+Finding good practice datasets can take some practice. Here are a few that offer good potential.  If you want to find your own, try to find data sets that contain individual records, not statistics.
 
   * [Baseball salaries]({{site.baseurl}}/assets/data/xlexamples/MLB2011.xlsx)
   * [Football stats for a season]({{site.baseurl}}/assets/data/xlexamples/football.xlsx)
   * [Traffic stops]({{site.baseurl}}/assets/data/xlexamples/saintanthony_police.xlsx) obtained from St. Anthony, Minn., after a police officer fatally shot a black motorist named Philandro Castile.
+ß

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Links to source data for doctoral students - Cronkite School data reporting</title>
+  <title> - Cronkite School data reporting</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/vendor/lunr.min.js"></script>
@@ -778,7 +778,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
             
@@ -830,9 +830,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link active">Links to source data for doctoral students</a>
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
                   
@@ -921,43 +921,139 @@
       <div class="main-content">
         
           
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                
-                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/workshops">Workshops</a></li>
-                
-                <li class="breadcrumb-nav-list-item"><span>Links to source data for doctoral students</span></li>
-              </ol>
-            </nav>
-          
         
         <div class="page-content">
-          <h2 id="outside-data-sources-for-doctoral-students">Outside data sources for doctoral students</h2>
+          <h1 id="more-on-scraping">More on scraping</h1>
+
+<h2 id="more-tools">more tools</h2>
+<ul>
+  <li>Outwit hub (now about $50, but powerful)</li>
+  <li>import.io - said to be the easiest out there, but I’ve had trouble using it.</li>
+</ul>
+
+<p>By the time I get through trying to learn a tool, I might as well have learned to program it. Key parts of Python that will help with difficult sites:</p>
+
+<ul>
+  <li>Scrapy - a whole library of scraping tools that has its own manual and syntax. I think this one uses XPath though, so it will be easier to incorporate that in.</li>
+  <li>Selenium, for when you need to actually run a browser.
+*</li>
+</ul>
+
+<p>Building on the tutorial that is at the http://sarahcnyt.github.io/ire-toronto site</p>
+
+<p>These examples came up recently and I needed to memorialize it for myself.  It’s just to help me remember.</p>
+
+<p>Start with Chrome inspection tool, right click on the element you want, then copy the XPath to give you a start.</p>
+
+<h2 id="finding-text-between-tags">Finding Text Between Tags</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;td nowrap=""&gt;
+	&lt;font face="arial" size="2"&gt;
+		&lt;b&gt;ABRAMSON, JOEL ELIOT &amp;nbsp; &amp;nbsp; &lt;br&gt; &lt;/b&gt;
+		JOEL E. ABRAMSON, P.C. &amp;nbsp; &amp;nbsp; &lt;br&gt;
+		271 MADISON AVE FL 22 &amp;nbsp; &amp;nbsp; &lt;br&gt;
+		NEW YORK, NY 10016 &amp;nbsp; &amp;nbsp; &lt;br&gt;
+		(212)599-7700 &amp;nbsp; &amp;nbsp;
+	&lt;/font&gt;
+&lt;/td&gt;
+</code></pre></div></div>
+
+<p>If the whole chunk is the 2nd column, it’s [2]</p>
+
+<p>How can I get the name, which is outlined by the   &lt; b &gt;  (bold) tag? That text is the first text() element below the “font” tag, Any of these will work:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [2]/font/text()
+	or
+ [2]//text()
+	or
+ [2]/font/b/text()
+</code></pre></div></div>
+
+<p>A little less intuitively:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> *[2]font[1]/child::text()
+	or
+ *[2]/node()/node()
+	or
+ *[2]/font/node()[position=1]
+</code></pre></div></div>
+
+<p>The bold tag is the first child of the font tag. Technically, the “node” is everything between the font tags, then the second node is everything between the bold tags.</p>
+
+<p>Here’s how to get the city, state, zipcode from that chunk. (Use the last-1 because some firms had two-line addresses and others had only one. It would fail in cases where the city, state was the last row.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	*[2]/font/text()[position()=last()-1]
+			or
+	*[2]//text()[count(following-sibling::br)=1]
+</code></pre></div></div>
+
+<p>What if you had a slightly different piece of code, this one a line from the <a href="http://www.seminoles.com/SportSelect.dbml?SPID=157113&amp;SPSID=917030">Florida State football roster</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tr class="odd"&gt;
+	&lt;td class="number"&gt;3&lt;/td&gt;
+	&lt;td class="name"&gt;
+		&lt;span class="sortname" style="display:none;"&gt;Darby Ronald&lt;/span&gt;
+		&lt;a title="Ronald Darby" href="/ViewArticle.dbml?ATCLID=209573037&amp;amp;DB_OEM_ID=32900"&gt;Ronald Darby&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td class="position"&gt;CB&lt;/td&gt;
+	&lt;td class="height" nowrap=""&gt;5-11&lt;/td&gt;
+	&lt;td class="weight"&gt;195&lt;/td&gt;
+	&lt;td class="year"&gt;
+		&lt;span style="display:none;"&gt;3&lt;/span&gt;
+		Jr.
+	&lt;/td&gt;
+	&lt;td class="hometown "&gt;Oxon Hill, Md. / Potomac&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre></div></div>
+
+<p>I’ll come back to this example later, so it’s worth having the whole snippet here. But all I care about right now is to pick up the “Jr” separate from the “3” in the class year.</p>
+
+<p>The first part is obvious, assuming we’re starting from the row.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  *[6]/span
+	 or
+  *[@class="year"]/span
+</code></pre></div></div>
+
+<p>How about getting just the word, without the number?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  *[6]/node()[position()=3]
+</code></pre></div></div>
+
+<p>or position()=last would work. It’s the 3rd node, not the second, because there is a span element in between. If it were text(), it would be the second.</p>
+
+<p>Recap:</p>
+
+<ul>
+  <li>To get everything as text, without the tags in between, just use the position or name.</li>
+  <li>To get the first text element, use <strong>text()</strong> or <strong>text()[position()=1]</strong>. It’s the same thing.</li>
+  <li>To get the last text element, use <strong>text()[position()=last]</strong></li>
+  <li>To get a list of all of the elements, which has an entry for each tag and another for its text representation, use <strong>node()</strong> instead of <strong>text()</strong>. If for some reason you only want the list of tags without what they contain, use <strong>element()</strong></li>
+</ul>
+
+<h2 id="finding-elements">Finding elements</h2>
+
+<p>Key XPath selectors are:</p>
 
 <ul>
   <li>
-    <p><a href="https://socialexplorer.com">Social Explorer</a> is a much easier way to get at Census and related data than going through the Census bureau. It’s a subscription service that is available any time you’re connected through the school’s IP.  It includes block group level 5-year ACS files, decennial census and some historical data other sources.</p>
+    <p><strong>descendant-or-self</strong>, which refers to everything below as well as yourself. It helps when you don’t know what level it might be. For example, in the html above, finding the “sortname” class wouldn’t depend on you knowing that it was two levels below.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  descendant-or-self::node()[@class="sortname"]
+</code></pre></div>    </div>
   </li>
   <li>
-    <p><a href="https://www.ipums.org/">IPUMS</a> is a project out of the University of Minnesota that collects microdata and tries to line it up across years. This means you can compare Census results for some geographic areas over a very long time. Most of the time, you can generate your results online, which takes care of weighting and error testing. In some cases, you’ll have to download the data and create summaries yourself. Of particular note is the Time-Use survey and the CPS voter supplement.</p>
+    <p><strong>count(preceding-sibling::p)</strong> would count how many &lt; p &gt; tags came before. The opposite is <strong>following-sibling::tag</strong>. Leave off the the tag if you want just the number of elements, but they will be at the same level. You can use the count as a test, so that if you want the first two paragraphs, it can be:
+*
+      text()[count(preceding-sibling::p)&lt;3]</p>
   </li>
   <li>
-    <p><a href="http://www.norc.org/Research/Projects/Pages/general-social-survey.aspx">General Social Survey</a> has been taken every other year since 1972, and include a varying set of questions on social issues. It’s a difficult site to use, and trend data is shown online only for some predetermined issues. Be careful with the weighting - in two years, they oversampled African-American respondents, which means you have to remove that sample code to make years comparable. Using wtsall as the weight will take care of these problems. (<a href="docs/GSS.xlsx">example using hours of tv</a>)</p>
-  </li>
-  <li>
-    <p><a href="https://public.enigma.com">enigma.com</a> wants to be the Google for public records, and it has aggressively sought out some datasets from government agencies. (Example: The minority report on Facebook ads allows you to look at the data submitted to Congress during the investigation) One of its great strengths is that it takes care to give you the lineage of all datasets.</p>
-  </li>
-  <li>
-    <p><a href="https://data.world">data.world</a> wants to be the Facebook of data, where people can share their data and insights. It’s all over the place – no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.</p>
-  </li>
-  <li>
-    <p><a href="https://github.com">github.com</a> is where a lot of people stash their data, and by default it’s public. A Google search usually doesn’t search the datasets held inside Github’s world - you normally need to search there. It’s also useful to look for news organizations’ github pages – this is where they make data public that they’ve used in stories. (There are some other places, but this is the most common.)</p>
-  </li>
-  <li>
-    <p>Google’s new <a href="https://toolbox.google.com/datasetsearch">dataset search</a> makes it a little easier to find standard datasets, but it is just as hit or miss as the rest of Google.</p>
-  </li>
-  <li>
-    <p><a href="https://ropercenter.cornell.edu/polls/">Roper Center for Public Opinion Research</a> is an archive of reputable polling results. Most organizations contribute them to Roper after some time has passed, but it’s a useful place to see what questions on your topic have been asked before, and by whom. One way to use it is to do a new survey based on the same questions if you need a comparison. Search poll questions using the  <a href="https://ropercenter.cornell.edu/CFIDE/cf/action/ipoll/index.cfm">ipoll search</a>. Their datasets are mainly historical or esoteric.</p>
+    <p><strong>attributes of a tag, like onclick() action</strong> This was an interesting one, from the NYC ACRIS real estate document database. In this case, we were looking in an exercise for a company called Prevezon. There were about 30 records, just enough to make clicking into them a pain. If you get fewer than 100 records, you can scrape all using Chrome scraper. The key, though, is the link to the detail page. That is under the input button as an onclick event. Here is how I made the XPATH to get to that.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  substring(*[1]/div/font/input[1]/@onclick, 23,16))
+</code></pre></div>    </div>
+
+    <p>This says, for each of the 1st tds, look for div/font/input[1] – he first input item (there are two). Then find the @click attribute, and take the 16 characters beginning at 23. To create the actual link, you can use concat(“root html”, your substring)</p>
   </li>
 </ul>
 

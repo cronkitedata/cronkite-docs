@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Links to source data for doctoral students - Cronkite School data reporting</title>
+  <title> - Cronkite School data reporting</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/vendor/lunr.min.js"></script>
@@ -778,7 +778,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
             
@@ -830,9 +830,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link active">Links to source data for doctoral students</a>
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
                   
@@ -921,45 +921,54 @@
       <div class="main-content">
         
           
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                
-                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/workshops">Workshops</a></li>
-                
-                <li class="breadcrumb-nav-list-item"><span>Links to source data for doctoral students</span></li>
-              </ol>
-            </nav>
-          
         
         <div class="page-content">
-          <h2 id="outside-data-sources-for-doctoral-students">Outside data sources for doctoral students</h2>
+          <h1 id="ire-toronto">ire-toronto</h1>
+<p>Scraping may be the most valuable new skill you’ll learn this year. There are several tools out there to help you, with more coming out all the time. But at some point, if you do this enough, you’ll find that learning to program a little is a lot easier than trying to wrangle a tool into something it didn’t anticipate.</p>
+
+<h2 id="whats-scraping-and-what-can-you-do-with-it">What’s scraping, and what can you do with it?</h2>
+
+<p>With the simplest of tools:</p>
+<ul>
+  <li>Download all of the documents linked off of a page.</li>
+  <li>Simple scrape of a table created on one page, like inmates at the <a href="http://showmeboone.com/sheriff/jailresidents/jailresidents.asp">Boone County jail</a> or salaries of officials in <a href="http://www.fin.gov.on.ca/en/publications/salarydisclosure/pssd/orgs.php?organization=legislative&amp;year=2013">Ontario’s legislature</a></li>
+  <li>Simple scrape of a more complex page, like a page of articles from the IRE website, <a href="http://www.ire.org/blog/extra-extra/">Extra Extra</a>, or Craigslist listings for <a href="http://toronto.en.craigslist.ca/apa/">housing</a> in Toronto</li>
+</ul>
+
+<p>With some common tools:</p>
+<ul>
+  <li>Extract everything from a set of paginated results.</li>
+  <li>Dig into detail pages when you have to click on each link on a site to get more.</li>
+  <li>Simulate simple searches, like going through each possible date on the White House <a href="http://www.whitehouse.gov/schedule/complete/2013-11-04">public schedule</a>.</li>
+</ul>
+
+<p>What’s going to be hard no matter what:</p>
+<ul>
+  <li>Security systems that require Javascript and checking of session cookies.</li>
+  <li>Search pages that require parameters you can’t know in advance</li>
+  <li>Popups</li>
+</ul>
+
+<p>Most of these can be finessed with enough programming, but your simple tools probably won’t do it.</p>
+
+<p>##Tools</p>
+
+<p>#####Free and easy</p>
 
 <ul>
-  <li>
-    <p><a href="https://socialexplorer.com">Social Explorer</a> is a much easier way to get at Census and related data than going through the Census bureau. It’s a subscription service that is available any time you’re connected through the school’s IP.  It includes block group level 5-year ACS files, decennial census and some historical data other sources.</p>
-  </li>
-  <li>
-    <p><a href="https://www.ipums.org/">IPUMS</a> is a project out of the University of Minnesota that collects microdata and tries to line it up across years. This means you can compare Census results for some geographic areas over a very long time. Most of the time, you can generate your results online, which takes care of weighting and error testing. In some cases, you’ll have to download the data and create summaries yourself. Of particular note is the Time-Use survey and the CPS voter supplement.</p>
-  </li>
-  <li>
-    <p><a href="http://www.norc.org/Research/Projects/Pages/general-social-survey.aspx">General Social Survey</a> has been taken every other year since 1972, and include a varying set of questions on social issues. It’s a difficult site to use, and trend data is shown online only for some predetermined issues. Be careful with the weighting - in two years, they oversampled African-American respondents, which means you have to remove that sample code to make years comparable. Using wtsall as the weight will take care of these problems. (<a href="docs/GSS.xlsx">example using hours of tv</a>)</p>
-  </li>
-  <li>
-    <p><a href="https://public.enigma.com">enigma.com</a> wants to be the Google for public records, and it has aggressively sought out some datasets from government agencies. (Example: The minority report on Facebook ads allows you to look at the data submitted to Congress during the investigation) One of its great strengths is that it takes care to give you the lineage of all datasets.</p>
-  </li>
-  <li>
-    <p><a href="https://data.world">data.world</a> wants to be the Facebook of data, where people can share their data and insights. It’s all over the place – no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.</p>
-  </li>
-  <li>
-    <p><a href="https://github.com">github.com</a> is where a lot of people stash their data, and by default it’s public. A Google search usually doesn’t search the datasets held inside Github’s world - you normally need to search there. It’s also useful to look for news organizations’ github pages – this is where they make data public that they’ve used in stories. (There are some other places, but this is the most common.)</p>
-  </li>
-  <li>
-    <p>Google’s new <a href="https://toolbox.google.com/datasetsearch">dataset search</a> makes it a little easier to find standard datasets, but it is just as hit or miss as the rest of Google.</p>
-  </li>
-  <li>
-    <p><a href="https://ropercenter.cornell.edu/polls/">Roper Center for Public Opinion Research</a> is an archive of reputable polling results. Most organizations contribute them to Roper after some time has passed, but it’s a useful place to see what questions on your topic have been asked before, and by whom. One way to use it is to do a new survey based on the same questions if you need a comparison. Search poll questions using the  <a href="https://ropercenter.cornell.edu/CFIDE/cf/action/ipoll/index.cfm">ipoll search</a>. Their datasets are mainly historical or esoteric.</p>
-  </li>
+  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownloadThemAll!</a> for Firefox, <a href="https://chrome.google.com/webstore/detail/download-master/mcceagdollnkjlogmdckgjakjapmkdjf?hl=en-US">Download Master</a> for Chrome.  These will let you capture all of the files linked off a page, filtering for just the ones you want. They are great when an agency has put a whole bunch of PDFs online and you want them all in one folder so you can search them.</li>
+  <li>Some people just use Google Docs for scraping simple pages, but I find them limiting and the formulas just don’t work that well.</li>
+  <li><a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en">Chrome Scraper</a> extension, for parsing almost anything you can see on a page. Very powerful.</li>
 </ul>
+
+<p>#####Not too expensive and more powerful</p>
+
+<ul>
+  <li>Outwit Hub](http://www.outwit.com/),  US$60 - standalone software or Firefox extension that automates going through multipage results and digging into detail pages.</li>
+  <li><a href="http://www.heliumscraper.com/en/index.php?p=home">Helium Scraper</a>, US$99 for Windows only. More powerful for very complicated pages, but it helps to know a little Javascript if you need to walk through forms or guess addresses.</li>
+</ul>
+
+<p>Each of these have their own odd language, so there’s a considerable learning curve. If you’re spending a lot of time learning the tool, consider putting your effort instead into learning a programming language like Ruby or Python for scraping.</p>
 
 
 

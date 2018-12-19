@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Links to source data for doctoral students - Cronkite School data reporting</title>
+  <title> - Cronkite School data reporting</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/vendor/lunr.min.js"></script>
@@ -778,7 +778,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
             
@@ -830,9 +830,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link active">Links to source data for doctoral students</a>
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
                   
@@ -921,45 +921,45 @@
       <div class="main-content">
         
           
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                
-                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/workshops">Workshops</a></li>
-                
-                <li class="breadcrumb-nav-list-item"><span>Links to source data for doctoral students</span></li>
-              </ol>
-            </nav>
-          
         
         <div class="page-content">
-          <h2 id="outside-data-sources-for-doctoral-students">Outside data sources for doctoral students</h2>
+          <h1 id="pdf-tools">PDF Tools</h1>
 
+<p>PDF’s are the bane of a data journalist’s existence. They come in all kinds of unfriendly formats. This list of tools is just for those PDFs you want to turn into a data table of some kind, not ones that you just need to search as documents.</p>
+
+<p>#Searchable tables
+Some PDFs were created from an Access or Excel printout, and have within them the original text. Others have been effectively scanned and are just images. You can tell the difference by trying to select some text. If you can select text then you have the first step done.</p>
+
+<p>The problem is that PDFs are designed to preserve the format on the page, and aren’t data files. They’re like printed reports. Sometimes copying and pasting leaves you with unintelligible line breaks and smushed-together cells. You’ll usually have to use some kind of tool to deal with this.</p>
+
+<p>The key to trying to convert PDFs is to try every tool you can afford. You’ll never know which one works.</p>
+
+<h2 id="free-tools">Free tools</h2>
 <ul>
-  <li>
-    <p><a href="https://socialexplorer.com">Social Explorer</a> is a much easier way to get at Census and related data than going through the Census bureau. It’s a subscription service that is available any time you’re connected through the school’s IP.  It includes block group level 5-year ACS files, decennial census and some historical data other sources.</p>
-  </li>
-  <li>
-    <p><a href="https://www.ipums.org/">IPUMS</a> is a project out of the University of Minnesota that collects microdata and tries to line it up across years. This means you can compare Census results for some geographic areas over a very long time. Most of the time, you can generate your results online, which takes care of weighting and error testing. In some cases, you’ll have to download the data and create summaries yourself. Of particular note is the Time-Use survey and the CPS voter supplement.</p>
-  </li>
-  <li>
-    <p><a href="http://www.norc.org/Research/Projects/Pages/general-social-survey.aspx">General Social Survey</a> has been taken every other year since 1972, and include a varying set of questions on social issues. It’s a difficult site to use, and trend data is shown online only for some predetermined issues. Be careful with the weighting - in two years, they oversampled African-American respondents, which means you have to remove that sample code to make years comparable. Using wtsall as the weight will take care of these problems. (<a href="docs/GSS.xlsx">example using hours of tv</a>)</p>
-  </li>
-  <li>
-    <p><a href="https://public.enigma.com">enigma.com</a> wants to be the Google for public records, and it has aggressively sought out some datasets from government agencies. (Example: The minority report on Facebook ads allows you to look at the data submitted to Congress during the investigation) One of its great strengths is that it takes care to give you the lineage of all datasets.</p>
-  </li>
-  <li>
-    <p><a href="https://data.world">data.world</a> wants to be the Facebook of data, where people can share their data and insights. It’s all over the place – no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.</p>
-  </li>
-  <li>
-    <p><a href="https://github.com">github.com</a> is where a lot of people stash their data, and by default it’s public. A Google search usually doesn’t search the datasets held inside Github’s world - you normally need to search there. It’s also useful to look for news organizations’ github pages – this is where they make data public that they’ve used in stories. (There are some other places, but this is the most common.)</p>
-  </li>
-  <li>
-    <p>Google’s new <a href="https://toolbox.google.com/datasetsearch">dataset search</a> makes it a little easier to find standard datasets, but it is just as hit or miss as the rest of Google.</p>
-  </li>
-  <li>
-    <p><a href="https://ropercenter.cornell.edu/polls/">Roper Center for Public Opinion Research</a> is an archive of reputable polling results. Most organizations contribute them to Roper after some time has passed, but it’s a useful place to see what questions on your topic have been asked before, and by whom. One way to use it is to do a new survey based on the same questions if you need a comparison. Search poll questions using the  <a href="https://ropercenter.cornell.edu/CFIDE/cf/action/ipoll/index.cfm">ipoll search</a>. Their datasets are mainly historical or esoteric.</p>
-  </li>
+  <li><a href="http://www.cometdocs.com">CometDocs</a> is a free service that lets you upload your pdf and will return to you an XL file in email. Your IRE membership gives you a paid version for free, which lets you keep all of your pdf’s on their site and puts you in the front of the line.</li>
+  <li><a href="http://tabula.nerdpower.org/">Tabula</a>, a new alpha-level project from ProPublica and the Mozilla fellows (and also Jeremy Merrill now at the NYT). It lets you show the program where a table is, and it does a little more sophisticated work to figure out where the cells are. It’s a little better with PDF’s with lines between rows than CometDocs.</li>
+  <li><a href="http://www.foolabs.com/xpdf/">xpdf</a> is an old but reliable command line tool that still works remarkably well. It’s often best for very fixed-width and consistent pdfs. It’s a bit of a pain to install on Unix-based (including Mac) systems, but once you have it it’s easy. See <a href="http://www.ire.org/resource-center/tipsheets/3440/">this tutorial</a> from IRE to use it. You’ll have to log into IRE to get it.</li>
 </ul>
+
+<p>There are also PDF plug-ins to Ruby and Python, which can sometimes work just fine.</p>
+
+<p>None of these tools will convert images to words – for that, you may need to pay some money.</p>
+
+<p>##When free isn’t good enough
+Most of the pay products have two levels: one if you don’t need “OCR”, or Optical Character Recognition, for scanned documents; another if you do. If you’re going to pay, you might as well get the OCR – you’ll need it someday.</p>
+
+<p>In order of difficulty and cost:</p>
+
+<p>*<a href="http://www.investintech.com/order_main.htm">Able2Extract</a>: $99.95 for non-OCR/ $129.95 for OCR. Intuitive and reasonably accurate. It has some annoyances, but saving as a text file often overcomes them (rather than going directly to Excel).</p>
+
+<p>*<a href="http://finereader.abbyy.com/">ABBYY FineReader</a> Also $99.99 for personal use. Rob had a great tutorial on this. In terms of speed, ease of use and accuracy, it’s probably the best investment. It will also work very well on documents that have been scanned to turn them into searchable PDFs.</p>
+
+<p>*<a href="http://www.nuance.com/for-individuals/by-product/omnipage/index.htm">OmniPage</a>, $149.99 for individuals. This one is just slightly more powerful, but I’ve had better luck with it over time. The constant upgrades
+are really a pain.</p>
+
+<p>*<a href="http://www.cogniview.com/">Cogniview</a> has PDF2XL, which has been a treat for very difficult pdfs. It has a hard learning curve and is only really useful on tables, unlike OmniPage and ABBYY. ($129.97).</p>
+
+<p>Some of these come for both Mac and Windows, others just for Windows.</p>
 
 
 

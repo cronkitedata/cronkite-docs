@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Links to source data for doctoral students - Cronkite School data reporting</title>
+  <title> - Cronkite School data reporting</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/vendor/lunr.min.js"></script>
@@ -778,7 +778,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
             
@@ -830,9 +830,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link active">Links to source data for doctoral students</a>
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
                   
@@ -921,45 +921,59 @@
       <div class="main-content">
         
           
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                
-                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/workshops">Workshops</a></li>
-                
-                <li class="breadcrumb-nav-list-item"><span>Links to source data for doctoral students</span></li>
-              </ol>
-            </nav>
-          
         
         <div class="page-content">
-          <h2 id="outside-data-sources-for-doctoral-students">Outside data sources for doctoral students</h2>
+          <h2 id="visualization-as-a-reporting-tool">Visualization as a reporting tool</h2>
+
+<p>The <a href="reportingviz.pptx?raw=true">slides</a> and a <a href="viztips.pdf?raw=true">tip sheet</a> are included in this folder.</p>
+
+<h3 id="tools-for-data-visualization">Tools for data visualization###</h3>
+
+<p>The R programming language’s <a href="http://ggplot2.org/">ggplot2</a> is probably used most frequently by reporters to get quick visualizations that won’t be published. It’s each to make some of the most common charts, graphs and maps with default options that take advantage of a century of research into visual perception. It has a recent add-in called <a href="http://shiny.rstudio.com/">Shiny</a> to make interactive visualizations, something it was missing in the past.</p>
+
+<p><a href="http://d3js.org/">D3</a> is used by reporters who already know Javascript (not many). It’s the language that has pretty much replaced Flash and Activescript.</p>
+
+<p>Most reporters, as opposed to those who produce visualizations for publication, use simpler tools. Keep in mind that the free, online versions of some of these tools will make your data public by default.</p>
 
 <ul>
   <li>
-    <p><a href="https://socialexplorer.com">Social Explorer</a> is a much easier way to get at Census and related data than going through the Census bureau. It’s a subscription service that is available any time you’re connected through the school’s IP.  It includes block group level 5-year ACS files, decennial census and some historical data other sources.</p>
+    <p>Excel’s implementation of <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR">sparklines</a>. They are an amazingly simple and effective way to see trends quickly.</p>
   </li>
   <li>
-    <p><a href="https://www.ipums.org/">IPUMS</a> is a project out of the University of Minnesota that collects microdata and tries to line it up across years. This means you can compare Census results for some geographic areas over a very long time. Most of the time, you can generate your results online, which takes care of weighting and error testing. In some cases, you’ll have to download the data and create summaries yourself. Of particular note is the Time-Use survey and the CPS voter supplement.</p>
+    <p><a href="http://www.tableausoftware.com/public/">Tableau Public</a> is a small-scale version of the expensive Tableau software used in business and industry. The more powerful desktop version is free for IRE members, but about $2,000 a seat if you pay.</p>
   </li>
   <li>
-    <p><a href="http://www.norc.org/Research/Projects/Pages/general-social-survey.aspx">General Social Survey</a> has been taken every other year since 1972, and include a varying set of questions on social issues. It’s a difficult site to use, and trend data is shown online only for some predetermined issues. Be careful with the weighting - in two years, they oversampled African-American respondents, which means you have to remove that sample code to make years comparable. Using wtsall as the weight will take care of these problems. (<a href="docs/GSS.xlsx">example using hours of tv</a>)</p>
+    <p><a href="http://www-958.ibm.com/software/analytics/manyeyes/">ManyEyes</a> has a similar public approach, but is a little easier to use for very small scale visualizations.</p>
   </li>
   <li>
-    <p><a href="https://public.enigma.com">enigma.com</a> wants to be the Google for public records, and it has aggressively sought out some datasets from government agencies. (Example: The minority report on Facebook ads allows you to look at the data submitted to Congress during the investigation) One of its great strengths is that it takes care to give you the lineage of all datasets.</p>
+    <p><a href="https://support.google.com/fusiontables/answer/184641?hl=en">Google Fusion Tables</a> have the advantage of geocoding (putting addresses on a map when you don’t know the coordinates.) It’s a little confusing, but there is a big user base and a lot of help.</p>
   </li>
   <li>
-    <p><a href="https://data.world">data.world</a> wants to be the Facebook of data, where people can share their data and insights. It’s all over the place – no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.</p>
+    <p><a href="https://github.com/FlowingMedia/TimeFlow/wiki">Timeflow</a>, an alpha level product created at Duke University for exploratory investigative timelines and calendars. It will run off of a hard drive, but your security  settings may still block it. Most other timeline programs are for publication rather than exploration (at least the ones we can afford)</p>
   </li>
   <li>
-    <p><a href="https://github.com">github.com</a> is where a lot of people stash their data, and by default it’s public. A Google search usually doesn’t search the datasets held inside Github’s world - you normally need to search there. It’s also useful to look for news organizations’ github pages – this is where they make data public that they’ve used in stories. (There are some other places, but this is the most common.)</p>
-  </li>
-  <li>
-    <p>Google’s new <a href="https://toolbox.google.com/datasetsearch">dataset search</a> makes it a little easier to find standard datasets, but it is just as hit or miss as the rest of Google.</p>
-  </li>
-  <li>
-    <p><a href="https://ropercenter.cornell.edu/polls/">Roper Center for Public Opinion Research</a> is an archive of reputable polling results. Most organizations contribute them to Roper after some time has passed, but it’s a useful place to see what questions on your topic have been asked before, and by whom. One way to use it is to do a new survey based on the same questions if you need a comparison. Search poll questions using the  <a href="https://ropercenter.cornell.edu/CFIDE/cf/action/ipoll/index.cfm">ipoll search</a>. Their datasets are mainly historical or esoteric.</p>
+    <p><a href="http://www.simile-widgets.org/exhibit/">Simile Exhibit</a>, a project out of MIT that attempts to make it easy to make timelines, Google maps and small searchable datasets in one place. It’s good for data that won’t change a lot, since you have to have a specific data format for it. It’s not very actively supported and still feels like an academic project, but it generally works.</p>
   </li>
 </ul>
+
+<h3 id="visualizing-text">Visualizing text</h3>
+
+<ul>
+  <li>
+    <p><a href="http://voyant-tools.org/">Voyant Tools</a> lets you upload text or pdfs and get a high-level view of the contents. <a href="http://voyeurtools.org/?corpus=1411344109413.2091&amp;stopList=stop.en.taporware.txt">Here’s</a> an example using Martin Luther King’s “I have a Dream” speech, or [this one] (http://voyeurtools.org/?corpus=1411347124307.8286&amp;stopList=stop.en.taporware.txt) from three Chicago Police Board decisions.</p>
+  </li>
+  <li>
+    <p><a href="http://www-958.ibm.com/software/analytics/labs/manyeyes/#create">ManyEyes</a> has several visualizations that are just for text. <a href="http://www-958.ibm.com/software/analytics/labs/manyeyes/#vis=503352">The same example</a></p>
+  </li>
+  <li>
+    <p><a href="http://wordseer.berkeley.edu/wordseer-3-0-blog/">Wordseer</a>. I haven’t tried this yet – it’s just recently available to the general public. But I’ve seen demos and it looks interesting.</p>
+  </li>
+  <li>
+    <p>Although it’s not really visualization, <a href="https://addons.mozilla.org/en-US/firefox/addon/clearforest-gnosis/">ClearForest Gnosis</a>, a plug-in for Mozilla, is helpful for color-coding the entities on your documents.</p>
+  </li>
+</ul>
+
+<p>There are a lot of other text visualization experiments in the digital humanities, especially history, linguistics and literature graduate programs. Keep an eye on the projects at the <a href="http://dirtdirectory.org/categories/visualization">Digital Research Tools</a> site, which is constantly updated.</p>
 
 
 

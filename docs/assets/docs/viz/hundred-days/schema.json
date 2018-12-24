@@ -1,0 +1,41 @@
+{
+    types: {
+        'type-entry': {
+            pluralLabel: 'events'
+        },
+        'tags': {
+            pluralLabel: 'subjects'
+        }
+    },
+    properties: {
+        'id': {
+            valueType: "number",
+            label:      "sort order"
+        },
+        'type-details': {
+            valueType: "text"
+        },
+        'author': {
+            label:                  "authored by",
+            reverseLabel:           "author of",
+            reversePluralLabel:     "authors of",
+            groupingLabel:          "their authors",
+            reverseGroupingLabel:   "their work",
+            valueType:              "item"
+        },
+        'type-entry': {
+            valueType:              "text",
+            label:                  "event"
+        },
+        'start': {
+            valueType:              "date"
+        },
+        'end': {
+            valueType:              "date"
+        },
+        'description': {
+            valueType:              "text",
+            label:                  "narrative"
+        }
+    }
+}

@@ -42,11 +42,13 @@ nav_order: 99
 
 * "[Demystifying Data Journalism](Demystifying Data Journalism)", with Susan McGregor and Sarah Cohen at a Mashable conference. I think it's 2012.
 
+* [Interview with  data editor Janet Roberts](https://datajournalismawards.org/2018/06/14/producing-data-stories-and-visualisations-the-reuters-way/) on the Reuters approach to data reporting, 2018, from the [Data Journalism Awards](https://datajournalismawards.org/)
+
 ### Newsroom numbers
 
 * [Addressing Journalistic innumeracy](https://journalistsresource.org/studies/society/news-media/journalistic-innumeracy-math-phobia-sequence-resources-to-sharpen-your-mind#), John Whibey, Journalist's Resource website.
 
-* Numbers in the newsroom: overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture)
+* [Numbers in the newsroom](newsroom-math): overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture)
 
 ### Visualation as a reporting tool
 
@@ -54,9 +56,7 @@ nav_order: 99
 
 * Financial Times' "visual vocabulary", as a [pdf document](https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf) or [online at Github repo](http://ft-interactive.github.io/visual-vocabulary/)
 
-* "Vizualization as a reporting tool", from a conference at IRE:
-
-(None of the links work on either the handout or the interview -- don't bother to try.)
+* "Vizualization as a reporting tool", from a conference at IRE (None of the links work on either the handout or the interview -- don't bother to try.)
 
   * An [interview with me](https://www.poynter.org/news/using-data-visualization-reporting-tool-can-reveal-storys-shape) from Poynter leading up to a conference
   * [The handout]({{site.baseurl}}/assets/docs/viz/viz-reporting-tool.pdf) from the conference
@@ -76,13 +76,13 @@ This is a fairly random set of stories that we often use in class to discuss how
 
 * The Bell, Calif., small-town corruption: ["Is a City manager Worth $800,000?"](http://www.pulitzer.org/archives/9203) and ["Bell's Money Flowed Uphill"](http://www.pulitzer.org/archives/9215)
 
-* "[Cops among Florida's worst Speeders](https://www.sun-sentinel.com/news/speeding-cops/fl-speeding-cops-20120211-story.html)", by Sally Kestin and John Maines in the Ft. Lauderdale Sun-Sentinel, 2012. Dan Ngyuen [deconstructed the story](http://2015.padjo.org/briefs/florida-missing-speeding-cops/) for Stanford University and [compiled a smallish dataset for practice](http://2015.padjo.org/tutorials/spreadsheets/sun-sentinel-speeding-miami-cops-exercise/).
+* "[Cops among Florida's worst Speeders](https://www.sun-sentinel.com/news/speeding-cops/fl-speeding-cops-20120211-story.html)", by Sally Kestin and John Maines in the Ft. Lauderdale Sun-Sentinel, 2012. Dan Nguyen [deconstructed the story](http://2015.padjo.org/briefs/florida-missing-speeding-cops/) for Stanford University and [compiled a smallish dataset for practice](http://2015.padjo.org/tutorials/spreadsheets/sun-sentinel-speeding-miami-cops-exercise/).
 
 * "[Medicare Unmasked](https://www.pulitzer.org/winners/wall-street-journal-staff)" from the Wall Street Journal (2014), in which reporters mined doctor billing records to find those who were fleecing the system. This link is to the Pulitzer Prize site because the Journal's own site has kind of buried the big stories. Whether you use SQL or not, [Dan Ngyuen's tutorial](http://2015.padjo.org/tutorials/sql-walks/exploring-wsj-medicare-investigation-with-sql/) using the data is a useful way to reconstruct a story like this.
 
 * [Elliot Jaspin's story](http://hnn.us/article/35847) of finding racial cleansing in Census data. (very old!)
 
-* [Inside the Hidden World of Thefts](https://www.washingtonpost.com/investigations/inside-the-hidden-world-of-thefts-scams-and-phantom-purchases-at-the-nations-nonprofits/2013/10/26/825a82ca-0c26-11e3-9941-6711ed662e71_story.html?utm_term=.7dc33c25828a), Joe Stephens and Mary Pat Flaherty, Washington Post, 2013. One of the first set of reporters to take advantage of new questions on the IRS 990 form available now in electronic form. 
+* [Inside the Hidden World of Thefts](https://www.washingtonpost.com/investigations/inside-the-hidden-world-of-thefts-scams-and-phantom-purchases-at-the-nations-nonprofits/2013/10/26/825a82ca-0c26-11e3-9941-6711ed662e71_story.html?utm_term=.7dc33c25828a), Joe Stephens and Mary Pat Flaherty, Washington Post, 2013. One of the first set of reporters to take advantage of new questions on the IRS 990 form available now in electronic form.
 
 * Boston Globe 2018: "[For some State Police, it's a posting in Paradise](https://www.bostonglobe.com/metro/2018/07/14/for-some-state-police-posting-paradise/OAQmtHaFtLZr0Mt8faPQKM/story.html)," by Kay Lazar and Todd Wallack. Be sure to [read Todd's tweetstorm](https://mobile.twitter.com/TWallack/status/1025346534471348225) on what it took to get this data, and how he got past bureaucratic and public records battles.
 

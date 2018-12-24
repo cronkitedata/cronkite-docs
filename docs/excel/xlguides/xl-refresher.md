@@ -18,10 +18,9 @@ The key reasons for reporters to use a spreadsheet are:
 * To use data created by others for fast, simple analysis and data cleanup. Many government agencies provide their information in spreadsheet form, so you'll need to get used to using it.
 * To perform simple, straightforward analysis on data and share with team members. This is becoming less common as more reporters learn programming languages, but it's still common in newsrooms to share data, especially through Google Sheets.
 
-We're going to work with Excel because it is still far more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, for some things -- especially interacting with web pages elsewhere and sharing with others -- they're much more robust.
+We're going to work with Excel because it is still far more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members. Simple lists are much easier to share than various Excel attachments or Dropbox files.
 
 Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn't. If you learn to take notes in a structured way, you'll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you'll have to type them all in at least twice anyway. And getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more.
-
 
 
 ## Re-learning Excel from the ground up
@@ -78,32 +77,45 @@ Select the corner that you want frozen. For example, if you want the first three
 
 * If a column is filled with a lot of text, select the column and look on the Home ribbon next to the formatting area for "Wrap Text". This means that when you double-click to widen a column, it will get taller, not wider. This is good when you need to save valuable real estate on the screen.
 
-## Best practices
+## Getting started with a dataset
 
-There are several best practices we'll be using throughout the course, and you're expected to follow them and catch errors that they might show you. All of this is related to interviewing your data the same way you'd interview a person.
 
-### Open, don't double-click
 
-Double-clicking on files to open them is never a great idea. We all do it and we all find some day that we regret it. Getting used to doing it the long way will help you in the future, not just in Excel but in other programs.
+**SLOW DOWN!**
+Don't do anything until you understand what you have in front of you and can predict what your next mouse click will do to it.
 
-As an example, double-clicking on a computer program like Python or R will run the program -- it won't give you a way to edit it. Double-clicking on Excel might try to open a corrupted or extremely large file.
+Most data we encounter was created by someone else for some purpose other than ours. This means that you can't assume anything.  It may not be complete. It may be inaccurate. It may mean something completely different than it appears at first blush.
 
-Opening the file forces you to pay attention to where the file resides in your computer. That way  you always know that you're using the right version, not some version that was stuck on your desktop or in some other place by mistake.
+### First steps
 
-### First look - getting to know your data
-
-We'll go over other best practices as we move along, but for now you should spend some time getting to know your data.
-
-* Save your workbook under a new name and work only on that copy.  
-* Check your corners -- look at the top left and bottom right. Is the data all in one area? Are there footnotes or other non-data sections mixed in? We're going to want to fix that later.
+* Document where you got the spreadsheet and how you can get back to the original.
+* Read anything you can about what it contains. Look for documentation that comes with the data.
+* Save the original into a safe place with its original name and metadata. Work on a copy.
 * If the spreadsheet shows #### instead of words or numbers, widen your columns. If it shows 7E-14 or something like that, format them as numbers, not "General".  
-* Add some headings and id numbers if necessary.
+* Check your corners -- look at the top left and bottom right. Is the data all in one area? Are there footnotes or other non-data sections mixed in? We're going to want to fix that later.
 
-This video goes through the first steps you'll usually take when you have a new dataset. We're going to go over the concept of "tidy data" later.
+### Interview your data
 
-[You should follow along using the same datasest as on the video]({{site.baseurl}}/assets/data/phoenix_salaries.xlsx).   
+#### Headings
+The most fraught part of data reporting is understanding what each *column* actually means. These often have cryptic, bureaucratic names. You may need to go back to the source of the data to be sure you actually understand them.
+
+If your data doesn't have any headings, that's going to be your first priority. In effect, you'll need to build what we call a *data dictionary* or *record layout* if one hasn't been provided.
+
+#### Unit of analysis
+
+A *unit of analysis* refers to the items that are listed in the rows of your dataset. Ideally, every row should be at the same unit of analysis -- a person, an inspection, or a city, for example. Summaries should be separated by a blank row, or moved to a different sheet.
+
+#### Row numbers
+The data was probably given to you in some sort of natural sort order. Different computer systems sort differently -- some are case-sensitive, others are not. Some put numbers before letters, others don't. The order of the data may depend on a column you don't have. For example, say an agency gave you the data in the order it came into the system, but didn't give you that ID number. If you don't do something now, you'll never be able to get back to the original order, which could have meaning for both the agency and for fact-checking.
+
+### Example
+
+These first steps, along with adding an ID row, are shown here. You can [follow along with the same dataset]({{site.baseurl}}/assets/data/xlexamples/phoenix_salaries.xlsx).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iGCpfop0zvs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<br>
+Read [Interview your data](http://mediashift.org/2014/07/take-an-interviewing-approach-to-find-stories-in-data/) from ProPublica data reporter and developer Derek Willis for more tips like these, even if you don't quite yet know how to accomplish it all.
 
 ## Keyboard shortcuts
 

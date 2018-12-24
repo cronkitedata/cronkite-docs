@@ -51,6 +51,6 @@ The [full methodology](https://www2.census.gov/programs-surveys/popest/technical
 
 ### Reference map
 
-It will be easier to work with the data if you have a sense of Arizona geography, especially which counties contain the large cities and which counties are made up of tribal lands:
+It will be easier to work with the data if you have a sense of Arizona geography, especially which counties contain the large cities and which counties are made up of tribal lands. Green areas are national forest and parkland; striped areas are reservations.
 
 ![Arizona map]({{site.baseurl}}/assets/images/01-azstatemap.png)

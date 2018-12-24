@@ -127,7 +127,7 @@ At its core, HTML is a structured document containing text. Images, sound, video
 
 #### Traps
 
-Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, "--", you'll see &mdash; or instead of an "&", you see "&amp;". This is particularly annoying in lists of names with accents and other non-standard characters. Converting between the various text encodings can also be a headache, but it's getting easier. (Old versions of Python choke on UTF-8 characters, like accents or smart quotes.)
+Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, "--", you'll see "<code>&mdash</code>;" or instead of an "&", you see "<code>&amp</code>;". This is particularly annoying in lists of names with accents and other non-standard characters. Converting between the various text encodings can also be a headache, but it's getting easier. (Old versions of Python choke on UTF-8 characters, like accents or smart quotes.)
 
 ### SQL dumps
 

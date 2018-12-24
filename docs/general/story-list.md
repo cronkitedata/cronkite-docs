@@ -94,6 +94,8 @@ This is a fairly random set of stories that we often use in class to discuss how
 
 * ProPublica Illinois: "[How Chicago Ticket Debt Sends Black Motorists Into Bankruptcy](https://features.propublica.org/driven-into-debt/chicago-ticket-debt-bankruptcy/)", using several databases to show how Chicago's aggressive ticketing is driving people into bankruptcy, by Melissa Sanchez and Sandhya Kambhampati, February 2018. The writing is a little rough, but the data work is solid and, most importantly, the stories were well reporting and identified.
 
+* “[L.A. is slammed with record costs for legal payouts](http://www.latimes.com/local/lanow/la-me-ln-city-payouts-20180627-story.html)”, Emily Alpert Reyes and Ben Welsh. Note the [link at the bottom to github repo](https://github.com/datadesk/la-settlements-analysis) showing the data analysis.
+
 ### Scraping
 
 * Todd Wallack from the Boston Globe on using a little programming to get to a story on liquor licensing. Be sure to [read the story](https://t.co/6DuYIGp67u) to understand how the data fits in with the story. (2018)

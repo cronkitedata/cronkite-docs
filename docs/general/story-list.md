@@ -44,6 +44,8 @@ nav_order: 99
 
 * [Interview with  data editor Janet Roberts](https://datajournalismawards.org/2018/06/14/producing-data-stories-and-visualisations-the-reuters-way/) on the Reuters approach to data reporting, 2018, from the [Data Journalism Awards](https://datajournalismawards.org/)
 
+* ["How to Plan, Pitch and Do a Data-Driven Investigation"](https://docs.google.com/presentation/d/1uLJwYjVcyR8-STf9odEl_jTCSy7viAjhEJju2lAfLCs), Miguel Paz and Ryan McNeil, presentation from a CUNY course in 2016 (?). Many links are broken or private, but the ideas are still useful.
+
 ### Newsroom numbers
 
 * [Addressing Journalistic innumeracy](https://journalistsresource.org/studies/society/news-media/journalistic-innumeracy-math-phobia-sequence-resources-to-sharpen-your-mind#), John Whibey, Journalist's Resource website.
@@ -65,7 +67,9 @@ nav_order: 99
 
 * Slides from [Peter Aldhous's site](http://paldhous.github.io/ucsc/2016/investigative-policy/week5.html) on visualizing data for science investigations.
 
+### Open source investigations
 
+* "[How to conduct an open-source investigation](https://www.newyorker.com/culture/culture-desk/how-to-conduct-an-open-source-investigation-according-to-the-founder-of-bellingcat) according to the founder of Bellingcat", by Ned Bauman, New Yorker, August 30, 2018
 
 ## Selected stories
 

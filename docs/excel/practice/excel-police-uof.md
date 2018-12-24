@@ -29,9 +29,9 @@ Several longer documents would be useful if you were going to do this for a real
 
 ## Open data
 
-The current data is updated on the [Phoenix Open Data site](https://www.phoenixopendata.com/dataset/officer-involved-shooting-incidents/resource/8f8c1739-b905-407f-9eb6-6b10db55b931) in a comma-delimited text file. A copy of that data was saved as of Dec. 24, 2018, in case it is taken down.
+The current data is updated on the [Phoenix Open Data site](https://www.phoenixopendata.com/dataset/officer-involved-shooting-incidents/resource/8f8c1739-b905-407f-9eb6-6b10db55b931) in a comma-delimited text file. A [copy of that data]({{site.baseurl}}/assets/data/csv/officer-involved-shooting-incidents_officer-involved-shooting-incidents-2017-forward_ois.csv) was saved as of Dec. 24, 2018, in case it is taken down.
 
-Import the data into a spreadsheet and evaluate it by sorting and filtering.
+Import the data into a spreadsheet and evaluate it by sorting and filtering -- you don't need to know anything more than this right now.
 
 Answer the following questions:
 * How many incidents were logged in 2018?

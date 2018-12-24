@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Tidy data - Data reporting @ Cronkite</title>
+  <title>Data types / tidy data - Data reporting @ Cronkite</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/just-the-docs.js"></script>
@@ -341,7 +341,7 @@
                           
                             
                               <li class="navigation-list-item  active">
-                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html" class="navigation-list-link active">Tidy data</a>
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html" class="navigation-list-link active">Data types / tidy data</a>
                               </li>
                             
                           
@@ -1029,20 +1029,33 @@
                   <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/excel">Excel</a></li>
                   <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/excel/xlguides">Excel guides</a></li>
                 
-                <li class="breadcrumb-nav-list-item"><span>Tidy data</span></li>
+                <li class="breadcrumb-nav-list-item"><span>Data types / tidy data</span></li>
               </ol>
             </nav>
           
         
         <div class="page-content">
           <ol id="markdown-toc">
+  <li><a href="#understanding-data-types" id="markdown-toc-understanding-data-types">Understanding data types</a></li>
   <li><a href="#tidy-data" id="markdown-toc-tidy-data">Tidy data</a>    <ol>
       <li><a href="#tidy-example" id="markdown-toc-tidy-example">Tidy example</a></li>
       <li><a href="#not-so-tidy" id="markdown-toc-not-so-tidy">Not so tidy</a></li>
     </ol>
   </li>
-  <li><a href="#understanding-data-types" id="markdown-toc-understanding-data-types">Understanding data types</a></li>
+  <li><a href="#fixing-untidy-data-part-1" id="markdown-toc-fixing-untidy-data-part-1">Fixing untidy data, part 1</a></li>
 </ol>
+
+<h2 id="understanding-data-types">Understanding data types</h2>
+
+<p>When you start working with structured data, there is an important unspoken rule: Each column should contain the same <em>type</em> of data, often broken into three categories: text, numbers and dates.</p>
+
+<p>This video goes through the basic types of data that you’ll find within a table such as an Excel worksheet, and what opportunities and traps await you.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYLwi-XNck" allow="autoplay; encrypted-media" allowfullscreen="" style="margin: 2em;"></iframe>
+
+<p>Most programming languages enforce a singe data type for each field or variable in a data frame or table. Instead of keeping the wrong version, it will turn all of them in to characters if it isn’t sure. It will turn all of the characters to missing data if there are only a few.</p>
+
+<p>As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of “data frame” is used in R and Python to act like an Excel sheet. A json object can define a whole database in nested text. Those types will be covered in later modules.</p>
 
 <h2 id="tidy-data">Tidy data</h2>
 
@@ -1075,13 +1088,13 @@
 
 <p>Here’s an example, showing the beginning of a file obtained from New York State showing the names, locations and salaries of judges in the state’s Supreme Court (the main trial court in New York):</p>
 
-<p><img src="/cronkite-docs/assets/images/xltidy-nycjudges-start.png" alt="judges" /></p>
+<p class="my-6"><img src="/cronkite-docs/assets/images/xltidy-nycjudges-start.png" alt="judges" /></p>
 
 <p>It follows the simple rule that every column always means one and only one thing, and every row is an instance of that thing at the same level of analysis – the employee.</p>
 
 <p>It’s not perfect. The position titles don’t really show their level, but instead are sometimes used to show districts. In this sense, it’s not quite tidy: separating the title from the district would make it more useful.</p>
 
-<p><img src="/cronkite-docs/assets/images/xltidy-nycjudges-titles.png" alt="titles" /></p>
+<p class="my-6"><img src="/cronkite-docs/assets/images/xltidy-nycjudges-titles.png" alt="titles" /></p>
 
 <h3 id="not-so-tidy">Not so tidy</h3>
 
@@ -1091,21 +1104,23 @@
 
 <p>Sadly, the information and datasets you receive from others will often NOT adhere to tidy principles. Government “datasets” often have a lot of extra verbiage at the top and bottom, or are done in a hierarchical fashion, mixing detail and total at the same time. In this example, the Census Bureau seems to anticipate that you will print this data, not use it:</p>
 
-<p><img src="/cronkite-docs/assets/images/xltidy-healthins-census.png" alt="printout" /></p>
+<p class="my-6"><img src="/cronkite-docs/assets/images/xltidy-healthins-census.png" alt="printout" /></p>
 
 <p>If you just needed a few numbers from the release, this table is perfectly adequate. But if you wanted to combine it with other data or sort it in any way, it’s nearly useless.  When you come across data that looks like this – with subtotals and different topics broken down the side, and many figures going across the top – look for other formats that might have been released, or talk with the agency to get something more useful. In this case, we’d look for the underlying data that created these tables.</p>
 
 <p><a href="https://www.sos.state.oh.us/globalassets/elections/2016/gen/precinct.xlsx">Here’s another example</a>, this time from the Ohio Secretary of State, that lists the results of the 2016 election. Each page is one type of race – Congress, president, etc. – and each column shows the result for a candidate within a race. The rows are sometimes the precinct, and sometimes the total.</p>
 
-<p><img src="/cronkite-docs/assets/images/xltidy-ohsos-precinct.png" alt="OHSOS" /></p>
+<p class="my-6"><img src="/cronkite-docs/assets/images/xltidy-ohsos-precinct.png" alt="OHSOS" /></p>
 
 <p>There are totals mixed in with the precincts, and each of the candidates are listed left to right for every Congressional race. This makes it easy to read if you want to see who won. But each precinct would only have one race for U.S. Senate and one for the House, meaning that most of the values listed in this very, very wide spreadsheet are zero.</p>
 
-<p>Take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like – what are the column headings, what does each row represent, and how might it be put together? It’s actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together.</p>
+<h2 id="fixing-untidy-data-part-1">Fixing untidy data, part 1</h2>
+
+<p>When you encounter untidy data like the example above, take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like. What are the column headings, what does each row represent, and how might it be put together? It’s actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together.</p>
 
 <p>(Computer scientists shouldn’t confuse this with the “3rd normal form”. This is much less rigid about breaking out tables whenever there is repetition, but it does adhere to the idea of a single unit of analysis in each table.)</p>
 
-<p><img src="/cronkite-docs/assets/images/xltidy-envision.jpg" alt="envision success" /></p>
+<p class="my-6"><img src="/cronkite-docs/assets/images/xltidy-envision.jpg" alt="envision success" /></p>
 
 <p>This is an excellent exercise for you to do whenever you are working on data: <strong><em>envision success</em></strong>. If you had what you wanted, what might that look like?</p>
 
@@ -1113,15 +1128,7 @@
 
 <p>Here’s a video that goes through what is wrong with them and how we fixed it.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ndkHwNE8LBs" frameborder="0" allowfullscreen=""></iframe>
-
-<h2 id="understanding-data-types">Understanding data types</h2>
-
-<p>When you start working with tidy data, there is also an unspoken rule: Each column should contain the same <em>type</em> of data, often broken into three categories: text, numbers and dates.</p>
-
-<p>This video goes through the basic types of data that you’ll find within a table, like an Excel worksheet. As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of “data frame” is used in R and Python to act like a data table. A json object can define a whole database in nested text. For now, though, just understanding exactly what numbers, text and dates are will make things clearer – including what happens if you don’t pay attention to them.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYLwi-XNck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ndkHwNE8LBs" frameborder="0" allowfullscreen="" class="mt-6"></iframe>
 
 
 

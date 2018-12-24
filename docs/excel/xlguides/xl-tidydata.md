@@ -1,5 +1,5 @@
 ---
-title: Tidy data
+title: Data types / tidy data
 nav_order: 2
 parent: Excel guides
 grand_parent: Excel
@@ -7,6 +7,21 @@ grand_parent: Excel
 
 1. TOC
 {:toc}
+
+
+
+## Understanding data types
+
+When you start working with structured data, there is an important unspoken rule: Each column should contain the same _type_ of data, often broken into three categories: text, numbers and dates.  
+
+This video goes through the basic types of data that you'll find within a table such as an Excel worksheet, and what opportunities and traps await you.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYLwi-XNck" allow="autoplay; encrypted-media" allowfullscreen
+style="margin: 2em;"></iframe>
+
+Most programming languages enforce a singe data type for each field or variable in a data frame or table. Instead of keeping the wrong version, it will turn all of them in to characters if it isn't sure. It will turn all of the characters to missing data if there are only a few.
+
+As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of "data frame" is used in R and Python to act like an Excel sheet. A json object can define a whole database in nested text. Those types will be covered in later modules.
 
 
 ## Tidy data
@@ -35,12 +50,14 @@ It's always easy to turn these tidy datasets into another form. It's often diffi
 Here's an example, showing the beginning of a file obtained from New York State showing the names, locations and salaries of judges in the state's Supreme Court (the main trial court in New York):
 
 ![judges]({{site.baseurl}}/assets/images/xltidy-nycjudges-start.png)
+{: .my-6}
 
 It follows the simple rule that every column always means one and only one thing, and every row is an instance of that thing at the same level of analysis -- the employee.
 
 It's not perfect. The position titles don't really show their level, but instead are sometimes used to show districts. In this sense, it's not quite tidy: separating the title from the district would make it more useful.
 
 ![titles]({{site.baseurl}}/assets/images/xltidy-nycjudges-titles.png)
+{: .my-6}
 
 ### Not so tidy
 
@@ -51,21 +68,26 @@ Think of this when you see forms in the wild. They are often pretty tidy! A park
 Sadly, the information and datasets you receive from others will often NOT adhere to tidy principles. Government "datasets" often have a lot of extra verbiage at the top and bottom, or are done in a hierarchical fashion, mixing detail and total at the same time. In this example, the Census Bureau seems to anticipate that you will print this data, not use it:
 
 ![printout]({{site.baseurl}}/assets/images/xltidy-healthins-census.png)
+{: .my-6}
 
 If you just needed a few numbers from the release, this table is perfectly adequate. But if you wanted to combine it with other data or sort it in any way, it's nearly useless.  When you come across data that looks like this -- with subtotals and different topics broken down the side, and many figures going across the top -- look for other formats that might have been released, or talk with the agency to get something more useful. In this case, we'd look for the underlying data that created these tables.
 
 [Here's another example](https://www.sos.state.oh.us/globalassets/elections/2016/gen/precinct.xlsx), this time from the Ohio Secretary of State, that lists the results of the 2016 election. Each page is one type of race -- Congress, president, etc. -- and each column shows the result for a candidate within a race. The rows are sometimes the precinct, and sometimes the total.
 
 ![OHSOS]({{site.baseurl}}/assets/images/xltidy-ohsos-precinct.png)
+{: .my-6}
 
 There are totals mixed in with the precincts, and each of the candidates are listed left to right for every Congressional race. This makes it easy to read if you want to see who won. But each precinct would only have one race for U.S. Senate and one for the House, meaning that most of the values listed in this very, very wide spreadsheet are zero.
 
-Take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like -- what are the column headings, what does each row represent, and how might it be put together? It's actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together.
+
+## Fixing untidy data, part 1
+
+When you encounter untidy data like the example above, take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like. What are the column headings, what does each row represent, and how might it be put together? It's actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together.
 
 (Computer scientists shouldn't confuse this with the "3rd normal form". This is much less rigid about breaking out tables whenever there is repetition, but it does adhere to the idea of a single unit of analysis in each table.)
 
-
  ![envision success]({{site.baseurl}}/assets/images/xltidy-envision.jpg)
+ {: .my-6}
 
 This is an excellent exercise for you to do whenever you are working on data: **_envision success_**. If you had what you wanted, what might that look like?
 
@@ -74,11 +96,4 @@ This is an excellent exercise for you to do whenever you are working on data: **
 Here's a video that goes through what is wrong with them and how we fixed it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ndkHwNE8LBs" frameborder="0"   allowfullscreen></iframe>
-
-## Understanding data types
-
-When you start working with tidy data, there is also an unspoken rule: Each column should contain the same _type_ of data, often broken into three categories: text, numbers and dates.
-
-This video goes through the basic types of data that you'll find within a table, like an Excel worksheet. As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of "data frame" is used in R and Python to act like a data table. A json object can define a whole database in nested text. For now, though, just understanding exactly what numbers, text and dates are will make things clearer -- including what happens if you don't pay attention to them.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AiYLwi-XNck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{: .mt-6}

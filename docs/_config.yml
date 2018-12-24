@@ -25,12 +25,12 @@ exclude: ["node_modules/",
           "*.DS_Store",
           ]
 
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+#aux_links:
+#  "Data reporting Canvas site @ Cronkite":
+#    - "//github.com/pmarsceill/just-the-docs"
 
 # Enable or disable the site search
-search_enabled: true
+#search_enabled: false
 
 title: Data reporting @ Cronkite
 description: A collection of materials used in the data reporting class at ASU's Cronkite School of Journalism

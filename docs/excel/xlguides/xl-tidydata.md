@@ -1,6 +1,6 @@
 ---
 title: Tidy data
-nav_order: 3
+nav_order: 2
 parent: Excel guides
 grand_parent: Excel
 ---
@@ -28,7 +28,7 @@ In other words, each column means one thing, each row is an instance of that thi
 
 It's always easy to turn these tidy datasets into another form. It's often difficult to turn messy datasets into something tidy.
 
-This sometimes looks repetitive. That's good -- it give you something consistent to summarize.
+[Look through Wickham's list of ways that day is often untidy](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) (about halfway down the document). Don't worry about the programming in R that he suggests to fix the problems. Concentrate instead on the different ways that untidy data frequently appears.
 
 ### Tidy example
 

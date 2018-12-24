@@ -1,7 +1,7 @@
 ---
 title: Excel formulas
 parent: Excel guides
-nav_order: 2
+nav_order: 5
 grand_parent: Excel
 ---
 

@@ -14,7 +14,9 @@ Data doesn't always show up in a simple Excel spreadsheet or on a Google sheet. 
 
 File types refer to two different things. At its core, data could be:
 * **Text** - the (nearly) universally recognized format that can be opened and managed in any software. There are different encodings, but usually you'll find them labeled as UTF-8 or ASCII. Don't worry about it for now.
-* **Binary** - machine-readable but encoded in computer-ese, often in proprietary form. Images and sound are always binary, but so are Excel and PDF files.
+* **Binary** - machine-readable but encoded in computer-ese, often in proprietary form. Images and sound are always binary, but so are PDF files.
+
+
 
 Both of these types, at their most basic level, are transmitted using bits -- a series of 0s and 1s -- but text file bits represent characters and binary file bits represent some other kind of data, either proprietary or non-character.
 
@@ -32,9 +34,9 @@ In Windows, use the shortcut for All Settings in the bottom right, then search f
 
 ### CSV, TSV and other delimited data files
 
-Tabular text, the simplest data to read into any program, can come in several structures. The most common that you'll see is called CSV, or comma-separated values. Your computer probably thinks that a CSV file is supposed to be opened in Excel or, on a Mac, in the built-in Numbers program.
+Tabular text, the simplest data to read into any program, can come in several structures. The most common is called CSV, or comma-separated values. Your computer probably thinks that a CSV file is supposed to be opened in Excel or, on a Mac, in the built-in Numbers program.
 
-A CSV file suggests that a program wishing to use the data table should use commas to separate the columns, or fields. Usually, the data is enclosed by double quotes when it's possible to have a comma within the field. The first row usually shows the headings in the same form:
+A CSV file suggests that a program wishing to use the data table should use commas to separate the columns. Usually, the data is enclosed by double quotes when it's possible to have a comma within the field. The first row usually shows the headings in the same form:
 
       name, position, start_date, age_at_start_date
       "Trump, Donald", President, 2017-01-20, 70
@@ -55,7 +57,7 @@ These are very specific problems, but they are impossible to fix if you lose the
 
 You can usually just change the extension from .csv to .txt and then you'll be allowed to specify what you want the program to do.
 
-The other trap is harder to deal with and is treated differently in each program -- that's the problem of unescaped quotes. An unescaped quote would look something like this:
+The other trap is harder to deal with and is treated differently in each program -- that's the problem of unescaped quotes and line endings in long fields. An unescaped quote would look something like this:
 
          Donald "You're fired!" Trump, president, ...
 
@@ -68,12 +70,12 @@ This is a common problem when someone has exported the data into a text file fro
 
 ### Fixed-width text
 
-This is another form of a universal file format that can be read by anyone, except it splits the fields at specific locations within a row rather than using specific characters. These are a little harder to read, but are common when you get data produced by old computers in government agencies.  The bigger disadvantage is that every field has to be the same size. If someone has a long name or title, for example, it will be chopped off in this format.
+This is another form of a universal file format that can be read by anyone, except it splits the fields at specific locations within a row rather than using specific characters. These are a little harder to read, but are common when you get data produced by old computers in government agencies.  The bigger disadvantage is that every field has to be the same size. If someone has a long name or title, for example, it will be chopped off in this format. You will usually need a data dictionary or record layout to tell you how to split it apart.
 
-          Trump, Donald   |president     |2017-01-20
-          Obama, Barack   |president     |2009-01-20
-          Biden, Joe      |vice president|2009-01-20
-          Washington, Geor|president     |1779-04-30
+          Trump, Donald   president     2017-01-20
+          Obama, Barack   president     2009-01-20
+          Biden, Joe      vice president2009-01-20
+          Washington, Georpresident     1779-04-30
 
 
 ### XML and JSON
@@ -87,7 +89,7 @@ XML (eXtensible Markup Language) and JSON (Javascript Object Notation) are two o
         <employee sex="F">
             <firstName>Anna</firstName> <lastName>Smith</lastName>
         </employee>
-        <employee sex="">
+        <employee>
             <firstName>Peter</firstName> <lastName>Jones</lastName>
         </employee>
     </employees>ß
@@ -98,10 +100,16 @@ At one time, XML was the official format required by federal agencies for data t
 JSON also defines the structure of a dataset by using the names of the fields, but it's stored in a somewhat more compact structure:
 
       {"employees":[
-          { "firstName":"John", "lastName":"Doe" },
-          { "firstName":"Anna", "lastName":"Smith" },
+          { "firstName":"John", "lastName":"Doe", "sex":"M"},
+          { "firstName":"Anna", "lastName":"Smith", "sex": "F" },
           { "firstName":"Peter", "lastName":"Jones" }
       ]}
+
+Leaving out a field simply leaves it blank in the output dataset.
+
+Most Application Programming Interfaces (or APIs) return their data in .json format, which is easily converted into a complex object by javascript, Python or R. JSON was designed for efficiently transferring data to your browser, so it's usually the most flexible format. Excel doesn't open json by default, but Google sheets can easily import simple json objects.
+
+For both XML and json, look for online converters to .csv files online. They won't handle large documents, but they're perfectly good to convert files with a few hundred items in them.
 
 #### Benefits
 No one has to guess what anything means in these tagged structures. They can include anything you want, including full documents within one field. Once a computer program can read one of these formats, there are very few ways they can go wrong.
@@ -119,11 +127,27 @@ At its core, HTML is a structured document containing text. Images, sound, video
 
 #### Traps
 
-Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, "--", you'll see &mdash; or instead of an "&", you see "&amp;". This is particularly annoying in lists of names with accents and other non-standard characters.
+Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, "--", you'll see &mdash; or instead of an "&", you see "&amp;". This is particularly annoying in lists of names with accents and other non-standard characters. Converting between the various text encodings can also be a headache, but it's getting easier. (Old versions of Python choke on UTF-8 characters, like accents or smart quotes.)
 
 ### SQL dumps
 
 A SQL dump is plain text or binary information that is designed to be read back into a relational database program like MySQL, SQLite or PostGreSQL. While not strictly text, it is considered an open format. (SQL databases can store more than text, including images or sound, but it's stored in a standard way.) Just know that if you need to ask for data, a SQL dump is a very easy way to work with a large database, and is usually easy for a government agency to produce.
+
+## Proprietary file formats
+
+Most software saves files in special formats that they and only they can read. Some are so common, though, that there are converters and importers, or they have become de facto standards.
+
+### Excel, Access and their cousins
+
+These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you'll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. They are much more susceptible to viruses and other malware, but they can contain a lot more information.
+
+They can be either text or binary. In fact, Microsoft Excel and Word documents are now text files -- very, very, complicated text files that you wouldn't want to try to decipher on your own.
+
+### PDF
+
+I've saved PDF because it's the bane of most data journalists' existence. PDF files were designed to present information on a page exactly as the person who created it wanted. It's really a report, not a dataset. But many government agencies now try to pawn off PDFs as data. There are all kinds of issues with PDFs, but for now just leave it this way: You don't want them.
+
+This list suggests that, depending on the complexity of the data you are requesting, you'll usually want one of the standard text-based formats: csv or tsv for simple data; xml or json for complicated data.
 
 ## Non-text files
 
@@ -138,15 +162,3 @@ We won't be dealing with these much, but it's worth it for you to know that you 
 ### Vector images
 
 These files are often used to transfer images made with Adobe Illustrator or in mapping programs. Rather than put each pixel in the file, each object -- a dot, line, or polygon -- is defined by a giant mathematical formula. It's more efficient than working with pixels, and it allows the objects to contain additional information. Shrinking and enlarging them doesn't change the file size or the quality.
-
-## Proprietary files
-
-### Excel, Access and their cousins
-
-These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you'll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. They are much more susceptible to viruses and other malware, but they can contain a lot more information.
-
-They can be either text or binary. In fact, Microsoft Excel and Word documents are now text files -- very, very, complicated text files that you wouldn't want to try to decipher on your own.
-
-### PDF
-
-I've saved PDF because it's the bane of most data journalists' existence. PDF files were designed to present information exactly as the person who created it wanted. It's really a report, not a dataset. But many government agencies now try to pawn off PDFs as data. There are all kinds of issues with PDFs, but for now just leave it this way: You don't want them.

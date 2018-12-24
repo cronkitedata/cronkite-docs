@@ -2,7 +2,7 @@
 title: Grouping with pivot tables
 parent: Excel guides
 grand_parent: Excel
-nav_order: 5
+nav_order: 7
 ---
 
 

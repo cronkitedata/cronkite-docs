@@ -2,7 +2,7 @@
 title: "Arizona population exercise"
 parent: Excel practice
 grand_parent: Excel
-nav_order: 2
+nav_order: 1
 ---
 
 1. TOC

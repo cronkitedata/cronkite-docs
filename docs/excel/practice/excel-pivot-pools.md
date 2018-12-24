@@ -2,7 +2,7 @@
 title: Swimming pool inspections
 parent: Excel practice
 grand_parent: Excel
-nav_order: 3
+nav_order: 15
 ---
 
 # Grouping from start to finish

@@ -1,6 +1,6 @@
 ---
 title: Rates and ratios with FBI data
-nav_order: 3
+nav_order: 10
 parent: Excel practice
 grand_parent: Excel
 ---

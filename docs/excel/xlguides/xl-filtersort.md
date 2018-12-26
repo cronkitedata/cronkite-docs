@@ -31,10 +31,7 @@ After matching up the demographics of police departments with their cities, Cohe
 
 The story, "[Police Chiefs, Looking to Diversity Forces, Face Structural Hurdles](https://www.nytimes.com/2015/11/08/us/politics/police-chiefs-looking-to-diversify-forces-face-structural-hurdles.html)" helped explain the persistent gap between the makeup of police in some areas and the communities they served.
 
-This video goes through many of the details of sorting and filtering:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1XRPdG0GAwE" allow="autoplay; encrypted-media" allowfullscreen
-style="margin: 2em;"></iframe>
 
 ## Sorting and filtering as a reporting tool
 
@@ -45,6 +42,8 @@ Sorting can also:
 * Show you rows containing the highest and lowest values of any column. That can be news or it can be errors or other problems with the data.
 * Let you answer quick "how many?" questions, with a count of the rows that match your criteria.
 * Together, sorting and filtering can narrow your dataset to just the items you want to examine more closely in your reporting.
+
+
 
 ### Create a data table from your spreadsheet
 
@@ -144,3 +143,10 @@ The other comes when you have numbers that are treated as text. This is a tricky
 ### I want to get rid of my data table
 
 You can revert to the a plain old spreadsheet by selecting any cell within your table, then looking for the "Table" tab at the top of your screen. Choose the option that says "Convert to Range".
+
+### Show me a video
+
+This video goes through many of the details of sorting and filtering:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1XRPdG0GAwE" allow="autoplay; encrypted-media" allowfullscreen
+style="margin: 2em;"></iframe>

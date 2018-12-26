@@ -25,7 +25,9 @@ After Ferguson, Mo., [police killed Michael Brown in 2014](https://en.wikipedia.
 
 When newer data reflecting departments' makeup in 2012 was released a year later, Matt Apuzzo and Sarah Cohen hoped it would show some differences. It didn't. So they were left trying to find news in the data that was clearly of public interest.
 
-After matching up the demographics of police departments with their cities, Cohen started sorting, filtering and Googling. Could there be news in the outliers on the list? Which departments most closely represented their communities? Which ones had unusually large gaps? She quickly stumbled on the story: Inkster, Mich. had one of the least representative departments in the country, and had recently hired a new police chief to help mend the department's fraught relationship with its largely African-American community. Where had he come from? Selma, Ala., one of the most representative police departments in the nation. Interviews with the chief, William T. Riley III, suggested one for some cities' disparities: there was no money to pay for training new police officers.
+After matching up the demographics of police departments with their cities, Cohen started sorting, filtering and Googling. Could there be news in the outliers on the list? Which departments most closely represented their communities? Which ones had unusually large gaps?
+
+She quickly stumbled on telling anecdote to frame the story: Inkster, Mich. had one of the least representative departments in the country, and had recently hired a new police chief to help mend the department's fraught relationship with its largely African-American community. Where had he come from? Selma, Ala., one of the most representative police departments in the nation. Interviews with the chief, William T. Riley III, suggested one reason for some cities' disparities: there was no state or federal money to pay for training new police officers.
 
 “There’s no doubt in my mind we have good police candidates in this city. No doubt,” said Chief Riley, who is African-American. “How hard can it be? You’re telling me everybody here can’t be a police officer?”
 
@@ -35,9 +37,11 @@ The story, "[Police Chiefs, Looking to Diversity Forces, Face Structural Hurdles
 
 ## Sorting and filtering as a reporting tool
 
-Reporters frequently sort and filter for both stories and for data integrity and cleanup. One of the most common uses of sorting and filtering comes with spreadsheets you  build yourself. If you keep your data tidy and make sure that each column has the same *type* of information -- particularly dates -- it does't matter if you've had to collect it piecemeal and out of order. Sorting can magically turn it into a chronology, useful for spotting holes in sources' stories and putting background information in context. If you build fact-checking and sourcing into your spreadsheet, filtering can hide from you any material that isn't publishable while you're writing, making it less likely to let poorly sourced or secondary source information into your story.
+Reporters frequently sort and filter for both stories and for data integrity and cleanup.
 
-Sorting can also:
+One of the most common uses of sorting and filtering comes with spreadsheets you  build yourself. If you keep your data tidy and make sure that each column has the same *type* of information -- particularly dates -- it does't matter if you've had to collect it piecemeal and out of order. Sorting can magically turn it into a chronology, useful for spotting holes in sources' stories and putting background information in context. If you build fact-checking and sourcing into your spreadsheet, filtering can hide from you any material that isn't publishable while you're writing, making it less likely to let poorly sourced or secondary source information into your story.
+
+Sorting and filtering can also:
 
 * Show you rows containing the highest and lowest values of any column. That can be news or it can be errors or other problems with the data.
 * Let you answer quick "how many?" questions, with a count of the rows that match your criteria.
@@ -47,8 +51,8 @@ Sorting can also:
 
 ### Create a data table from your spreadsheet
 
-In Excel, you may want to create a "data table" from your spreadsheet to help make sure you're always sorting and filtering the correct rows. There are several benefits to data tables:
-ß
+In Excel, you may want to create a "data table" from your spreadsheet to help make sure you're always sorting and filtering the correct rows. This is a way of enforcing just a little structure and rigor onto a spreadsheet, which usually lets you do whatever you want. There are several benefits to data tables:
+
 * Formulas automatically copy throughout your data, whether or not there are empty values next to them.
 * Sorting and filtering are always done on the proper list of rows, once you're made sure to define the table correctly.
 * You can use column names rather than addresses to reference a field.
@@ -62,11 +66,11 @@ Select your entire table, using Shift-CTL-* or by selecting the corners, then ch
 
 ## Sorting
 
-"Sorting" lists in Excel is one of the most common tasks you'l do in a spreadsheet. Think of it as rearranging the rows in a different order. Some reporters take a conceptual shortcut and call this "sorting columns". That thinking will only get you into trouble -- it lets you forget that you want to keep all of the rows in tact while changing the order you see them.
+Sorting means rearranging the rows of a data table into a different order. Some reporters take a conceptual shortcut and call this "sorting columns". That thinking will only get you into trouble -- it lets you forget that you want to keep all of the rows in tact while changing the order in which you see them. In fact, in other languages it's called "order by" or "arrange" by one or more columns --  a much clearer way to think of it.
 
 ### A simple sort
 
-Using a list of Phoenix city employees, try sorting without putting it into a data table. Under the Data tab, choose the Sort button and select the column you want to use to order the rows. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the city government.
+In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the Phoenix city government.
 
 ![sort dialog]({{site.baseurl}}/assets/images/06-filtersort-sortdialog.png)
 
@@ -76,27 +80,27 @@ Gives you this:
 
 ### A more complicated sort
 
-You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the lowest (or highest) values at the top. When those are the same, it will sort *within* that group by the second item you mention. And so on.
+You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the rows with lowest (or highest) values at the top. When those are the same, it will sort *within* that group by the second item you mention. And so on.
 
 So let's say I want to see all of the "probable" opioid-related emergency calls in Tempe that were treated with Narcan, ordered chronologically. We're in luck, because "Yes" comes at the end of the alphabet, letting us sort "From Z to A" to get them on top.
 
 ![sort first level]({{site.baseurl}}/assets/images/06-filtersort-addlevel.png)
 
-Add more levels using the + sign in the dialog box until you have what you want on top:
+Add more levels using the + sign in the dialog box:
 
 ![sort more levels]({{site.baseurl}}/assets/images/06-filtersort-multilevelsort.png)
 
-Gives you:
+Notice that Excel understood that the first two fields were *character* fields, so it asks you if you want A->Z or Z->A (ascending or descending). But when it came to the incident date and time, it understood these were dates, so it asks if you want "Oldest to newest" instead.
 
 ![sort result]({{site.baseurl}}/assets/images/06-filtersort-sortresult.png)
 
-Excel has now ordered the table so you see those items on top. Because this is formatted as a data table, there are a few other things that happen here. First, it understood that the *incident_date* field referred to something in time, and asked you if you wanted to sort it "Oldest to Newest". Second, it is giving you little visual clues that your data is sorted, by putting little arrows on the drop-down menu on each column. You can also see why data sets often have seemingly repetitive information. In this case, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a "Yes/No" flag just for Narcan so sorting and filtering still works when there was more than one drug given.
+(The little arrows on the headers showing you they are sorted only happen when you have your data formatted as a table.)
 
 ## Filtering
 
-Filtering is the same concept as sorting, except instead of *ordering* your rows a different way, you're *shrinking* the number of rows you look at. Think of it as casting a fishing net -- the more filters you add, the fewer fish will be caught.
+Filtering means picking out only some of the rows you want to see based on a criteria you select in a column. Think of it as casting a fishing net -- the more filters you add, the fewer fish will be caught.
 
-The filtering buttons are shown when you create a data table. If they're not, look under Data..Filter and press the button that looks like a funnel:
+The filtering buttons are shown when you create a data table. If they're not, look in your Data tab at top press the button that looks like a funnel:
 
 ![turn on filter]({{site.baseurl}}/assets/images/06-filtersort-turnonfilter.png)   
 
@@ -108,7 +112,11 @@ Check and un-check any of the boxes that you want. Here's a filter that picks ou
 
 ![filter result]({{site.baseurl}}/assets/images/06-filtersort-filteron.png)
 
+### Use filters to count rows
+
 Excel tells you how many of the rows match your filter -- 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you're looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.
+
+### Free-text, date and numeric filters
 
 When there are long phrases in a field, you can just type a word you're looking for into the box:
 
@@ -117,6 +125,20 @@ When there are long phrases in a field, you can just type a word you're looking 
 And when you have numbers or dates, you'll get different choices. We don't really have any numbers on this dataset to work with, but here are some choices for dates:
 
 ![filter date]({{site.baseurl}}/assets/images/06-filtersort-between.png)
+
+### Create flags using filters
+
+Just from this example, you see why analysts often create some seemingly repetitive information. In this table, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a "Yes/No" flag just for Narcan, which we used for sorting and filtering.
+
+You can create your own flags using filters. (There are other ways to accomplish the same thing using formulas.) I wanted a simple "Yes" / "No" field for oxycodone. Going back to the text filter, we can see that there were 52 rows that contained a mention of Oxycodone in the "current medications" field. When I add a new header to the end, Excel automatically appends it to my data table. I can enter "Yes" into the first row, and copy down, and it will only fill in the visible cells. Remove your filter from the medications list, and it looks like this:
+
+![Flag yes]({{site.baseurl}}/assets/images/06-filtersort-makeflag.png)
+
+Now I can filter for all of the blanks in that field, and fill them in with "No" to create the rest of the flag:
+
+![Flag yes]({{site.baseurl}}/assets/images/06-filtersort-makeflag2.png)
+
+Just be sure you document HOW you made your filter. What did you do with "(Blanks)" or anything that didn't make sense? You should be able to recreate your flags exactly whenever you make them, and it's easy to forget exactly what you did.
 
 ## FAQ
 

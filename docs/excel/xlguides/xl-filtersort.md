@@ -8,12 +8,15 @@ grand_parent: Excel
 # Sorting and filtering to find stories
 {: .no_toc}
 
+1. TOC
+{: toc}
+
+
+
 Data files used in this tutorial:
 * Salaries for [city workers in Phoenix]({{site.baseurl}}/assets/data/xlexamples/phoenix_salaries.xlsx) (source: [Phoenix Open Data portal](https://www.phoenixopendata.com/dataset/staff-salaries))
 * [Opioid-related EMS calls](opioidemscalls.xlsx) in Tempe, Az. (source and documentation: [Tempe Open Data Portal](https://data.tempe.gov/dataset/opiod-ems-calls))
 
-1. TOC
-{: toc}
 
 
 ## A sorting miracle

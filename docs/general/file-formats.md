@@ -7,20 +7,10 @@ parent: General resources
 # Understanding file formats
 {: .no_toc}
 
-1. TOC
-{: toc}
 
-Data doesn't always show up in a simple Excel spreadsheet or on a Google sheet. There are about a dozen common forms that you'll find data.   
+When you encounter data in the wild it won't always come to you in prepared Excel files or Google sheets. In fact, it's become more common for data providers to post their information in a more universal form that can be more easily read by many different programs, not just spreadsheets.
 
-File types refer to two different things. At its core, data could be:
-* **Text** - the (nearly) universally recognized format that can be opened and managed in any software. There are different encodings, but usually you'll find them labeled as UTF-8 or ASCII. Don't worry about it for now.
-* **Binary** - machine-readable but encoded in computer-ese, often in proprietary form. Images and sound are always binary, but so are PDF files.
-
-
-
-Both of these types, at their most basic level, are transmitted using bits -- a series of 0s and 1s -- but text file bits represent characters and binary file bits represent some other kind of data, either proprietary or non-character.
-
-The other kind of file specification tells you how it is organized -- in rectangular table structure, or in some other form that looks more like documents?
+This should make you happy, not sad. We're going to skip over the more technical side of the concept of data formats, and just go through what awaits you when you find data on the Web.
 
 Most file structures are denoted by their file extension, or the part that comes after the period. In both Macs and Windows, you may not see those extensions by default. Make sure you see the extensions on a Mac by opening a Finder window and choosing "Preferences." Make sure the box that says "Show all filename extensions" is *checked*:
 
@@ -30,7 +20,31 @@ In Windows, use the shortcut for All Settings in the bottom right, then search f
 
 <img src="{{site.baseurl}}/assets/images/filetypes-windows-exensions.png" style="width:500px;">
 
-## Text-based formats
+**tl;dr**
+
+Best: csv and other tabular text, json, xml, and any spatial data
+So-so: Excel (xlsx), html
+Avoid: pdf
+
+
+1. TOC
+{: toc}
+
+
+## Text data
+
+A dataset is considered "text" if it used only to convey characters you can type on a keyboard. Text-based data can be opened and read by a human in any text editor, like Notepad on Windows or TextEdit on a Mac. Most data journalists have a powerful text processor on their computers so they can easily check any file that comes across their desks.
+
+Examples of text data are CSV, or comma-separated values, that are intended to be used as tabular data; and JSON, or javascript object notation, which is used to convey data across the Web. But other types of text data also exist. HTML files are text-based, even though you see fancy page and text formatting, images and videos. Those items are rendered by your browser using instructions built into the text and separate non-text files held elsewhere on the site. Even modern versions of Excel files, with the .xlsx extension, are text based, though they are extremely complicated text that you wouldn't want to deal with on your own.
+
+The most common non-text, or binary, files that you'll encounter are PDFs --  the form that most reports, forms and formatted documents are exchanged electronically -- and some sort of image, sound or video file.
+
+## Tabular data
+
+Not all text data is well suited to using as a data source. For example, we saw during the tidy data tutorial, that Excel files can be nearly useless for data analysis even though they're conveyed through  a spreadsheet. On the other end, files like JSON files are intended to be used for data analysis and presentation, even though they look difficult to deal with in the text editor.
+
+
+## Common file formats
 
 ### CSV, TSV and other delimited data files
 
@@ -54,6 +68,10 @@ CSV and its cousins are the international language of data. They work with every
 
 Excel and Google sheets quite annoyingly like to think they know what's in your data, and don't let you specify the way the fields are read. This means that if it sees a number, it will treat it as a number even if it's a Zip Code. It will also turn fields that look like dates into dates, even when they shouldn't. This comes up frequently in two places. In anything related to schools that list the grades that school includes, you'll often see '9-12' turned into September 12th or September 2012. In some cities, addresses with dashes also get corrupted, turning 12-21 into December 12th. (This is very frequent in Queens, NY)
 These are very specific problems, but they are impossible to fix if you lose the original CSV file.
+
+TK - a video of how to do control Excel imports
+
+
 
 You can usually just change the extension from .csv to .txt and then you'll be allowed to specify what you want the program to do.
 
@@ -120,18 +138,15 @@ Most computer languages such as R or Python have standard methods of reading the
 
 They're often NOT properly created, leading to frustrating "malformed" errors in programs that can read them. Complicated structures -- ones with nested pieces of information, such as a list of nicknames for each of these employees -- and very large files are almost impossible to open in software without reading it through a program first.
 
-
 ### HTML
 
 At its core, HTML is a structured document containing text. Images, sound, videos and other files are linked to them; the formatting you see is done through text instructions. That doesn't mean it's easy to work with as a data source. You'll have to *parse* the document to get its pieces out.
 
 #### Traps
 
+Parsing HTML files has gotten easier, but it remains a time-consuming chore the first time you encounter the need. Most of the time, HTML is used when you scrape websites.
+
 Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, "--", you'll see "<code>&mdash</code>;" or instead of an "&", you see "<code>&amp</code>;". This is particularly annoying in lists of names with accents and other non-standard characters. Converting between the various text encodings can also be a headache, but it's getting easier. (Old versions of Python choke on UTF-8 characters, like accents or smart quotes.)
-
-### SQL dumps
-
-A SQL dump is plain text or binary information that is designed to be read back into a relational database program like MySQL, SQLite or PostGreSQL. While not strictly text, it is considered an open format. (SQL databases can store more than text, including images or sound, but it's stored in a standard way.) Just know that if you need to ask for data, a SQL dump is a very easy way to work with a large database, and is usually easy for a government agency to produce.
 
 ## Proprietary file formats
 
@@ -139,9 +154,20 @@ Most software saves files in special formats that they and only they can read. S
 
 ### Excel, Access and their cousins
 
-These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you'll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. They are much more susceptible to viruses and other malware, but they can contain a lot more information.
+These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you'll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. Recent versions use a form of XML that contain detailed instructions on formatting, formulas, pages, and other Excel features. Don't try to use them as text files. Every data system has a way to read Excel files. Some, like Google Sheets, reads them without any special instructions. Programming languages like R have importers.
 
-They can be either text or binary. In fact, Microsoft Excel and Word documents are now text files -- very, very, complicated text files that you wouldn't want to try to decipher on your own.
+#### Benefits
+
+Excel files, when properly formed into tidy data, are among the easiest for sources to produce. They make PIO's happy because they can be read by human beings using the programs that are on their desks already. They can also contain extra information, like a page of documentation or summaries and charts. Reading them into other programs is often seamless.
+
+Microsoft Access files are becoming less frequent, but it is a format that was used for many years by government agencies to transmit larger, more complicated, databases.  They are much more likely to be "tidy" because they are designed to work with well formed data.
+
+#### Traps
+
+First, Microsoft doesn't make a version of Access for Macs, which makes it more difficult to import -- you'll have to find a program or utility to convert them into something more universal.
+
+Excel can actually be a problem as well, which is why we advise reporters to request the data in a "plain text", or CSV, format. If the data conveyed in the spreadsheet isn't "tidy" it won't do  you much good. Text forms are much less likely to be presented as reports.
+One common issue is that a column contains different data types -- other programs won't know what to do with them.
 
 ### PDF
 
@@ -149,16 +175,10 @@ I've saved PDF because it's the bane of most data journalists' existence. PDF fi
 
 This list suggests that, depending on the complexity of the data you are requesting, you'll usually want one of the standard text-based formats: csv or tsv for simple data; xml or json for complicated data.
 
-## Non-text files
 
-### Image, sound and video
+## Spatial data
 
-There are two kinds of binary files. The first is a set of files that are standard across all operating systems and used to convey images, sound and video. These are .jpg, .png, .mp4, .mp3, etc. You can't read them with a text file, but almost any program that processes that kind of file will open and save them. You can read them into computer programs and work with them bit-by-bit.
+"Spatial data" is the technical term for data formats that come with information needed to create maps. The important thing to know is that whenever you are offered spatial data, or map files, take them. You can always extract tabular data from them, and they have a lot of other information that is usually very difficult to get. The most common file types are shapefiles (a bundle of files but .shp is the main extension), KML and GeoJSON, a special form of JSON files with instructions for drawing shapes.
 
-For example, many machine learning algorithms are used to identify pictures that are the same. They look for codes that tell them what each pixel of the screen shows. Each pixel can be one of about a million different colors.
-
-We won't be dealing with these much, but it's worth it for you to know that you can do analysis of sound, video and image just the same way  you can with tabular data.
-
-### Vector images
-
-These files are often used to transfer images made with Adobe Illustrator or in mapping programs. Rather than put each pixel in the file, each object -- a dot, line, or polygon -- is defined by a giant mathematical formula. It's more efficient than working with pixels, and it allows the objects to contain additional information. Shrinking and enlarging them doesn't change the file size or the quality.
+### Traps
+The only problem with spatial data is that sometimes the person doesn't give you what you need to know. My first mapping project went quite smoothly -- as long as I put everything in Greenland instead of Maryland.

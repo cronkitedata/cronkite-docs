@@ -65,23 +65,23 @@
     
       
         
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
           <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/" class="navigation-list-link">Home</a>
             
           </li>
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
         
       
     
@@ -171,6 +171,8 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/general/sourcing.html" class="navigation-list-link">Data sources and sourcing</a>
@@ -224,6 +226,8 @@
     
       
         
+      
+    
       
     
       
@@ -322,11 +326,11 @@
                             
                           
                             
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html" class="navigation-list-link">Excel refresher</a>
                               </li>
-                            
-                          
                             
                           
                             
@@ -348,15 +352,17 @@
                             
                           
                             
-                          
-                            
-                          
-                            
-                          
-                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-filtersort.html" class="navigation-list-link">Filter and sort</a>
                               </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
                             
                           
                             
@@ -392,6 +398,8 @@
                         </ul>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -449,13 +457,15 @@
                             
                           
                             
-                          
-                            
-                          
-                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/practice/excel-azpop-exercise.html" class="navigation-list-link">Arizona population exercise</a>
                               </li>
+                            
+                          
+                            
+                          
+                            
+                          
                             
                           
                             
@@ -563,6 +573,8 @@
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
                 
                   
                 
@@ -763,6 +775,8 @@
                 
                   
                 
+                  
+                
               </ul>
             
           </li>
@@ -839,19 +853,21 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/public-records-outside-in.html" class="navigation-list-link">Public records strategey</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -934,15 +950,17 @@
                   
                 
                   
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
+                  
+                
+                  
+                
+                  
+                
                   
                 
                   
@@ -1018,6 +1036,12 @@
         <div class="main-content">
           
           
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="https://cronkite.asu.edu/about/faculty-and-leadership/faculty/cohenbio">Sarah Cohen / Knight Chair / Cronkite School</a></li>
+              
+            </ul>
+          
         </div>
       </div>
       <div class="main-content">
@@ -1036,8 +1060,28 @@
         <div class="page-content">
           <h1 class="no_toc" id="understanding-file-formats">Understanding file formats</h1>
 
+<p>When you encounter data in the wild it won’t always come to you in prepared Excel files or Google sheets. In fact, it’s become more common for data providers to post their information in a more universal form that can be more easily read by many different programs, not just spreadsheets.</p>
+
+<p>This should make you happy, not sad. We’re going to skip over the more technical side of the concept of data formats, and just go through what awaits you when you find data on the Web.</p>
+
+<p>Most file structures are denoted by their file extension, or the part that comes after the period. In both Macs and Windows, you may not see those extensions by default. Make sure you see the extensions on a Mac by opening a Finder window and choosing “Preferences.” Make sure the box that says “Show all filename extensions” is <em>checked</em>:</p>
+
+<p><img src="/cronkite-docs/assets/images/filetypes-finder-preferences.png" alt="" />    <img src="/cronkite-docs/assets/images/filetypes-finder.png" alt="" /></p>
+
+<p>In Windows, use the shortcut for All Settings in the bottom right, then search for File Extensions. A window will pop up and make sure that “Hide extensions for known file types” is <em>unchecked</em>.</p>
+
+<p><img src="/cronkite-docs/assets/images/filetypes-windows-exensions.png" style="width:500px;" /></p>
+
+<p><strong>tl;dr</strong></p>
+
+<p>Best: csv and other tabular text, json, xml, and any spatial data
+So-so: Excel (xlsx), html
+Avoid: pdf</p>
+
 <ol id="markdown-toc">
-  <li><a href="#text-based-formats" id="markdown-toc-text-based-formats">Text-based formats</a>    <ol>
+  <li><a href="#text-data" id="markdown-toc-text-data">Text data</a></li>
+  <li><a href="#tabular-data" id="markdown-toc-tabular-data">Tabular data</a></li>
+  <li><a href="#common-file-formats" id="markdown-toc-common-file-formats">Common file formats</a>    <ol>
       <li><a href="#csv-tsv-and-other-delimited-data-files" id="markdown-toc-csv-tsv-and-other-delimited-data-files">CSV, TSV and other delimited data files</a>        <ol>
           <li><a href="#benefits" id="markdown-toc-benefits">Benefits</a></li>
           <li><a href="#traps" id="markdown-toc-traps">Traps</a></li>
@@ -1053,42 +1097,36 @@
           <li><a href="#traps-2" id="markdown-toc-traps-2">Traps</a></li>
         </ol>
       </li>
-      <li><a href="#sql-dumps" id="markdown-toc-sql-dumps">SQL dumps</a></li>
     </ol>
   </li>
   <li><a href="#proprietary-file-formats" id="markdown-toc-proprietary-file-formats">Proprietary file formats</a>    <ol>
-      <li><a href="#excel-access-and-their-cousins" id="markdown-toc-excel-access-and-their-cousins">Excel, Access and their cousins</a></li>
+      <li><a href="#excel-access-and-their-cousins" id="markdown-toc-excel-access-and-their-cousins">Excel, Access and their cousins</a>        <ol>
+          <li><a href="#benefits-2" id="markdown-toc-benefits-2">Benefits</a></li>
+          <li><a href="#traps-3" id="markdown-toc-traps-3">Traps</a></li>
+        </ol>
+      </li>
       <li><a href="#pdf" id="markdown-toc-pdf">PDF</a></li>
     </ol>
   </li>
-  <li><a href="#non-text-files" id="markdown-toc-non-text-files">Non-text files</a>    <ol>
-      <li><a href="#image-sound-and-video" id="markdown-toc-image-sound-and-video">Image, sound and video</a></li>
-      <li><a href="#vector-images" id="markdown-toc-vector-images">Vector images</a></li>
+  <li><a href="#spatial-data" id="markdown-toc-spatial-data">Spatial data</a>    <ol>
+      <li><a href="#traps-4" id="markdown-toc-traps-4">Traps</a></li>
     </ol>
   </li>
 </ol>
 
-<p>Data doesn’t always show up in a simple Excel spreadsheet or on a Google sheet. There are about a dozen common forms that you’ll find data.</p>
+<h2 id="text-data">Text data</h2>
 
-<p>File types refer to two different things. At its core, data could be:</p>
-<ul>
-  <li><strong>Text</strong> - the (nearly) universally recognized format that can be opened and managed in any software. There are different encodings, but usually you’ll find them labeled as UTF-8 or ASCII. Don’t worry about it for now.</li>
-  <li><strong>Binary</strong> - machine-readable but encoded in computer-ese, often in proprietary form. Images and sound are always binary, but so are PDF files.</li>
-</ul>
+<p>A dataset is considered “text” if it used only to convey characters you can type on a keyboard. Text-based data can be opened and read by a human in any text editor, like Notepad on Windows or TextEdit on a Mac. Most data journalists have a powerful text processor on their computers so they can easily check any file that comes across their desks.</p>
 
-<p>Both of these types, at their most basic level, are transmitted using bits – a series of 0s and 1s – but text file bits represent characters and binary file bits represent some other kind of data, either proprietary or non-character.</p>
+<p>Examples of text data are CSV, or comma-separated values, that are intended to be used as tabular data; and JSON, or javascript object notation, which is used to convey data across the Web. But other types of text data also exist. HTML files are text-based, even though you see fancy page and text formatting, images and videos. Those items are rendered by your browser using instructions built into the text and separate non-text files held elsewhere on the site. Even modern versions of Excel files, with the .xlsx extension, are text based, though they are extremely complicated text that you wouldn’t want to deal with on your own.</p>
 
-<p>The other kind of file specification tells you how it is organized – in rectangular table structure, or in some other form that looks more like documents?</p>
+<p>The most common non-text, or binary, files that you’ll encounter are PDFs –  the form that most reports, forms and formatted documents are exchanged electronically – and some sort of image, sound or video file.</p>
 
-<p>Most file structures are denoted by their file extension, or the part that comes after the period. In both Macs and Windows, you may not see those extensions by default. Make sure you see the extensions on a Mac by opening a Finder window and choosing “Preferences.” Make sure the box that says “Show all filename extensions” is <em>checked</em>:</p>
+<h2 id="tabular-data">Tabular data</h2>
 
-<p><img src="/cronkite-docs/assets/images/filetypes-finder-preferences.png" alt="" />    <img src="/cronkite-docs/assets/images/filetypes-finder.png" alt="" /></p>
+<p>Not all text data is well suited to using as a data source. For example, we saw during the tidy data tutorial, that Excel files can be nearly useless for data analysis even though they’re conveyed through  a spreadsheet. On the other end, files like JSON files are intended to be used for data analysis and presentation, even though they look difficult to deal with in the text editor.</p>
 
-<p>In Windows, use the shortcut for All Settings in the bottom right, then search for File Extensions. A window will pop up and make sure that “Hide extensions for known file types” is <em>unchecked</em>.</p>
-
-<p><img src="/cronkite-docs/assets/images/filetypes-windows-exensions.png" style="width:500px;" /></p>
-
-<h2 id="text-based-formats">Text-based formats</h2>
+<h2 id="common-file-formats">Common file formats</h2>
 
 <h3 id="csv-tsv-and-other-delimited-data-files">CSV, TSV and other delimited data files</h3>
 
@@ -1113,6 +1151,8 @@
 
 <p>Excel and Google sheets quite annoyingly like to think they know what’s in your data, and don’t let you specify the way the fields are read. This means that if it sees a number, it will treat it as a number even if it’s a Zip Code. It will also turn fields that look like dates into dates, even when they shouldn’t. This comes up frequently in two places. In anything related to schools that list the grades that school includes, you’ll often see ‘9-12’ turned into September 12th or September 2012. In some cities, addresses with dashes also get corrupted, turning 12-21 into December 12th. (This is very frequent in Queens, NY)
 These are very specific problems, but they are impossible to fix if you lose the original CSV file.</p>
+
+<p>TK - a video of how to do control Excel imports</p>
 
 <p>You can usually just change the extension from .csv to .txt and then you’ll be allowed to specify what you want the program to do.</p>
 
@@ -1188,11 +1228,9 @@ These are very specific problems, but they are impossible to fix if you lose the
 
 <h4 id="traps-2">Traps</h4>
 
+<p>Parsing HTML files has gotten easier, but it remains a time-consuming chore the first time you encounter the need. Most of the time, HTML is used when you scrape websites.</p>
+
 <p>Even when you do get the text out, there are often weird entities that are used for things like accents and other characters. For example, instead of a dash, “–”, you’ll see “<code>&amp;mdash</code>;” or instead of an “&amp;”, you see “<code>&amp;amp</code>;”. This is particularly annoying in lists of names with accents and other non-standard characters. Converting between the various text encodings can also be a headache, but it’s getting easier. (Old versions of Python choke on UTF-8 characters, like accents or smart quotes.)</p>
-
-<h3 id="sql-dumps">SQL dumps</h3>
-
-<p>A SQL dump is plain text or binary information that is designed to be read back into a relational database program like MySQL, SQLite or PostGreSQL. While not strictly text, it is considered an open format. (SQL databases can store more than text, including images or sound, but it’s stored in a standard way.) Just know that if you need to ask for data, a SQL dump is a very easy way to work with a large database, and is usually easy for a government agency to produce.</p>
 
 <h2 id="proprietary-file-formats">Proprietary file formats</h2>
 
@@ -1200,9 +1238,20 @@ These are very specific problems, but they are impossible to fix if you lose the
 
 <h3 id="excel-access-and-their-cousins">Excel, Access and their cousins</h3>
 
-<p>These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you’ll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. They are much more susceptible to viruses and other malware, but they can contain a lot more information.</p>
+<p>These are files the files created by software that contain special instructions in computer code that are intended to be read by the originating programs. Many of the formats you’ll see originated with Microsoft: .xlsx, .accdb, .docx and .pptx. In fact, Google docs downloads, by default, are converted into these Microsoft formats. Recent versions use a form of XML that contain detailed instructions on formatting, formulas, pages, and other Excel features. Don’t try to use them as text files. Every data system has a way to read Excel files. Some, like Google Sheets, reads them without any special instructions. Programming languages like R have importers.</p>
 
-<p>They can be either text or binary. In fact, Microsoft Excel and Word documents are now text files – very, very, complicated text files that you wouldn’t want to try to decipher on your own.</p>
+<h4 id="benefits-2">Benefits</h4>
+
+<p>Excel files, when properly formed into tidy data, are among the easiest for sources to produce. They make PIO’s happy because they can be read by human beings using the programs that are on their desks already. They can also contain extra information, like a page of documentation or summaries and charts. Reading them into other programs is often seamless.</p>
+
+<p>Microsoft Access files are becoming less frequent, but it is a format that was used for many years by government agencies to transmit larger, more complicated, databases.  They are much more likely to be “tidy” because they are designed to work with well formed data.</p>
+
+<h4 id="traps-3">Traps</h4>
+
+<p>First, Microsoft doesn’t make a version of Access for Macs, which makes it more difficult to import – you’ll have to find a program or utility to convert them into something more universal.</p>
+
+<p>Excel can actually be a problem as well, which is why we advise reporters to request the data in a “plain text”, or CSV, format. If the data conveyed in the spreadsheet isn’t “tidy” it won’t do  you much good. Text forms are much less likely to be presented as reports.
+One common issue is that a column contains different data types – other programs won’t know what to do with them.</p>
 
 <h3 id="pdf">PDF</h3>
 
@@ -1210,19 +1259,12 @@ These are very specific problems, but they are impossible to fix if you lose the
 
 <p>This list suggests that, depending on the complexity of the data you are requesting, you’ll usually want one of the standard text-based formats: csv or tsv for simple data; xml or json for complicated data.</p>
 
-<h2 id="non-text-files">Non-text files</h2>
+<h2 id="spatial-data">Spatial data</h2>
 
-<h3 id="image-sound-and-video">Image, sound and video</h3>
+<p>“Spatial data” is the technical term for data formats that come with information needed to create maps. The important thing to know is that whenever you are offered spatial data, or map files, take them. You can always extract tabular data from them, and they have a lot of other information that is usually very difficult to get. The most common file types are shapefiles (a bundle of files but .shp is the main extension), KML and GeoJSON, a special form of JSON files with instructions for drawing shapes.</p>
 
-<p>There are two kinds of binary files. The first is a set of files that are standard across all operating systems and used to convey images, sound and video. These are .jpg, .png, .mp4, .mp3, etc. You can’t read them with a text file, but almost any program that processes that kind of file will open and save them. You can read them into computer programs and work with them bit-by-bit.</p>
-
-<p>For example, many machine learning algorithms are used to identify pictures that are the same. They look for codes that tell them what each pixel of the screen shows. Each pixel can be one of about a million different colors.</p>
-
-<p>We won’t be dealing with these much, but it’s worth it for you to know that you can do analysis of sound, video and image just the same way  you can with tabular data.</p>
-
-<h3 id="vector-images">Vector images</h3>
-
-<p>These files are often used to transfer images made with Adobe Illustrator or in mapping programs. Rather than put each pixel in the file, each object – a dot, line, or polygon – is defined by a giant mathematical formula. It’s more efficient than working with pixels, and it allows the objects to contain additional information. Shrinking and enlarging them doesn’t change the file size or the quality.</p>
+<h3 id="traps-4">Traps</h3>
+<p>The only problem with spatial data is that sometimes the person doesn’t give you what you need to know. My first mapping project went quite smoothly – as long as I put everything in Greenland instead of Maryland.</p>
 
 
 

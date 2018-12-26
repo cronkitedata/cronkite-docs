@@ -119,7 +119,7 @@ Read [Interview your data](http://mediashift.org/2014/07/take-an-interviewing-ap
 
 ## Keyboard shortcuts
 
-For Mac users, it's much easier to use Excel if you override the action of function keys while you're in the program. In your Mac's System Preferences, choose Keyboard, and select the box that says, "Use F1, F2, etc. as standard function keys."
+For Mac users, it's much easier to use Excel if you override the action of function keys while you're in the program. In your Mac's System Preferences, choose Keyboard, and select the box that says, "Use F1, F2, etc. as standard function keys." (NOTE: If you have a MacBook Pro with a touch bar, this option isn't there. Instead, go into the Shortcuts section of the keyboard options and turn off all of the options for Mission Control. Those are the ones that interfere with Excel.)
 
 <img src="{{site.baseurl}}/assets/images/xldayone-options.png" width="300">
 

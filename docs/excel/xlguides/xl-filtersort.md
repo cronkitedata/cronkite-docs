@@ -64,11 +64,9 @@ Select your entire table, using Shift-CTL-* or by selecting the corners, then ch
 
 ![create table]({{site.baseurl}}/assets/images/06-filtersort-createtable.gif)
 
-## Sorting
+### Sorting
 
 Sorting means rearranging the rows of a data table into a different order. Some reporters take a conceptual shortcut and call this "sorting columns". That thinking will only get you into trouble -- it lets you forget that you want to keep all of the rows in tact while changing the order in which you see them. In fact, in other languages it's called "order by" or "arrange" by one or more columns --  a much clearer way to think of it.
-
-### A simple sort
 
 In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the Phoenix city government.
 
@@ -78,7 +76,7 @@ Gives you this:
 
 ![sort result]({{site.baseurl}}/assets/images/06-filtersort-bysalary.png)
 
-### A more complicated sort
+#### Adding fields to the sort
 
 You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the rows with lowest (or highest) values at the top. When those are the same, it will sort *within* that group by the second item you mention. And so on.
 
@@ -96,7 +94,7 @@ Notice that Excel understood that the first two fields were *character* fields, 
 
 (The little arrows on the headers showing you they are sorted only happen when you have your data formatted as a table.)
 
-## Filtering
+### Filtering
 
 Filtering means picking out only some of the rows you want to see based on a criteria you select in a column. Think of it as casting a fishing net -- the more filters you add, the fewer fish will be caught.
 
@@ -112,11 +110,7 @@ Check and un-check any of the boxes that you want. Here's a filter that picks ou
 
 ![filter result]({{site.baseurl}}/assets/images/06-filtersort-filteron.png)
 
-### Use filters to count rows
-
 Excel tells you how many of the rows match your filter -- 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you're looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.
-
-### Free-text, date and numeric filters
 
 When there are long phrases in a field, you can just type a word you're looking for into the box:
 
@@ -125,8 +119,6 @@ When there are long phrases in a field, you can just type a word you're looking 
 And when you have numbers or dates, you'll get different choices. We don't really have any numbers on this dataset to work with, but here are some choices for dates:
 
 ![filter date]({{site.baseurl}}/assets/images/06-filtersort-between.png)
-
-### Create flags using filters
 
 Just from this example, you see why analysts often create some seemingly repetitive information. In this table, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a "Yes/No" flag just for Narcan, which we used for sorting and filtering.
 

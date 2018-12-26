@@ -1065,17 +1065,11 @@
   <li><a href="#a-sorting-miracle" id="markdown-toc-a-sorting-miracle">A sorting miracle</a></li>
   <li><a href="#sorting-and-filtering-as-a-reporting-tool" id="markdown-toc-sorting-and-filtering-as-a-reporting-tool">Sorting and filtering as a reporting tool</a>    <ol>
       <li><a href="#create-a-data-table-from-your-spreadsheet" id="markdown-toc-create-a-data-table-from-your-spreadsheet">Create a data table from your spreadsheet</a></li>
-    </ol>
-  </li>
-  <li><a href="#sorting" id="markdown-toc-sorting">Sorting</a>    <ol>
-      <li><a href="#a-simple-sort" id="markdown-toc-a-simple-sort">A simple sort</a></li>
-      <li><a href="#a-more-complicated-sort" id="markdown-toc-a-more-complicated-sort">A more complicated sort</a></li>
-    </ol>
-  </li>
-  <li><a href="#filtering" id="markdown-toc-filtering">Filtering</a>    <ol>
-      <li><a href="#use-filters-to-count-rows" id="markdown-toc-use-filters-to-count-rows">Use filters to count rows</a></li>
-      <li><a href="#free-text-date-and-numeric-filters" id="markdown-toc-free-text-date-and-numeric-filters">Free-text, date and numeric filters</a></li>
-      <li><a href="#create-flags-using-filters" id="markdown-toc-create-flags-using-filters">Create flags using filters</a></li>
+      <li><a href="#sorting" id="markdown-toc-sorting">Sorting</a>        <ol>
+          <li><a href="#adding-fields-to-the-sort" id="markdown-toc-adding-fields-to-the-sort">Adding fields to the sort</a></li>
+        </ol>
+      </li>
+      <li><a href="#filtering" id="markdown-toc-filtering">Filtering</a></li>
     </ol>
   </li>
   <li><a href="#faq" id="markdown-toc-faq">FAQ</a>    <ol>
@@ -1139,11 +1133,9 @@
 
 <p><img src="/cronkite-docs/assets/images/06-filtersort-createtable.gif" alt="create table" /></p>
 
-<h2 id="sorting">Sorting</h2>
+<h3 id="sorting">Sorting</h3>
 
 <p>Sorting means rearranging the rows of a data table into a different order. Some reporters take a conceptual shortcut and call this “sorting columns”. That thinking will only get you into trouble – it lets you forget that you want to keep all of the rows in tact while changing the order in which you see them. In fact, in other languages it’s called “order by” or “arrange” by one or more columns –  a much clearer way to think of it.</p>
-
-<h3 id="a-simple-sort">A simple sort</h3>
 
 <p>In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the Phoenix city government.</p>
 
@@ -1153,7 +1145,7 @@
 
 <p><img src="/cronkite-docs/assets/images/06-filtersort-bysalary.png" alt="sort result" /></p>
 
-<h3 id="a-more-complicated-sort">A more complicated sort</h3>
+<h4 id="adding-fields-to-the-sort">Adding fields to the sort</h4>
 
 <p>You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the rows with lowest (or highest) values at the top. When those are the same, it will sort <em>within</em> that group by the second item you mention. And so on.</p>
 
@@ -1171,7 +1163,7 @@
 
 <p>(The little arrows on the headers showing you they are sorted only happen when you have your data formatted as a table.)</p>
 
-<h2 id="filtering">Filtering</h2>
+<h3 id="filtering">Filtering</h3>
 
 <p>Filtering means picking out only some of the rows you want to see based on a criteria you select in a column. Think of it as casting a fishing net – the more filters you add, the fewer fish will be caught.</p>
 
@@ -1187,11 +1179,7 @@
 
 <p><img src="/cronkite-docs/assets/images/06-filtersort-filteron.png" alt="filter result" /></p>
 
-<h3 id="use-filters-to-count-rows">Use filters to count rows</h3>
-
 <p>Excel tells you how many of the rows match your filter – 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you’re looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.</p>
-
-<h3 id="free-text-date-and-numeric-filters">Free-text, date and numeric filters</h3>
 
 <p>When there are long phrases in a field, you can just type a word you’re looking for into the box:</p>
 
@@ -1200,8 +1188,6 @@
 <p>And when you have numbers or dates, you’ll get different choices. We don’t really have any numbers on this dataset to work with, but here are some choices for dates:</p>
 
 <p><img src="/cronkite-docs/assets/images/06-filtersort-between.png" alt="filter date" /></p>
-
-<h3 id="create-flags-using-filters">Create flags using filters</h3>
 
 <p>Just from this example, you see why analysts often create some seemingly repetitive information. In this table, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a “Yes/No” flag just for Narcan, which we used for sorting and filtering.</p>
 

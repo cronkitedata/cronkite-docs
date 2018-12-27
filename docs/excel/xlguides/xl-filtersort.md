@@ -112,6 +112,8 @@ Check and un-check any of the boxes that you want. Here's a filter that picks ou
 
 Excel tells you how many of the rows match your filter -- 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you're looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.
 
+#### Free text and date filters
+
 When there are long phrases in a field, you can just type a word you're looking for into the box:
 
 ![filter long text]({{site.baseurl}}/assets/images/06-filtersort-longtextfilter.png)
@@ -119,6 +121,8 @@ When there are long phrases in a field, you can just type a word you're looking 
 And when you have numbers or dates, you'll get different choices. We don't really have any numbers on this dataset to work with, but here are some choices for dates:
 
 ![filter date]({{site.baseurl}}/assets/images/06-filtersort-between.png)
+
+#### Creating your own flags with filters
 
 Just from this example, you see why analysts often create some seemingly repetitive information. In this table, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a "Yes/No" flag just for Narcan, which we used for sorting and filtering.
 

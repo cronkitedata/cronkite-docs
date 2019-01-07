@@ -1326,7 +1326,7 @@
   "39": {
     "id": "39",
     "title": "Excel practice",
-    "content": "",
+    "content": "Here are some of the data files used in other tutorials:  Phoenix city worker salaries  Tempe opioid EMS calls  Nebraska mountain lion sightingsAnd some thoughts on where you can find more practice data:  State and local open government web sites. Some are great, others, not so much.  public.enigma.com and data.world, often cataloged in Google data",
     "url": "http://localhost:4000/cronkite-docs/excel/xlpractice",
     "relUrl": "/excel/xlpractice"
   },

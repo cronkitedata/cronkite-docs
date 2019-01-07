@@ -86,7 +86,7 @@ Even if you can't find the database, you might be able to find the name of a dat
 
 Once you know a good agency to search, use advanced Google searches for filetype:csv or filetype:xlsx, and limit the site to an agency or city site to bring up datasets that they are letting users download.
 
-TK: Video or tipsheet on advanced google search for data.
+[This tipsheet](https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?usp=sharing) goes through all of the Google advanced search operators. The [Verification Handbook for Investigative Reporting](https://verificationhandbook.com/book2/chapter2.php) has a chapter from Henk Van Ness on advanced searching. Some of the sites he mentions no longer exist, but his strategy is sound.
 
 ### News reports
 

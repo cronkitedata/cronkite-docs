@@ -94,7 +94,7 @@ Some projects require many steps to get to a dataset that can be analyzed. You m
 
 [A published Jupyter notebook for an analysis of FEC enforcement](http://nbviewer.jupyter.org/github/datadesk/ferc-enforcement-analysis/blob/master/02_analyze.ipynb) actions from the Los Angeles Times' data desk.  Ben Welsh, the author of that notebook, says that there are previous versions with unpublishable work.
 
-[An example of a data diary kept by Talia Buford](TB_Data_Diary.pdf), a ProPublica reporter, when she was working at the Center for Public Integrity. She's nicely annotated the document to show why she structures it the way she does.
+[An example of a data diary kept by Talia Buford]({{site.baseurl}}/assets/docs/TB_Data_Diary.pdf), a ProPublica reporter, when she was working at the Center for Public Integrity. She's nicely annotated the document to show why she structures it the way she does.
 
 [A 2018 Buzzfeed News repo with start-to-finish documentation](https://github.com/BuzzFeedNews/2018-05-fentanyl-and-cocaine-overdose-deaths) of an opioid deaths story.
 

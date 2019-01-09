@@ -24,12 +24,14 @@ Using averages, percentages and percent change is the bread and butter of data j
 
 The good news is that most of the math and statistics you need in a newsroom isn't nearly as difficult as high school algebra. You learned it somewhere around the 4th grade. You then had a decade to forget it before deciding you didn't like math. But mastering this most basic arithmetic again is a requirement in the modern age.
 
-In this module, you'll learn to:
+In working with typical newsroom math, you will need to learn how to:
 
 * Overcome your fear of numbers
 * Integrate numbers into your reporting
 * Calculate change in a list of items
 * Use different types of averages as summaries of a list of items.
+
+This tutorial has some general tips for dealing with numbers and resources for going further. The common arithmetic you need is covered in the [Excel module on formulas]({{site.baseurl}}/excel/xlguides/xl-formulas).
 
 ## Overcoming your fear of math
 

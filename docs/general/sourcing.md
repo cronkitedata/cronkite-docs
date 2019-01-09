@@ -25,18 +25,22 @@ That meant that the team had to find some creative way to quantify the problem. 
 
 <blockquote style='margin: 1.5em 10px; quotes: "\201C""\201D""\2018""\2019"; padding: .5em 10px; border-left: 10px solid #ccc; background: #f9f9f9; padding-left: 2em; margin-left: 1em;'>
 <p>
-About half the posts were directed at specific demographics or communities, from black Americans and Latinos to Jewish people and LGBTQ members. The posts varied in sentiment from describing gays as “ill” to referring to black Americans as “chimps” and “sh*tskins.”</p>
+News 21 monitored the daily social media activity of various far-right users, including white nationalists and neo-Nazis, from June 10 to June 24. Those tracked had more than 3 million followers combined. Reporters recorded and compiled more than 2,500 posts on popular platforms, such as Twitter and Facebook, and emerging social media platforms, including Gab and VK.</p>
+
+<p>
+About half the posts were directed at specific demographics or communities, from black Americans and Latinos to Jewish people and LGBTQ members....
+</p>
 
 <footer>
 <a href="https://hateinamerica.news21.com/social-media-where-hate-finds-place-to-preach/">Social Media: Where voices of hate find a place to preach</a>, News 21, August 2018</footer>
 
 </blockquote>
 
-* Federal prosecutions of hate crimes under the various federal statutes. Reporter Lenny Martinez scraped all of the Justice Department's hate crime-related press releases to find cases the government bragged about. Those cases were supplemented by a list of cases extracted from Westlaw federal case database. The team logged each case in a Google sheet to show what kinds of incidents were pursued by federal prosecutors, and where.
+* Federal prosecutions of hate crimes under the various federal statutes. Reporter Lenny Martinez scraped all of the Justice Department's hate crime-related press releases to find cases the government bragged about. Those cases were supplemented by a list of cases extracted from Westlaw federal case database. The team logged each case in a Google sheet to show [what kinds of incidents were pursued by federal prosecutors](https://hateinamerica.news21.com/police-trained-in-hate-crimes-key-to-convictions/), and where.
 
-* ProPublica's "Documenting Hate" project, which, with the Southern Poverty Law Center, tried to compile as many stories as they could about hate incidents. ProPublica's database was a tip sheet, not a quantification. But it served one key goal of any data source: a source reporters could consult when seeking specific types of examples in specific locations.
+* ProPublica's "[Documenting Hate](https://projects.propublica.org/graphics/hatecrimes)" project, which, with the Southern Poverty Law Center, tried to compile as many stories as they could about hate incidents. ProPublica's database was a tip sheet, not a quantification. But it served one key goal of any data source: a source reporters could consult when seeking specific types of examples in specific locations.
 
-* The FBI Uniform Crime Report's Hate Crime series, which is required by a 1991 law. They quickly learned that the data is seriously flawed because of non-response from local police departments and a squishy definition of what should be included. Another flaw was that others, including ProPublica, had thoroughly reported on those flaws and the trends in the data, meaning it failed the test of newsworthiness.
+* The [FBI Uniform Crime Report's Hate Crime](https://ucr.fbi.gov/hate-crime) series. They quickly learned that the data is seriously flawed because of non-response from local police departments and a squishy definition of what should be included. Another flaw was that others, including ProPublica, had thoroughly reported on those flaws and the trends in the data, meaning it failed the test of newsworthiness.
 
 #### Data the team didn't use
 
@@ -78,15 +82,19 @@ When you start on a project, you'll usually rely on experts and advocates to lea
 
 Listen to any caveats and warnings. You may decide that they're not important, but you don't want to be blindsided by them in the end. And be sure to ask what they would do if they were you -- often, people who have expertise in data have story or project ideas that they can't get funded or approved, and would be happy for someone else to do them.
 
+When you search using Google, try to use the advanced commands to more precisely hit your target.
+[This tipsheet](https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?usp=sharing) goes through all of the Google advanced search operators. The [Verification Handbook for Investigative Reporting](https://verificationhandbook.com/book2/chapter2.php) has a chapter from Henk Van Ess on advanced searching. Some of the sites he mentions no longer exist, but his strategy is sound.
+
+
 ### Government agency sites
 
-Try to guess what government agencies -- state, local and federal -- have an interest in your topic. Browse through their websites to find "Publications" or "Data and research", or any searchable database. You'll often find downloadable data there. Once you learn more, you can also evaluate how hard it will be to scrape the data you want.
+Try to guess what government agencies -- state, local and federal -- have an interest in your topic. Browse through their websites to find "Publications" or "Data and research", or any searchable database. You'll often find downloadable data there. Once you learn more, you can also evaluate how hard it will be to scrape the data you want. Don't limit yourself to the jurisdications you care about. If one city or state has a good dataset, there is a strong chance that your local government will have the same thing.
+
+Look at federal agency sites to find a least common denominator database -- they are usually compiled from more detailed state or local reports.
 
 Even if you can't find the database, you might be able to find the name of a datset that is maintained internally in audits, footnotes of reports, or IT initiatives.
 
 Once you know a good agency to search, use advanced Google searches for filetype:csv or filetype:xlsx, and limit the site to an agency or city site to bring up datasets that they are letting users download.
-
-[This tipsheet](https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?usp=sharing) goes through all of the Google advanced search operators. The [Verification Handbook for Investigative Reporting](https://verificationhandbook.com/book2/chapter2.php) has a chapter from Henk Van Ness on advanced searching. Some of the sites he mentions no longer exist, but his strategy is sound.
 
 ### News reports
 

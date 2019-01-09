@@ -13,10 +13,10 @@ nav_exclude: true
 Here are some handouts on avoiding data errors in stories (all from IRE, so you'll need to sign in):
 
 * "Editing the data-driven story," by Maud Beelman now at the Associated Press:
-[http://ire.org/resource-center/tipsheets/4045/download/?fileid=3950](http://ire.org/resource-center/tipsheets/4045/download/?fileid=3950)><br><br>
+[https://www.ire.org/resource-center/tipsheets/4045](https://www.ire.org/resource-center/tipsheets/4045)><br><br>
 
-* DANGER! Look out for Dirty Data, by Jaimi Dowdell now at Reuters [http://ire.org/resource-center/tipsheets/3999/download/?fileid=3905](http://ire.org/resource-center/tipsheets/3999/download/?fileid=3905)<br><br>
-* "A Guide to Bulletproofing Your Data," by Jennifer LaFleur, now at the Investigative Reporting Workshop at American University: [http://ire.org/resource-center/tipsheets/3848/download/?fileid=3745](http://ire.org/resource-center/tipsheets/3848/download/?fileid=3745)
+* DANGER! Look out for Dirty Data, by Jaimi Dowdell now at Reuters [http://ire.org/resource-center/tipsheets/3999](http://ire.org/resource-center/tipsheets/3999)<br><br>
+* "A Guide to Bulletproofing Your Data," by Jennifer LaFleur, now at the Investigative Reporting Workshop at American University: [http://ire.org/resource-center/tipsheets/3848](http://ire.org/resource-center/tipsheets/3848)
 
 I wrote this email in May 2014 to Criag Silverman, who at the time wrote a column for Poynter called "Regret the Error". The topic was how we keep from making mistakes in projects that rely on a lot of records and data. I can't find the piece that it was used in, but here's the raw email text:
 

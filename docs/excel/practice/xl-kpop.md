@@ -1,5 +1,5 @@
 ---
-title: K pop
+title: K-pop
 parent: Excel practice
 grand_parent: Excel
 nav_order: 5
@@ -41,18 +41,21 @@ Additional fields came from other parts of the Spotify API. They are:
 
 By using a .tsv file instead of a .csv file, you have more options when you open the dataset. Don't double-click on it. Instead, start up Excel and use File / Open to open it up. That will bring you a diaolog box that asks how you want to deal with it. One of the options is to tell Excel what character set to use. Choose Korean (Mac). If you leave it at the default, all of the Korean characters will turn into mathematical symbols!
 
+![import]({{site.baseurl}}/assets/images/xlkpop-import.png)
 
 Take a few minutes to interview your data. Some possible first steps:
 
-* Convert the data to a table, and format some of the numbers to make them easier to read. (You'll notice some of the numers are showing up in scientific notation, like -5.35E-06. Scientific notation is used for very, very large and very, very small numbers. This means that the number is 5.35 * 10<sup>-6</sup>
+* Convert the data to a table, and format some of the numbers to make them easier to read. (You'll notice some of the numers are showing up in scientific notation, like -5.35E-06. Scientific notation is used for very, very large and very, very small numbers. This means that the number is 5.35*10<sup>-6</sup>, or 0.00000535.<sup>1</sup>
 
 * Insert a column and add an ID so you can get back to the original order.
 
 * Play with your filters while studying the documentation of what each column means.
 
-* Get a sense of the variation within each column - are they all the same ? What is the scale (0 to 1, -60 to 0, 0 to 100 or something else?)
+* What *data type* is each column? For example, "key" is actually something we would normally treat as words, or categories. "Mode" is a yes-or-no field. Many of the measures run from 0 to 1, with 1 being 100% of the characteristic, and 0 being none of it.
 
-* Try sorting by various fields.
+* Get a sense of how much each value varies -- are they all around the same level, or is there some range to the values? If a measure doesn't vary enough, it won't be interesting -- there's no news.
+
+* Try sorting by various fields. Are the most danceable songs also the happiest with high valence?
 
 ## Calculate some summary statistics
 
@@ -61,19 +64,44 @@ It's useful to know how much fields *vary* within themselves. You can calculate 
 Measure | Excel formula | Meaning
 -|-|-
 Mean | =AVERAGE(range) | the simple average of a column of values
-Mode | =MODE.x(range) |  the most common value
+Mode | =MODE(range) |  the most common value
 Standard Deviation | =STDEV.P(range) | A standard measure of variance. Rule of thumb: If it's larger than the mean, the numbers are vey spread out. If it's very small, there is almost no spread. This is a useful shorthand to see how well an average summarizes a group of numbers.
 Maximum | =MAX(range) | the highest value
 75th percentile | =PERCENTILE.INC(range, .75) | three quarters of the values are at or below this level
 Median | =MEDIAN(range) | the middle value, where half are higher and half are lower, or the 50th percentile
 25th percentile | =PERCENTILE.INC(range, .25) | one quarter of the values are at or below this level
 Minimum | =MIN(range) | the lowest value
-* Highest and lowest values
 
-TK - image of the values.
+![summary stats]({{site.baseurl}}/assets/images/xlkpop-summarystats.png)
 
-These are typical "descriptive statistics" that help you quickly sum up a set of numbers. Let's take the track popularity field. A histogram shows a typical bell curve in statistics. This shows you the number of songs that fall between 0 and 10 on the popularity scale, between 10 and 20, etc. The standard deviation provides, in numbers, what you see on the chart: that there isn't a lot of variation in the popularity. That makes sense, since we chose the most popular kpop artists.
+These are typical "descriptive statistics" that help you quickly sum up a set of numbers. Let's take the track popularity field. The mean popularity score is 57, which is more that the average across all songs in Spotify. That makes sense because we chose the most popular kpop artists. The standard deviation is 9.6 (rounded to 10), meaning that two-thirds of the songs are between about 47 and 67 on the popularity scale.  That's not very much variation, but it's enough to get something interesting out of it. The most popular track scored a 91, and the least popular scored 22.
+
+Here are two histograms, which show the number of songs that fall between the values shown on the bottom. The first one, of popularity, range from 0 to 100, and our songs are on the high end but have a fairly typical distribution. But the key, measuring pitch, has no pattern -- there are just about an equal number of songs in each key. This tells you that there is no typical answer to key -- an average doesn't mean anything.
+
+#### Popularity
+![popularity]({{site.baseurl}}/assets/images/xlkpop-histogram.png)
+
+#### Key
+![key]({{site.baseurl}}/assets/images/xlkpop-key.png)
 
 
+## Operationalize some concepts by creating new fields
 
-But when you look at the key variable -- which pitch is used as the basis for the music -- you'll see that kpop doesn't follow a single dominant chord, the way Blues does.
+One research concept that you can use in journalism is the idea of operationalization. It's a way of measuring something that seems immeasurable. In our example blog, the author operationalized the concept of "boring" by combining several variables: energy, danceability, tempo and loudness. However, these measures are on a different scale, so he had to bring them back to the same level by converting a few of them. The lower the measure, the more boring the song is. To make that easier to remember, let's call it "fun-ness"
+
+      fun-ness = (loudness + 60) + tempo + (energy * 100) + (danceability * 100)
+
+
+(Spotify has changed how it measures loudness since this blog was written. It now ranges from -60 to 0, so I added 60 to the measure so it would go from 0 to 60)
+
+Doing this, our most "fun" song is [HANGSANG](https://open.spotify.com/track/4mYu3kfBCW6qiTDnfVeuMx), from j-hope. Our most "boring" song is TAEYON's "[All with you](https://open.spotify.com/track/6CJbMoa2AmXnnjwGMxe1zh)"
+
+(I think the boring measure worked pretty well. I'm not so sure about the fun one!)
+
+
+## On your own
+
+Think of a feeling you'd like to measure listening to the songs -- then try to think of what variables, put together, might help you operationalize it.
+
+#### Footnotes
+1. Scientific notation can actually cause you problems in computers. That's because it's an efficient way to hold numbers, but it also loses precision. In fact, in some languages, 0 doesn't equal 0 because of it! It's just something to be aware of when you get odd results.

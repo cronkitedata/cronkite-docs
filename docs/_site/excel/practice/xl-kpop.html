@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>K pop - Data reporting @ Cronkite</title>
+  <title>K-pop - Data reporting @ Cronkite</title>
   <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
@@ -500,7 +500,7 @@
                           
                             
                               <li class="navigation-list-item  active">
-                                <a href="http://localhost:4000/excel/practice/xl-kpop.html" class="navigation-list-link active">K pop</a>
+                                <a href="http://localhost:4000/excel/practice/xl-kpop.html" class="navigation-list-link active">K-pop</a>
                               </li>
                             
                           
@@ -1077,7 +1077,7 @@
                   <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/excel">Excel</a></li>
                   <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/excel/xlpractice">Excel practice</a></li>
                 
-                <li class="breadcrumb-nav-list-item"><span>K pop</span></li>
+                <li class="breadcrumb-nav-list-item"><span>K-pop</span></li>
               </ol>
             </nav>
           
@@ -1094,7 +1094,16 @@
 <ol id="markdown-toc">
   <li><a href="#data-and-documentation" id="markdown-toc-data-and-documentation">Data and documentation</a></li>
   <li><a href="#import-and-interview" id="markdown-toc-import-and-interview">Import and interview</a></li>
-  <li><a href="#calculate-some-summary-statistics" id="markdown-toc-calculate-some-summary-statistics">Calculate some summary statistics</a></li>
+  <li><a href="#calculate-some-summary-statistics" id="markdown-toc-calculate-some-summary-statistics">Calculate some summary statistics</a>    <ol>
+      <li><a href="#popularity" id="markdown-toc-popularity">Popularity</a></li>
+      <li><a href="#key" id="markdown-toc-key">Key</a></li>
+    </ol>
+  </li>
+  <li><a href="#operationalize-some-concepts-by-creating-new-fields" id="markdown-toc-operationalize-some-concepts-by-creating-new-fields">Operationalize some concepts by creating new fields</a></li>
+  <li><a href="#on-your-own" id="markdown-toc-on-your-own">On your own</a>    <ol>
+      <li><a href="#footnotes" id="markdown-toc-footnotes">Footnotes</a></li>
+    </ol>
+  </li>
 </ol>
 
 <h2 id="data-and-documentation">Data and documentation</h2>
@@ -1152,11 +1161,13 @@
 
 <p>By using a .tsv file instead of a .csv file, you have more options when you open the dataset. Don’t double-click on it. Instead, start up Excel and use File / Open to open it up. That will bring you a diaolog box that asks how you want to deal with it. One of the options is to tell Excel what character set to use. Choose Korean (Mac). If you leave it at the default, all of the Korean characters will turn into mathematical symbols!</p>
 
+<p><img src="/assets/images/xlkpop-import.png" alt="import" /></p>
+
 <p>Take a few minutes to interview your data. Some possible first steps:</p>
 
 <ul>
   <li>
-    <p>Convert the data to a table, and format some of the numbers to make them easier to read. (You’ll notice some of the numers are showing up in scientific notation, like -5.35E-06. Scientific notation is used for very, very large and very, very small numbers. This means that the number is 5.35 * 10<sup>-6</sup></p>
+    <p>Convert the data to a table, and format some of the numbers to make them easier to read. (You’ll notice some of the numers are showing up in scientific notation, like -5.35E-06. Scientific notation is used for very, very large and very, very small numbers. This means that the number is 5.35*10<sup>-6</sup>, or 0.00000535.<sup>1</sup></p>
   </li>
   <li>
     <p>Insert a column and add an ID so you can get back to the original order.</p>
@@ -1165,10 +1176,13 @@
     <p>Play with your filters while studying the documentation of what each column means.</p>
   </li>
   <li>
-    <p>Get a sense of the variation within each column - are they all the same ? What is the scale (0 to 1, -60 to 0, 0 to 100 or something else?)</p>
+    <p>What <em>data type</em> is each column? For example, “key” is actually something we would normally treat as words, or categories. “Mode” is a yes-or-no field. Many of the measures run from 0 to 1, with 1 being 100% of the characteristic, and 0 being none of it.</p>
   </li>
   <li>
-    <p>Try sorting by various fields.</p>
+    <p>Get a sense of how much each value varies – are they all around the same level, or is there some range to the values? If a measure doesn’t vary enough, it won’t be interesting – there’s no news.</p>
+  </li>
+  <li>
+    <p>Try sorting by various fields. Are the most danceable songs also the happiest with high valence?</p>
   </li>
 </ul>
 
@@ -1176,14 +1190,91 @@
 
 <p>It’s useful to know how much fields <em>vary</em> within themselves. You can calculate various statistics to get a good sense of this:</p>
 
-<ul>
-  <li>Mean : =AVERAGE(range), the simple average of a column of values</li>
-  <li>Mode : =MODE.x(range), the most common value</li>
-  <li>Median: =MEDIAN(range), the middle value, where half are higher and half are lower</li>
-  <li>Standard Deviation: A standard measure of variance. Rule of thumb: If it’s larger than the mean, the numbers are vey spread out. If it’s very small, there is almost no spread. This is a useful shorthand to see how well an average summarizes a group of numbers.</li>
-  <li>80th percentile</li>
-  <li>20th percentile</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Excel formula</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean</td>
+      <td>=AVERAGE(range)</td>
+      <td>the simple average of a column of values</td>
+    </tr>
+    <tr>
+      <td>Mode</td>
+      <td>=MODE(range)</td>
+      <td>the most common value</td>
+    </tr>
+    <tr>
+      <td>Standard Deviation</td>
+      <td>=STDEV.P(range)</td>
+      <td>A standard measure of variance. Rule of thumb: If it’s larger than the mean, the numbers are vey spread out. If it’s very small, there is almost no spread. This is a useful shorthand to see how well an average summarizes a group of numbers.</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>=MAX(range)</td>
+      <td>the highest value</td>
+    </tr>
+    <tr>
+      <td>75th percentile</td>
+      <td>=PERCENTILE.INC(range, .75)</td>
+      <td>three quarters of the values are at or below this level</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>=MEDIAN(range)</td>
+      <td>the middle value, where half are higher and half are lower, or the 50th percentile</td>
+    </tr>
+    <tr>
+      <td>25th percentile</td>
+      <td>=PERCENTILE.INC(range, .25)</td>
+      <td>one quarter of the values are at or below this level</td>
+    </tr>
+    <tr>
+      <td>Minimum</td>
+      <td>=MIN(range)</td>
+      <td>the lowest value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/images/xlkpop-summarystats.png" alt="summary stats" /></p>
+
+<p>These are typical “descriptive statistics” that help you quickly sum up a set of numbers. Let’s take the track popularity field. The mean popularity score is 57, which is more that the average across all songs in Spotify. That makes sense because we chose the most popular kpop artists. The standard deviation is 9.6 (rounded to 10), meaning that two-thirds of the songs are between about 47 and 67 on the popularity scale.  That’s not very much variation, but it’s enough to get something interesting out of it. The most popular track scored a 91, and the least popular scored 22.</p>
+
+<p>Here are two histograms, which show the number of songs that fall between the values shown on the bottom. The first one, of popularity, range from 0 to 100, and our songs are on the high end but have a fairly typical distribution. But the key, measuring pitch, has no pattern – there are just about an equal number of songs in each key. This tells you that there is no typical answer to key – an average doesn’t mean anything.</p>
+
+<h4 id="popularity">Popularity</h4>
+<p><img src="/assets/images/xlkpop-histogram.png" alt="popularity" /></p>
+
+<h4 id="key">Key</h4>
+<p><img src="/assets/images/xlkpop-key.png" alt="key" /></p>
+
+<h2 id="operationalize-some-concepts-by-creating-new-fields">Operationalize some concepts by creating new fields</h2>
+
+<p>One research concept that you can use in journalism is the idea of operationalization. It’s a way of measuring something that seems immeasurable. In our example blog, the author operationalized the concept of “boring” by combining several variables: energy, danceability, tempo and loudness. However, these measures are on a different scale, so he had to bring them back to the same level by converting a few of them. The lower the measure, the more boring the song is. To make that easier to remember, let’s call it “fun-ness”</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  fun-ness = (loudness + 60) + tempo + (energy * 100) + (danceability * 100)
+</code></pre></div></div>
+
+<p>(Spotify has changed how it measures loudness since this blog was written. It now ranges from -60 to 0, so I added 60 to the measure so it would go from 0 to 60)</p>
+
+<p>Doing this, our most “fun” song is <a href="https://open.spotify.com/track/4mYu3kfBCW6qiTDnfVeuMx">HANGSANG</a>, from j-hope. Our most “boring” song is TAEYON’s “<a href="https://open.spotify.com/track/6CJbMoa2AmXnnjwGMxe1zh">All with you</a>”</p>
+
+<p>(I think the boring measure worked pretty well. I’m not so sure about the fun one!)</p>
+
+<h2 id="on-your-own">On your own</h2>
+
+<p>Think of a feeling you’d like to measure listening to the songs – then try to think of what variables, put together, might help you operationalize it.</p>
+
+<h4 id="footnotes">Footnotes</h4>
+<ol>
+  <li>Scientific notation can actually cause you problems in computers. That’s because it’s an efficient way to hold numbers, but it also loses precision. In fact, in some languages, 0 doesn’t equal 0 because of it! It’s just something to be aware of when you get odd results.</li>
+</ol>
 
 
 

@@ -20,11 +20,12 @@ In Windows, use the shortcut for All Settings in the bottom right, then search f
 
 <img src="{{site.baseurl}}/assets/images/filetypes-windows-exensions.png" style="width:500px;">
 
-**tl;dr**
+### tl;dr
 
-Best: csv and other tabular text, json, xml, and any spatial data
-So-so: Excel (xlsx), html
-Avoid: pdf
+
+      Best  : csv and other tabular text, json, xml, and any spatial data
+      So-so : Excel (xlsx), html
+      Avoid : pdf
 
 
 1. TOC

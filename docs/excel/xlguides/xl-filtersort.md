@@ -166,5 +166,4 @@ You can revert to the a plain old spreadsheet by selecting any cell within your 
 
 This video goes through many of the details of sorting and filtering:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1XRPdG0GAwE" allow="autoplay; encrypted-media" allowfullscreen
-style="margin: 2em;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QByd8L7owsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 2em;"></iframe>

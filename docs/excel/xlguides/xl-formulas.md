@@ -27,7 +27,7 @@ The math review is going to use the City of Phoenix's budgeted spending for the 
 ## Files for this tutorial
 
 * [A data diary]({{site.baseurl}}/assets/docs/xl-mathreview-datadiary) for the processing that went into this spreadsheet for this tutorial.
-* [The Excel spreadsheet]({{site.baseurl}}/assets/data/phx_budget_summary.xlsx) for this tutorial.
+* [The Excel spreadsheet]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) for this tutorial.
 
 
 ## Get into good habits

@@ -32,7 +32,7 @@ The math review is going to use the City of Phoenix's budgeted spending for the 
 
 ## Get into good habits
 
-* Right-click on [this link to the Phoenix budget summary]({{site.baseurl}}/assets/data/phx_budget_summary.xlsx) that I prepared for you, and choose "Save As" to keep a copy on your computer rather than opening it directly into Excel. Once you've done that, right-click on the Download area of your browser and look for the file on your computer. Don't double-click -- we're going to ask you to get out of that practice as much as possible, understanding that it's a natural instinct.  
+* Right-click on [this link to the Phoenix budget summary]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) that I prepared for you, and choose "Save As" to keep a copy on your computer rather than opening it directly into Excel. Once you've done that, right-click on the Download area of your browser and look for the file on your computer. Don't double-click -- we're going to ask you to get out of that practice as much as possible, understanding that it's a natural instinct.  
 
 * Start your documentation worksheet or document and describe, in plain language, every question you've asked, every answer and its source, and every step you've taken.
 

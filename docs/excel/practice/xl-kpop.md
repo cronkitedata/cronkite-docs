@@ -20,7 +20,7 @@ Anyone with a Spotify account can get access to its API, or Application Programm
 
 ## Data and documentation
 
-[kpop_spotify_tracks.tsv]() is a tab-separated text file exported from R containing the k-pop tracks. (There were some duplicates in the original dataset -- I'm not sure how they got there, but they've been eliminated.)
+[kpop_spotify_tracks.tsv]({{site.baseurl}}/assets/data/csv/kpop_tracks.tsv) is a tab-separated text file exported from R containing the k-pop tracks. (There were some duplicates in the original dataset -- I'm not sure how they got there, but they've been eliminated.)
 
 Most elements are defined on the Spotify API [track details documentation](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/). The tracks were selected from those that can be played by subscribers in the U.S.
 
@@ -56,6 +56,12 @@ Take a few minutes to interview your data. Some possible first steps:
 * Get a sense of how much each value varies -- are they all around the same level, or is there some range to the values? If a measure doesn't vary enough, it won't be interesting -- there's no news.
 
 * Try sorting by various fields. Are the most danceable songs also the happiest with high valence?
+
+### Turn off "named" formulas
+
+Excel usually uses the column names in tables when you create formulas, which causes problems when you want to copy left-to-right. Turn off that option under Excel Preferences:
+
+![]({{site.baseurl}}/assets/images/xlkpop-turnoff.gif)
 
 ## Calculate some summary statistics
 

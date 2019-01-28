@@ -168,6 +168,8 @@ hr { height: 1px; padding: 0; margin: 2rem 0; background-color: #eeebee; border:
 @media (min-width: 46.25rem) { .main-content { position: relative; max-width: 800px; padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; margin-left: 232px; } }
 @media (min-width: 70rem) { .main-content { padding-left: 2rem; margin-left: calc((100% - 1032px) / 2 + 232px); } }
 
+.js-main-content:focus { outline: none; }
+
 .page-header { background-color: #f5f6fa; }
 @media (min-width: 46.25rem) { .page-header { background-color: #fff; } }
 .page-header .main-content { padding-top: 0; }
@@ -367,7 +369,7 @@ thead th { border-bottom: 1px solid #eeebee; }
 
 code { padding: 0.2em 0.15em; font-weight: 400; background-color: #f5f6fa; border: 1px solid #eeebee; border-radius: 4px; }
 
-pre.highlight { padding: 0.75rem; margin-bottom: 0; background-color: #f5f6fa; }
+pre.highlight { padding: 0.75rem; margin-bottom: 0; -webkit-overflow-scrolling: touch; background-color: #f5f6fa; }
 pre.highlight code { padding: 0; border: 0; }
 
 .highlighter-rouge { margin-bottom: 0.75rem; overflow: hidden; border-radius: 4px; }
@@ -508,7 +510,7 @@ pre.highlight code { padding: 0; border: 0; }
 
 .highlight .il { color: #2aa198; }
 
-.code-example { padding: 0.75rem; margin-bottom: 0.75rem; overflow: scroll; border: 1px solid #eeebee; border-radius: 4px; }
+.code-example { padding: 0.75rem; margin-bottom: 0.75rem; overflow: auto; border: 1px solid #eeebee; border-radius: 4px; }
 .code-example + .highlighter-rouge, .code-example + figure.highlight { position: relative; margin-top: -1rem; border-right: 1px solid #eeebee; border-bottom: 1px solid #eeebee; border-left: 1px solid #eeebee; border-top-left-radius: 0; border-top-right-radius: 0; }
 
 .text-grey-dk-000 { color: #959396 !important; }

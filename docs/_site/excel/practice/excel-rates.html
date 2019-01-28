@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
 
   <title>Rates and ratios with FBI data - Data reporting @ Cronkite</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
@@ -13,13 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<body>
 
   <div class="page-wrap">
     <div class="side-bar">
       <a href="http://localhost:4000/cronkite-docs" class="site-title fs-6 lh-tight">Data reporting @ Cronkite</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
   <ul class="navigation-list">
     
     
@@ -1110,7 +1112,7 @@
           
         </div>
       </div>
-      <div class="main-content">
+      <div class="main-content js-main-content" tabindex="0">
         
           
             <nav class="breadcrumb-nav">
@@ -1124,26 +1126,61 @@
             </nav>
           
         
-        <div class="page-content">
+        <div id="main-content" class="page-content" role="main">
           <p>Reading for FBI crime reports:</p>
 
 <p>FBI crime statistics
-We’re going to look at Uniform Crime Reports for 2017 in class. Read these stories to see how reporters handle them, taking note of the caveats they use. This is a good example of data that you are obligated to report, even though there are serious flaws. While reading, take special note of any definitions (“reported” crimes, not actual crimes, for example) , units of analysis (“cities”, not states or counties) and other details that will help you know what you can and can’t do with the data.</p>
+We’re going to look at Uniform Crime Reports for 2016 in class.</p>
 
-<p>“<a href="https://www.nytimes.com/2018/12/31/nyregion/crime-nyc-rapes-murders.html">Reports of Rapes and Hate Crimes Rise in 2018, but New York Remains Safest Big City</a>,” New York Times, Dec. 31, 2018; “<a href="https://www.nytimes.com/2019/01/06/nyregion/rape-reports-nyc-me-too.html">As the number of Reported Rapes Climb, Mayor Points to #MeToo</a>”, New York Times, Jan 6, 2019
-“<a href="https://www.latimes.com/local/la-me-crimestats-lapd-20140810-story.html#page=1">LAPD misclassified nearly 1,200 violent crimes as minor offenses</a>”, Los Angeles Times, Aug. 9, 2014
-“[FBI crime report shows national decline, but uptick in metro-Phoenix]”(https://www.azcentral.com/story/news/local/arizona/2018/10/01/fbi-crime-report-shows-national-decline-uptick-metro-phoenix/1433323002/) Arizona Republic, Oct. 1, 2018</p>
+<h2 id="data-and-documentation">Data and documentation</h2>
+
+<p>I downloaded the data from the FBI for 2017. The files are:</p>
 
 <ul>
   <li>
-    <p><a href="https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016">Original FBI spreadsheet</a> We’re going to walk through this page, since there’s some important information there, and look at the spreadsheet they provide.</p>
+    <p><a href="https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/tables/table-8/table-8.xls/view">Original FBI data</a>. Read the “Data Declaration” at the top of this page. The original data was downloaded from the “Download Excel” link at the top of the page.</p>
   </li>
   <li>
-    <p>A <a href="/cronkite-docs/assets/data/xlexamples/crime2016.xlsx">cleaned-up version of the dataset</a> for us to use while you’re reading about the UCR.</p>
+    <p>A <a href="/cronkite-docs/assets/data/xlexamples/crime2016.xlsx">cleaned-up version of the dataset</a> for us to use while you’re reading about the UCR. (NOTE: I’ve changed this since class. I eliminated the first crime rate and took out the property and violent crime totals, which is the way the FBI gives it to us.)</p>
   </li>
 </ul>
 
-<p>TK - 2017 and 2018 data.</p>
+<p>It contains three pages :</p>
+<ol>
+  <li>Original_data: This was the full list of cities that the FBI reported. Be sure to review the footnotes at the bottom, which will explain some anomalies you find later on.  You should note that it contains three types of numbers:
+    <ol>
+      <li>A population for the city.</li>
+      <li>Total numbers of violent and property crimes, which should be the sum of the parts, except for Arson.</li>
+      <li>Each “Part I” type of crime. These are the specific crimes that local police agencies are asked to report to the FBI each year for this program.</li>
+    </ol>
+  </li>
+  <li>
+    <p>A somewhat (but not entirely) tidy version of the data, but only for large cities.</p>
+  </li>
+  <li>A list of Arizona cities.</li>
+</ol>
+
+<h3 id="stories-that-were-based-on-ucr-crime-data">Stories that were based on UCR crime data</h3>
+
+<p>It’s always worth the time to read how others have presented a common dataset so you don’t miss important nuances.</p>
+
+<ul>
+  <li>“<a href="https://www.nytimes.com/2018/12/31/nyregion/crime-nyc-rapes-murders.html">Reports of Rapes and Hate Crimes Rise in 2018, but New York Remains Safest Big City</a>,” New York Times, Dec. 31, 2018;</li>
+  <li>“<a href="https://www.nytimes.com/2019/01/06/nyregion/rape-reports-nyc-me-too.html">As the number of Reported Rapes Climb, Mayor Points to #MeToo</a>”, New York Times, Jan 6, 2019</li>
+  <li>“<a href="https://www.latimes.com/local/la-me-crimestats-lapd-20140810-story.html#page=1">LAPD misclassified nearly 1,200 violent crimes as minor offenses</a>”, Los Angeles Times, Aug. 9, 2014</li>
+  <li>“[FBI crime report shows national decline, but uptick in metro-Phoenix]”(https://www.azcentral.com/story/news/local/arizona/2018/10/01/fbi-crime-report-shows-national-decline-uptick-metro-phoenix/1433323002/) Arizona Republic, Oct. 1, 2018</li>
+</ul>
+
+<h2 id="check-the-governments-math">Check the government’s math</h2>
+
+<p>Get in the habit of trying to reproduce numbers that were calculated by others. In this case, you’ll want to check to see if you get the same number of violent and property crimes, based on the FBI’s definitions in the data declaration.</p>
+
+<ol>
+  <li>Calculate the number of violent crimes.</li>
+  <li>Calculate the number of property crimes, excluding Arson.</li>
+</ol>
+
+<p>You’ll notice that not all of the numbers match. Returning to the original sheet and looking for footnotes will help explain it.</p>
 
 
 
@@ -1152,4 +1189,6 @@ We’re going to look at Uniform Crime Reports for 2017 in class. Read these sto
       </div>
     </div>
   </div>
+
+</body>
 </html>

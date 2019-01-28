@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
 
   <title>K-pop - Data reporting @ Cronkite</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
@@ -13,13 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<body>
 
   <div class="page-wrap">
     <div class="side-bar">
       <a href="http://localhost:4000/cronkite-docs" class="site-title fs-6 lh-tight">Data reporting @ Cronkite</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
   <ul class="navigation-list">
     
     
@@ -1110,7 +1112,7 @@
           
         </div>
       </div>
-      <div class="main-content">
+      <div class="main-content js-main-content" tabindex="0">
         
           
             <nav class="breadcrumb-nav">
@@ -1124,7 +1126,7 @@
             </nav>
           
         
-        <div class="page-content">
+        <div id="main-content" class="page-content" role="main">
           <h1 class="no_toc" id="how-much-fun-is-k-pop">How much fun is k-pop?</h1>
 
 <p>In 2018, Lisa Travis, a student at the Walter Cronkite School, wanted to know more about her musical passion: k-pop. We worked to get the 11 characteristics of top k-pop stars’ biggest hits into a dataset using the Spotify API. Now we can use her data to think about how numbers are useful in operationalizing concepts like “boring”, “fast”, or “sad”.</p>
@@ -1135,7 +1137,10 @@
 
 <ol id="markdown-toc">
   <li><a href="#data-and-documentation" id="markdown-toc-data-and-documentation">Data and documentation</a></li>
-  <li><a href="#import-and-interview" id="markdown-toc-import-and-interview">Import and interview</a></li>
+  <li><a href="#import-and-interview" id="markdown-toc-import-and-interview">Import and interview</a>    <ol>
+      <li><a href="#turn-off-named-formulas" id="markdown-toc-turn-off-named-formulas">Turn off “named” formulas</a></li>
+    </ol>
+  </li>
   <li><a href="#calculate-some-summary-statistics" id="markdown-toc-calculate-some-summary-statistics">Calculate some summary statistics</a>    <ol>
       <li><a href="#popularity" id="markdown-toc-popularity">Popularity</a></li>
       <li><a href="#key" id="markdown-toc-key">Key</a></li>
@@ -1150,7 +1155,7 @@
 
 <h2 id="data-and-documentation">Data and documentation</h2>
 
-<p><a href="">kpop_spotify_tracks.tsv</a> is a tab-separated text file exported from R containing the k-pop tracks. (There were some duplicates in the original dataset – I’m not sure how they got there, but they’ve been eliminated.)</p>
+<p><a href="/cronkite-docs/assets/data/csv/kpop_tracks.tsv">kpop_spotify_tracks.tsv</a> is a tab-separated text file exported from R containing the k-pop tracks. (There were some duplicates in the original dataset – I’m not sure how they got there, but they’ve been eliminated.)</p>
 
 <p>Most elements are defined on the Spotify API <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">track details documentation</a>. The tracks were selected from those that can be played by subscribers in the U.S.</p>
 
@@ -1227,6 +1232,12 @@
     <p>Try sorting by various fields. Are the most danceable songs also the happiest with high valence?</p>
   </li>
 </ul>
+
+<h3 id="turn-off-named-formulas">Turn off “named” formulas</h3>
+
+<p>Excel usually uses the column names in tables when you create formulas, which causes problems when you want to copy left-to-right. Turn off that option under Excel Preferences:</p>
+
+<p><img src="/cronkite-docs/assets/images/xlkpop-turnoff.gif" alt="" /></p>
 
 <h2 id="calculate-some-summary-statistics">Calculate some summary statistics</h2>
 
@@ -1325,4 +1336,6 @@
       </div>
     </div>
   </div>
+
+</body>
 </html>

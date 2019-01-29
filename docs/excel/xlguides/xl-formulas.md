@@ -1,7 +1,7 @@
 ---
 title: Excel formulas
 parent: Excel guides
-nav_order: 5
+nav_order: 7
 grand_parent: Excel
 ---
 
@@ -13,8 +13,6 @@ There are lots of good tip sheets and reminders of how to use formulas in Excel.
 * If you're brand new to spreadsheets, or feel uncomfortable, start with [Mary Jo Webster's "Beginner Excel" tutorial](http://mjwebster.github.io/DataJ/BeginnerExcel.html).
 
 * Jaimi Dowdell's [quick list of Excel formulas]({{site.baseurl}}/assets/docs/xlformulas-dowdell.pdf). It's written for Windows, but nothing is different on a Mac in this list.
-
-
 
 
 The math review is going to use the City of Phoenix's budgeted spending for the 2018 fiscal year, compared with previous years.  (Source: https://www.phoenix.gov/budget/annualbudget)
@@ -32,7 +30,7 @@ The math review is going to use the City of Phoenix's budgeted spending for the 
 
 ## Get into good habits
 
-* Right-click on [this link to the Phoenix budget summary]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) that I prepared for you, and choose "Save As" to keep a copy on your computer rather than opening it directly into Excel. Once you've done that, right-click on the Download area of your browser and look for the file on your computer. Don't double-click -- we're going to ask you to get out of that practice as much as possible, understanding that it's a natural instinct.  
+* Right-click on [this link to the Phoenix budget summary]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) that I prepared for you, and choose "Save As" to keep a copy on your computer rather than opening it directly into Excel. Once you've done that, right-click on the Download area of your browser and look for the file on your computer. Don't double-click -- we're going to ask you to get out of that practice as much as possible, understanding that it's a natural instinct.
 
 * Start your documentation worksheet or document and describe, in plain language, every question you've asked, every answer and its source, and every step you've taken.
 
@@ -147,7 +145,7 @@ For example, if we have five people with the following incomes:
        $15,000
       $500,000
 
-The average, $109,000, will not be a good *summary* of the list. In fact, no one on the list makes anything like that. But the median, $12,000, reflects the middle of the pack. With America's income inequality, this is common in anything measured in dollars like home values or incomes.  
+The average, $109,000, will not be a good *summary* of the list. In fact, no one on the list makes anything like that. But the median, $12,000, reflects the middle of the pack. With America's income inequality, this is common in anything measured in dollars like home values or incomes.
 
 In Excel, you can get the median of a list of numbers by just using the formula, MEDIAN()
 

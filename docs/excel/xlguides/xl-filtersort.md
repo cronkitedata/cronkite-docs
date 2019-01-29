@@ -1,6 +1,6 @@
 ---
 title: "Filter and sort"
-nav_order: 3
+nav_order: 6
 parent: Excel guides
 grand_parent: Excel
 ---
@@ -100,7 +100,7 @@ Filtering means picking out only some of the rows you want to see based on a cri
 
 The filtering buttons are shown when you create a data table. If they're not, look in your Data tab at top press the button that looks like a funnel:
 
-![turn on filter]({{site.baseurl}}/assets/images/06-filtersort-turnonfilter.png)   
+![turn on filter]({{site.baseurl}}/assets/images/06-filtersort-turnonfilter.png)
 
 Looking through your filters is an easy way to see the range of information you have in your dataset. For example, pulling down the button for filtering on the Narcan flag, you see only the options for "Yes" and "No". But if you click on the dropdown box for the incident date and time, you'll first see just the years, which you can expand to months, days, and even hours.
 
@@ -146,7 +146,7 @@ In the data tab, chose "Clear" (the funnel with the red "X") to remove all of th
 
 Sometimes you don't want to see all of your columns -- there are too many and they're getting confusing. There is no column filter in Excel. (You'll see how to filter, or "Select", columns from a dataset in standard programming languages later.)
 
-Instead, you can hide the columns you don't want to see. When columns and rows are hidden, they generally won't copy to a new sheet.  
+Instead, you can hide the columns you don't want to see. When columns and rows are hidden, they generally won't copy to a new sheet.
 
 ### I'm getting weird questions and alerts about sorting
 

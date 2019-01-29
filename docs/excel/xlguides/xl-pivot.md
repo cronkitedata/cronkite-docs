@@ -2,7 +2,7 @@
 title: Grouping with pivot tables
 parent: Excel guides
 grand_parent: Excel
-nav_order: 7
+nav_order: 8
 ---
 
 
@@ -24,7 +24,7 @@ Here are two excellent tutorials on pivot tables. There's no need to re-create t
 
 * [Mary Jo Webster's tutorial](http://mjwebster.github.io/DataJ/pivottables.html) is pretty comprehensive with lots of screen shots.
 
-For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)"
+For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/12-excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)"
 
 
 Finding good practice datasets can take some practice. Here are a few that offer good potential.  If you want to find your own, try to find data sets that contain individual records, not statistics.

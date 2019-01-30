@@ -1,7 +1,7 @@
 ---
 title:  Pivot tables with baseball scores
 parent: Excel practice
-grand-parent: Excel
+grand_parent: Excel
 nav_order: 12
 categories: pivot tables
 ---

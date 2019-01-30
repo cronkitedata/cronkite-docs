@@ -10,7 +10,7 @@ categories: formulas; filter
 
 I downloaded the data from the FBI for 2016. The files are:
 
-* [Original FBI data](hhttps://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/tables/table-8/table-8.xls/view). Read the "Data Declaration" at the top of this page. The original data was downloaded from the "Download Excel" link at the top of the page.
+* [Original FBI data](https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/tables/table-6/table-6.xls/view). Read the "Data Declaration" at the top of this page. The original data was downloaded from the "Download Excel" link at the top of the page.
 
 * A [cleaned-up version of the dataset]({{site.baseurl}}/assets/data/xlexamples/crime2016.xlsx) for us to use while you're reading about the UCR. (NOTE: I've changed this since class by eliminating the violent crime rate calculation. )
 
@@ -31,7 +31,7 @@ It's always worth the time to read how others have presented a common dataset so
 * "[Reports of Rapes and Hate Crimes Rise in 2018, but New York Remains Safest Big City](https://www.nytimes.com/2018/12/31/nyregion/crime-nyc-rapes-murders.html)," New York Times, Dec. 31, 2018;
 * "[As the number of Reported Rapes Climb, Mayor Points to #MeToo](https://www.nytimes.com/2019/01/06/nyregion/rape-reports-nyc-me-too.html)", New York Times, Jan 6, 2019
 * "[LAPD misclassified nearly 1,200 violent crimes as minor offenses](https://www.latimes.com/local/la-me-crimestats-lapd-20140810-story.html#page=1)", Los Angeles Times, Aug. 9, 2014
-* "[FBI crime report shows national decline, but uptick in metro-Phoenix]"(https://www.azcentral.com/story/news/local/arizona/2018/10/01/fbi-crime-report-shows-national-decline-uptick-metro-phoenix/1433323002/) Arizona Republic, Oct. 1, 2018
+* "[FBI crime report shows national decline, but uptick in metro-Phoenix](https://www.azcentral.com/story/news/local/arizona/2018/10/01/fbi-crime-report-shows-national-decline-uptick-metro-phoenix/1433323002/)" Arizona Republic, Oct. 1, 2018
 
 ## Check the government's math
 

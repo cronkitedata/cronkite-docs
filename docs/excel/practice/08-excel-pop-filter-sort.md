@@ -17,7 +17,7 @@ These datasets are documented in a sketchy way in the file itself.
 
 ## Step 1: The data
 
-[Download the spreadsheet]({{site.baseurl}}/assets/data/xlexamles/countypops_withinfo.xlsx) to get started.
+[Download the spreadsheet]({{site.baseurl}}/assets/data/xlexamples/countypops_withinfo.xlsx) to get started.
 
 Look over the documentation and the names of the fields that are listed in the file. Set some filters and do some sorts so that you have a good sense of the *range* of values in the spreadsheet, and the *kinds* of fields you have.
 

@@ -23,5 +23,5 @@ We'll work from a few tutorials:
 * Get used to the concept of [tidy data]({{site.baseurl}}/excel/xlguides/xl-tidydata))
 
 Excel files we'll work with:
-* [The budget from Phoenix]({{site.baseurl}}/assets/data/phx_budget_summary.xlsx)
-* [An example of a homemade database]({{site.baseurl}}/assets/data/hundred-days/first100days.xlsx)
+* [The budget from Phoenix]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx)
+* [An example of a homemade database]({{site.baseurl}}/assets/docs/viz/hundred-days/first100days.xlsx)

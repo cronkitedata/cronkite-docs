@@ -12,7 +12,7 @@ grand_parent: Excel
 
 ## Understanding data types
 
-When you start working with structured data, there is an important unspoken rule: Each column should contain the same _type_ of data, often broken into three categories: text, numbers and dates.  
+When you start working with structured data, there is an important unspoken rule: Each column should contain the same _type_ of data, often broken into three categories: text, numbers and dates.
 
 This video goes through the basic types of data that you'll find within a table such as an Excel worksheet, and what opportunities and traps await you.
 
@@ -91,7 +91,7 @@ When you encounter untidy data like the example above, take out a piece of paper
 
 This is an excellent exercise for you to do whenever you are working on data: **_envision success_**. If you had what you wanted, what might that look like?
 
-[Here is an example spreadsheet]({{site.baseurl}}/assets/data/bad-spreadsheet-examples.xlsx) of a series of ways that governments have provided data when it was requested. Go through them and think about how they might be useful -- what might they look like? How could you use them to sort and filter? How could you add or count them effectively?
+[Here is an example spreadsheet]({{site.baseurl}}/assets/data/xlexamples/bad-spreadsheet-examples.xlsx) of a series of ways that governments have provided data when it was requested. Go through them and think about how they might be useful -- what might they look like? How could you use them to sort and filter? How could you add or count them effectively?
 
 Here's a video that goes through what is wrong with them and how we fixed it.
 

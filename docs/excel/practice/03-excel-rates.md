@@ -87,7 +87,7 @@ Here are some suggested first steps:
 
 Insert a column to the right of Violent Crime and create a Violent Crime Rate column. (A column will always insert to the LEFT of whatever area you have selected.)
 
-![insert column]({{site.baseurl}}/assets/images/xlcrime-insertcolumn.png)
+![insert column]({{site.baseurl}}/assets/images/xlcrime-insertcolumn.gif)
 
 Note that the stick-pin (the $ in the formula) is before the "D" -- the column element. That means that as you copy down, the row will adjust. But when you copy left to right, the column won't. It will always use the population column as the base.
 

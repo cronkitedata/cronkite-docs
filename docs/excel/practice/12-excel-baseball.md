@@ -14,7 +14,7 @@ categories: pivot tables
 
 A pivot table is a powerful way to summarize data in Excel. It's designed to answer questions that start with the words, "how many?" or "how much?".
 
-Before you start, [review the tutorial written by Matt Waite]((https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md)
+Before you start, [review the tutorial written by Matt Waite](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md)
 ) of the University of Nebraska to get a basic understanding of summarizing data using pivot tables.
 
  Download the .csv file for that tutorial by [right-clicking on this link](https://github.com/datajtext/DataJournalismTextbook/blob/master/Data/mountainlions.csv) and choosing "Save Link as..." (in Chrome) or "Download Linked File As.." (in Safari)

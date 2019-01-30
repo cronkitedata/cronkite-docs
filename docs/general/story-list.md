@@ -40,7 +40,7 @@ nav_order: 99
 
 * "[A Data State of Mind](http://datadrivenjournalism.net/news_and_analysis/what_is_a_data_state_of_mind_and_how_you_can_develop_it)", Mary Jo Webster, Data-Driven Journalism, Sept. 2016
 
-* "[Demystifying Data Journalism](Demystifying Data Journalism)", with Susan McGregor and Sarah Cohen at a Mashable conference. I think it's 2012.
+* "[Demystifying Data Journalism](https://www.youtube.com/watch?v=P_nj0r_A0co)", with Susan McGregor and Sarah Cohen at a Mashable conference. I think it's 2012.
 
 * [Interview with  data editor Janet Roberts](https://datajournalismawards.org/2018/06/14/producing-data-stories-and-visualisations-the-reuters-way/) on the Reuters approach to data reporting, 2018, from the [Data Journalism Awards](https://datajournalismawards.org/)
 

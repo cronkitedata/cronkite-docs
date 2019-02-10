@@ -1,0 +1,127 @@
+---
+title: "R review"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    toc_depth: '4'
+  html_notebook:
+    df_print: paged
+    highlight: tango
+    theme: united
+    toc: yes
+    toc_depth: '4'
+---
+
+## Conceptual review of the tidyverse
+
+Remember when we talked about tidy data? That's what we're working with when we work in R's "tidyverse". The big strength of R is that there is a package -- or something pre-written for you -- for almost anything you can think of that involves data analysis. The downside is that they have been written by different people, using different conventions. For example, sometimes you have to refer to a column name in quotes, sometimes not. They're also very difficult to read. 
+
+The Tidyverse was created to produce a standard grammar and structure to commands, to make them easier to read while taking advantage of the underlying program's structure. 
+
+
+### How to read a program (any language)
+
+Programming is made up of verbs and nouns just like language. When you read or write a program, the language itself usually supplies the verb, and you usually supply the noun. 
+
+so if you want to invoke the tidyverse, 
+
+      library(tidyverse)
+
+the verb is "library", meaning "load in this package" and the noun is "tidyverse", which we have already installed.
+
+
+
+## Review of learn-r chapters
+
+We're going to work with a simplified version of some data you're pretty familiar with by now: the Murder Accountability Project's underlying data. You read about it in the New Yorker, and you worked with the data in the tutorial. But we're going to slow down a little and walk through everything that's happening in that dataset. 
+
+First, I want to create a smaller version with only Arizona homicides. I've copied the datasets from the original tutorial, and now I'm going to import them. 
+
+### Note on "foreign" files that tripped you up
+
+I think there was some confusion because you quite reasonably had no clue what was happening with the foreign SPSS files. SPSS, SAS and some other programs do things differently than spreadsheets and databases. In them, codes and names of columns (*fields* or *variables* from now on) can have labels. Those labels are just stored once, and appear on the screen. That's why they had to import twice. 
+
+Let's try it again. (I've already unzipped it onto my Desktop)
+
+```{r}
+library(foreign)
+data_labels <- read.spss("~/Desktop/SHR76_16.sav", to.data.frame=T, stringsAsFactors = FALSE)
+
+```
+
+We get a weird error message, but it's unclear what's going on. It appears to happen in Record 7. Let's view the dataset and see what's happening here. From your "Environment" tab, click on the dataset to view it. Also, the "stringsAsFactors" argument seemed to have no effect on many of the variables! 
+
+(An image of what happens in RStudio)
+
+![](data/viewdata-example.png)
+
+That's a way to see the whole dataset, but how about just a few records? 
+The first of these shows us the top of the file. The second one says, "Show me rows 6 through 8, and columns 14 - 21" (that's why there's a comma). The last one says, show me the structure of the data frame. It looks very 
+
+```{r}
+head(data_labels)
+data_labels[6:8, 14:21]
+str(data_labels)
+
+```
+This shows us everything "labeled". That is, the underlying data in SPSS has values that are masked by formats, or labels. It's kind of like in Excel, when you formatted a number as a date -- it appeared different than the underlying data was. 
+
+## Cut the data down to size so you can see it a little better.
+
+We're not going to bother getting the UN-labeled data for us. And we're going to get rid of some of the columns and rows. This is when the "tidyverse" comes in. 
+
+### Select columns
+
+We're going to "select" some variables to play with. Think of this as filtering vertically. 
+
+In Excel, it would be the equivalent of copying your whole dataset, then deleting some of the columns so you could see it more clearly.
+
+We're also introducing the *%>%* operator. This is only used in the Tidyverse, and it means "do what I asked before this, then go do the next thing without stopping". Think of everything connected by %>% as a code chunk. It stops when you finish the last command without the %>%
+
+You might notice that I start a lot of new lines, and I indent a lot. This makes it easier to read and also helps me keep track of parentheses and quotes.
+
+```{r}
+library(tidyverse)
+
+murder_data <- 
+  data_labels %>%  #start with the data frame called "data labels", then...
+  
+  select( ID, CNTYFIPS, Ori, State, Agency, AGENCY_A, Source, Solved, Year, 
+          StateName, Month, Situation, VicAge, VicSex, VicRace, VicEthnic, 
+          OffAge, OffSex, OffRace, OffEthnic, 
+          Weapon, Relationship, Circumstance)  # the end of the chunk
+
+## a new commmand
+head(murder_data) 
+
+```
+
+### Filter rows
+
+But we want to only keep the Arizona data, so now we need to **filter**, just the way you filtered in Excel. This is the equivalent of finding the records you want to keep using your filter in Excel, then copying them to another sheet. We could have done this whole thing in one step, but sometimes it's easier to just keep them separate. We're not going to create another whole data frame -- we'll just replace the one we're working with.
+
+
+```{r}
+murder_data <-
+  murder_data %>%
+    filter ( State == "Arizona")
+
+head(murder_data)
+```
+
+## Save it for later use
+
+Now I'm just going to save this data frame for you so you can use it directly without any of the trouble I just went through. 
+
+Don't worry about the first command here. What happened, if you look at your data in View(murder_data) is that some labels for the variables are wrong. I'm just getting rid of them. (They would have been right if I had not removed some of the variables.) 
+
+```{r}
+attributes(murder_data)$variable.labels <- NULL
+#now save it.
+save (murder_data, file="murder_data.Rda")
+```
+
+From here on out, we can work together on the dataset, but we'll get different answers from the tutorial and work with a much smaller set of data.
+
+

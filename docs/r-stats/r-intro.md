@@ -1,6 +1,6 @@
 ---
-title: The very basics in R
-parent: /r-stats
+title: Starting R & RStudio
+parent: R for journalism
 nav_order: 1
 ---
 
@@ -10,7 +10,7 @@ nav_order: 1
 
 ## Installing R and R Studio
 
-There are lots of ways to interact with the R program. You first need to install the language itself, then choose one of several ways to interact with it. We're going to work exclusively in RStudio.
+You can install it on your laptop or use a new cloud-based version, at least to start out with.
 
 ### RStudio Cloud
 
@@ -20,16 +20,19 @@ If you don't want to install R and RStudio on you computer, you can sign up for 
 
 If you want to install on your laptop, try these steps. Bring in your laptop if you're having trouble.
 
-* If on a Mac, [install the Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/). (You will need administrative rights)
+* Mac only: [Install the Command Line Tools](https://developer.apple.com/download/more/).  You won't need this until we get to more complex graphics, so skip this step if you're having trouble.
 * Install [R for your computer](https://rweb.crmda.ku.edu/cran/). Use the most recent binaries for your operating system.
 * Install [R Studio Desktop](https://www.rstudio.com/products/rstudio/download/#download) for your computer ONLY AFTER YOU HAVE INSTALLED R. Use the free community version.
 
 ## First steps with R
 
-We'll be interacting with R using a R Studio, which is a simple way to see all of the different pieces of any project.
+We'll be interacting with R using R Studio, which is a simple way to see all of the different pieces of any project.
 
 ### The Console
+
 The Console is where you can type commands. Try it.
+
+![console]({{site.baseurl}}/assets/images/21-rintro-rstudio.png)
 
     5+5           #when you type this
     [1] 10        #this is what you get back
@@ -54,7 +57,11 @@ into the console. (You can also get and set working directories through menu ite
 R has horrible error message. Say I want to add 5 and the word "Three". Here's what happens:
 
     > 5 + "three"
+
+<span style="color:red;">
     Error in 5 + "three" : non-numeric argument to binary operator
+
+</span>
 
 When you see an error, try to piece together what it means. In this case, it has three parts:
 

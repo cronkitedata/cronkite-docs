@@ -1,0 +1,214 @@
+---
+title: "Introduction to R Notebooks"
+author: "Sarah Cohen"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_document:
+    df_print: paged
+    highlight: tango
+    theme: lumen
+  html_notebook: default
+  html_document:
+    df_print: paged
+---
+
+
+## Packages required for this notebook
+
+1. tidyverse
+2. prettydoc
+3. rmarkdown
+
+Install them now if you don't have them. (You can use the Tools menu)
+
+
+## Introducing R Notebooks
+
+Markdown is an easy way to make documents that can be rendered in a variety of formats, including Web pages, PDFs, slides and other forms. It began as a way to write Wikipedia entries. With markdown, authors could edit simple text documents without worrying about HTML or other coding. 
+
+There are several flavors of markdown and R has its own version, but the basics are the same as an authoring language. 
+
+R Notebooks and R Markdown add give you the ability to mix code and the results of your program into the document. 
+
+The nice people at R Studio have created [a full tutorial on R Markdown](https://rmarkdown.rstudio.com/lesson-1.html) if this brief introduciton isn't enough for you. 
+
+### Notebook vs. markdown document
+
+With a notebook, you can preview your document without running all of the code. A markdown document always requires you re-run after making changes. This can take a long time. 
+
+The top of a markdown document has what's called "front matter", which tells R how to treat the file, what it's called and how to style it. 
+
+Most of it is self-explanatory, but you can have different outputs at the same time. Be sure to add the "html_notebook: default" if you want to be able to preview rather than run the whole document. 
+
+
+## How markdown and R Notebooks work
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor.
+
+Depending on what output options you have added to the top, you'll get different options. "Knit to HTML" will likely be your most common option, which re-runs all of the code on the page and saves the entire package as one big HTML document. 
+
+Unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+<div style="background-color:#e6f0ff;padding:10px;">
+WARNING: If you print or display a very large dataset this document will become very, very large and it will take down your computer. Try to avoid this. If you do it by mistake, delete the output and try again.
+</div>
+
+
+
+## Using code chunks
+
+So far, this is just a simple Markdown document, which contains headings and one link. You can also write lists like this: 
+
+* First element, 
+* Second element. 
+
+But the most important thing you can do is add "code chunks", which are pieces of code that you run one part at a time. 
+
+
+The first thing you'll do is add packages to any program, so let's start with this. If you get an error, you may have to install the packages first. 
+
+Add a new chunk by clicking the *Insert Chunk* , *R* button on the toolbar or by pressing *Cmd+Option+I*.
+
+Place your cursor anywhere in the shaded chunk and press Cmd-Shft-Enter or CTL-Shft-Enter to run the whole chunk. 
+
+
+```{r}
+
+# this is a comment - it does nothing.
+# this reminds you that if it isn't installed already, you'll need to install a package
+# install.packages("tidyverse")
+
+#this loads the package for this session. 
+library(tidyverse)
+
+#this sets an option that says you only want to see 2 decimal places.
+# at any point you can increase this.
+options(digits=2)
+
+
+
+```
+
+I'm never sure why but sometimes these commands lead to notes about how the packages loaded and sometimes they don't. Don't worry about it unless you get an error. 
+
+## Introducing R
+
+#### Some arithmetic
+
+Let's try something simple: Type this
+      2+2. 
+
+into the code chunk below, then then run the code chunk by pressing CMD-SHFT-Enter or by hitting the little green arrow: 
+
+```{r}
+
+#type the formula here:
+
+```
+
+You should see [1] 4 above this line. The [1] refers to which piece of the output it is showing. The 4 is your answer. 
+
+#### Creating a named variable
+
+Let's try creating something more complicated -- a variable, which is then used in another formula. Create the following variables: 
+
+A variable is created using the <- operator. Think of it as "goes into". So
+
+    addition <- 2 + 2
+
+means "two plus two *goes into* the variable called "addition"
+
+YOUR TURN: 
+
+In the code chunk below, create some additional variables:
+
+1. "multiplication" should equal 5 times 5
+2. "division" should equal 100 divided by 2
+3. "words" should equal the phrase "some words"
+
+Then run the code chunk. Look to the upper right of your screen to find the Environment tab, and you should see your new variables. 
+
+```{r}
+
+addition <- 2 + 2
+
+
+```
+
+
+When you create a variable, R doesn't automatically show the value. Instead, look to the right. If "Environment" tab isn't shown, select it. You should see that you have some "Global Environment" variables with the names you just created, with the answer to the formula.
+
+Be careful not to create variable names that are the same as R keywords. For now, it's easiest to remember by avoiding a name that pops up as you're typing. 
+
+
+#### Use variables in new variables
+
+
+This code chunk creates one variable called "difference", which is then used to create a new variable called "pct_difference".  
+
+```{r}
+
+difference <- 120-100
+pct_difference <- difference / 100 * 100
+
+#now print out the value of pct_difference
+pct_difference
+
+```
+
+## Introducing vectors (lists)
+
+The reason R works so efficiently is that it works on a whole set of values rather than one at a time. It's like giving one formula in Excel that works on the whole column or the whole sheet. These are called vectors in R (similar, but not exactly the same as, lists or arrays in other languages). A vector can have only one type of data -- numbers, text, or something like it. Anything else will be considered an NA value, which can make your life hard. We'll deal with NA's in the next lesson. 
+
+
+To make a vector, use the syntax c(), where "c" stands for "combine"
+
+      c(1, 2, 3)
+      c("one", "two", "three")
+
+Try creating two variables (you pick the names) that contain the two vectors above.
+
+```{r}
+
+#put your formulas here
+
+
+```
+
+
+## Important traps
+
+### NA values
+
+A missing value in R is shown as NA. Whenever you try to do anything with any vector or data frame that contains missing values, everything will turn out missing. You have to explicitly tell R to ignore them: 
+
+```{r}
+
+indata <- c(1, 2, 3, 4, NA)
+sum(indata)
+
+
+```
+
+Instead, you hae to tell R to ignore them:
+```{r}
+sum(indata, na.rm=TRUE)
+```
+### Factors
+
+There is actually another type of data element -- a factor -- which will often trip you up. We don't have to deal with it right now, but it will come into play as you work with graphics and with some other data sets. 
+
+Generally, R thinks that relatively short text strings are unique "factors". These are categories, and once they're set up they can't be changed. It's a way of being more efficient in large data sets. You'll sometimes see an option that says
+
+    stringsAsFactors=FALSE
+
+That's good.
+ 
+
+
+That's it for now! 
+Try previewing, then knitting your document. 
+
+

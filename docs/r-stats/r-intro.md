@@ -79,6 +79,7 @@ R has horrible error message. Say I want to add 5 and the word "Three". Here's w
     > 5 + "three"
 
 <span style="color:red;"> Error in 5 + "three" : non-numeric argument to binary operator</span>
+x
 
 When you see an error, try to piece together what it means. In this case, it has three parts:
 

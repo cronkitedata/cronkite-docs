@@ -79,7 +79,7 @@ R has horrible error message. Say I want to add 5 and the word "Three". Here's w
     > 5 + "three"
 
 <span style="color:red;"> Error in 5 + "three" : non-numeric argument to binary operator</span>
-x
+
 
 When you see an error, try to piece together what it means. In this case, it has three parts:
 
@@ -91,24 +91,4 @@ Later on, we'll go through some common error messages and what they tell you abo
 
 ### New project
 
-One good practice is to create projects for all of your R work on a given topic or dataset. This is a package of
-
-
-## Best practices
-
-### Use "R projects", not "R files"
-
-All of our work will be done in R Projects, which are important to help you organize your work. If you keep all of your programs, data and output in one general area of your computer, you can be sure that copying the project will copy everything you need to reproduce your work.
-
-
-
-
-## Markdown
-
-We're going to interact with R through a language called Markdown. It's a note-taking and markup language that replaces complicated HTML tags with simple keystrokes. By making all of your programs R Markdown documents, you will always have
-
-Once you've gotten accustomed to R Studio, you will need to install some additional "packages", which are libraries of programs written to simplify many tasks. The key ones we need are:
-
-    install.packages("tidyverse")
-    install.packages("rmarkdown")
-    install.packages("dplyr")
+One good practice is to create projects for all of your R work on a given topic or dataset. When you create a project then open it, it makes sure that everything you need is in the working directory. It also makes sure you can just copy the whole project onto a new computer and it will likely work. (You may have to reinstall some packages)

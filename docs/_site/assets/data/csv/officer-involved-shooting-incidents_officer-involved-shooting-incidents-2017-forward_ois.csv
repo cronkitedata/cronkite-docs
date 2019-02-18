@@ -1,0 +1,98 @@
+DATE,TIME,HOUR,DAY_OF_WEEK,MONTH,QUARTER,YEAR,INC_RPT,PRECINCT,COUNCIL_DIST,LOCATION,SP_WEAPON,SP_INJURY_LEVEL,FATALITY_FLG,SP_GENDER,SP_ETHNICITY,SP_RACE,SP_AGE_AT_INC,SP_AGE_GROUP,PO_RACE,PO_ETHNICITY,REFERENCE_ID
+09-JAN-17,1538,15,01 - Monday,01 - January,1,2017,2017-51067,900 Cactus Park,1,34XX W Tangerine Ln,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,38,30's,White,Non-Hispanic,06256
+09-JAN-17,1538,15,01 - Monday,01 - January,1,2017,2017-51067,900 Cactus Park,1,34XX W Tangerine Ln,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,38,30's,White,Non-Hispanic,09355
+02-MAR-17,1645,16,04 - Thursday,03 - March,1,2017,2017-370161,700 Mountain View,8,23XX E Van Buren St,Firearm,Fatal,Fatal,Male,Hispanic,White,27,20's,Hispanic,Hispanic,08920
+15-MAR-17,1347,13,03 - Wednesday,03 - March,1,2017,2017-451326,200 Black Mountain,2,23XX W Dove Valley Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,25,20's,Asian,Non-Hispanic,09422
+15-MAR-17,1347,13,03 - Wednesday,03 - March,1,2017,2017-451326,200 Black Mountain,2,23XX W Dove Valley Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,25,20's,White,Non-Hispanic,04862
+23-MAR-17,1725,17,04 - Thursday,03 - March,1,2017,2017-504654,800 Maryvale / Estrella Mountain,7,65XX W Van Buren St,Bladed Object,Fatal,Fatal,Male,Hispanic,White,24,20's,White,Non-Hispanic,09339
+09-APR-17,1533,15,07 - Sunday,04 - April,2,2017,2017-612995,500 Central City,8,16XX S 15th Drive,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,23,20's,White,Non-Hispanic,09781
+12-APR-17,1804,18,03 - Wednesday,04 - April,2,2017,2017-632253,Unknown,NotPHX,130XX W Rancho Santa Fe Boulevard Avondale AZ,Vehicle,Fatal,Fatal,Male,Non-Hispanic,White,38,30's,White,Non-Hispanic,06914
+19-APR-17,1932,19,03 - Wednesday,04 - April,2,2017,2017-677763,800 Maryvale / Estrella Mountain,7,70XX W Alta Vista Rd,Bladed Object,Injured,Non-fatal,Male,Non-Hispanic,White,31,30's,Hispanic,Hispanic,07782
+19-APR-17,1932,19,03 - Wednesday,04 - April,2,2017,2017-677763,800 Maryvale / Estrella Mountain,7,70XX W Alta Vista Rd,Bladed Object,Injured,Non-fatal,Male,Non-Hispanic,White,31,30's,Hispanic,Hispanic,08863
+15-MAY-17,1832,18,01 - Monday,05 - May,2,2017,2017-844586,500 Central City,7,11XX N 3rd Ave ,Firearm,Fatal,Fatal,Female,Non-Hispanic,Black,27,20's,White,Non-Hispanic,06561
+23-JUN-17,2154,21,05 - Friday,06 - June,2,2017,2017-1094550,700 Mountain View,8,22nd St & Washington St,Vehicle,Fatal,Fatal,Male,Hispanic,White,34,30's,White,Non-Hispanic,08304
+25-JUN-17,1104,11,07 - Sunday,06 - June,2,2017,2017-1103407,200 Black Mountain,2,44XX E Rancho Caliente Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,47,40's,White,Non-Hispanic,05984
+20-JUL-17,0803,08,04 - Thursday,07 - July,3,2017,2017-1261620,200 Black Mountain,3,158XX N Hanna Maui Dr,Vehicle,No Injury,Non-fatal,Male,Hispanic,White,22,20's,White,Non-Hispanic,07237
+26-JUL-17,0110,01,03 - Wednesday,07 - July,3,2017,2017-1298810,900 Cactus Park,1,34XX W Deer Valley Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,07390
+26-JUL-17,0110,01,03 - Wednesday,07 - July,3,2017,2017-1298810,900 Cactus Park,1,34XX W Deer Valley Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,08028
+17-AUG-17,0509,05,04 - Thursday,08 - August,3,2017,2017-1438722,700 Mountain View,8,10XX N 25th Pl,Bladed Object,Fatal,Fatal,Male,Hispanic,White,28,20's,White,Non-Hispanic,09814
+08-SEP-17,1959,19,05 - Friday,09 - September,3,2017,2017-1581924,200 Black Mountain,3,174XX N 13th St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,17,10's,Asian,Non-Hispanic,08869
+20-SEP-17,1939,19,03 - Wednesday,09 - September,3,2017,2017-137937,Unknown,Unknown,43XX W Bethany Home Rd,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,07854
+20-SEP-17,1939,19,03 - Wednesday,09 - September,3,2017,2017-137937,Unknown,Unknown,43XX W Bethany Home Rd,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,08334
+20-SEP-17,1939,19,03 - Wednesday,09 - September,3,2017,2017-137937,Unknown,Unknown,43XX W Bethany Home Rd,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,08620
+20-SEP-17,1940,19,03 - Wednesday,09 - September,3,2017,2017-1656063,700 Mountain View,6,30XX N 44th St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,35,30's,Hispanic,Hispanic,09600
+20-SEP-17,1940,19,03 - Wednesday,09 - September,3,2017,2017-1656063,700 Mountain View,6,30XX N 44th St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,07013
+04-NOV-17,1638,16,06 - Saturday,11 - November,4,2017,2017-1945385,900 Cactus Park,1,27XX W Cactus Rd,Bladed Object,Fatal,Fatal,Male,Non-Hispanic,White,27,20's,White,Non-Hispanic,08787
+10-NOV-17,1354,13,05 - Friday,11 - November,4,2017,2017-1982153,700 Mountain View,7,3XX W Culver St,Bladed Object,Fatal,Fatal,Male,Non-Hispanic,Black,42,40's,White,Non-Hispanic,09553
+14-NOV-17,1127,11,02 - Tuesday,11 - November,4,2017,2017-2006629,800 Maryvale / Estrella Mountain,7,70XX W Indian School Rd,Firearm,Fatal,Fatal,Male,Hispanic,White,23,20's,White,Non-Hispanic,05463
+24-DEC-17,1602,16,07 - Sunday,12 - December,4,2017,2017-2255178,700 Mountain View,4,16XX E Yale St,Bladed Object,Fatal,Fatal,Male,Hispanic,White,25,20's,White,Non-Hispanic,10179
+25-DEC-17,2210,22,01 - Monday,12 - December,4,2017,2017-2263100,700 Mountain View,4,16XX E Highland Av #1164,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,Black,46,40's,White,Non-Hispanic,06082
+25-DEC-17,2210,22,01 - Monday,12 - December,4,2017,2017-2263100,700 Mountain View,4,16XX E Highland Av #1164,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,Black,46,40's,White,Non-Hispanic,08607
+10-JAN-18,1143,11,03 - Wednesday,01 - January,1,2018,2018-57014,400 South Mountain,8,32XX E Southern Av,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,31,30's,White,Non-Hispanic,05729
+17-JAN-18,1853,18,03 - Wednesday,01 - January,1,2018,2018-102479,700 Mountain View,8,32XX E Thomas Rd,Bladed Object,Fatal,Fatal,Male,Non-Hispanic,White,22,20's,Asian / Pacific Islander,Non-Hispanic,08215
+17-JAN-18,1853,18,03 - Wednesday,01 - January,1,2018,2018-102479,700 Mountain View,8,32XX E Thomas Rd,Bladed Object,Fatal,Fatal,Male,Non-Hispanic,White,22,20's,White,Non-Hispanic,09534
+01-FEB-18,1430,14,04 - Thursday,02 - February,1,2018,2018-193653,800 Maryvale / Estrella Mountain,7,88XX W Kingman St,Firearm,No Injury,Non-fatal,Male,Hispanic,White,14,10's,White,Non-Hispanic,06723
+16-FEB-18,2231,22,05 - Friday,02 - February,1,2018,2018-290275,800 Maryvale / Estrella Mountain,5,18XX N 89th Av,Firearm,Injured,Non-fatal,Male,Hispanic,White,39,30's,White,Non-Hispanic,07491
+21-FEB-18,1602,16,03 - Wednesday,02 - February,1,2018,2018-320441,800 Maryvale / Estrella Mountain,4,36XX W Lewis Av,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,39,30's,Asian / Pacific Islander,Non-Hispanic,07439
+22-FEB-18,1632,16,04 - Thursday,02 - February,1,2018,2018-325796,800 Maryvale / Estrella Mountain,7,46XX S 99th Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,27,20's,White,Hispanic,09592
+02-MAR-18,1030,10,05 - Friday,03 - March,1,2018,2018-2056,Unknown,Unknown,44XX W Purdue Av,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,44,40's,White,Non-Hispanic,06696
+07-MAR-18,1037,10,03 - Wednesday,03 - March,1,2018,2018-403803,400 South Mountain,7,XX S 33 Av,Firearm,No Injury,Non-fatal,Male,Hispanic,White,34,30's,Black,Non-Hispanic,08661
+09-MAR-18,1310,13,05 - Friday,03 - March,1,2018,2018-417842,800 Maryvale / Estrella Mountain,4,59XX W Mulberry Dr,Firearm,Fatal,Fatal,Male,Hispanic,White,26,20's,White,Hispanic,09159
+09-MAR-18,1310,13,05 - Friday,03 - March,1,2018,2018-417842,800 Maryvale / Estrella Mountain,4,59XX W Mulberry Dr,Firearm,Fatal,Fatal,Male,Hispanic,White,26,20's,White,Hispanic,09242
+23-MAR-18,1126,11,05 - Friday,03 - March,1,2018,2018-507433,800 Maryvale / Estrella Mountain,5,75XX W Glenrosa,Bladed Object,Fatal,Fatal,Male,Hispanic,White,22,20's,White,Non-Hispanic,05884
+27-MAR-18,0638,06,02 - Tuesday,03 - March,1,2018,2018-532381,400 South Mountain,4,29XX W Garfield ,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,05587
+27-MAR-18,0638,06,02 - Tuesday,03 - March,1,2018,2018-532381,400 South Mountain,4,29XX W Garfield ,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,07097
+27-MAR-18,0638,06,02 - Tuesday,03 - March,1,2018,2018-532381,400 South Mountain,4,29XX W Garfield ,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,09335
+28-MAR-18,0515,05,03 - Wednesday,03 - March,1,2018,2018-538725,700 Mountain View,4,23XX E Mulberry Dr,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,48,40's,White,Non-Hispanic,07944
+01-APR-18,0837,08,07 - Sunday,04 - April,2,2018,2018-566484,700 Mountain View,8,21XX N 32nd St,Firearm,Fatal,Fatal,Male,Non-Hispanic,American Indian / Alaskan,58,50's,Black,Non-Hispanic,09696
+04-APR-18,1911,19,03 - Wednesday,04 - April,2,2018,2018-589190,900 Cactus Park,1,192XX N 47th Av,Firearm,Fatal,Fatal,Female,Non-Hispanic,White,44,40's,White,Non-Hispanic,08590
+04-APR-18,1911,19,03 - Wednesday,04 - April,2,2018,2018-589190,900 Cactus Park,1,192XX N 47th Av,Firearm,Fatal,Fatal,Female,Non-Hispanic,White,44,40's,White,Non-Hispanic,09301
+04-APR-18,1911,19,03 - Wednesday,04 - April,2,2018,2018-589190,900 Cactus Park,1,192XX N 47th Av,Firearm,Fatal,Fatal,Female,Non-Hispanic,White,44,40's,White,Non-Hispanic,09448
+14-APR-18,0503,05,06 - Saturday,04 - April,2,2018,2018-652510,700 Mountain View,4,14XX W Thomas Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,39,30's,White,Hispanic,08687
+14-APR-18,0503,05,06 - Saturday,04 - April,2,2018,2018-652510,700 Mountain View,4,14XX W Thomas Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,39,30's,White,Hispanic,09164
+14-APR-18,0503,05,06 - Saturday,04 - April,2,2018,2018-652510,700 Mountain View,4,14XX W Thomas Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,39,30's,White,Non-Hispanic,09631
+14-APR-18,0503,05,06 - Saturday,04 - April,2,2018,2018-652510,700 Mountain View,4,14XX W Thomas Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,39,30's,White,Non-Hispanic,09856
+14-APR-18,0503,05,06 - Saturday,04 - April,2,2018,2018-652510,700 Mountain View,4,14XX W Thomas Rd,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,39,30's,White,Non-Hispanic,09863
+14-APR-18,1409,14,06 - Saturday,04 - April,2,2018,2018-654998,400 South Mountain,7,65XX S 3rd St,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,08936
+14-APR-18,1409,14,06 - Saturday,04 - April,2,2018,2018-654998,400 South Mountain,7,65XX S 3rd St,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,09240
+14-APR-18,1409,14,06 - Saturday,04 - April,2,2018,2018-654998,400 South Mountain,7,65XX S 3rd St,Firearm,Fatal,Fatal,Male,Hispanic,White,44,40's,White,Non-Hispanic,10054
+17-APR-18,1213,12,02 - Tuesday,04 - April,2,2018,2018-673179,700 Mountain View,6,25XX E Camelback Rd,Firearm,No Injury,Non-fatal,Male,Hispanic,White,26,20's,Black,Non-Hispanic,08661
+01-MAY-18,2016,20,02 - Tuesday,05 - May,2,2018,2018-767219,500 Central City,7,3XX N 21st Av,Firearm,Injured,Non-fatal,Male,Hispanic,White,42,40's,White,Hispanic,09621
+06-MAY-18,0100,01,07 - Sunday,05 - May,2,2018,2018-794448,900 Cactus Park,5,54XX N 40th Dr,Bladed Object,Injured,Non-fatal,Male,Non-Hispanic,White,49,40's,White,Non-Hispanic,09687
+09-MAY-18,0920,09,03 - Wednesday,05 - May,2,2018,2018-815148,500 Central City,8,18XX W Grant St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,52,50's,White,Non-Hispanic,06082
+09-MAY-18,0920,09,03 - Wednesday,05 - May,2,2018,2018-815148,500 Central City,8,18XX W Grant St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,52,50's,White,Non-Hispanic,06961
+09-MAY-18,0920,09,03 - Wednesday,05 - May,2,2018,2018-815148,500 Central City,8,18XX W Grant St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,52,50's,White,Non-Hispanic,07361
+09-MAY-18,0920,09,03 - Wednesday,05 - May,2,2018,2018-815148,500 Central City,8,18XX W Grant St,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,52,50's,White,Non-Hispanic,08288
+21-MAY-18,1720,17,01 - Monday,05 - May,2,2018,2018-896082,700 Mountain View,7,15XX N Central Av,Firearm,Injured,Non-fatal,Male,Non-Hispanic,American Indian / Alaskan,35,30's,White,Hispanic,08659
+24-MAY-18,0030,00,04 - Thursday,05 - May,2,2018,2018-911304,200 Black Mountain,2,5XX E Marco Polo Rd,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,42,40's,White,Non-Hispanic,07704
+29-MAY-18,1430,14,02 - Tuesday,05 - May,2,2018,2018-945608,900 Cactus Park,1,94XX N Metro Parkway West,Firearm,Fatal,Fatal,Male,Non-Hispanic,American Indian / Alaskan,34,30's,White,Non-Hispanic,06015
+29-MAY-18,1430,14,02 - Tuesday,05 - May,2,2018,2018-945608,900 Cactus Park,1,94XX N Metro Parkway West,Firearm,Fatal,Fatal,Male,Non-Hispanic,American Indian / Alaskan,34,30's,White,Non-Hispanic,09594
+10-JUN-18,1140,11,07 - Sunday,06 - June,2,2018,2018-1024936,600 Desert Horizon,7,23XX W Windrose Dr,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,26,20's,White,Non-Hispanic,05062
+10-JUN-18,1140,11,07 - Sunday,06 - June,2,2018,2018-1024936,600 Desert Horizon,7,23XX W Windrose Dr,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,26,20's,White,Non-Hispanic,05572
+10-JUN-18,1140,11,07 - Sunday,06 - June,2,2018,2018-1024936,600 Desert Horizon,7,23XX W Windrose Dr,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,26,20's,White,Non-Hispanic,06082
+12-JUN-18,0715,07,02 - Tuesday,06 - June,2,2018,2018-1032437,700 Mountain View,4,2XX W Osborn Rd,Blunt Object,Fatal,Fatal,Male,Non-Hispanic,White,34,30's,White,Non-Hispanic,06864
+14-JUN-18,0440,04,04 - Thursday,06 - June,2,2018,2018-1045007,400 South Mountain,8,22XX W Grove St,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,Black,30,30's,White,Non-Hispanic,06696
+16-JUN-18,0745,07,06 - Saturday,06 - June,2,2018,2018-1059020,900 Cactus Park,1,37XX W Ruth Av,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,48,40's,White,Non-Hispanic,08786
+29-JUN-18,1736,17,05 - Friday,06 - June,2,2018,2018-1143517,900 Cactus Park,5,40XX W Colter St,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,19,10's,White,Non-Hispanic,09002
+29-JUN-18,1736,17,05 - Friday,06 - June,2,2018,2018-1143517,900 Cactus Park,5,40XX W Colter St,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,19,10's,White,Non-Hispanic,10318
+29-JUN-18,1736,17,05 - Friday,06 - June,2,2018,2018-1143517,900 Cactus Park,5,40XX W Colter St,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,19,10's,White,Non-Hispanic,
+09-JUL-18,1350,13,01 - Monday,07 - July,3,2018,2018-1204764,200 Black Mountain,3,162XX N 7th St #1204,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,35,30's,White,Non-Hispanic,09942
+15-JUL-18,1826,18,07 - Sunday,07 - July,3,2018,2018-1245597,800 Maryvale / Estrella Mountain,4,27XX W Thomas Rd,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,28,20's,White,Non-Hispanic,09656
+23-JUL-18,2047,20,01 - Monday,07 - July,3,2018,2018-1296160,700 Mountain View,6,21XX E Orangewood Av,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,77,70's,White,Hispanic,09351
+23-JUL-18,2047,20,01 - Monday,07 - July,3,2018,2018-1296160,700 Mountain View,6,21XX E Orangewood Av,Firearm,No Injury,Non-fatal,Male,Non-Hispanic,White,77,70's,White,Non-Hispanic,09366
+05-AUG-18,1602,16,07 - Sunday,08 - August,3,2018,2018-1379141,700 Mountain View,4,21XX W Glenrosa Av,Firearm,Injured,Non-fatal,Male,Non-Hispanic,Black,35,30's,White,Non-Hispanic,09862
+07-AUG-18,1834,18,02 - Tuesday,08 - August,3,2018,2018-1392551,700 Mountain View,4,5XX W Holly St,Bladed Object,No Injury,Non-fatal,Female,Non-Hispanic,White,24,20's,White,Non-Hispanic,09647
+16-AUG-18,2000,20,04 - Thursday,08 - August,3,2018,2018-1451472,600 Desert Horizon,3,122XX N Cave Creek Rd,Firearm,Injured,Non-fatal,Male,Non-Hispanic,White,41,40's,White,Hispanic,10010
+18-AUG-18,1644,16,06 - Saturday,08 - August,3,2018,2018-1463618,400 South Mountain,7,54XX S 15th Av,Firearm,Fatal,Fatal,Male,Hispanic,White,27,20's,White,Non-Hispanic,09240
+26-AUG-18,2349,23,07 - Sunday,08 - August,3,2018,2018-1516514,400 South Mountain,4,10XX N 43rd Av,Firearm,Fatal,Fatal,Male,Hispanic,White,25,20's,White,Non-Hispanic,08278
+27-AUG-18,0155,01,01 - Monday,08 - August,3,2018,2018-1516948,900 Cactus Park,1,38XX W Anderson Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,20,20's,White,Hispanic,10260
+27-AUG-18,0155,01,01 - Monday,08 - August,3,2018,2018-1516948,900 Cactus Park,1,38XX W Anderson Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,White,20,20's,White,Non-Hispanic,10133
+22-SEP-18,0503,05,06 - Saturday,09 - September,3,2018,2018-1682847,800 Maryvale / Estrella Mountain,5,80XX W Campbell Av,Firearm,Injured,Non-fatal,Male,Hispanic,White,45,40's,White,Hispanic,10078
+22-SEP-18,0503,05,06 - Saturday,09 - September,3,2018,2018-1682847,800 Maryvale / Estrella Mountain,5,80XX W Campbell Av,Firearm,Injured,Non-fatal,Male,Hispanic,White,45,40's,White,Non-Hispanic,10076
+08-OCT-18,0812,08,01 - Monday,10 - October,4,2018,2018-1784937,800 Maryvale / Estrella Mountain,4,52XX W McDowell Rd,Vehicle,No Injury,Non-fatal,Male,Hispanic,White,32,30's,White,Hispanic,06745
+13-NOV-18,1539,15,02 - Tuesday,11 - November,4,2018,2018-2015739,Unknown,Unknown,63XX N 64th Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,24,20's,White,Non-Hispanic,07097
+13-NOV-18,1539,15,02 - Tuesday,11 - November,4,2018,2018-2015739,Unknown,Unknown,63XX N 64th Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,24,20's,White,Non-Hispanic,08038
+13-NOV-18,1539,15,02 - Tuesday,11 - November,4,2018,2018-2015739,Unknown,Unknown,63XX N 64th Dr,Firearm,Fatal,Fatal,Male,Non-Hispanic,Black,24,20's,White,Non-Hispanic,08566
+29-NOV-18,1552,15,04 - Thursday,11 - November,4,2018,2018-2111736,800 Maryvale / Estrella Mountain,4,33XX W Cambridge Av,Firearm,Fatal,Fatal,Male,Hispanic,White,46,40's,White,Non-Hispanic,07013
+17-DEC-18,2135,21,01 - Monday,12 - December,4,2018,2018-2223822,900 Cactus Park,4,36XX W Camelback Rd,Firearm,Fatal,Fatal,Male,Hispanic,White,34,30's,White,Non-Hispanic,07273
+19-DEC-18,2104,21,03 - Wednesday,12 - December,4,2018,2018-2236611,700 Mountain View,8,35XX E Monte Vista Rd,Blunt Object,Fatal,Fatal,Male,Hispanic,White,,,White,Hispanic,09507

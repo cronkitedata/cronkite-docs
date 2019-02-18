@@ -1,0 +1,210 @@
+  Gm#,Date,,Tm,,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance,Streak,Orig. Scheduled
+  1,Thursday Mar 29,boxscore,ARI,,COL,W,8,2,,1-0,1,Tied,Corbin,Gray,,3:36,N,48703,+,
+  2,Friday Mar 30,boxscore,ARI,,COL,W,9,8,,2-0,1,Tied,Ray,Senzatela,Boxberger,3:22,N,23937,++,
+  3,Saturday Mar 31,boxscore,ARI,,COL,L,1,2,,2-1,1,Tied,Shaw,Salas,Davis,2:54,N,33346,-,
+  4,Monday Apr 2,boxscore,ARI,,LAD,W-wo,8,7,15,3-1,1,up 1.0,Salas,Font,,5:46,N,21735,+,
+  5,Tuesday Apr 3,boxscore,ARI,,LAD,W,6,1,,4-1,1,up 2.0,Godley,Kershaw,,2:48,N,27574,++,
+  6,Wednesday Apr 4,boxscore,ARI,,LAD,W,3,0,,5-1,1,up 2.0,Corbin,Wood,Boxberger,2:25,D,25754,+++,
+  7,Thursday Apr 5,boxscore,ARI,@,STL,W,3,1,,6-1,1,up 2.0,Ray,Wainwright,Boxberger,3:32,N,46512,++++,
+  8,Saturday Apr 7,boxscore,ARI,@,STL,L,3,5,,6-2,1,up 1.5,Wacha,Greinke,Norris,2:58,D,41113,-,
+  9,Sunday Apr 8,boxscore,ARI,@,STL,W,4,1,,7-2,1,up 2.5,Hirano,Leone,Boxberger,2:53,D,40468,+,
+  10,Monday Apr 9,boxscore,ARI,@,SFG,W,2,1,,8-2,1,up 3.5,Godley,Holland,Bradley,2:33,N,36997,++,
+  11,Tuesday Apr 10,boxscore,ARI,@,SFG,L-wo,4,5,,8-3,1,up 2.5,Strickland,De La Rosa,,3:24,N,37869,-,
+  12,Wednesday Apr 11,boxscore,ARI,@,SFG,W,7,3,,9-3,1,up 3.5,Salas,Suarez,,3:09,D,35041,+,
+  13,Friday Apr 13,boxscore,ARI,@,LAD,W,8,7,,10-3,1,up 3.0,Greinke,Maeda,Boxberger,3:30,N,43791,++,
+  14,Saturday Apr 14,boxscore,ARI,@,LAD,W,9,1,,11-3,1,up 4.0,McFarland,Hill,,3:10,N,44306,+++,
+  15,Sunday Apr 15,boxscore,ARI,@,LAD,L,2,7,,11-4,1,up 3.0,Kershaw,Godley,,3:09,D,47527,-,
+  16,Tuesday Apr 17,boxscore,ARI,,SFG,W,1,0,,12-4,1,up 2.5,Corbin,Watson,,2:05,N,19669,+,
+  17,Wednesday Apr 18,boxscore,ARI,,SFG,L,3,4,10,12-5,1,up 2.5,Strickland,Boxberger,Gearrin,3:44,N,16976,-,
+  18,Thursday Apr 19,boxscore,ARI,,SFG,W,3,1,,13-5,1,up 3.0,Greinke,Blach,Boxberger,2:23,N,18736,+,
+  19,Friday Apr 20,boxscore,ARI,,SDP,L,1,4,,13-6,1,up 3.0,Hand,Boxberger,,2:54,N,24902,-,
+  20,Saturday Apr 21,boxscore,ARI,,SDP,W,6,2,,14-6,1,up 3.0,Godley,Richard,,2:55,N,38820,+,
+  21,Sunday Apr 22,boxscore,ARI,,SDP,W,4,2,,15-6,1,up 4.0,Corbin,Lucchesi,Bradley,2:42,D,31061,++,
+  22,Tuesday Apr 24,boxscore,ARI,@,PHI,W,8,4,,16-6,1,up 4.5,Salas,Velasquez,,3:49,N,18195,+++,
+  23,Wednesday Apr 25,boxscore,ARI,@,PHI,L,3,5,,16-7,1,up 3.5,Arrieta,Greinke,Neris,2:55,N,21349,-,
+  24,Thursday Apr 26,boxscore,ARI,@,PHI,W,8,2,,17-7,1,up 4.0,Koch,Lively,,3:12,D,20335,+,
+  25,Friday Apr 27,boxscore,ARI,@,WSN,W,5,4,,18-7,1,up 4.0,Godley,Strasburg,Boxberger,3:02,N,26517,++,
+  26,Saturday Apr 28,boxscore,ARI,@,WSN,W,4,3,10,19-7,1,up 5.0,Hirano,Solis,Boxberger,3:16,D,32963,+++,
+  27,Sunday Apr 29,boxscore,ARI,@,WSN,L,1,3,,19-8,1,up 5.0,Gonzalez,McFarland,Doolittle,2:49,D,30285,-,
+  28,Monday Apr 30,boxscore,ARI,,LAD,W,8,5,,20-8,1,up 5.5,Greinke,Stripling,Boxberger,3:27,N,17562,+,
+  29,Tuesday May 1,boxscore,ARI,,LAD,W,4,3,,21-8,1,up 6.0,Bracho,Liberatore,Boxberger,3:12,N,18940,++,
+  30,Wednesday May 2,boxscore,ARI,,LAD,L,1,2,,21-9,1,up 5.0,Hudson,Godley,Jansen,3:12,N,19531,-,
+  31,Thursday May 3,boxscore,ARI,,LAD,L,2,5,,21-10,1,up 4.5,Chargois,Salas,Jansen,3:17,D,21407,--,
+  32,Friday May 4,boxscore,ARI,,HOU,L,0,8,,21-11,1,up 3.5,Cole,Medlen,,2:50,N,29463,---,
+  33,Saturday May 5,boxscore,ARI,,HOU,W-wo,4,3,,22-11,1,up 3.5,Boxberger,Devenski,,3:34,N,39154,+,
+  34,Sunday May 6,boxscore,ARI,,HOU,W,3,1,,23-11,1,up 3.5,Koch,Verlander,Boxberger,2:55,D,35632,++,
+  35,Tuesday May 8,boxscore,ARI,@,LAD,W,8,5,12,24-11,1,up 3.5,McFarland,Garcia,,4:29,N,45894,+++,
+  36,Wednesday May 9,boxscore,ARI,@,LAD,L,3,6,,24-12,1,up 3.5,Baez,Salas,Jansen,3:48,N,45600,-,
+  37,Thursday May 10,boxscore,ARI,,WSN,L,1,2,11,24-13,1,up 3.5,Kintzler,Salas,Doolittle,3:42,N,17397,--,
+  38,Friday May 11,boxscore,ARI,,WSN,L,1,3,,24-14,1,up 3.5,Scherzer,Koch,Doolittle,2:24,N,22901,---,
+  39,Saturday May 12,boxscore,ARI,,WSN,L,1,2,,24-15,1,up 2.5,Strasburg,Scribner,Madson,3:17,D,29428,----,
+  40,Sunday May 13,boxscore,ARI,,WSN,L,4,6,,24-16,1,up 2.5,Madson,Bradley,Doolittle,3:09,N,31906,-----,
+  41,Monday May 14,boxscore,ARI,,MIL,L,2,7,,24-17,1,up 1.5,Guerra,Corbin,,3:06,N,17390,------,
+  42,Tuesday May 15,boxscore,ARI,,MIL,W,2,1,,25-17,1,up 2.5,Bradley,Williams,Boxberger,2:40,N,17914,+,
+  43,Wednesday May 16,boxscore,ARI,,MIL,L,2,8,,25-18,1,up 2.0,Woodruff,Koch,,3:04,D,16762,-,
+  44,Friday May 18,boxscore,ARI,@,NYM,L,1,3,,25-19,1,up 0.5,deGrom,Godley,Familia,2:36,N,31285,--,
+  45,Saturday May 19,boxscore,ARI,@,NYM,L-wo,4,5,,25-20,1,up 0.5,Familia,Chafin,,3:04,N,39515,---,
+  46,Sunday May 20,boxscore,ARI,@,NYM,L,1,4,,25-21,1,up 0.5,Syndergaard,De La Rosa,Gsellman,2:41,D,34894,----,
+  47,Monday May 21,boxscore,ARI,@,MIL,L,2,4,,25-22,2,0.5,Anderson,Greinke,Knebel,2:31,N,27094,-----,
+  48,Tuesday May 22,boxscore,ARI,@,MIL,L,0,1,,25-23,2,0.5,Albers,Koch,Knebel,2:40,N,27065,------,
+  49,Wednesday May 23,boxscore,ARI,@,MIL,L,2,9,,25-24,2,0.5,Suter,Godley,,3:04,D,29237,-------,
+  50,Friday May 25,boxscore,ARI,@,OAK,W,7,1,,26-24,2,0.5,Corbin,Manaea,,3:02,N,22691,+,
+  51,Saturday May 26,boxscore,ARI,@,OAK,L,0,3,,26-25,2,0.5,Mengden,Buchholz,,2:15,D,17580,-,
+  52,Sunday May 27,boxscore,ARI,@,OAK,L,1,2,,26-26,2,1.5,Montas,Greinke,Treinen,2:38,D,13947,--,
+  53,Monday May 28,boxscore,ARI,,CIN,W,12,5,,27-26,2,1.5,Koch,Bailey,,3:19,D,29924,+,
+  54,Tuesday May 29,boxscore,ARI,,CIN,W,5,2,,28-26,2,1.5,Godley,Castillo,Boxberger,2:40,N,20046,++,
+  55,Wednesday May 30,boxscore,ARI,,CIN,L,4,7,,28-27,2,1.5,Romano,Corbin,Iglesias,3:06,D,18340,-,
+  56,Friday Jun 1,boxscore,ARI,,MIA,W,9,1,,29-27,2,0.5,Buchholz,Hernandez,,2:40,N,25866,+,
+  57,Saturday Jun 2,boxscore,ARI,,MIA,W,6,2,,30-27,1,up 0.5,Greinke,Smith,,3:01,N,34117,++,
+  58,Sunday Jun 3,boxscore,ARI,,MIA,W,6,1,,31-27,1,up 1.5,Koch,Straily,,2:47,D,31727,+++,
+  59,Monday Jun 4,boxscore,ARI,@,SFG,L,3,10,,31-28,1,up 1.0,Johnson,Godley,,3:11,N,36542,-,
+  60,Tuesday Jun 5,boxscore,ARI,@,SFG,W,3,2,,32-28,1,up 1.0,Corbin,Bumgarner,Boxberger,3:05,N,36925,+,
+  61,Wednesday Jun 6,boxscore,ARI,@,SFG,L-wo,4,5,10,32-29,1,Tied,Strickland,Chafin,,3:38,D,41042,-,
+  62,Friday Jun 8,boxscore,ARI,@,COL,W,9,4,,33-29,1,up 1.5,Greinke,Marquez,,2:51,N,38917,+,
+  63,Saturday Jun 9,boxscore,ARI,@,COL,W,12,7,,34-29,1,up 2.5,Bracho,Shaw,,3:34,N,43197,++,
+  64,Sunday Jun 10,boxscore,ARI,@,COL,W,8,3,,35-29,1,up 2.5,Godley,Freeland,,3:23,D,36433,+++,
+  65,Monday Jun 11,boxscore,ARI,,PIT,W,9,5,,36-29,1,up 3.0,Bradley,Crick,,3:07,N,20927,++++,
+  66,Tuesday Jun 12,boxscore,ARI,,PIT,W,13,8,,37-29,1,up 3.0,Salas,Williams,,3:56,N,22488,+++++,
+  67,Wednesday Jun 13,boxscore,ARI,,PIT,L,4,5,,37-30,1,up 2.0,Taillon,Greinke,Vazquez,3:07,D,32803,-,
+  68,Thursday Jun 14,boxscore,ARI,,NYM,W,6,3,,38-30,1,up 2.5,Koch,Vargas,Boxberger,2:38,N,23300,+,
+  69,Friday Jun 15,boxscore,ARI,,NYM,W,7,3,,39-30,1,up 2.5,Godley,Lugo,Boxberger,3:20,N,32170,++,
+  70,Saturday Jun 16,boxscore,ARI,,NYM,L,1,5,,39-31,1,up 1.5,Matz,Corbin,,2:56,N,31824,-,
+  71,Sunday Jun 17,boxscore,ARI,,NYM,L,3,5,,39-32,1,up 1.5,Familia,Boxberger,Gsellman,3:27,D,47907,--,
+  72,Monday Jun 18,boxscore,ARI,@,LAA,W,7,4,,40-32,1,up 2.0,Greinke,Barria,Bradley,3:21,N,33809,+,
+  73,Tuesday Jun 19,boxscore,ARI,@,LAA,L,4,5,,40-33,1,up 1.5,Alvarez,Koch,Parker,3:11,N,33088,-,
+  74,Thursday Jun 21,boxscore,ARI,@,PIT,W,9,3,,41-33,1,up 2.5,Godley,Kuhl,,3:11,N,20554,+,
+  75,Friday Jun 22,boxscore,ARI,@,PIT,W,2,1,13,42-33,1,up 2.5,Chafin,Glasnow,McFarland,3:51,N,24843,++,
+  76,Saturday Jun 23,boxscore,ARI,@,PIT,W,7,2,,43-33,1,up 2.5,Greinke,Musgrove,,2:52,D,21121,+++,
+  77,Sunday Jun 24,boxscore,ARI,@,PIT,W,3,0,,44-33,1,up 2.5,Buchholz,Williams,Boxberger,2:32,D,19207,++++,
+  78,Monday Jun 25,boxscore,ARI,@,MIA,L,5,9,,44-34,1,up 1.5,Straily,Miller,,3:14,N,6105,-,
+  79,Tuesday Jun 26,boxscore,ARI,@,MIA,W,5,3,,45-34,1,up 2.5,Godley,Hernandez,Boxberger,3:24,N,6159,+,
+  80,Wednesday Jun 27,boxscore,ARI,@,MIA,W,2,1,,46-34,1,up 2.5,Ray,Chen,Boxberger,2:52,N,6382,++,
+  81,Thursday Jun 28,boxscore,ARI,@,MIA,W,4,0,,47-34,1,up 3.5,Greinke,Richards,,3:06,D,12715,+++,
+  82,Friday Jun 29,boxscore,ARI,,SFG,L,1,2,,47-35,1,up 3.5,Suarez,Chafin,Smith,2:49,N,30981,-,
+  83,Saturday Jun 30,boxscore,ARI,,SFG,L,0,7,,47-36,1,up 3.5,Rodriguez,Miller,,2:51,N,38117,--,
+  84,Sunday Jul 1,boxscore,ARI,,SFG,L,6,9,,47-37,1,up 2.5,Gearrin,Godley,Smith,3:45,D,29721,---,
+  85,Monday Jul 2,boxscore,ARI,,STL,L,3,6,,47-38,1,up 1.5,Martinez,Ray,Norris,2:52,N,20334,----,
+  86,Tuesday Jul 3,boxscore,ARI,,STL,W,4,2,,48-38,1,up 1.5,Greinke,Flaherty,Boxberger,2:51,N,25843,+,
+  87,Wednesday Jul 4,boxscore,ARI,,STL,L,4,8,,48-39,1,up 0.5,Mikolas,Hirano,,3:47,N,44072,-,
+  88,Thursday Jul 5,boxscore,ARI,,SDP,L,3,6,,48-40,1,Tied,Lauer,Miller,Hand,3:15,N,17982,--,
+  89,Friday Jul 6,boxscore,ARI,,SDP,W,3,1,,49-40,1,up 1.0,Godley,Lucchesi,Boxberger,2:52,N,25128,+,
+  90,Saturday Jul 7,boxscore,ARI,,SDP,W,20,5,,50-40,1,up 1.0,Delgado,Ross,,3:23,N,27091,++,
+  91,Sunday Jul 8,boxscore,ARI,,SDP,L,3,4,16,50-41,1,up 1.0,Hand,Mathis,,5:31,D,24869,-,
+  92,Tuesday Jul 10,boxscore,ARI,@,COL,W,5,3,,51-41,1,up 1.5,Delgado,McGee,Boxberger,3:40,N,43405,+,
+  93,Wednesday Jul 11,boxscore,ARI,@,COL,L,2,19,,51-42,1,up 0.5,Marquez,Miller,,3:05,N,33919,-,
+  94,Thursday Jul 12,boxscore,ARI,@,COL,L,1,5,,51-43,2,0.5,Oberg,Ray,,3:17,D,41410,--,
+  95,Friday Jul 13,boxscore,ARI,@,ATL,W,2,1,,52-43,2,0.5,Godley,Freeman,Boxberger,3:05,N,42130,+,
+  96,Saturday Jul 14,boxscore,ARI,@,ATL,W,3,0,,53-43,1,up 0.5,Greinke,Newcomb,Boxberger,2:53,D,40862,++,
+  97,Sunday Jul 15,boxscore,ARI,@,ATL,L,1,5,,53-44,2,0.5,Teheran,Corbin,,2:42,D,27323,-,
+  98,Friday Jul 20,boxscore,ARI,,COL,L,10,11,,53-45,2,1.5,Oberg,Bradley,Ottavino,4:02,N,29546,--,
+  99,Saturday Jul 21,boxscore,ARI,,COL,L,5,6,,53-46,3,1.5,Oberg,Hirano,Davis,3:21,N,43340,---,
+  100,Sunday Jul 22,boxscore,ARI,,COL,W,6,1,,54-46,2,1.5,Greinke,Senzatela,,2:45,D,32985,+,
+  101,Monday Jul 23,boxscore,ARI,@,CHC,W,7,1,,55-46,2,1.5,Corbin,Farrell,,2:55,N,40859,++,
+  102,Tuesday Jul 24,boxscore,ARI,@,CHC,W,5,1,,56-46,2,0.5,Buchholz,Hendricks,,3:13,N,40869,+++,
+  103,Wednesday Jul 25,boxscore,ARI,@,CHC,L,1,2,,56-47,2,0.5,Edwards,McFarland,Strop,2:39,D,35548,-,
+  104,Thursday Jul 26,boxscore,ARI,@,CHC,L-wo,6,7,,56-48,2,1.5,Butler,Boxberger,,3:22,D,38979,--,
+  105,Friday Jul 27,boxscore,ARI,@,SDP,W,6,2,,57-48,2,1.5,Greinke,Perdomo,,2:37,N,34725,+,
+  106,Saturday Jul 28,boxscore,ARI,@,SDP,W,9,4,,58-48,2,1.5,Bradley,Maton,,3:15,N,37149,++,
+  107,Sunday Jul 29,boxscore,ARI,@,SDP,W,5,4,,59-48,2,0.5,Buchholz,Lucchesi,Boxberger,3:18,D,32529,+++,
+  108,Monday Jul 30,boxscore,ARI,,TEX,L,5,9,,59-49,2,0.5,Butler,Andriese,,3:33,N,20639,-,
+  109,Tuesday Jul 31,boxscore,ARI,,TEX,W,6,0,,60-49,1,up 0.5,Godley,Colon,,2:45,N,21877,+,
+  110,Thursday Aug 2,boxscore,ARI,,SFG,L,1,8,,60-50,2,1.0,Bumgarner,Greinke,,3:26,N,22980,-,
+  111,Friday Aug 3,boxscore,ARI,,SFG,W,6,3,,61-50,1,Tied,Corbin,Stratton,Boxberger,2:59,N,27581,+,
+  112,Saturday Aug 4,boxscore,ARI,,SFG,W,9,3,,62-50,1,up 1.0,Buchholz,Suarez,,2:59,N,38093,++,
+  113,Sunday Aug 5,boxscore,ARI,,SFG,L,2,3,,62-51,1,Tied,Black,Bradley,Smith,3:15,D,27884,-,
+  114,Monday Aug 6,boxscore,ARI,,PHI,W-wo,3,2,14,63-51,1,up 0.5,Hirano,Davis,,4:38,N,21131,+,
+  115,Tuesday Aug 7,boxscore,ARI,,PHI,L,2,5,,63-52,2,0.5,Pivetta,Greinke,Neshek,3:08,N,22382,-,
+  116,Wednesday Aug 8,boxscore,ARI,,PHI,W,6,0,,64-52,1,up 0.5,Corbin,Velasquez,,2:58,D,23384,+,
+  117,Friday Aug 10,boxscore,ARI,@,CIN,L,0,3,,64-53,1,Tied,DeSclafani,Buchholz,Iglesias,2:30,N,19089,-,
+  118,Saturday Aug 11,boxscore,ARI,@,CIN,L,3,6,,64-54,1,Tied,Garrett,Bradley,Iglesias,3:04,N,29348,--,
+  119,Sunday Aug 12,boxscore,ARI,@,CIN,W,9,2,,65-54,1,up 1.0,Godley,Castillo,,2:53,D,17909,+,
+  120,Monday Aug 13,boxscore,ARI,@,TEX,L,3,5,,65-55,1,up 1.0,Colon,Greinke,Leclerc,2:51,N,18204,-,
+  121,Tuesday Aug 14,boxscore,ARI,@,TEX,W,6,4,,66-55,1,up 1.0,Corbin,Gallardo,Boxberger,3:08,N,19353,+,
+  122,Thursday Aug 16,boxscore,ARI,@,SDP,W,5,1,,67-55,1,up 1.5,Buchholz,Nix,,3:00,N,20617,++,
+  123,Friday Aug 17,boxscore,ARI,@,SDP,W,9,4,,68-55,1,up 1.5,Hirano,Lucchesi,,3:46,N,20010,+++,
+  124,Saturday Aug 18,boxscore,ARI,@,SDP,L-wo,6,7,,68-56,1,up 0.5,Stammen,Chafin,,2:54,N,24440,-,
+  125,Sunday Aug 19,boxscore,ARI,@,SDP,W,4,3,,69-56,1,up 0.5,Bradley,Yates,Boxberger,3:09,D,22346,+,
+  126,Tuesday Aug 21,boxscore,ARI,,LAA,W-wo,5,4,,70-56,1,up 1.5,Boxberger,Bedrosian,,2:54,N,30420,++,
+  127,Wednesday Aug 22,boxscore,ARI,,LAA,W,5,1,,71-56,1,up 1.5,Buchholz,Despaigne,,3:05,N,23584,+++,
+  128,Friday Aug 24,boxscore,ARI,,SEA,L,3,6,,71-57,1,up 1.0,Ramirez,Godley,Diaz,2:47,N,43867,-,
+  129,Saturday Aug 25,boxscore,ARI,,SEA,L,3,4,10,71-58,1,Tied,Colome,Diekman,Diaz,4:11,N,34968,--,
+  130,Sunday Aug 26,boxscore,ARI,,SEA,W,5,2,,72-58,1,up 1.0,Greinke,Leake,Boxberger,2:48,D,37175,+,
+  131,Monday Aug 27,boxscore,ARI,@,SFG,L,0,2,,72-59,1,up 1.0,Stratton,Corbin,Strickland,2:32,N,38808,-,
+  132,Tuesday Aug 28,boxscore,ARI,@,SFG,L-wo,0,1,,72-60,1,Tied,Smith,Ziegler,,3:03,N,37276,--,
+  133,Wednesday Aug 29,boxscore,ARI,@,SFG,W,3,1,,73-60,1,up 0.5,Godley,Rodriguez,Boxberger,2:45,N,35626,+,
+  134,Thursday Aug 30,boxscore,ARI,@,LAD,W,3,1,,74-60,1,up 1.5,Ray,Hill,Boxberger,3:14,N,45150,++,
+  135,Friday Aug 31,boxscore,ARI,@,LAD,L,2,3,,74-61,1,up 1.0,Floro,Greinke,Jansen,2:33,N,48965,-,
+  136,Saturday Sep 1,boxscore,ARI,@,LAD,L,2,3,,74-62,1,Tied,Maeda,Bradley,Jansen,2:59,N,52394,--,
+  137,Sunday Sep 2,boxscore,ARI,@,LAD,L-wo,2,3,,74-63,3,1.0,Jansen,Boxberger,,3:35,D,48517,---,
+  138,Monday Sep 3,boxscore,ARI,,SDP,L,2,6,,74-64,3,1.5,Mitchell,Godley,,3:19,N,22514,----,
+  139,Tuesday Sep 4,boxscore,ARI,,SDP,W,6,0,,75-64,3,1.5,Ray,Lucchesi,,2:47,N,18556,+,
+  140,Thursday Sep 6,boxscore,ARI,,ATL,L,6,7,10,75-65,3,2.5,Biddle,Boxberger,Brach,4:11,N,21903,-,
+  141,Friday Sep 7,boxscore,ARI,,ATL,W,5,3,,76-65,3,1.5,Corbin,Gausman,Boxberger,3:48,N,31308,+,
+  142,Saturday Sep 8,boxscore,ARI,,ATL,L,4,5,10,76-66,3,2.5,Sobotka,Chafin,Minter,4:07,N,40482,-,
+  143,Sunday Sep 9,boxscore,ARI,,ATL,L,5,9,,76-67,3,2.5,Freeman,Boxberger,,3:45,D,28339,--,
+  144,Monday Sep 10,boxscore,ARI,@,COL,L,2,13,,76-68,3,3.5,Marquez,Godley,,3:09,N,25114,---,
+  145,Tuesday Sep 11,boxscore,ARI,@,COL,W,6,3,,77-68,3,2.5,Greinke,Senzatela,Hirano,3:14,N,26510,+,
+  146,Wednesday Sep 12,boxscore,ARI,@,COL,L-wo,4,5,,77-69,3,3.5,Davis,Hirano,,3:07,N,31687,-,
+  147,Thursday Sep 13,boxscore,ARI,@,COL,L,3,10,,77-70,3,4.5,Freeland,Koch,,3:04,D,31783,--,
+  148,Friday Sep 14,boxscore,ARI,@,HOU,W,4,2,,78-70,3,3.5,Ziegler,Rondon,Hirano,3:36,N,36924,+,
+  149,Saturday Sep 15,boxscore,ARI,@,HOU,L,4,10,,78-71,3,4.0,Morton,Godley,,3:17,N,38345,-,
+  150,Sunday Sep 16,boxscore,ARI,@,HOU,L,4,5,,78-72,3,4.5,Verlander,Greinke,Osuna,3:09,D,37889,--,
+  151,Monday Sep 17,boxscore,ARI,,CHC,L,1,5,,78-73,3,5.0,Hendricks,Corbin,,2:46,N,27662,---,
+  152,Tuesday Sep 18,boxscore,ARI,,CHC,L,1,9,,78-74,3,6.0,Montgomery,Andriese,,3:10,N,26095,----,
+  153,Wednesday Sep 19,boxscore,ARI,,CHC,W,9,0,,79-74,3,6.0,Ray,Hamels,,2:20,N,25715,+,
+  154,Friday Sep 21,boxscore,ARI,,COL,L,2,6,,79-75,3,6.0,Marquez,Greinke,,2:54,N,28833,-,
+  155,Saturday Sep 22,boxscore,ARI,,COL,L,1,5,,79-76,3,7.0,Senzatela,Corbin,,3:02,N,35094,--,
+  156,Sunday Sep 23,boxscore,ARI,,COL,L,0,2,,79-77,3,8.0,Freeland,Godley,Davis,3:15,D,29191,---,
+  157,Monday Sep 24,boxscore,ARI,,LAD,L,4,7,,79-78,3,9.0,Kershaw,Chafin,,3:33,N,26067,----,
+  158,Tuesday Sep 25,boxscore,ARI,,LAD,W-wo,4,3,,80-78,3,8.0,Boxberger,Maeda,,3:23,N,25774,+,
+  159,Wednesday Sep 26,boxscore,ARI,,LAD,W,7,2,,81-78,3,7.5,Greinke,Stripling,,3:14,N,31149,++,
+  160,Friday Sep 28,boxscore,ARI,@,SDP,L-wo,2,3,15,81-79,3,9.0,Brewer,Andriese,,5:02,N,28055,-,
+  161,Saturday Sep 29,boxscore,ARI,@,SDP,W,5,4,,82-79,3,8.0,Godley,Nix,Hirano,2:49,N,28024,+,
+  162,Sunday Sep 30,boxscore,ARI,@,SDP,L-wo,3,4,10,82-80,3,9.0,Castillo,Barrett,,3:29,D,31243,-,
+
+
+
+Source: https://www.baseball-reference.com/teams/ARI/2018-schedule-scores.shtml
+
+Glossary:
+Gm# -- Game Number
+Which game out of all played by this team.
+
+Date -- A number in parentheses indicates which game of a doubleheader.
+Click dates for box scores of games or standings on this day.
+
+  -- Home or Away Game
+@ means it is an away game, blank means home.
+
+W/L -- Win/Loss/Tie
+-wo indicates it was a walkoff win or loss. May miss some of those pre-1973, and none before 1940.
+
+R -- Runs Scored/Allowed
+
+RA -- Runs Allowed
+
+Inn -- Innings
+Only shown if something other than 9 innings were played.
+
+W-L -- Win Loss Record
+Team’s overall record after this game.
+
+GB -- Games Back of Division/League Leader
+Computed as games over .500 of leader (W-L) minus games over .500 of team divided by two.
+Typically computed at the end of play for a particular day.
+Blank for 1st game of DH.
+
+Time -- Time of Game
+
+D/N -- Day or Night Game
+Determined by the start time of the game as stated by RetroSheet.
+We rely on their designation here.
+
+Attendance -- Attendance
+Typically, tickets sold in home games.
+
+Streak -- Win Loss Streak
++ means a winning streak, - means a losing streak.
+
+Orig. Scheduled -- Originally Scheduled Game Date
+If this is a makeup game, the original game date. The reason for the reschedule is in parentheses.

@@ -1,0 +1,269 @@
+---
+title: "Reading and manipulating data frames"
+output: 
+  rmarkdown::html_document:
+    theme: lumen
+    highlight: tango
+    df_print: paged
+  html_notebook: default
+---
+
+## Packages needed in this notebook
+
+1. tidyverse
+2. lubridate (a package to convert text to dates and back)
+
+
+```{r}
+library(tidyverse)
+
+```
+
+
+## Introducing the data frame
+
+You've seen values and vectors, but you haven't seen a data frame yet. A data frame is an *object* in R, that is treated just like any other variable. However, it contains columns and rows, just like a spreadsheet. 
+
+Let's start by importing a dataset that you've already seen: Opioid emergency calls from Tempe, Arizona. 
+
+
+
+### Importing from a csv
+
+This is the URL for the opioid emergency data we used in class a while back. To read it, we're using a package called *readr*, and the read_csv() command. This avoids some of the problems with recognizing data types that other importers have in R. 
+
+Try running this chunk, then looking up to the Environment area of your console. You should see an object called opiod_calls_orig, which you can click on to look inside.
+
+```{r}
+
+#the location on the Web for the data set's csv download
+
+my_link <- "https://data.tempe.gov/dataset/5673ca24-e099-4bdc-a4dd-2bbcec759899/resource/43d02a7a-91e7-4b86-9ae1-1e143369f8b6/download/opioidemscalls.csv"
+
+#use it in a read_csv command
+
+opioid_calls_orig <- read_csv(
+         url(my_link)
+         )
+```
+
+The stuff in red above this are details about how it read the files -- what types of data did it think it was working with? This says, it treated everything as a character, or text, field except the ones listed. (Double and Integer are two different types of numbers)
+
+
+Look in your Environment tab. You'll now see something in the area called Data, with an arrow next to it, telling you that opioid_calls_orig contains 650 observations (rows) and 21 variables (columns). Click on it to explore the data. 
+
+
+## Copying and renaming to a new data frame
+
+Let's clean this up a little to get some names that are easier to remember and don't have odd characters. We can also choose not to include some in a new "data frame".
+
+The basic idea is to do the following:
+
+1. Create a *new* data frame, with a new name by using the assignment operator, which is 
+
+          <- (think of it as "goes into")
+
+2. Start with the name of an old data frame or source that you want to work from, followed by 
+
+        %>%   (think of this as "and then do the next thing")
+      
+3. **Select** the columns you want, and rename them at the same time. You may have to put some of the old names in quotation marks if they have special characters or spaces in them. 
+
+<p style="background-color:#e6f0ff;padding:10px;"> R is **case-sensitive**, meaning that *age* is not the same thing as *Age*. Use an = sign to connect the new name (on the left) to the old name (on the right). Leave out the new name and the = sign if you want to use the old name. </p>
+
+You might note that I try to space out my commands and add whitespace where possible. The indentation is used to remind me what parts of the commands are connected to one another. 
+      
+```{r}
+
+opioid_calls <- 
+  
+     opioid_calls_orig  %>%  
+  
+     select( id = "OBJECTID",
+             incident_date = "IncidentDate",
+             dow = "Day_of_Week_Sort",
+             impression = "Primary_Impression",
+             narcan = "Narcan/Naloxone Given", 
+             age = Age,
+             gender = Patient_Gender,
+             asu_yn = Is_ASU_student,
+             vet_yn = Is_Veteran,
+             homeless_yn = Is_Homeles,
+             special_population = Spec_Pop  
+     )  
+  
+
+
+```
+
+
+
+We now have two data frames in our Environment -- the original and the new one.
+
+
+## Displaying portions of the data frame
+
+Let's take a look at just a few of the lines using R commands. To do that, you'll tell R which rows and columns you want. Here's an example that takes the fields shown in the list, but only the 5th through 10th lines. (You always need to use a c() command -- short for "combine" -- when you need R to work on a list of items.)
+
+The way  you look at parts of a data frame is to identify the list of rows, then the list of columns within square brackets:
+
+      name_of_df [  rows , columns]
+
+
+```{r}
+
+opioid_calls [
+              5:10,                                    #rows 5 through 10
+              c("id","narcan", "incident_date")        #the list of field names 
+        ]
+
+```
+
+
+## Try filtering
+
+Filtering is done in a much more sophisticated way in R. 
+
+To filter, you can nest and combine conditions. There are three easy ways to find them: 
+
+        ==   equals 
+        >    Is more than
+        <    Is less than 
+        %in%   Is in a list of values
+        
+        |    "Or" -- think of it as "this or that"
+        &    "And"  -- both things must be true
+        
+        
+**"==" isn't "=" ! You always need two equals signs for comparison. A single = sign is used to assign something to another value.**
+
+If you don't assign the result to another variable, or to itself, it will just print out on the screen:
+
+```{r}
+
+opioid_calls %>%
+  filter ( 
+    narcan == "Yes"
+    
+  ) %>%
+  
+  head(50) #just show the first 50 rows to keep your browser from choking
+
+
+```
+
+Let's try a more complex one. This says, find me the rows that have narcan == "Yes" and also have asu_yn == "Yes".  In other words, cases in which ASU students were treated with Narcan.
+
+```{r}
+opioid_calls %>%
+  filter ( 
+    narcan == "Yes"  &  asu_yn == "Yes"
+  )  %>%
+  head()  #again, to avoid choking the browser. 
+
+```
+
+## Stringing together commands
+
+We can keep adding commands that work on the results of the previous one. In this example, we'll filter for young men, then group them by the day of the week, then count up the number in each day, then sort those results in descending order. 
+
+
+### Group by and counting
+
+In R, grouping and counting are done in different steps. (There's a reason for this - it allows you to create subtotals, but that's too confusing for now).  Think if group_by and summarise (British spelling) as a pivot table row element and the COUNT in the data section. In this case, we're grouping by *dow* (day of week), then counting the number of cases , using n(). 
+
+At the same time, we want to sort the output by the highest number of cases to the lowest, which is done using the *arrange* command.
+
+```{r}
+
+opioid_calls %>%
+  #don't forget to put the %>% at the end when you want to keep going. You'll get a weird error without it.
+  filter (  gender == "Male" & 
+            age %in% c("20 to 24", "15 to 19", "25 to 29")
+          ) %>%
+  #now group
+  group_by (dow) %>%
+  #now count
+  summarise (case_ct = n() ) %>%
+  #now re-sort
+  arrange(desc(case_ct)) 
+  
+
+
+```
+
+## Traps
+
+### Case-sensitivity
+
+R is always case-sensitive, which means that it makes a difference whether an object, a column name or the value of a variable (like Male) is upper-case, lower-case or some proper case. For example:
+
+```{r}
+filter (opioid_calls, narcan == "yes")
+
+```
+
+instead of 
+
+```{r}
+filter (opioid_calls, narcan == "Yes") %>%
+  summarize(n())  #just show me how many match
+
+``` 
+
+One way to deal with this is to turn everything into lower case for the time you do your analysis. If you're planning on working with something that isn't consistent in casing, that's the easiest thing to do in the long run. Another way is to use transformations to make sure: 
+
+
+```{r}
+filter(opioid_calls, str_to_lower(narcan) == "yes") %>%
+  head()
+```
+
+
+Another way is to use what's called "regular expressions" to extract the pieces you want. We'll get into that later.
+
+### Equals versus double-equals
+
+You'll get this weird error if you try to use an equals sign as a comparison operator: 
+
+```{r error=TRUE}
+filter(opioid_calls, narcan = "Yes")
+
+```
+Note that R is guessing that you meant "==" instead. It won't always be so kind.
+
+
+### Forgetting the "and then" operator (%>%)
+
+You also get a weird error if you forget to string together commands without the %>%. 
+In this example, it prints the first list with the filter, then doesn't know what to do with the group_by(dow) part, and says that it can't find an object called "dow". 
+This is very common and hard to remember.
+
+A code chunk that looks like this: 
+
+      filter (opioid_calls, narcan == "Yes")
+          group_by (dow)
+
+Will result in this:
+
+```{r error=TRUE , collapse=TRUE}
+
+filter (opioid_calls, narcan == "Yes")
+   group_by (dow)
+
+
+```
+
+This is really common and a pain. R thought you had TWO things you wanted to do -- one is just the filter, the other  is an error. The fix is to put the %>% after the filter.
+
+
+```{r}
+
+filter (opioid_calls, narcan == "Yes") %>%
+   group_by (dow) %>%
+   summarize ( n())
+
+
+```
+
+

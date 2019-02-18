@@ -3,12 +3,10 @@ title: "Introduction to R Notebooks"
 author: "Sarah Cohen"
 date: "`r Sys.Date()`"
 output:
-  rmarkdown::html_document:
-    df_print: paged
-    highlight: tango
-    theme: lumen
   html_notebook: default
-  html_document:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
     df_print: paged
 ---
 
@@ -95,65 +93,52 @@ I'm never sure why but sometimes these commands lead to notes about how the pack
 
 ## Introducing R
 
-#### Some arithmetic
-
-Let's try something simple: Type this
-      2+2. 
-
-into the code chunk below, then then run the code chunk by pressing CMD-SHFT-Enter or by hitting the little green arrow: 
+Let's try something simple: Adding 2+2. Insert a code chunk, and just type the formula: 
 
 ```{r}
 
-#type the formula here:
+2+2
 
 ```
 
 You should see [1] 4 above this line. The [1] refers to which piece of the output it is showing. The 4 is your answer. 
 
-#### Creating a named variable
+(There's a complicated reason for the [1].  R thinks that everything is a list, or vector. Sometimes it's just got one element, but it shows you which one anyway.
 
-Let's try creating something more complicated -- a variable, which is then used in another formula. Create the following variables: 
-
-A variable is created using the <- operator. Think of it as "goes into". So
-
-    addition <- 2 + 2
-
-means "two plus two *goes into* the variable called "addition"
-
-YOUR TURN: 
-
-In the code chunk below, create some additional variables:
-
-1. "multiplication" should equal 5 times 5
-2. "division" should equal 100 divided by 2
-3. "words" should equal the phrase "some words"
-
-Then run the code chunk. Look to the upper right of your screen to find the Environment tab, and you should see your new variables. 
+Let's try creating something more complicated -- a variable, which is then used in another formula.
 
 ```{r}
 
 addition <- 2 + 2
+multiplication <- 2 * 2
+division <- 10 / 2
+words <- "some words"
 
+print (addition)
+print (multiplication)
+print (division)
+print (words)
 
 ```
 
-
-When you create a variable, R doesn't automatically show the value. Instead, look to the right. If "Environment" tab isn't shown, select it. You should see that you have some "Global Environment" variables with the names you just created, with the answer to the formula.
+Look to the right. If "Environment" tab isn't shown, select it. You should see that you have some "Global Environment" variables with the names you just created. 
 
 Be careful not to create variable names that are the same as R keywords. For now, it's easiest to remember by avoiding a name that pops up as you're typing. 
+## Your turn
 
+Assignment: 
 
-#### Use variables in new variables
+Create an R Notebook that contains the following: 
 
-
-This code chunk creates one variable called "difference", which is then used to create a new variable called "pct_difference".  
+* A heading that says, "My First R Notebook"
+* A sentence that describes yourself.
+* A code chunk that calculates the percent change of a value that went from 100 in the previous period to 120 in the current period. (Note: R doesn't automatically add the two decimal points. You'll have to mulitply by 100.)
 
 ```{r}
 
 difference <- 120-100
 pct_difference <- difference / 100 * 100
 
-#now print out the value of pct_difference
 pct_difference
 
 ```
@@ -168,47 +153,13 @@ To make a vector, use the syntax c(), where "c" stands for "combine"
       c(1, 2, 3)
       c("one", "two", "three")
 
-Try creating two variables (you pick the names) that contain the two vectors above.
+Try it in this code chunk
 
 ```{r}
 
-#put your formulas here
-
-
-```
-
-
-## Important traps
-
-### NA values
-
-A missing value in R is shown as NA. Whenever you try to do anything with any vector or data frame that contains missing values, everything will turn out missing. You have to explicitly tell R to ignore them: 
-
-```{r}
-
-indata <- c(1, 2, 3, 4, NA)
-sum(indata)
-
+num_vec <- c(1,2,3)
+char_vec <- c("one", "two", "three")
 
 ```
-
-Instead, you hae to tell R to ignore them:
-```{r}
-sum(indata, na.rm=TRUE)
-```
-### Factors
-
-There is actually another type of data element -- a factor -- which will often trip you up. We don't have to deal with it right now, but it will come into play as you work with graphics and with some other data sets. 
-
-Generally, R thinks that relatively short text strings are unique "factors". These are categories, and once they're set up they can't be changed. It's a way of being more efficient in large data sets. You'll sometimes see an option that says
-
-    stringsAsFactors=FALSE
-
-That's good.
- 
-
-
-That's it for now! 
-Try previewing, then knitting your document. 
 
 

@@ -22,3 +22,5 @@ I don't know how to put the rendered HTML into this format, so here's a link to 
 * Getting started with R Markdown and R: [Document](r-notebooks.html)  and the  [R notebook](https://drive.google.com/open?id=18HInvkPeDYRg4Mf2LQwO_4vJ-2PX8oiD)
 
 * Intro to data frames:  [Document](r-data-frames.html) and the [R notebook](https://drive.google.com/open?id=146tMPLag-npFXcJ68cpN1DghYJEsdYGs)
+
+* [Filtering and selecting](02-murders-filter.html) from the Murder Accountability Project files, with [Arizona only data]({{site.baseurl}}/assets/data/r-data/murder_data.Rda)

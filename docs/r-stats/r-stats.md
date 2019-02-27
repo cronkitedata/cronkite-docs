@@ -41,6 +41,6 @@ In class, we went over the exercise that Andrew created that tried to tease out 
 [RStudio zipped project](03-groupby-merge.zip)
 
 * Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) . Use the zipped project to get the data frame.
-* More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true)
+* More grouping and reorganizing: [Document](03-groupby-merge.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true)
 
 Practice: We're going to do a lab working on the built-in flight data in the tidyverse. For a complete tutorial using this dataset, and for more information on the things you can do with R in this context, watch the entire video from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"

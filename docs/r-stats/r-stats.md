@@ -18,12 +18,28 @@ Here are several other sources for you to review if you want to try something di
 
 I don't know how to put the rendered HTML into this format, so here's a link to the tutorials and R Markdown files that we've used in class:
 
-### February 13 2019
+##
 
-Most of these exercises are in RStudio.cloud for ASU students.
+Most of these exercises are in RStudio.cloud for ASU students. These items have links to zipped files that can be uploaded to RStudio.cloud as a whole project, and to .Rmd files (markdown documents) that aren't yet converted into HTML. They may open as text in your browser -- just save it to your local machine to have a file that you can work with in R. Where necessary, data files are also listed.
 
-* Getting started with R Markdown and R: [Document](r-notebooks.html)  
+### Lesson 1: Getting around R & intro to data frames
+[RStudio zipped project](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-markdown-r.zip)
 
-* Intro to data frames:  [Document](r-data-frames.html)
+* Getting started with R Markdown and R: [Document](01-1-notebooks.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-1-notebooks.Rmd?raw=true) / RStudio project
 
-* [Filtering and selecting](02-murders-filter.html) from the Murder Accountability Project files, with [Arizona only data]({{site.baseurl}}/assets/data/r-data/murder_data.Rda)
+* Introduction to data frames: [Document](01-2-dataframes.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-2-dataframes.Rmd?raw=true)
+
+### Lesson 2: Select and filter
+In class, we went over Sharon Machlis' first lesson on her site,  listed above. We also went through the tutorial from the ["swirl" package](https://swirlstats.com/students.html)
+
+* Filtering murder data (based on material from Andrew Ba Tran's course listed above): [Document](02-murder-filter.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/0-murders-filter.Rmd?raw=true) / [RStudio zipped project](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-select-filter.zip)
+
+### Lesson 3: Group by and join
+
+In class, we went over the exercise that Andrew created that tried to tease out of the murder data the Green River Killer. Then we went over the idea of grouping and joining.
+
+[RStudio zipped project](03-groupby-merge.zip)
+
+* Green River killer: [Document](03-green-river)
+
+Practice: We're going to do a lab working on the built-in flight data in the tidyverse. For a complete tutorial using this dataset, and for more information on the things you can do with R in this context, watch the entire video from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"

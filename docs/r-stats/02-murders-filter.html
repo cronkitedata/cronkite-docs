@@ -3883,31 +3883,8 @@ $(document).ready(function () {
 
 </div>
 
-<div id="TOC">
-<ul>
-<li><a href="#dont-forget">Don’t forget!</a><ul>
-<li><a href="#troubleshooting">Troubleshooting</a></li>
-</ul></li>
-<li><a href="#explanation-of-key-data-fields">Explanation of key data fields</a></li>
-<li><a href="#load-our-saved-file">Load our saved file</a><ul>
-<li><a href="#example-of-group-by">EXAMPLE OF GROUP BY</a></li>
-<li><a href="#arrange">Arrange</a></li>
-</ul></li>
-<li><a href="#select-and-filter">select()* and filter()*</a><ul>
-<li><a href="#select">select()</a></li>
-<li><a href="#filter">filter()</a></li>
-<li><a href="#filter-with-one-exact-condition">Filter with one exact condition</a><ul>
-<li><a href="#an-aside-on-best-practices">An aside on best practices</a></li>
-</ul></li>
-<li><a href="#more-complex-filters">More complex filters</a></li>
-</ul></li>
-<li><a href="#the-missing-wildcard">The missing wildcard</a><ul>
-<li><a href="#dealing-with-case-sensitivity">Dealing with case-sensitivity</a></li>
-</ul></li>
-<li><a href="#on-your-own">On your own</a></li>
-</ul>
-</div>
 
+<p>(This tutorial is based on work done by Andrew Ba Tran on the learn-r.journalism.com course.)</p>
 <div id="dont-forget" class="section level2">
 <h2>Don’t forget!</h2>
 <p>If you open this file, make sure that you run all of the code chunks necessary before you try your own work. In other words, load any libraries and data sets, and make any changes you need to make before you start. One way to do that is to delete all of the output.</p>
@@ -3935,12 +3912,12 @@ $(document).ready(function () {
 <p>You can just read in an R-saved file using the “load” command, without worrying about how R interprets things. It’s already been interpreted for you.</p>
 <p>We should load in the packages we want to use now as well.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
 <pre><code>## ✔ ggplot2 3.1.0     ✔ purrr   0.3.0
 ## ✔ tibble  2.0.1     ✔ dplyr   0.7.8
 ## ✔ tidyr   0.8.2     ✔ stringr 1.4.0
 ## ✔ readr   1.3.1     ✔ forcats 0.3.0</code></pre>
-<pre><code>## ── Conflicts ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(DT)
@@ -3949,7 +3926,7 @@ $(document).ready(function () {
 #
 load(&quot;murder_data.Rda&quot;)</code></pre>
 <p>There is actually a problem in this data, which will trip us up later, so I’m going to truncate the Agency and AGENCY_A fields, getting rid of the trailing spaces that are causing problems with filtering.</p>
-<pre class="r"><code>murder_data$AGENCY_A &lt;- str_trim(murder_data$AGENCY_A)
+<pre class="r"><code>murder_data$AGENCY_A &lt;-   str_trim(murder_data$AGENCY_A)
 murder_data$Agency &lt;- str_trim(murder_data$Agency)
 
 #the function str() means &quot;structure&quot;. You can take a look at what's in it.
@@ -3995,15 +3972,9 @@ str(murder_data)</code></pre>
 <p>Arrange is the same as “Sort” in Excel. You arrange your rows by a variable. Precede it with “desc” if you want it to go from largest to smallest.</p>
 <p>If you don’t put the new data frame into a variable name, it will print out the whole thing when you run the code chunk.</p>
 <pre class="r"><code>murder_data %&gt;%
-   group_by( 
-             Relationship 
-           ) %&gt;%
-   summarize ( 
-             count=n() 
-             ) %&gt;%
-   arrange ( 
-     desc(count) 
-     )</code></pre>
+   group_by(  Relationship ) %&gt;%
+   summarize ( count=n()  ) %&gt;%
+   arrange ( desc(count) )  #this says, do it in descending order. </code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["Relationship"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["count"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Relationship not determined","2":"4547"},{"1":"Stranger","2":"3298"},{"1":"Acquaintance","2":"2767"},{"1":"Friend","2":"692"},{"1":"Wife","2":"569"},{"1":"Girlfriend","2":"402"},{"1":"Other - known to victim","2":"325"},{"1":"Son","2":"243"},{"1":"Daughter","2":"225"},{"1":"Other family","2":"216"},{"1":"Husband","2":"210"},{"1":"Neighbor","2":"173"},{"1":"Boyfriend","2":"140"},{"1":"Brother","2":"112"},{"1":"Mother","2":"108"},{"1":"Father","2":"105"},{"1":"In-law","2":"73"},{"1":"Ex-wife","2":"43"},{"1":"Sister","2":"37"},{"1":"Stepfather","2":"34"},{"1":"Common-law wife","2":"33"},{"1":"Stepson","2":"26"},{"1":"Homosexual relationship","2":"23"},{"1":"Common-law husband","2":"21"},{"1":"Stepdaughter","2":"20"},{"1":"Ex-husband","2":"18"},{"1":"Employer","2":"15"},{"1":"Employee","2":"8"},{"1":"Stepmother","2":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -4022,8 +3993,8 @@ murder_data %&gt;%
 select (&quot;ID&quot;, &quot;StateName&quot;, Agency ) %&gt;%
   head(100)    %&gt;%
   datatable()</code></pre>
-<div id="htmlwidget-ec26d9db3b9afbab89f4" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ec26d9db3b9afbab89f4">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100"],["197601001AZ00301","197601001AZ00700","197601001AZ00705","197601001AZ00707","197601001AZ00713","197601001AZ00717","197601001AZ00723","197601001AZ01003","197601001AZ01307","197601001AZ01405","197601002AZ00301","197601002AZ00713","197601002AZ00723","197601003AZ00723","197601004AZ00723","197601005AZ00723","197601006AZ00723","197601007AZ00723","197602001AZ00700","197602001AZ00701","197602001AZ00723","197602001AZ00800","197602001AZ01000","197602001AZ01003","197602001AZ01101","197602001AZ01105","197602001AZ01405","197602002AZ00700","197602002AZ00723","197602003AZ00700","197602003AZ00723","197602004AZ00700","197602004AZ00723","197602005AZ00700","197603001AZ00700","197603001AZ00713","197603001AZ00723","197603001AZ00800","197603001AZ01000","197603001AZ01003","197603001AZ01300","197603001AZ01405","197603002AZ00700","197603002AZ00723","197603002AZ01003","197603002AZ01405","197603003AZ00700","197603003AZ00723","197603004AZ00723","197603022AZ00723","197604001AZ00700","197604001AZ00723","197604001AZ00900","197604001AZ01003","197604001AZ01405","197604002AZ00723","197604002AZ01003","197604003AZ00723","197605001AZ00209","197605001AZ00707","197605001AZ00713","197605001AZ00717","197605001AZ00723","197605001AZ00725","197605001AZ01000","197605001AZ01003","197605001AZ01101","197605001AZ01400","197605002AZ00723","197605002AZ01000","197605002AZ01003","197605003AZ00723","197605003AZ01003","197605004AZ00723","197605004AZ01003","197606001AZ00700","197606001AZ00700","197606001AZ00700","197606001AZ00717","197606001AZ00723","197606001AZ01000","197606001AZ01001","197606001AZ01300","197606002AZ00723","197606002AZ01003","197606003AZ00300","197606003AZ00723","197606004AZ00700","197606004AZ00723","197606005AZ00723","197606006AZ00723","197606007AZ00723","197606008AZ00723","197607001AZ00301","197607001AZ00700","197607001AZ00717","197607001AZ00723","197607001AZ00725","197607001AZ01000","197607001AZ01100"],["ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  "],["Flagstaff","Maricopa County","Chandler","El Mirage","Glendale","Mesa","Phoenix","Tucson","Prescott","Yuma","Flagstaff","Glendale","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Maricopa County","Avondale","Phoenix","Mohave County","Pima County","Tucson","Casa Grande","Eloy","Yuma","Maricopa County","Phoenix","Maricopa County","Phoenix","Maricopa County","Phoenix","Maricopa County","Maricopa County","Glendale","Phoenix","Mohave County","Pima County","Tucson","Yavapai County","Yuma","Maricopa County","Phoenix","Tucson","Yuma","Maricopa County","Phoenix","Phoenix","Phoenix","Maricopa County","Phoenix","Navajo County","Tucson","Yuma","Phoenix","Tucson","Phoenix","Sierra Vista","El Mirage","Glendale","Mesa","Phoenix","Scottsdale","Pima County","Tucson","Casa Grande","Yuma County","Phoenix","Pima County","Tucson","Phoenix","Tucson","Phoenix","Tucson","Maricopa County","Maricopa County","Maricopa County","Mesa","Phoenix","Pima County","South Tucson","Yavapai County","Phoenix","Tucson","Coconino County","Phoenix","Maricopa County","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Flagstaff","Maricopa County","Mesa","Phoenix","Scottsdale","Pima County","Pinal County"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>ID<\/th>\n      <th>StateName<\/th>\n      <th>Agency<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e1ee20aee0fd530901fc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e1ee20aee0fd530901fc">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100"],["197601001AZ00301","197601001AZ00700","197601001AZ00705","197601001AZ00707","197601001AZ00713","197601001AZ00717","197601001AZ00723","197601001AZ01003","197601001AZ01307","197601001AZ01405","197601002AZ00301","197601002AZ00713","197601002AZ00723","197601003AZ00723","197601004AZ00723","197601005AZ00723","197601006AZ00723","197601007AZ00723","197602001AZ00700","197602001AZ00701","197602001AZ00723","197602001AZ00800","197602001AZ01000","197602001AZ01003","197602001AZ01101","197602001AZ01105","197602001AZ01405","197602002AZ00700","197602002AZ00723","197602003AZ00700","197602003AZ00723","197602004AZ00700","197602004AZ00723","197602005AZ00700","197603001AZ00700","197603001AZ00713","197603001AZ00723","197603001AZ00800","197603001AZ01000","197603001AZ01003","197603001AZ01300","197603001AZ01405","197603002AZ00700","197603002AZ00723","197603002AZ01003","197603002AZ01405","197603003AZ00700","197603003AZ00723","197603004AZ00723","197603022AZ00723","197604001AZ00700","197604001AZ00723","197604001AZ00900","197604001AZ01003","197604001AZ01405","197604002AZ00723","197604002AZ01003","197604003AZ00723","197605001AZ00209","197605001AZ00707","197605001AZ00713","197605001AZ00717","197605001AZ00723","197605001AZ00725","197605001AZ01000","197605001AZ01003","197605001AZ01101","197605001AZ01400","197605002AZ00723","197605002AZ01000","197605002AZ01003","197605003AZ00723","197605003AZ01003","197605004AZ00723","197605004AZ01003","197606001AZ00700","197606001AZ00700","197606001AZ00700","197606001AZ00717","197606001AZ00723","197606001AZ01000","197606001AZ01001","197606001AZ01300","197606002AZ00723","197606002AZ01003","197606003AZ00300","197606003AZ00723","197606004AZ00700","197606004AZ00723","197606005AZ00723","197606006AZ00723","197606007AZ00723","197606008AZ00723","197607001AZ00301","197607001AZ00700","197607001AZ00717","197607001AZ00723","197607001AZ00725","197607001AZ01000","197607001AZ01100"],["ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  ","ARIZ  "],["Flagstaff","Maricopa County","Chandler","El Mirage","Glendale","Mesa","Phoenix","Tucson","Prescott","Yuma","Flagstaff","Glendale","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Maricopa County","Avondale","Phoenix","Mohave County","Pima County","Tucson","Casa Grande","Eloy","Yuma","Maricopa County","Phoenix","Maricopa County","Phoenix","Maricopa County","Phoenix","Maricopa County","Maricopa County","Glendale","Phoenix","Mohave County","Pima County","Tucson","Yavapai County","Yuma","Maricopa County","Phoenix","Tucson","Yuma","Maricopa County","Phoenix","Phoenix","Phoenix","Maricopa County","Phoenix","Navajo County","Tucson","Yuma","Phoenix","Tucson","Phoenix","Sierra Vista","El Mirage","Glendale","Mesa","Phoenix","Scottsdale","Pima County","Tucson","Casa Grande","Yuma County","Phoenix","Pima County","Tucson","Phoenix","Tucson","Phoenix","Tucson","Maricopa County","Maricopa County","Maricopa County","Mesa","Phoenix","Pima County","South Tucson","Yavapai County","Phoenix","Tucson","Coconino County","Phoenix","Maricopa County","Phoenix","Phoenix","Phoenix","Phoenix","Phoenix","Flagstaff","Maricopa County","Mesa","Phoenix","Scottsdale","Pima County","Pinal County"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>ID<\/th>\n      <th>StateName<\/th>\n      <th>Agency<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 <p>You can also rename as you select:</p>
 <pre class="r"><code>some_data &lt;-
   
@@ -4226,11 +4197,13 @@ murder_extract</code></pre>
 </div>
 <div id="on-your-own" class="section level2">
 <h2>On your own</h2>
-<p>Start with the original murder_data dataset:</p>
+<p>Start with the original murder_data data frame. You might need to load it again and re-load the tidyverse library using these commands (you can type them into the console)</p>
+<pre><code>  library(tidyverse)
+  load(&quot;murder_data.Rda&quot;)</code></pre>
 <ul>
-<li>Find unsolved murders against white, non-Hispanic victims since 1990</li>
-<li>Find unsolved murders against black or Hispanic victims since 1990</li>
-<li>Find the unsolved murders covered by the Phoenix Police Department (the column name is Agency) in 2016</li>
+<li><p>Find unsolved murders against white, non-Hispanic victims since 1990</p></li>
+<li><p>Find unsolved murders against black or Hispanic victims since 1990</p></li>
+<li><p>Find the unsolved murders covered by the Phoenix Police Department (the column name is Agency) in 2016</p></li>
 </ul>
 <p>In each case, try asking yourself more questions with the results.</p>
 </div>

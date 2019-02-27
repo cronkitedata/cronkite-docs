@@ -3,11 +3,9 @@ title: "Introduction to R Notebooks"
 author: "Sarah Cohen"
 date: "`r Sys.Date()`"
 output:
-  html_notebook: default
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+  html_document:
     df_print: paged
+  html_notebook: default
 ---
 
 

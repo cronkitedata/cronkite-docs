@@ -1,0 +1,364 @@
+---
+title: "Data Wrangling in R Part One"
+output:
+  html_document:
+    df_print: paged
+  html_notebook:
+    df_print: paged
+    toc: yes
+    toc_depth: '4'
+---
+
+(This tutorial is based on work done by Andrew Ba Tran on the learn-r.journalism.com course.)
+
+## Don't forget!
+
+If you open this file, make sure that you run all of the code chunks necessary before you try your own work. In other words, load any libraries and data sets, and make any changes you need to make before you start. One way to do that is to delete all of the output. 
+
+### Troubleshooting
+
+The most common errors are: 
+
+* Forgetting to put %>% at the end of the line if you want to continue on. Remember, it means "now do this". Without it, R will see the two lines as entirely separate commands. 
+* Having unbalanced quotes and parentheses.
+* Not paying attention to the case of variable names and values. In R, "relationship" is an entirely different word than "Relationship" or "RELATIONSHIP".
+
+If you're having trouble go one step at a time. For example, try setting ONE filter before you set two. Or try selecting a few variables before you filter. 
+
+Also, try copying an example you know works and then editing it rather than starting from scratch.
+
+## Explanation of key data fields
+
+The data definitions for each of the fields in this dataset are shown in the documentation to the Murder Accountability Project at https://www.dropbox.com/s/lo6tgo8nnbpqeru/MAPdefinitionsSHR.pdf?dl=1
+
+(A copy is saved in this project.)
+
+Everything that starts with the letters OFF refer to the "offenders". Everything that starts with VIC refers to the victims. 
+
+The most confusing variable is the Relationship reference. It refers to the relationship of the victim to the offender. In other words, if it says "Wife", it means that the victim was the wife of the offender. 
+
+
+## Load our saved file
+
+You can just read in an R-saved file using the "load" command, without worrying about how R interprets things. It's already been interpreted for you.
+
+We should load in the packages we want to use now as well.
+
+
+```{r}
+library(tidyverse)
+library(DT)
+
+#you can load Rdata files directly from the Web by using the url() function 
+#
+load("murder_data.Rda")
+
+```
+
+There is actually a problem in this data, which will trip us up later, so I'm going to truncate the Agency and AGENCY_A fields, getting rid of the trailing spaces that are causing problems with filtering.
+
+```{r}
+murder_data$AGENCY_A <-   str_trim(murder_data$AGENCY_A)
+murder_data$Agency <- str_trim(murder_data$Agency)
+
+#the function str() means "structure". You can take a look at what's in it.
+str(murder_data)
+
+```
+
+### EXAMPLE OF GROUP BY
+
+Group by is the same as a pivot table. The "groups" are the piles you create, like the fields you dragged into the row or column variable in pivot tables. "Summarize" is the part where you decide which number you want, like the Count, Average, and Sum in the value area of a pivot table. 
+
+The key ones are: 
+
+* n() = count, or the answer to "how many"
+* n_distinct(*fieldname*)  = how many unique answers are there? 
+* sum(*fieldname*)
+
+There are many more. 
+
+### Arrange
+Arrange is the same as "Sort" in Excel. You arrange your rows by a variable. Precede it with "desc" if you want it to go from largest to smallest. 
+
+
+If you don't put the new data frame into a variable name, it will print out the whole thing when you run the code chunk. 
+
+```{r}
+murder_data %>%
+   group_by(  Relationship ) %>%
+   summarize ( count=n()  ) %>%
+   arrange ( desc(count) )  #this says, do it in descending order. 
+
+```
+
+## select()* and filter()*
+
+### select()
+
+There are various ways to select variables to keep. You can name them, give R the positions they hold, or exclude a few with a minus sign. They can be quoted or not -- they're only required when there is a space or special character in the field name.
+
+```{r}
+
+# You don't have to use the second line -- I added it to make this file smaller. Otherwise it defaults to 10,000 and takes forever. 
+
+murder_data %>%
+select ("ID", "StateName", Agency ) %>%
+  head(100)    %>%
+  datatable()
+
+```
+
+You can also rename as you select: 
+
+```{r}
+
+some_data <-
+  
+select (murder_data,
+        "id" = ID,
+        "cnty_fips" = CNTYFIPS,
+        ori = Ori,
+        state= State,
+        agency = Agency,
+        AGENCY_A ) %>%
+  head(100)
+
+
+```
+
+
+### filter()
+
+We've also seen just a little filtering, where we chose just one condition. But we can put together conditions.
+
+If you want BOTH conditions to be true, use the "&" operator. If you want EITHER condition to be true, use the "OR" or "|" operator. First let's see what levels exist in our Relationship variable.
+
+```{r}
+levels(murder_data$Relationship)
+
+```
+
+
+### Filter with one exact condition
+
+Remember, you have to use **TWO** equal signs to set up a filter, not one. Here are a couple of common mistakes and their error messages:  
+
+```{r error=TRUE}
+
+murder_data %>%
+filter( Relationship = "Wife" )  #only one equal sign
+
+```
+
+Don't get upset when you see an error. In fact, R is showing you what probably went wrong when it says, *do you need '=='?*
+
+```{r error=TRUE}
+
+filter (murder_data, Relationship == Husband) #forgetting quotes
+
+```
+
+Whenever you see **_"object ... not found"_** there is usually one of two possible problems: you've fogotten to put quotes around a word, and the system is looking for a variable called Husband, instead of the letters H-u-s-b-a-n-d. Another common cause for this error is that I've misspelled the variable name. R is case-sensitive in variable names.
+
+```{r}
+
+filter ( murder_data, Relationship == "Husband" )
+
+```
+
+
+#### An aside on best practices
+
+This dataset is actually a problem because it mixes up the conventions used for naming variables. There are several common ways to do it, but most people do one of these:
+
+* All lower case names, with a *_* between words.
+* CamelCase, in which the first letter is always capitalized, and it uses capitalization throughout to make it easier to read.
+* All upper case, with _ between words.
+* Periods between words, which you will see a lot in R, but is being discouraged.
+
+When you make a dataset, I suggest you rename everything using a convention. You can pick the one you like best, but I use the all lower case version.
+
+
+### More complex filters
+
+Let's go through it step by step.  Get used to using the %>% operator to make things easier to read.
+
+I have 210 rows in which the husband was the victim. But what if I want anyone that suggested domestic violence? Let's first look at what values are in the dataset:
+
+```{r}
+levels ( murder_data$Relationship )
+```
+
+
+So we might want to get any of these:
+
+    "Common-law wife",
+    "Father",
+    "Girlfriend",
+    "Husband",
+    "Mother",
+    "Wife",
+    "Ex-wife",
+    "Boyfriend",
+    "Common-law husband",
+    "Daughter",
+    "Homosexual relationship",
+    "Ex-husband"
+
+To do that, we need to put them together into a list, then ask R to see if the value of Relationship matches anything in the list, created with that "c" concatenator.
+
+```{r}
+
+murder_data %>%
+  filter ( Relationship %in%
+             c ("Common-law wife",
+              "Father",
+              "Girlfriend",
+              "Husband",
+              "Mother",
+              "Wife",
+              "Ex-wife",
+              "Boyfriend",
+              "Common-law husband",
+              "Daughter",
+              "Homosexual relationship",
+              "Ex-husband" )
+    )
+
+
+
+```
+
+Let's narrow it  down to victims at least 60 years old.
+
+```{r}
+murder_data %>%
+  filter ( Relationship %in%
+             c ("Common-law wife",
+              "Father",
+              "Girlfriend",
+              "Husband",
+              "Mother",
+              "Wife",
+              "Ex-wife",
+              "Boyfriend",
+              "Common-law husband",
+              "Daughter",
+              "Homosexual relationship",
+              "Ex-husband" )
+           &
+             VicAge >= 60
+    )
+
+
+```
+
+Let's save a little piece of this table by putting together our filter with a select
+
+```{r}
+
+murder_extract <-
+
+murder_data %>%
+  select (ID:Agency,
+          Source:Year,
+          starts_with("Vic"),
+          OffRace, OffEthnic,
+          Weapon,
+          victim_relationship = Relationship ,
+          Circumstance) %>%
+
+  filter ( victim_relationship %in%
+             c ("Common-law wife",
+              "Father",
+              "Girlfriend",
+              "Husband",
+              "Mother",
+              "Wife",
+              "Ex-wife",
+              "Boyfriend",
+              "Common-law husband",
+              "Daughter",
+              "Homosexual relationship",
+              "Ex-husband" )
+           &
+             VicAge >= 60 )  %>%
+
+    arrange (Agency, Year)
+
+
+
+murder_extract
+
+```
+
+
+## The missing wildcard
+
+From what I can tell, filter() has no equivalent to Excel or other languages' wild cards. For example, in most languages, if you type
+
+      my_variable_name like "Unknown%"
+
+You would get back anything that **started** with the word "Unknown". I also don't see a way to turn off case-sensitivity, which can be a real problem when you deal with data that isn't sanitized. It's especially a problem when dealing with proper names and addresses, or any variable composed of free text that someone can make up without a formal code book. 
+
+The Tidyverse comes with a package called "stringr", which handles all of the text (or, in computereze, "string") manipulations. This package treats factors as strings, so you don't have to worry about the underlying data type (or at least I think that's true).
+
+### Dealing with case-sensitivity
+
+To a computer, "Sarah" is different from "SARAH" or "sarah". They'll never match. There are several ways to deal with this in R. The easiest of these is to upper- or lower-case everything in the database before you try to match anything. This is a pain, much like standardizing the convention of naming, but it's worth it if you're doing a lot of queries and can't be sure. The other way is to use what's called "regular expressions", and indicate that it's not case-sensitive. 
+
+If you know what the entire variable contains, the simplest approach is to lowercase the whole thing.  There can still be a problem if there are invisible leading or trailing spaces (which we got rid of in the first step above), but this often works. 
+
+Just be sure to lower-case the original field like this: 
+
+```{r}
+
+murder_extract %>%
+  filter(
+          str_to_lower(Agency) ==  "phoenix"
+         )
+
+```
+
+
+
+## On your own
+
+Start with the original murder_data data frame. You might need to load it again and re-load the tidyverse library using these commands (you can type them into the console) 
+
+      library(tidyverse)
+      load("murder_data.Rda")
+
+
+
+* Find unsolved murders against white, non-Hispanic victims since 1990
+
+```{r echo=FALSE, results='hide'}
+
+
+
+```
+
+* Find unsolved murders against black or Hispanic victims since 1990
+
+
+```{r echo=FALSE, results='hide'}
+
+
+
+```
+
+
+* Find the unsolved murders covered by the Phoenix Police Department (the column name is Agency) in 2016
+
+```{r echo=FALSE, results='hide'}
+
+
+```
+
+
+
+In each case, try asking yourself more questions with the results. 
+
+

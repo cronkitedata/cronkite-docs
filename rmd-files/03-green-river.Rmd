@@ -1,0 +1,156 @@
+---
+title: "Merging tables"
+output: 
+    html_document: default
+    html_notebook: default
+---
+(With thanks to Andrew Ba Tran, whose [R for Journalists course](https://learn.r-journalism.com/en/) this is based upon.)
+
+This notebook will go over grouping and merging in R, and will give you a bonus: How to get data from a website using a simple table command. 
+
+We have a new version of our dataset, this time a little larger with Washington, Oregon and Idaho added to our Arizona data. I've gotten rid of some of the traps -- all of the field names are now lower cased, and I removed some of the problems with extra spaces. 
+
+We're going to see if we can replicate an analysis of the Green River Killer.  This is one claim from the Serial Killer Detective: 
+
+<blockquote>
+Ridgway’s slayings began in 1982, when young runaways and prostitutes began disappearing from state Route 99 in south King County, Washington. He brought many of them to his home and strangled them, then left them in woodsy, remote sites. The first few bodies turned up along the now-notorious Green River.
+
+Ridgway told investigators he killed as many as 75-80 women along Route 99 in south King County, Washington. He was convicted and received multiple life sentences.
+</blockquote>
+
+
+
+
+## Packages used in this tutorial
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(DT)
+
+#this is the new version
+load("murders.Rda")
+
+```
+
+*rvest* is the scraping library that many people use in R. It's part of the tidyverse, so it allows for simplified syntax. 
+
+## Step 1 : We need county names! 
+
+Your data has a field called cntyfips -- that's a common way of looking at geographic variables. It's a standard code that's used by agencies to make sure that it's always the same, no matter how a county is spelled. 
+
+Luckily, there is a list of county FIPS codes right on the web in a web page, through the USDA: 
+https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697
+
+It looks like this: 
+
+![](images/usda_fips.png)
+
+We're going to use rvest to turn that web page into a dataset. Don't worry for now what it means -- just know that it works in thie case, and it can work for you too! 
+
+```{r}
+# where is my web page? 
+
+my_url <- "https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697"
+
+#in steps 
+counties <-
+  read_html (url (my_url)) %>%
+  html_nodes(xpath = "//div[@id='detail']/table") %>%
+  html_table() 
+
+counties <- counties[[1]]
+
+  
+datatable(head(counties))
+
+
+
+```
+
+
+Now we have a list of numeric FIPS codes that can be matched against the converted numeric FIPS codes in our murder data. 
+
+## The magic merge 
+
+One of the hardest things to do in Excel is to merge two datasets together. In R (and in other programming languages), it's not only expected that you have to do this, but it's considered best practices. 
+
+As in other programming languages, we'll use a term called JOIN to mix together two datasets. 
+
+This is, in journalism terms, called an "intentional join". We often use what journalists call an "enterprise join", when we are trying to find things on two lists that don't belong. We'll get to that in a later lesson. For now, our joins will follow the rules that database experts use: 
+
+* The list of codes is unique -- there aren't any repeats. Otherwise, every match will be repeated.
+* The list of codes is complete -- there aren't any missing codes. This actually isn't true in our case, but it doesn't affect our results, so we'll not worry about it. 
+* The list of codes is exactly the same -- in both data type and value -- as the values we want to match. Close doesn't count.
+
+They way you join is to add it to your list of operations the same way we did before:
+
+```{r}
+murders_with_counties <-
+  murders %>%
+     inner_join ( counties, by= c("cntyfips"= "FIPS")) %>%
+     #let's just keep some of the variables in a different order
+     select (id, ori, agency, state, cntyfips, county="Name", 
+             solved, year, situation, weapon, 
+             victim_age, victim_sex, victim_race, vic_relate_to_offender, 
+             circumstance, offender_age, offender_race) 
+
+
+
+
+```
+
+
+
+
+# Build the query
+
+Try building the query one step at a time in the following code block: 
+
+What are the weapons
+
+```{r}
+ murders_with_counties %>%
+  group_by(weapon) %>% 
+  summarize (n())
+
+
+
+```
+
+
+
+
+What do we have to find? 
+
+* Beginning in 1982
+* southern King County, Washington
+* Mainly strangled
+* Victims were young runaways or prostitutes
+
+
+```{r}
+# type your code here 
+
+murders_with_counties %>%
+  
+  filter ( year >= 1982  &
+           str_detect (county, "King") &
+           state == "Washington" & 
+           str_detect (weapon, "Strangulation") &
+           victim_sex != "Male"
+  )
+             
+
+
+
+```
+
+
+## Important caveat
+
+Of course, this isn't really finding a serial killer, and we don't know if what we found is right. But it's a way to start narrowing down what to look for when you get a tip.
+
+
+
+

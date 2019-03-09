@@ -18,13 +18,14 @@ nav_order: 0
 
 ##  Preliminary Schedule
 
---- | ---
-2:15 - | Introductions and warmup
-2:30 - | The role of data ; cleaning cautions
-3:00 -  | Data reporting for story: the promise of case level data.
-3:30 - | Building your chronology for narrative.
-4:00 - | Story structure - the big three
-4:45 - | Wordsmithing - precision with action
+|      |      |
+| --- | --- |
+| 2:15 - | Introductions and warmup
+| 2:30 - | The role of data ; cleaning cautions
+| 3:00 -  | Data reporting for story: the promise of case level data.
+| 3:30 - | Building your chronology for narrative.
+| 4:00 - | Story structure - the big three
+| 4:45 - | Wordsmithing - precision with action
 
 ## Time
 

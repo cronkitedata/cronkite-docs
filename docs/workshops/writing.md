@@ -16,7 +16,7 @@ nav_order: 0
 -- Michael Berens, 1999 </i>
 </blockquote>
 
-## Schedule
+##  Preliminary Schedule
 
 2:15 - Introductions and warmup
 2:30 - The role of data ; cleaning cautions

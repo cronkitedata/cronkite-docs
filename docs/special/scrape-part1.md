@@ -1,3 +1,7 @@
+---
+title: "Scraping part 1"
+parent: Special
+---
 
 ## The basics
 

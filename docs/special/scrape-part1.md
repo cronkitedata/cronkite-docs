@@ -81,11 +81,11 @@ This doesn't always work, and there are sometimes workarounds. It depends on how
 
 Many sites load the data you need into a browser in a form that is easy to convert to a dataset. Let's try looking at McDonalds locations:
 
-![]({{site.baseurl}}/assets/images/31mcdonalds1.png)
+![]({{site.baseurl}}/assets/images/31-mcdonalds1.png)
 
 When you reload this after inspecting, you can search through the pages that are loading for anything with a question mark in the URL. In this case, we find an entry that looks like this:
 
-![]({{site.baseurl}}/assets/images/31mcdonalds2.png)
+![]({{site.baseurl}}/assets/images/31-mcdonalds2.png)
 
 Try changing the numbers to a radius of 300 and a number of results to 300:
 

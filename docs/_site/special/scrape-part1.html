@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Scraping part 1 - Data reporting @ Cronkite</title>
+  <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
+
+  
+
+  
+  <script type="text/javascript" src="http://localhost:4000/cronkite-docs/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000/cronkite-docs" class="site-title fs-6 lh-tight">Data reporting @ Cronkite</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/general" class="navigation-list-link">General resources</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/newsroom-math.html" class="navigation-list-link">Newsroom math</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/file-formats.html" class="navigation-list-link">File formats</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/data-diary.html" class="navigation-list-link">Data diaries</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/sourcing.html" class="navigation-list-link">Data sources and sourcing</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/general/story-list.html" class="navigation-list-link">Story list</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/excel" class="navigation-list-link">Excel</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/excel/xlguides" class="navigation-list-link">Excel guides</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html" class="navigation-list-link">Excel refresher</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html" class="navigation-list-link">Data types / tidy data</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-filtersort.html" class="navigation-list-link">Filter and sort</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-formulas.html" class="navigation-list-link">Excel formulas</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-pivot.html" class="navigation-list-link">Grouping with pivot tables</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/excel/xlpractice" class="navigation-list-link">Excel practice</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/01-excel-azpop-exercise.html" class="navigation-list-link">Change and percent in Arizona population data</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/03-excel-rates.html" class="navigation-list-link">Rates and ratios with FBI data</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/05-excel-police-uof.html" class="navigation-list-link">Build your own use of force database</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/07-excel-kpop.html" class="navigation-list-link">Formulas for boring Spotify playlists</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/08-excel-pop-filter-sort.html" class="navigation-list-link">Population data filter & sort</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/11-excel-pivot-pools.html" class="navigation-list-link">Practice with swimming pool inspections</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="http://localhost:4000/cronkite-docs/excel/practice/12-excel-baseball.html" class="navigation-list-link">Pivot tables with baseball scores</a>
+                              </li>
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/r-stats" class="navigation-list-link">R for journalism</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/r-stats/r-intro.html" class="navigation-list-link">Starting R</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/cronkite-docs/special" class="navigation-list-link">Special</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_medicare.html" class="navigation-list-link">Open Refine 2</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_pdf.html" class="navigation-list-link">PDF tools</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/special/scrape-part1.html" class="navigation-list-link active">Scraping part 1</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/records" class="navigation-list-link">Public records</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/foia/01-foia-help.html" class="navigation-list-link">Getting FOIA help</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/foia/02-public-records-outside-in.html" class="navigation-list-link">Public records strategey</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/foia/03-arizona.html" class="navigation-list-link">Arizona public records</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/foia/05-tips.html" class="navigation-list-link">FOIA resources</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/workshops" class="navigation-list-link">Workshops</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/bootcamp.html" class="navigation-list-link">Cronkite bootcamp</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/cronkite-mayo.html" class="navigation-list-link">Cronkite-Mayo</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/newstrain/newstrain.html" class="navigation-list-link">NewsTrain Phoenix</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/writing.html" class="navigation-list-link">NICAR master class</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/fundamental1day.html" class="navigation-list-link">1-day CAR workshop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="https://cronkite.asu.edu/about/faculty-and-leadership/faculty/cohenbio">Sarah Cohen / Knight Chair / Cronkite School</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/special">Special</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Scraping part 1</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h2 id="the-basics">The basics</h2>
+
+<p>Looking for data on the web can be as simple as good searching. You might find what Rob Gebeloff calls an “JSON miracle”. Or you might be able to just change a few words in a window to get just what you want.</p>
+
+<p>Usually, data journalists want to get a database that is being searched within a site. In other words, they are looking for data that is not in Google but is being served up on request when you fill out a form.</p>
+
+<h3 id="understanding-urls">Understanding URL’s</h3>
+
+<p>Take a simple example. Go to the ASU people-search page at <a href="https://isearch.asu.edu/asu-people/">https://isearch.asu.edu/asu-people/</a>. Click on “Employee”, and you’ll see that the URL listed in the top of your screen  has changed. After the /asu-people/ part, it has added:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  fq=affiliationsFacet:Employee&amp;q=*:*
+</code></pre></div></div>
+
+<p>What you see the</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      xx=something&amp;yy=somethingelse
+</code></pre></div></div>
+
+<p>you know that there is a query going on inside the site. Depending on which product is being used to build the site, it might have a question mark before the data.</p>
+
+<p>Try just changing the *:* to the words “journalism cronkite” in the ASU employee search.</p>
+
+<p>Examining a page’s URL – either before or after you click on a link – is a good way to find out what has to be done to gather more information.</p>
+
+<p>These kind of queries are called GET queries. It means that the query criteria are baked into the URL as a “query string”. We’re going to look at how this works in Chrome’s inspection window. Right-click anywhere on your screen and choose “Inspect” from the menu. You should see something awful like this:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-inspector-chrome.png" width="800" /></p>
+
+<p>This window has a LOT of information on it, but for now we just want to look at what’s in the query header. Choose the Network tab and then refresh your page (it has to be open for it to record the steps.) Choose the “Doc” section of the network list, and you should see something like this:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-inspector2.png" alt="" /></p>
+
+<p>You can see your query turned into a query string, and if you’d changed the page, you’ll see a section called &amp;start=..  In this case, it means it’s starting at the 10th row. Notice that the Request Method says “GET”.</p>
+
+<p>If you search the same site for my name, you should get this URL: <a href="https://isearch.asu.edu/profile/3189494">https://isearch.asu.edu/profile/3189494</a>.  Notice that there is a number at the end This is common: most database programs create unique identifiers for each record, just the way we did in the Excel exercises. That suggests there might be someone with the number 3189493! Indeed, there is:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-urlchasing.png" alt="" /></p>
+
+<p>These are just a few of the ways you’ll want to pay attention to the URLs that appear when you click on a link. If you get something you like, try taking out the end of the url to see if there’s anything there – you might find a directory or a master page of some kind.</p>
+
+<h3 id="get-vs-post">GET vs. POST</h3>
+
+<p>The two common ways to get data from a server is through a “GET” or a “POST” request. One is easy to change in your browser, the other is not.</p>
+
+<p>[TK - How to try changing POST to GET using variables.]</p>
+
+<p>If it’s a POST request, it’s much harder – you have to use another program called CURL to make the request, or do it through R or another programming language. We’ll look at that next week.</p>
+
+<h2 id="looking-under-the-hood">Looking under the hood</h2>
+
+<p>There’s all kinds of interesting things buried inside a web page. Sometimes, it has all of the information you need – it’s just hiding some of it. Other times, it has entirely new information that someone is hiding from you.</p>
+
+<p>Consider this March 25, 2015 post on Buzzfeed:  <a href="http://www.buzzfeed.com/kelleydunlap/rihanna-reveals-new-music-arriving-tomorrow#.cw2x8QWpx">“Listen to Rihanna’s New Single”</a> describes how Buzzfeed looked behind Rihanna’s website and found a link to a new song that was top secret in the industry and wouldn’t be released for another day.</p>
+
+<p><img src="/cronkite-docs/assets/images/31-bbhm.webp" alt="" /></p>
+
+<p>This is what happened: The author, trolling through the web page, found a link that contained the phrase “APPROVED-3.256”  Copying and pasting that link into a browser showed the promo for her hit single.</p>
+
+<p>Journalists sometimes do the same thing. Griff Palmer, then of The New York Times, helped Declan Walsh prove that the <a href="https://www.nytimes.com/2015/05/18/world/asia/fake-diplomas-real-cash-pakistani-company-axact-reaps-millions-columbiana-barkley.html">same company was behind a ring of fake universities</a>, identified by <a href="https://www.nytimes.com/2015/05/17/world/asia/tracking-axacts-websites.html">working backwards</a> to find links to the same images, accreditation bodies and similar telltale signs. He eventually found more than 350 schools with signs of similarities.</p>
+
+<p>Getting used to reading underneath the slick presentation can reap stories and scoops.</p>
+
+<h2 id="overriding-page-limits">Overriding page limits</h2>
+
+<p>Some websites can be tricked into giving you more at once than you think. One example is the <a href="https://www.mcso.org/Mugshot">Maricopa County Sheriff’s public mugshot site</a>, which gives you information on the people who are in the county jail every day.</p>
+
+<p><img src="/cronkite-docs/assets/images/31-mugshots1.png" alt="" /></p>
+
+<p>If you hover over the “10 entries” limit and use your inspector, you’ll see that the option value of “10” is selected. Try changing the one below that to 1000 instead:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-mugshots2.png" alt="" /></p>
+
+<p>When you select it, you should be seeing all of the mugshots for that day.</p>
+
+<p>This doesn’t always work, and there are sometimes workarounds. It depends on how the website is created. If it has downloaded all of the information to your computer anyway, and is just hiding some of it, it will work. If it is going back to a server for more records, it usually won’t.</p>
+
+<h2 id="the-json-miracle">The JSON miracle</h2>
+
+<p>Many sites load the data you need into a browser in a form that is easy to convert to a dataset. Let’s try looking at McDonalds locations:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-mcdonalds1.png" alt="" /></p>
+
+<p>When you reload this after inspecting, you can search through the pages that are loading for anything with a question mark in the URL. In this case, we find an entry that looks like this:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-mcdonalds2.png" alt="" /></p>
+
+<p>Try changing the numbers to a radius of 300 and a number of results to 300:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  https://www.mcdonalds.com/googleapps/GoogleRestaurantLocAction.do?method=searchLocation&amp;latitude=33.4495511&amp;longitude=-112.0789355&amp;radius=300&amp;maxResults=300&amp;country=us&amp;language=en-us&amp;showClosed=&amp;hours24Text=Open%2024%20hr
+</code></pre></div></div>
+
+<p>Now you’ll have a json file you can save and read into either R or convert with one of the online converters into an Excel spreadsheet of the McDonalds locations within 300 miles.</p>
+
+<h2 id="more-ways-to-scrape">More ways to scrape</h2>
+
+<p>You might not get so lucky. You might have to convert the HTML code inside a page into a spreadsheet or database file. We’re going to do that by looking at something called XPATH. This is the language used to access the inner structure of a web page.</p>
+
+<p>That structure is kind of like a tree– there’s a trunk, which is the whole page. Then there are a couple of huge portions, like the heading and body of the page. Then within each of those are little branches. XPATH is a way to climb up and scramble across branches to find just what you want in a page.</p>
+
+<p>Here is an <a href="https://github.com/sarahcnyt/data-journalism/blob/master/class4/scraping-chrome.pdf">old tutorial</a> on XPATH and Chrome Scraper, which we’re going to use. None of the sites are the same anymore, so we’ll work on new ones.</p>
+
+<p>I use Chrome Scraper, which somehow doesn’t show up if you search Chrome extensions for Scraper! Google it instead. <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en">This is the one</a> you want:</p>
+
+<p><img src="/cronkite-docs/assets/31-images/scraper.png" alt="" /></p>
+
+<p>The tutorial has more on exactly how to look at it, but let’s jump right in with a page to scrape – the<a href="https://www.tdcj.state.tx.us/death_row/dr_offenders_on_dr.html">Texas Death Row</a> list. (Arizona’s isn’t as scraper friendly, at least at first.)  This is actually a simple list that would import directly into Excel pretty easily. Let’s use the scraper instead to start getting used to what’s going on under the hood.</p>
+
+<p>Select a couple of rows of data in table, and before you do anything else, look at your inspector. Look at the bottom of the screen, and it will show you the route that had to be taken to get to your selection. it starts with the html tag, goes to body, then a bunch of other tags, and eventually to a “tr” tag.</p>
+
+<p>Now go back to the table, make sure you have a few rows selected, right-click and choose “Scrape similar”</p>
+
+<p><img src="/cronkite-docs/assets/images/31-scrape-similar.png" alt="" /></p>
+
+<p>That should bring up a list that looks pretty good – it has the id number, the name, dob, etc. in nice columns and rows, and an invitation to copy to your clipboard or export to google docs. But let’s look at a little of what is going on here, and how it knows what to do.</p>
+
+<p><img src="/cronkite-docs/assets/images/31-scrape-window.png" alt="" /></p>
+
+<p>Because this page is so simple, all that the scraper had to do was look for any TR tag (//tr), then it is asking for all of the TD tags below that. In other words, there were no other tables in the page that would confuse it. What if there were? You can use other items in the page to steer XPATH to the right place. For instance, this one could have been:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    //div[@class="overflow"&gt;/table/tbody/tr[td]
+
+       or
+
+    //table[1]/tbody/tr[td]
+</code></pre></div></div>
+
+<p>There is one mistake in this table. That is, the Link only shows the words “Offender Information”. We want the actual link. The reason is XPATH always assumes you want the text shown on the screen, not the underlying information, if you don’t say you want it. Try going into the Link area on left, and make this change:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   \*[2]
+
+   to
+
+
+   \*[2]/a/@href
+</code></pre></div></div>
+
+<p>This means that you want the &lt;a href=…&gt; part of the underlying code. The “a” is the tag, and the @href is an attribute of that tag. Don’t worry too much about getting all the terminology down. The idea is to look underneath the hood of the page to see how to extract what you want.</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

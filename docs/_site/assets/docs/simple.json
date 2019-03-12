@@ -1,0 +1,9 @@
+{
+  "presidents": [
+    { "firstName" : "Donald" , "lastName" : "Trump"},
+    { "firstName" : "Barack" , "lastName" : "Obama"},
+    { "firstName" : "George W." , "lastName" : "Bush"},
+    { "firstName" : "Bill" , "lastName" : "Clinton"},
+    { "firstName" : "George H.W." , "lastName" : "Bush"}
+  ]
+}

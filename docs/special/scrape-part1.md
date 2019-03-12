@@ -1,57 +1,102 @@
 ---
-title: "Scraping part 1"
+title: Scraping part 1
 parent: Special
+nav_order: 1
 ---
 
-## The basics
+# Web scraping - Part 1
+{: .no_toc}
+
+Scraping data has two meanings in journalism. In one sense, it means extracting information from just one source, like a web page or a PDF document. In another sense, it means pulling data from multiple pages, like individual profiles of people.  A typical workflow for might be:
+
+1. Find a list or a way to guess at a list for all of the pages you might want
+2. Write a program to "crawl" a website to save those pages.
+3. Extract the information from each page into a database.
+
+Sometimes, though, it's not even necessary to go that far.
 
 Looking for data on the web can be as simple as good searching. You might find what Rob Gebeloff calls an "JSON miracle". Or you might be able to just change a few words in a window to get just what you want.
 
-Usually, data journalists want to get a database that is being searched within a site. In other words, they are looking for data that is not in Google but is being served up on request when you fill out a form.
+1. TOC
+{:toc}
 
-### Understanding URL's
 
-Take a simple example. Go to the ASU people-search page at [https://isearch.asu.edu/asu-people/](https://isearch.asu.edu/asu-people/). Click on "Employee", and you'll see that the URL listed in the top of your screen  has changed. After the /asu-people/ part, it has added:
+## Understanding requests
 
-      fq=affiliationsFacet:Employee&q=*:*
+When you use the search box WITHIN a website, you are usually searching an internal database that hasn't been indexed by Google.
 
-What you see the
+Take a simple example.  Go to the ASU website, and look for [the directory of faculty and staff](https://isearch.asu.edu/asu-people/). On the search page, type "Cronkite" into the search box. Look at what happened to the back end of the link address, or URL:
+
+![]({{site.baseurl}}/assets/images/31-urlchasing.png)
+
+When you see
 
           xx=something&yy=somethingelse
 
 you know that there is a query going on inside the site. Depending on which product is being used to build the site, it might have a question mark before the data.
 
-Try just changing the \*:\* to the words "journalism cronkite" in the ASU employee search.
+If you search the same site for my name, you should get this URL: [https://isearch.asu.edu/profile/3189494](https://isearch.asu.edu/profile/3189494).  Notice that there is a number at the end This is common: most database programs create unique identifiers for each record, just the way we did in the Excel exercises. That suggests there might be someone with the number 3189495! Indeed, there is:
 
-Examining a page's URL -- either before or after you click on a link -- is a good way to find out what has to be done to gather more information.
-
-These kind of queries are called GET queries. It means that the query criteria are baked into the URL as a "query string". We're going to look at how this works in Chrome's inspection window. Right-click anywhere on your screen and choose "Inspect" from the menu. You should see something awful like this:
-
-<img src="{{site.baseurl}}/assets/images/31-inspector-chrome.png" width="800">
-
-This window has a LOT of information on it, but for now we just want to look at what's in the query header. Choose the Network tab and then refresh your page (it has to be open for it to record the steps.) Choose the "Doc" section of the network list, and you should see something like this:
-
-![]({{site.baseurl}}/assets/images/31-inspector2.png)
-
-You can see your query turned into a query string, and if you'd changed the page, you'll see a section called &start=..  In this case, it means it's starting at the 10th row. Notice that the Request Method says "GET".
-
-If you search the same site for my name, you should get this URL: [https://isearch.asu.edu/profile/3189494](https://isearch.asu.edu/profile/3189494).  Notice that there is a number at the end This is common: most database programs create unique identifiers for each record, just the way we did in the Excel exercises. That suggests there might be someone with the number 3189493! Indeed, there is:
-
-![]({{site.baseurl}}/assets/images/31-urlchasing.png)
-
-These are just a few of the ways you'll want to pay attention to the URLs that appear when you click on a link. If you get something you like, try taking out the end of the url to see if there's anything there -- you might find a directory or a master page of some kind.
+![]({{site.baseurl}}/assets/images/31-urlchasing2.png)
 
 ### GET vs. POST
 
-The two common ways to get data from a server is through a "GET" or a "POST" request. One is easy to change in your browser, the other is not.
-
-[TK - How to try changing POST to GET using variables.]
-
-If it's a POST request, it's much harder -- you have to use another program called CURL to make the request, or do it through R or another programming language. We'll look at that next week.
+So far, the requests you've seen are all GET requests, meaning that the search criteria are built into the URL. There is also something called POST requests, which are usually more complicated and usually can't be done just by typing into the browser. We'll get to those later.
 
 ## Looking under the hood
 
-There's all kinds of interesting things buried inside a web page. Sometimes, it has all of the information you need -- it's just hiding some of it. Other times, it has entirely new information that someone is hiding from you.
+### Using the Chrome Developer Tab (Inspector)
+
+Browsers like Chrome and Safari have built in tools that are designed for developers to test their sites, but can also be used to inspect what is happening on a published site.
+
+[This is an extremely simple web page]({{site.baseurl}}/assets/docs/simple-page.html) that has several characteristics:
+* One standard library to format the page, called Bootstrap.
+* Another standard library, called JQuery, to access and use data held in json form.
+* Content written in plain HTML for a heading, a paragraph, and a couple of "divs".
+* A table created with a script using the json data.
+
+Right-click anywhere on the page and choose "Inspect". It will open to a different part of the page depending on where you click.
+
+![]({{site.baseurl}}/assets/images/31-simple-page2.png)
+
+There are all kinds of things buried in here, including the structure of the page and all of the elements that it accesses both on the web and elsewhere. Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren't displayed on your screen.
+
+#### Document object models
+
+Think of a web page as a tree - there are two big trunks (the head and the body), then there are little branches that are all from the same trunk. The DOM lets you scamper up and down the tree and across the branches using commands that are called XPATH commands.
+
+Look at the bottom of the page. The current element -- the one that you have selected -- is shown as a path up that tree. In this case, selected paragraph is three levels down:
+
+![]({{site.baseurl}}/assets/images/31-simple-page2.png)
+
+An XPATH command would look like this:
+
+           body/p
+
+We'll get more into that later on, but for now, just know it's there.
+
+#### Network resources - a json miracle
+
+Now reload the page, and change to the Network tab.
+
+![]({{site.baseurl}}/assets/images/31-simple-page3.png)
+
+This lists all of the resources that are accessed over a network to build your page. It includes items referenced in the head, and items loaded by scripts elsewhere in the page. Here you can see that it references the original page's HTML; bootstrap and JQuery resources; and something at the end called simple.json, which is initiated by the JQuery.
+
+![]({{site.baseurl}}/assets/images/31-simple-page4.png)
+
+Click on the json file, and take a look at what you see. (You may have to expand the little triangles to get to this):
+
+![]({{site.baseurl}}/assets/images/31-simple-page5.png)
+
+What you have is a json miracle! This is a little database that can be converted to a .csv or can be read into R without having to scrape anything! Most websites that use JQuery or similar libraries have a json dataset somewhere buried in them.
+
+Try right-clicking on the json object on the left side, and choose "Copy" -> "As response". Now go to a json-to-csv converter ([I use this one](http://www.convertcsv.com/json-to-csv.htm)) and paste into the box. Now you have a csv or Excel file ready to download, with a preview of what it looks like:
+
+![]({{site.baseurl}}/assets/images/31-simple-page6.png)
+
+
+### Using information under the hood
 
 Consider this March 25, 2015 post on Buzzfeed:  ["Listen to Rihanna's New Single"](http://www.buzzfeed.com/kelleydunlap/rihanna-reveals-new-music-arriving-tomorrow#.cw2x8QWpx) describes how Buzzfeed looked behind Rihanna's website and found a link to a new song that was top secret in the industry and wouldn't be released for another day.
 
@@ -59,7 +104,7 @@ Consider this March 25, 2015 post on Buzzfeed:  ["Listen to Rihanna's New Single
 
 This is what happened: The author, trolling through the web page, found a link that contained the phrase "APPROVED-3.256"  Copying and pasting that link into a browser showed the promo for her hit single.
 
-Journalists sometimes do the same thing. Griff Palmer, then of The New York Times, helped Declan Walsh prove that the [same company was behind a ring of fake universities](https://www.nytimes.com/2015/05/18/world/asia/fake-diplomas-real-cash-pakistani-company-axact-reaps-millions-columbiana-barkley.html), identified by [working backwards](https://www.nytimes.com/2015/05/17/world/asia/tracking-axacts-websites.html) to find links to the same images, accreditation bodies and similar telltale signs. He eventually found more than 350 schools with signs of similarities.  
+Griff Palmer, then of The New York Times, helped Declan Walsh prove that the [same company was behind a ring of fake universities](https://www.nytimes.com/2015/05/18/world/asia/fake-diplomas-real-cash-pakistani-company-axact-reaps-millions-columbiana-barkley.html), identified by [working backwards](https://www.nytimes.com/2015/05/17/world/asia/tracking-axacts-websites.html) to find links to the same images, accreditation bodies and similar telltale signs. He eventually found more than 350 schools with signs of similarities.  
 
 Getting used to reading underneath the slick presentation can reap stories and scoops.
 
@@ -69,44 +114,52 @@ Some websites can be tricked into giving you more at once than you think. One ex
 
 ![]({{site.baseurl}}/assets/images/31-mugshots1.png)
 
-If you hover over the "10 entries" limit and use your inspector, you'll see that the option value of "10" is selected. Try changing the one below that to 1000 instead:
+Hover over the box with the "10" in it, and right-click to get the developers' window by choosing "Inspect".
 
 ![]({{site.baseurl}}/assets/images/31-mugshots2.png)
 
 When you select it, you should be seeing all of the mugshots for that day.
 
-This doesn't always work, and there are sometimes workarounds. It depends on how the website is created. If it has downloaded all of the information to your computer anyway, and is just hiding some of it, it will work. If it is going back to a server for more records, it usually won't.
+This doesn't always work, depending on  how the website was created. Sometimes looking at the page source shows more than in the document model, and sometimes all of the data isn't loaded at the beginning.
 
-## The JSON miracle
+One hint is that if you click on "Next page" and there is no hesitation before it shows you the rest of the records, there is probably a dataset sitting on your browser. If it takes a second, it is probably going back to the original server to get more.
 
-Many sites load the data you need into a browser in a form that is easy to convert to a dataset. Let's try looking at McDonalds locations:
+## A real JSON miracle
 
-![]({{site.baseurl}}/assets/images/31-mcdonalds1.png)
+Open your Inspector panel, and go to this [list of Major League Baseball player statistics](http://mlb.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&tab_level=child&click_text=Sortable+Player+hitting&game_type='R'&season=2018&season_type=ANY&league_code='MLB'&sectionType=sp&statType=hitting&page=1&ts=1552429749141&timeframe=&playerType=ALL&last_x_days=&split=h)
 
-When you reload this after inspecting, you can search through the pages that are loading for anything with a question mark in the URL. In this case, we find an entry that looks like this:
+You're interested in getting to the data shown on the left side of the screen, but you don't want to have to page 21 times to get it.
 
-![]({{site.baseurl}}/assets/images/31-mcdonalds2.png)
+![]({{site.baseurl}}/assets/images/31-mlb1.png)
 
-Try changing the numbers to a radius of 300 and a number of results to 300:
+In your network tab, somewhere down the side is a file that begins with "stats.splayer?season=...."  These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page.
 
-      https://www.mcdonalds.com/googleapps/GoogleRestaurantLocAction.do?method=searchLocation&latitude=33.4495511&longitude=-112.0789355&radius=300&maxResults=300&country=us&language=en-us&showClosed=&hours24Text=Open%2024%20hr
+You should see a ver long "Request URL" on the right. If you scroll all the way down, you'll see that request has been split up into its pieces, which we can see under "Query String Parameters"
 
+![]({{site.baseurl}}/assets/images/31-mlb2.png)
 
-Now you'll have a json file you can save and read into either R or convert with one of the online converters into an Excel spreadsheet of the McDonalds locations within 300 miles.
+Here, we can see what characteristics we need to change to get more of the data at once.
 
-## More ways to scrape
+Go back up top, and copy and paste the "Request URL" into a new browser window. This will bring  a new page with the first 50 rows of the table. Just go back into the browser's address, and change the 50 at the end of the URL to 1000:
 
-You might not get so lucky. You might have to convert the HTML code inside a page into a spreadsheet or database file. We're going to do that by looking at something called XPATH. This is the language used to access the inner structure of a web page.
+![]({{site.baseurl}}/assets/images/31-mlb3.png)
 
-That structure is kind of like a tree-- there's a trunk, which is the whole page. Then there are a couple of huge portions, like the heading and body of the page. Then within each of those are little branches. XPATH is a way to climb up and scramble across branches to find just what you want in a page.
+It will take a little longer to load, but now you'll have a JSON file with the first 1000 rows (you can see that there were a total of 1033 if you study the first few rows of information. You could change both the total number of records and the records to page to a higher number if you wanted, to get them all.)
 
-Here is an [old tutorial](https://github.com/sarahcnyt/data-journalism/blob/master/class4/scraping-chrome.pdf) on XPATH and Chrome Scraper, which we're going to use. None of the sites are the same anymore, so we'll work on new ones.
+Copy and paste the new address into your nifty json to csv converter, and you'll get a downloadable table ready for analysis.
 
-I use Chrome Scraper, which somehow doesn't show up if you search Chrome extensions for Scraper! Google it instead. [This is the one](https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en) you want:
+## Scraping with XPATH
 
-![]({{site.baseurl}}/assets/31-images/scraper.png)
+There may be no JSON or XML miracle waiting for you. Instead, you might have to convert the HTML inside a page into a spreadsheet or database file.
 
-The tutorial has more on exactly how to look at it, but let's jump right in with a page to scrape -- the[Texas Death Row](https://www.tdcj.state.tx.us/death_row/dr_offenders_on_dr.html) list. (Arizona's isn't as scraper friendly, at least at first.)  This is actually a simple list that would import directly into Excel pretty easily. Let's use the scraper instead to start getting used to what's going on under the hood.
+Samantha Sunne [has a terrific tutorial showing you how to do this in Google Sheets](https://docs.google.com/presentation/d/e/2PACX-1vTBBph8FTWX4A09C22oWMxZuiLm_hkcprIjPfRfusBDlPIyvSEJWERH1YHyjQZI29FcseD9aP1cYlrk/pub?start=false&loop=false&delayms=60000&slide=id.g1199aeb248_0_120). (It's one of the rare things that Google Sheets can do that is missing in Excel.)
+
+We're going to do it using XPATH in [a Chrome extension called Scraper](https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en). This is the one you want:
+
+![]({{site.baseurl}}/assets/images/31-scraper.png)
+
+### A simple scrape: Texas Death Row
+The [Texas Death Row](https://www.tdcj.state.tx.us/death_row/dr_offenders_on_dr.html) list is very easy to scrape.
 
 Select a couple of rows of data in table, and before you do anything else, look at your inspector. Look at the bottom of the screen, and it will show you the route that had to be taken to get to your selection. it starts with the html tag, goes to body, then a bunch of other tags, and eventually to a "tr" tag.
 
@@ -136,3 +189,9 @@ There is one mistake in this table. That is, the Link only shows the words "Offe
        \*[2]/a/@href
 
 This means that you want the \<a href=...> part of the underlying code. The "a" is the tag, and the @href is an attribute of that tag. Don't worry too much about getting all the terminology down. The idea is to look underneath the hood of the page to see how to extract what you want.
+
+### On  your own
+
+Try scraping Craigslist for your town using the Chrome Scraper. Look at the elements in the Inspector to see what kind of hidden information you can extract. Here's what I came up with for a list of items that could easily be extracted from a Craigslist listing using the thumbnail view:
+
+![]({{site.baseurl}}/assets/images/31-craigslist-scrape.png)

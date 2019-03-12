@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>This is a fake page to look at in inspector</title>
+  <!--<script type="text/javascript"  src="simple.json"></script>-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+<script>
+  $(function() {
+   var presidents = [];
+   $.getJSON('simple.json', function(json) {
+       $.each(json.presidents, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "</tr>"
+           $(tblRow).appendTo("#president_data tbody");
+     });
+   });
+});
+</script>
+
+</head>
+
+<body style="margin:2em;">
+  <h2> A heading </h2>
+
+    <p style="font-size:90%;font-style:italic;padding-top:12px;" timestamp="2019-03-12 14:45:21"> This is a paragraph with smaller text, in italics</p>
+
+  <div>
+    This is a table created from the json file:
+
+  <table id="president_data" class="table" style="margin-top:2em;">
+    <thead> <th> First Name </th>
+            <th> Last Name </th>
+    <thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
+
+  <p>Somewhere in this we loaded a json object. See if you can find it in the network tab! </p>
+
+</body>
+</html>

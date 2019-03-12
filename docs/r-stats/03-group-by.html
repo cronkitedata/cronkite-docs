@@ -1648,9 +1648,9 @@ $(document).ready(function () {
 <h2>Libraries used in this notebook</h2>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 3.1.0       ✔ purrr   0.3.0  
+<pre><code>## ✔ ggplot2 3.1.0       ✔ purrr   0.3.0
 ## ✔ tibble  2.0.1       ✔ dplyr   0.8.0.1
-## ✔ tidyr   0.8.2       ✔ stringr 1.4.0  
+## ✔ tidyr   0.8.2       ✔ stringr 1.4.0
 ## ✔ readr   1.3.1       ✔ forcats 0.4.0</code></pre>
 <pre><code>## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
@@ -1679,7 +1679,7 @@ load(&quot;murders_with_counties.Rda&quot;)</code></pre>
 </div>
 <p>What if we wanted to know white-on-white , black-on-black, etc? Try adding another level:</p>
 <pre class="r"><code>#type your code here. You should have results that mirror the data frame called murders_by_race
- murders_by_race &lt;- 
+ murders_by_race &lt;-
     murders %&gt;%
     group_by (victim_race, offender_race) %&gt;%
     summarize (num_of_cases = n() ) %&gt;%
@@ -1693,7 +1693,7 @@ spread( key=victim_race, value=num_of_cases)</code></pre>
 spread_example &lt;- murders_by_race %&gt;%
                   spread (key=victim_race, value=num_of_cases)
 
-#now put it back together. You have to select with a minus sign at the end the field you want to just leave alone, 
+#now put it back together. You have to select with a minus sign at the end the field you want to just leave alone,
 #in our case the offender_race. (This is really the &quot;select&quot; portion of the query.)
 
 spread_example %&gt;%
@@ -1707,17 +1707,17 @@ spread_example %&gt;%
 <pre class="r"><code>murders_with_counties %&gt;%
    #just so we can see the fields we are calculating on the first page.
    select ( agency, state, county, year, victim_age, offender_age, solved) %&gt;%
-  
+
   #filter for King county and solved
   filter ( solved == &quot;Yes&quot; &amp; county==&quot;King&quot;) %&gt;%
-  
+
   #now calculate the difference
-  mutate ( age_diff = 
+  mutate ( age_diff =
               offender_age - victim_age) %&gt;%
-  
+
   #now re-order the list
   arrange( desc(age_diff)  ) %&gt;%
-  
+
   #so we don't print out 2,000 rows.
   head(50)</code></pre>
 <div data-pagedtable="false">
@@ -1733,14 +1733,14 @@ spread_example %&gt;%
                TRUE  ~  the value for everything else)
                </code></pre>
 <p>The condition is the same as you learned in filtering. This set of case_when statements sets the age of the victim and offender to NA when it is listed as 999. Otherwise, it keeps the original value.</p>
-<pre class="r"><code>age_differences &lt;- 
+<pre class="r"><code>age_differences &lt;-
   murders_with_counties %&gt;%
-  mutate (victim_age = case_when (victim_age == 999 ~ NA_real_, 
-                                TRUE ~ victim_age), 
-          
-        offender_age = case_when (offender_age == 999 ~ NA_real_, 
-                                  TRUE ~ offender_age), 
-        
+  mutate (victim_age = case_when (victim_age == 999 ~ NA_real_,
+                                TRUE ~ victim_age),
+
+        offender_age = case_when (offender_age == 999 ~ NA_real_,
+                                  TRUE ~ offender_age),
+
         age_difference = offender_age - victim_age
         )</code></pre>
 </div>
@@ -1749,11 +1749,11 @@ spread_example %&gt;%
 <h2>Summarize by year</h2>
 <p>Try summarizing by year and state and county. We’ll want to calculate the change in murders from one year to the next. We’ll save this data frame so we can work on it again later.</p>
 <p>Limit your analysis just to the last three years in the data, which ends in 2016.</p>
-<pre class="r"><code># UNCOMMENT AND FILL IN THE BLANKS IN THIS CODE  
+<pre class="r"><code># UNCOMMENT AND FILL IN THE BLANKS IN THIS CODE
 
-#annual_murders &lt;- 
+#annual_murders &lt;-
 #     murders_with_counties    %&gt;%
-#     select (  _____ , ____ , ____ ) %&gt;% 
+#     select (  _____ , ____ , ____ ) %&gt;%
 #     filter ( ___ &gt;= ___ ) %&gt;%
 #     group_by ( ____, _____ , ____ ) %&gt;%
 #     summarise ( murder_count = ___ ) </code></pre>
@@ -1765,7 +1765,7 @@ spread_example %&gt;%
 
 #annual_murders %&gt;%
 #    spread (  key= ____ , value = ____ , sep=&quot;&quot; ) %&gt;%
-#    mutate ( change2016 = ____ - _____, 
+#    mutate ( change2016 = ____ - _____,
 #             pctchange2016 = ____ / ____ * 100 )</code></pre>
 </div>
 

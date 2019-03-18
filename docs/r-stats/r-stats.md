@@ -44,3 +44,7 @@ In class, we went over the exercise that Andrew created that tried to tease out 
 * More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true)
 
 Practice: We're going to do a lab working on the built-in flight data in the tidyverse. For a complete tutorial using this dataset, and for more information on the things you can do with R in this context, watch the entire video from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"
+
+### Lesson 4: Intro to visualization
+
+This [rstudio.cloud project]() is an introduction to the concepts of visualization using gapminder data, borrowed from several other tutorials on ggplot. It's a way to start thinking about how to build charts in R. ([final document](04-intro-visualization.html))

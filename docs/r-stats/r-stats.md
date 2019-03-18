@@ -47,4 +47,4 @@ Practice: We're going to do a lab working on the built-in flight data in the tid
 
 ### Lesson 4: Intro to visualization
 
-This [rstudio.cloud project]() is an introduction to the concepts of visualization using gapminder data, borrowed from several other tutorials on ggplot. It's a way to start thinking about how to build charts in R. ([final document](04-intro-visualization.html))
+This [rstudio.cloud project](https://rstudio.cloud/spaces/10907/project/270748) is an introduction to the concepts of visualization using gapminder data, borrowed from several other tutorials on ggplot. It's a way to start thinking about how to build charts in R. ([final document](04-intro-visualization.html))

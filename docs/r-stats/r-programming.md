@@ -86,4 +86,4 @@ The more common applications are things we haven't done yet:
 
 * Gather identical spreadsheets into one dataset, as in [this example using refugee statistics](https://cronkitedata.github.io/rstats-training/refugees-loop.html).
 
-* Loop through a list of links, download a page, then scrape it to extract information. Here's [an example from the Maricopa County sheriff's department mugshots](https://cronkitedata.github.io/rstats-training/rscraping/mugshots-scrape.html). (It won't work -- the census changes each time, so the ID numbers are out of date.) 
+* Loop through a list of links, download a page, then scrape it to extract information. Here's [an example from the Maricopa County sheriff's department mugshots](https://cronkitedata.github.io/rstats-training/rscraping/mugshot-scrape.html). (It won't work -- the census changes each time, so the ID numbers are out of date.) 

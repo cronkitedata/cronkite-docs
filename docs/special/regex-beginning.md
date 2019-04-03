@@ -23,6 +23,9 @@ If you're using R, you can use a regex using the stringr package (part of the ti
 
     str_detect(var_name, regex("pattern"))  
 
+1. TOC
+{:toc}
+
 ### Pattern basics
 
 While each language implements regular expressions (or "regex") a little differently, they are generally the same. You may need to look up how to reference these pieces in your language.
@@ -53,6 +56,10 @@ Regular expressions also have wild cards of specific types. Usually, they are co
       \s   = "Any whitespace (tab, space, etc.)"
       \b   = "Any word boundary" (period, comma, space, etc.)
 
+When you upper-case them, it's the opposite:
+
+      \D = "Anything but a digit"
+
 #### Character classes
 
 Sometimes you want to tell the regex what characters it is allowed to accept. For example, say you don't know whether there is an alternative spelling for a name -- you can tell the regex to either ignore a character, or take one of several.
@@ -76,6 +83,8 @@ This means that to find a period or question mark, you have to use the pattern
         \. or
         \?
 
+In the Regex101, this is the biggest difference among the flavors of regex -- Python generally requires the least amount of escaping.
+
 ## Sample data
 
 Here are three small text files that you can copy and paste from your browser into the [regex101.com](https://regex101.com/) site. It's a site that lets you test out regular expressions, while explaining to you what's happening with them.
@@ -87,7 +96,7 @@ Here are three small text files that you can copy and paste from your browser in
 
 ## A simple example
 
-You should try following along in regex 101 for this part.
+You should try following along in [regex 101](https://regex101.com) for this part.
 
 ### Looking for specific words or characters
 
@@ -129,9 +138,11 @@ Try coming up with the rest of it on your own before you type in the answer:
 
 (This works because regular expressions normally are "greedy". That is, if you tell it "one or two digits", it will always take two if they exist.)
 
-      ^(\d{1,2}).(\d{1,2}).(\d{4})
+Put parentheses around any pieces that you want to use for later:
 
-Now each piece is numbered: \1 refers to the month, \2 refers to the day, and \3 refers to the year. Expand the "substitution" pane at the bottom of the screen, and try it:
+![]({{site.baseurl}}/assets/images/41-regex4.png)
+
+Now each piece has its section, numbered 0 for the whole match, and then 1-3 for the pieces.
 
 ![](../assets/images/41-regex3.png)
 
@@ -212,11 +223,11 @@ Here are a few lines of the data, which you can copy and paste to go through McD
 
 ## On your own
 
-[This is a small list of H2A visa applications](../assets/data/special/regex_h2bvisas.txt), which are requests for agricultural and seasonal workers, from companies or worksites in Arizona. Try writing some regular expression to extract diffrent pieces of it, since it's a fixed-width file.
+[This is a small list of H2A visa applications](../assets/data/special/regex_h2bvisas.txt), which are requests for agricultural and seasonal workers, from companies or worksites in Arizona. Try importing it into Excel, then copying some of the cells to practice your regular expression skills.
 
-Try importing it into Excel, then copying some of the cells to practice your regular expression skills. You might try
+You might try:
 
 * Finding all of the LLC's in the list (limited liability companies) of names. (You should turn on the case-insensitive flag in Regex 101 or set that flag in your program if you do.)
 * See how far you can get in standardizing the addresses.
-
-Next week, we'll see how this can work in OpenRefine.
+* Split the city, state and zip code of the worksite.
+* Find all of the jobs related to field crops such as lettuce or celery.

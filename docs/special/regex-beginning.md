@@ -3,85 +3,110 @@ title: Intro to Regular Expressions
 parent: Special
 ---
 
-We're going to use resources from IRE to work from in our first regular expression lesson.
-
 ## Regular Expressions basics
 
-A *regular expression* is a language that is implemented in most every computer programming language that lets you pick out patterns in text. It's used to split apart character strings like names, addresses, or phone numbers, or to pick out specific phrases that may not appear consistently enough to use search-and-replace.
+*Regular expressions* are used to find and replace text based on *patterns* rather than *characters*. They're particularly useful when trying to pull apart and standardize variables in a database such as names, phone numbers and addresses to make grouping and joining more effective.
+
+A human can easily discern that the name *John W. Smith, Jr.*  and *Smith, John W Jr* are probably the same. A computer sees them as completely different -- they don't start with the same characters, they have commas in different places, etc. A regular expression can help you pull apart names based on their pieces and then put them back together in another form.
 
 There are up to three parts to a regular expression:
 
-1. The pattern you are SEEKING
-2. An optional REPLACEMENT, which could use part of what you're seeking
-3. Options, which control whether it is case sensitive, and how it handles multiple-line character fields.
+1. The pattern you are trying to find.
+2. Options that control whether the pattern should be case-sensitive and how it handles line endings and wild cards. I usually turn off case-sensitivity but leave the other options alone.
+3. An optional replacement, which could use part of what you've found in the original seeking phase.
 
-Justin Meyer had a good handout at a recent IRE conference that can serve as a guide. There are lots of other regex cheatsheets out there.
+In practice, you'll usually save the pieces of each pattern you've found into a variable, then put them back together differently.
 
-NOTE: If you're using R, you can use a regex in your filter using this command:
+[Justin Meyer had a good handout]({{site.baseurl}}/assets/docs/meyer_regex.pdf) at a recent IRE conference that can serve as a guide.  
 
-    str_detect(var_name, regex("pattern"))
+If you're using R, you can use a regex using the stringr package (part of the tidyverse) using the functions *str_detect* , *str_extract* and their cousins. They look like this:  
 
-... where you replace var_name with the variable name you want to search, and "pattern" with the regex itself.
+    str_detect(var_name, regex("pattern"))  
+
+### Pattern basics
+
+While each language implements regular expressions (or "regex") a little differently, they are generally the same. You may need to look up how to reference these pieces in your language.
+
+#### Literal strings
+
+These are just letters, like "abc" or "Mary". They are case-sensitive and no different than using text in a filter.
+
+You can tell the regex that you want to find your pattern at the beginning or end of a line:
+
+    ^   = "Find only at the beginning of a line"
+    $   = "Find only at the end of a line"
+
+#### Wild cards
+
+A wild card is a character you use to indicate the word "anything". Here are some ways to use wild cards in regex:
+
+      .      = "any single character of any type"
+      .?     = "a possible single character of any type (but it might not exist)"
+      .*     = "anything or nothing of any length"
+      .{1,3} = "anything running between 1 and 3 characters long"
+
+Regular expressions also have wild cards of specific types. Usually, they are commonly used like this:
+
+      \d   = "Any digit"
+      \w   = "Any word character"
+      \s   = "Any whitespace (tab, space, etc.)"
+      \b   = "Any word boundary" (period, comma, space, etc.)
+
+#### Character classes
+
+Sometimes you want to tell the regex what characters it is allowed to accept. For example, say you don't know whether there is an alternative spelling for a name -- you can tell the regex to either ignore a character, or take one of several.
+
+In R, we saw that there were alternative spellings for words like "summarize" -- the British and the American spellings. You could, for example, use this pattern to pick up either spelling:
+
+        summari[sz]e
+
+The bracket tells the regex that it's allowed to take either one of those characters. You can also use ranges:
+
+      [a-zA-Z0-9]
+
+means that any lower case, upper case or numeric character is allowed.
+
+#### Escaping
+
+Because they're already being used for special purposes, some characters have to be "escaped" before you can search for them. Notably, they are parentheses (), periods, backslashes, dollar signs, question marks, dashes and carets.
+
+This means that to find a period or question mark, you have to use the pattern
+
+        \. or
+        \?
 
 ## Sample data
 
-Here are three small text files that you can open in any text editor, and then copy and paste into the [regex101.com](https://regex101.com/) site. It's a site that lets you test out regular expressions, while explaining to you what's happening with them.
+Here are three small text files that you can copy and paste from your browser into the [regex101.com](https://regex101.com/) site. It's a site that lets you test out regular expressions, while explaining to you what's happening with them.
 
-1. A [list of phone numbers](({{site.baseurl}}/assets/data/special/regex_phones.txt)) in different formats
+1. A [list of phone numbers]({{site.baseurl}}/assets/data/special/regex_phones.txt) in different formats
 2. A [list of dates]({{site.baseurl}}/assets/data/special/regex_dates.txt) that you need to convert into a different form.
 3. A [list of addresses]({{site.baseurl}}/assets/data/special/regex_addresses.txt) that are in multiple lines, and you need to pull out the pieces. (Courtesy of IRE)
-4. A [small chunk of the H2B visa applications]({{site.baseurl}}/assets/data/special/regex_practice_h2b.txt) from Arizona companies or worksites that has been kind of messed up for this demonstration, in tab-delimited format.
+4. A [small chunk of the H2B visa applications]({{site.baseurl}}/assets/data/special/regex_h2bvisas.txt) from Arizona companies or worksites that has been kind of messed up for this demonstration, in tab-delimited format.
 
 ## A simple example
 
+You should try following along in regex 101 for this part.
+
 ### Looking for specific words or characters
 
-The easiest regex is one that has just the characters  you're looking for when you know that they are the right case.
-
-typing "little" in the box will search for the literal letters l-i-t-t-l-e in the test string that you type in:
+The easiest regex is one that has just the characters  you're looking for when you know that they are the right case. They're called *literals* because you are literally looking for those letters or characters.
 
 ![](../assets/images/41-regex1.png)
 
-If you weren't sure if it was upper or lower case, you could change the flat from "gm" to "gmi", which includes the instruction to IGNORECASE.
-
-### Wildcards
-
-You should try following along in regex 101 for this part.
-
-There are several kinds of wildcards in regular expressions:
-
-      .*  means, "anything", up to the end of the line (usually)
-      .?  means, "any character might exist once or not at all"
-      .*? Means "only pick up the most limited version possible"
-
-Sometimes you don't know whether something is misspelled, but you can guess at some common misspellings. For example, you may know that there is a British spelling of the word "summarise", but that some people use "summarize". One way to work with this is to use a wildcard. In most regex implementations, a period is any character. So you could type in:
-
-      summari.e
-
-That would get "summarise", "summarize", but also "summarite".
-
-So you want to be a little more specific. Instead, you can use what's called a *character class*, in which you tell the regex which letters it can use:
-
-      summari[sz]e
-
-Another alternative is to say, anything EXCEPT a character:
-
-      summaris[^t]e
-
-You can also tell the regex *how many* times a character or phrase should appear using squigly brackets:
-
-      lit{1,2}le  would match "litle" and "little" but not "litttle"
+If you weren't sure if it was upper or lower case, you could change the global pattern flags (to the right of the pattern) from "gm" to "gmi", which includes the instruction to IGNORECASE.
 
 ## Practice #1: Extract date parts
 
-We're going to walk through a simple set of dates --  we're going to use regex 101 to replace something that looks like this:
+(In Regex 101, change the "Flavor" to "Python" -- otherwise, you have to escape more of the characters.)
+
+We want to turn dates that look like this:
 
       1/24/2018
 
 into something that looks like this:
 
      2008-1-24
-
 
 Copy and paste these numbers into the regex 101 window:
 
@@ -93,16 +118,17 @@ Copy and paste these numbers into the regex 101 window:
     10/13/2019
     11/3/2017
 
+First, you can use any digit using the pattern "\d". Try to do it in pieces. First, see if you can find one or two digits at the beginning of the line.
 
-First, you can use any digit using the pattern "\d"
+      ^\d{1,2}
 
-So we want to match the pattern like this:
+Try coming up with the rest of it on your own before you type in the answer:
 
-      \d{1,2}/\d{1,2}/\d{4}
+      ^\d{1,2}.\d{1,2}.\d{4}
 
-But if you put parentheses around each section, you can use them again later in a replacement.
+(This works because regular expressions normally are "greedy". That is, if you tell it "one or two digits", it will always take two if they exist.)
 
-      (\d{1,2})/(\d{1,2})/(\d{4})
+      ^(\d{1,2}).(\d{1,2}).(\d{4})
 
 Now each piece is numbered: \1 refers to the month, \2 refers to the day, and \3 refers to the year. Expand the "substitution" pane at the bottom of the screen, and try it:
 

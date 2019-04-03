@@ -1,0 +1,114 @@
+case_id	case_date	employer	address	city	state	zipcode	worksite	phone	job_title	crop	workers	base_pay
+H-300-17250-837887	9/7/2017	"RC Packing, LLC"	26769 El Camino Real North	Gonzalez	CA	93926	"Yuma, AZ 85364"	831-675-0308	Farmworker	Lettuce	260	10.95
+H-300-17249-354807	9/11/2017	"The Growers Company, Inc."	P.O. Box 3170	Somerton	AZ	85350	"Yuma, AZ 85364"	928-627-8080	General Farmworkers	Lettuce	440	10.95
+H-300-17254-459556	9/11/2017	Argo-Cargo LLC	17614 S Ave 1 1/2 E	Yuma	AZ	85365	"Yuma, AZ 85364"	928-344-2892	Farmworker	Lettuce	70	10.95
+H-300-17261-764320	9/19/2017	"SERVICIOS AGRICOLAS MEX, INC."	"15368 W. Westview Dr.,"	Goodyear	AZ	85395	"Scottsdale, AZ 85256"	623-374-1167	General Farmworkers	Broccoli	120	10.95
+H-300-17258-170455	9/15/2017	"FRESH HARVEST, INC."	"Headquarters: 101 E. MAIN STREET, HEBER CA 92249"	Somerton	AZ	85352	"Yuma, AZ 85365"	760-352-5212	Vegetable Harvest Workers	Romaine Lettuce	795	10.95
+H-300-17254-617116	9/14/2017	ELKHORN PACKING CO. LLC	"CA ADDR: 60 W MARKET ST. STE 150, Salinas, CA, 93901"	Yuma	AZ	85365	"Roll, AZ 85347"	831-676-3833	Field Workers	Spinach	563	10.95
+H-300-17251-382116	9/14/2017	ELKHORN PACKING CO. LLC	"CA ADDR: 60 W MARKET ST. STE 150, Salinas, CA, 93901"	Yuma	AZ	85365	"Somerton, AZ 85350"	(831)-676-3833	Field Workers (Mix Romaine and Romaine Hearts)	Romaine Lettuce	286	12.5
+H-300-17258-194499	9/18/2017	"Servicios Agricolas Mex, Inc."	15368 W. Westview Dr.	Goodyear	AZ	85395	"El Mirage, AZ 85335"	623-374-1167	General Farmworkers	General Farm Workers	52	10.95
+H-300-17262-337572	9/25/2017	JR CUSTOM HARVESTING COMPANY INC.	"HEADQUARTERS:20300 SPENCE RD, SALINAS, CA 93908"	YUMA	AZ	85365	"Yuma, AZ 85365"	831-775-0370	Field Workers (Iceberg and Romaine Lettuce)	Romaine Lettuce	120	11.2
+H-300-17229-016837	8/19/2017	"Kenly Farms, Inc."	5333 N 7th Street	Phoenix	AZ	85014	"Maricopa, AZ 85139"	602-955-0222	General Farmworker	Flowers	48	11
+H-300-17265-194742	9/26/2017	"The Growers Company, Inc."	P.O. Box 3170	Somerton	AZ	85350	"Yuma, AZ 85365"	928-627-8080	General Farmworkers	Lettuce	130	10.95
+H-300-17263-602672	9/20/2017	"FOOTHILL PACKING, INC."	1582 MOFFETT STREET SUITE G	SALINAS	CA	93905	"San Luis, AZ 85350"	831-784-1453	Field Workers	Romaine Lettuce	601	10.95
+H-300-17262-408029	9/28/2017	"FOOTHILL PACKING, INC."	"AZ address: 12350 S Tangelo Ave., Yuma, AZ 85365"	SALINAS	CA	93905	"Somerton, AZ 85350"	831-784-1453	Field Worker (Harvest)	Kale	205	10.95
+H-300-17262-222225	10/3/2017	VALLEY PRIDE INC.	"Corporate: 10735-B OCEAN MIST PARKWAY, CASTROVILLE, CA 95012"	Yuma	AZ	85364	"Yuma, AZ 85364"	831-633-5883	Field Worker (Head Lettuce Harvest)	Lettuce	170	10.95
+H-300-17262-501496	9/25/2017	ZION HARVEST INC.	"HEADQUARTERS: 20300 Spence Road, Salinas, CA 93908"	YUMA	AZ	85365	"Wellton, AZ 85356"	831-751-9784	Field Workers (Iceberg Lettuce)	Iceberg Lettuce	35	11.2
+H-300-17258-442421	9/20/2017	"FOOTHILL PACKING, INC."	"AZ address: 12350 S Tangelo Ave., Yuma, AZ 85365"	SALINAS	CA	93905	"Yuma, AZ 85365"	831-784-1453	Field Worker (Harvest)	Cabbage	60	10.95
+H-300-17254-384186	9/11/2017	PGM Packing Inc.	1450 S Atlantic Ave	Yuma	AZ	85365	"Welton, AZ 85356"	(928)-329-7548	Farmworker	Broccoli	100	10.95
+H-300-17268-510022	10/13/2017	D and J PACKING LLC	"HEADQUARTERS: 1588 MOFFETT ST., STE. B, SALINAS, CA 93905"	YUMA	AZ	85365	"Yuma, AZ 85364"	831-449-2494	Field Worker (Broccoli Harvest)	Broccoli	28	10.95
+H-300-17290-690046	11/3/2017	ELKHORN PACKING CO. LLC	"CA ADDR: 60 W MARKET ST. STE 150, Salinas, CA, 93901"	Yuma	AZ	85365	"Somerton, AZ 85350"	831-676-3833	Field Workers	Celery	85	10.95
+H-300-17293-861456	10/24/2017	"A. Oseguera Company, Inc."	1099 Rogge Road	Salinas	CA	93906	"Yuma, AZ 85365"	831-443-4155	Farm Worker; Crop	Cabbage	489	10.95
+H-300-17297-664472	11/3/2017	"RANCHO NUEVO HARVESTING, INC."	"HEADQUARTERS: 1429 S. BLOSSER, SANTA MARIA, CA 93458"	SANTA MARIA	CA	93454	"Yuma, AZ 85364"	805.347.1370	Field Worker (Celery Harvester Organic & Conventio	Celery	60	10.95
+H-300-17296-087592	11/17/2017	ELKHORN PACKING CO. LLC	"CA ADDR: 60 W MARKET ST. STE 150, Salinas, CA, 93901"	Yuma	AZ	85365	"Roll, AZ 85347"	831-676-3833	Field Workers	Celery	60	10.95
+H-300-17311-885154	11/17/2017	"FOOTHILL PACKING, INC."	"AZ ADDR: 12350 S. TANGELO AVE., YUMA, AZ 85365"	SALINAS	CA	93905	"Yuma, AZ 85364"	831-784-1453	Beekeeper	Bees	5	10.95
+H-300-17246-067490	11/14/2017	Desert Valley Honey LLC	2618 W Darrel Rd	Phoenix	AZ	85041	"Laveen, AZ 85339"	602-317-1228	Beekeeper	Bees	2	10.95
+H-300-17300-500792	11/2/2017	CENTRAL ARIZONA FARMING INCORPORATED	7332 EAST BUTHERUS DRIVE	SCOTTSDALE	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	Farmworker*SEE ATTACHMENT for full title	General Farm Workers	22	10.95
+H-300-17332-785306	11/28/2017	Manterola Sheep Company Inc	"20625 W. Clayton Rd., Casa Grande AZ 85193"	Casa Grande	AZ	85193	"Casa Grande, AZ 85193"	520-836-8597	Range Livestock Worker	Open Range Livestock	2	1389.67
+H-300-17296-131584	11/28/2017	"FONDOMONTE CALIFORNIA, LLC"	250 N Litchfield Rd	Goodyear	AZ	85338	"Blythe, CA 92225"	623-222-5148	Farm Machine Operator	Hay and Straw	18	12.57
+H-300-17326-091827	11/22/2017	"Riverview, LLP"	26406 470th Ave	Morris	MN	56267	"Willcox, AZ 85643"	320-392-6720	Farm Labor	Agricultural Equipment Operators	9	10.95
+H-300-17296-218806	11/27/2017	"Fondomonte Arizona, LLC"	250 N Litchfield Rd	Goodyear	AZ	85338	"Salome, AZ 85348"	623-222-5148	Farm Machine Operator	Hay and Straw	45	10.95
+H-300-17325-096770	11/21/2017	Southwest Ag Farms LLC	P.O. Box 540	Sunray	TX	79096	"Willcox, AZ 85643"	806-948-1325	Farm Labor	Corn	3	10.95
+H-300-17353-966951	12/21/2017	ELKHORN PACKING CO. LLC	"CA ADDR: 60 W MARKET ST. STE 150, Salinas, CA, 93901"	Yuma	AZ	85365	"Roll, AZ 85347"	831-676-3833	Field Workers	Lettuce	22	10.95
+H-300-17341-246685	12/21/2017	"FOOTHILL PACKING, INC."	"AZ address: 12350 S Tangelo Ave., Yuma, AZ 85365"	SALINAS	CA	93905	"Yuma, AZ 85364"	831-784-1453	Field Worker (Dates)	Trees	75	10.46
+H-300-17301-080888	12/6/2017	Pam's Kitchen Services LLC	148 Coconino St	Wickenburg	AZ	85390	"Aguila, AZ 85320"	928-302-8454	Cookers	Melons	8	10.95
+H-300-17324-371627	11/21/2017	CENTRAL ARIZONA FARMING INCORPORATED	7332 EAST BUTHERUS DRIVE	SCOTTSDALE	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	Farmworker*SEE ATTACHMENT for full title	Canteloupes	60	10.95
+H-300-17326-683315	11/22/2017	Arizona Apiaries LLC	7914 N 175 Ave	Waddell	AZ	85355	"Litchfield Park, AZ 85340"	623-695-7833	Beekeeper	Bees	12	12
+H-300-18005-610347	1/5/2018	"Ag Installers, Inc."	PO BOX 443	BOUSE	AZ	85325	"Bouse, AZ 85325"	281-330-1541	Farm Worker and Laborers	Construction of Livestock Buildings	24	10.5
+H-300-17348-996245	12/18/2017	"AG INSTALLERS, INC."	PO BOX 443	Bouse	AZ	85325	"Bloomfield, NE 68718"	281-330-1541	Farm Worker/Laborer	Construction of Livestock Buildings	60	13.79
+H-300-18011-814719	1/18/2018	"FRESH HARVEST, INC."	"HEADQUARTERS: 101 E. Main Street, Heber, CA 92249"	Somerton	AZ	85352	"Buckeye, AZ 85326"	760-352-5212	Field Workers: Harvest/Field Labor Crops	Cabbage	30	10.5
+H-300-17338-236962	1/13/2018	"Auza Ranches, LLC"	843 West Cottonwood Lane	Casa Grande	AZ	85122	"Casa Grande, AZ 85122"	520-426-9313	Farm Worker	Alfalfa	12	10.5
+H-300-18011-407130	1/12/2018	"Demaray Harvesting & Trucking, LLC"	2082 N. Curry Road	Casa Grande	AZ	85194	"Casa Grande, AZ 85194"	925-215-1277	Agricultural Equipment Operator	Agricultural Equipment Operators	32	10.5
+H-300-18017-604551	1/17/2018	"CY Ranchs, LLC"	"13825 N. 7th St., Suite M"	Phoenix	AZ	85022	"Bancroft, ID 83217"	602-993-0940	Farm/Irrigation/Livestock Worker	Wheat	2	11.63
+H-300-18016-423724	1/17/2018	"TAYLOR'S HERB GARDEN OF ARIZONA, INC"	23375 W Hwy 71	Congress	AZ	85232	"Congress, AZ 85232"	928-427-3201	"Farmworkers & Laborers, Crop"	Herbs	5	11
+H-300-18011-866830	1/11/2018	"DV FARMS, LLC"	843 West Cottonwood Lane	Casa Grande	AZ	85122	"Dateland, AZ 85333"	520-316-7600	Farm worker	Grains	2	10.5
+H-300-18030-535440	1/30/2018	"The Growers Company,  Inc."	P.O. Box 3170	Somerton	AZ	85350	"Huron, CA 93234"	928-627-8080	General Farmworkers	Iceberg Lettuce	100	13.18
+H-300-18017-831188	1/17/2018	"KENLY FARMS, INC"	5333 N 7th Street	Phoenix	AZ	85014	"Maricopa, AZ 85139"	602-955-0222	Nursery Workers	General Farm Workers	24	10.5
+H-300-17361-021892	12/27/2017	Auza Ranches LLC	"843 West Cottonwood Lane, Casa Grande AZ 85122"	Casa Grande	AZ	85230	"Casa Grande, AZ 85293"	520-426-9313	Sheepherder	Open Range Livestock	8	1584.22
+H-300-18012-490876	1/12/2018	"Moon Valley Farm Holdings, LLC"	"19820 N 7th Street, Suite 260"	Phoenix	AZ	85024	"Fillmore, CA 93015"	602-337-8678	"Farmworkers & Laborers, Crop"	General Farm Workers	30	13.18
+H-300-18012-528623	1/12/2018	"MOON VALLEY FARM HOLDINGS, LLC"	19820 N 7th Street Suite 260	Phoenix	AZ	85024	"Coachella, CA 92236"	602-337-8678	"Farmworkers & Laborers, Crop"	General Farm Workers	10	13.18
+H-300-18012-042777	1/12/2018	"Moon Valley Farm Holdings, LLC"	"19820 N 7th Street, Suite 260"	Phoenix	AZ	85024	"Fallbrook, CA 92028"	602-337-8678	"Farmworkers & Laborers, Crop"	General Farm Workers	20	13.18
+H-300-18045-286916	2/14/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	1	1584.22
+H-300-18045-286916	2/14/2018	MANTEROLA SHEEP	20625 WEST CLAYTON ROAD	CASA GRANDE	AZ	85122	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	1	1584.22
+H-300-18012-910957	1/12/2018	"MOON VALLEY FARM HOLDINGS, LLC"	"19820 N 7th Street, Suite 260"	Phoenix	AZ	85024	"Riverside, CA 92504"	602-337-8678	"Farmworkers & Laborers, Crop"	General Farm Workers	30	13.18
+H-300-18031-671752	2/7/2018	Nnima Bee Co LLC	7623 N Perryville Rd	Waddell	AZ	85355	"El Mirage, AZ 85355"	602-390-0801	Beekeeper	Bees	3	10.5
+H-300-18046-292754	2/15/2018	"CRANE HARVESTING & TRUCKING, INC."	P.O. BOX 397	BUCKEYE	AZ	85326	"BUCKEYE, AZ 85326"	623-386-1291	EQUIPMENT OPERATOR	Grains	16	10.5
+H-300-18050-714118	2/26/2018	"Ag Installers, Inc."	P.O. Box 443	Bouse	AZ	85325	"Bouse, AZ 85325"	281-330-1541	Farm worker and Laborer	Construction of Livestock Buildings	24	10.5
+H-300-18051-861688	2/22/2018	"Servicios Agricolas Mex, Inc."	15368 W. Westview Dr.	Goodyear	AZ	85395	"Surprise, AZ 85388"	623-374-1167	General Farmworkers	Lettuce	120	10.5
+H-300-18049-312581	2/19/2018	"Central Arizona Farming, Inc."	7332 E Butherus Dr.	Scottsdale	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	"Farmworkers and Laborers, Crop"	General Farm Workers	154	10.5
+H-300-18061-797218	3/8/2018	"Ag Installers, Inc."	P.O. Box 443	Bouse	AZ	85325	"North Vernon, IN 47265"	281-330-1541	Farm worker and Laborer	Cattle	32	12.93
+H-300-18053-761132	2/22/2018	PGM Packing Inc.	1450 S Atlantic Ave	Yuma	AZ	85365	"Watsonville, CA 95076"	928-329-7548	Farmworker	Cauliflower	80	13.18
+H-300-18066-539232	3/7/2018	"Central Arizona Farming, Inc."	7332 E Butherus Dr.	Scottsdale	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	"Farmworkers and Laborers, Crop"	General Farm Workers	160	10.5
+H-300-18051-617028	2/20/2018	Wurz Harvesting	PO Box 418	Waddell	AZ	85355	"Waddell, AZ 85355"	602-319-1100	Ag Equipment Operator	Agricultural Equipment Operators	3	15
+H-300-18043-929464	2/12/2018	PGM Packing Inc.	1450 S Atlantic Ave	Yuma	AZ	85365	"Santa Maria, CA 93458"	928-329-7548	Farmworker	Broccoli	50	13.18
+H-300-18067-862363	3/8/2018	"V & P Nurseries, Inc."	21919 E Germann Rd	Queen Creek	AZ	85142	"Queen Creek, AZ 85142"	480-919-847	Nursery Worker	Nursery and Greenhouse Workers	46	10.5
+H-300-18039-489666	2/14/2018	"Central Arizona Farming, Inc."	7332 E Butherus Dr.	Scottsdale	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	"Farmworkers and Laborers, Crop"	Melons	102	10.5
+H-300-18077-374968	3/18/2018	"Central Arizona Farming, Inc."	7332 E Butherus Dr.	Scottsdale	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	"Farmworkers and Laborers, Crop"	General Farm Workers	80	10.5
+H-300-18095-135508	4/6/2018	"The Growers Company,  Inc."	P.O. Box 3170	Somerton	AZ	85350	"Salinas, CA 93906"	928-627-8080	General Farmworkers	Strawberries	56	13.18
+H-300-18088-041442	3/29/2018	"Ag Installers, Inc."	P.O. Box 443	Bouse	AZ	85325	"North Vernon, IN 47265"	281-330-1541	Farm worker and Laborer	Livestock	24	12.93
+H-300-18089-944774	3/30/2018	DUNCAN FAMILY FARMS LLC	18969 W McDowell Rd	Buckeye	AZ	85396	"Brockport, NY 14420"	623-853-9880	Farmworker: Diversified	General Farm Workers	15	12.83
+H-300-18094-079175	4/4/2018	"Servicios Agricolas Mex, Inc."	15368 W. Westview Dr.	Goodyear	AZ	85395	"Litchfield Park, AZ 85340"	623-374-1167	General Farmworkers	Watermelons	180	10.5
+H-300-18072-391967	3/13/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	2	1584.22
+H-300-18072-391967	3/13/2018	MANTEROLA SHEEP	20625 WEST CLAYTON ROAD	CASA GRANDE	AZ	85122	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	2	1584.22
+H-300-18103-944764	4/13/2018	"Silver Canyon Nurseries, Inc."	2647 E. Southern Avenue	Phoenix	AZ	85040	"Dateland, AZ 85333"	602-268-9466	"Farmworkers, Laborers, Crop, Nursery, & Greenhouse"	Trees	10	10.5
+H-300-18098-554812	4/8/2018	MELBY CUSTOM CONTRACTING INC.	2815 W. WILLIAM LANE	SAN TAN VALLEY	AZ	85142	"Pond Creek, OK 73766"	480-440-5650	farm worker - grain 1	Custom Combine Harvesters	4	10.69
+H-300-18103-710953	4/13/2018	"Silver Canyon Nurseries, Inc."	2647 E. Southern Avenue	Phoenix	AZ	85040	"Phoenix, AZ 85040"	602-268-9466	"Farmworkers, Laborers, Crop Nursery"	Trees	18	10.5
+H-300-18142-673785	5/23/2018	"The Growers Company,  Inc."	P.O. Box 3170	Somerton	AZ	85350	"Salinas, CA 93905"	928-627-8080	General Farmworkers	Iceberg Lettuce	175	13.18
+H-300-18100-657346	4/10/2018	MANTEROLA SHEEP	20625 WEST CLAYTON ROAD	CASA GRANDE	AZ	85193	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	4	1584.22
+H-300-18100-657346	4/10/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	4	1584.22
+H-300-18142-682917	5/22/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	2	1584.22
+H-300-18142-682917	5/22/2018	MANTEROLA SHEEP	20625 WEST CLAYTON ROAD	CASA GRANDE	AZ	85122	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	2	1584.22
+H-300-18136-083641	5/22/2018	"BULLSEYE LIVESTOCK, LLC"	P.O. Box 609 (corporate headquarters)	Queen Creek	AZ	85142	"Fort Morgan, CO 80701"	480-797-2921	Livestock/Farm/Irrigation Worker & Truck Driver	Livestock	6	10.69
+H-300-15195-923040	5/25/2018	PURPLE KARAT ENTERPRISES INC	4762 N 189TH AVENUE	LITCHFIELD PARK	AZ	85340	"LITCHFIELD PARK, AZ 85340"	623-266-4031	Farmworkers	General Farm Workers	10	10.5
+H-300-18128-466282	5/8/2018	"Ag Installers, Inc."	P.O. Box 443	Bouse	AZ	85325	"North Vernon, IN 47265"	281-330-1541	Farm worker and Laborer	Livestock	32	12.93
+H-300-18124-646012	5/4/2018	AUZA RANCHES LLC	843 West Cottonwood Lane	Casa Grande	AZ	85122	"Casa Grande, AZ 85293"	520-426-9313	Sheepherder	Sheep	13	1584.22
+H-300-18113-948260	5/24/2018	BARNES HARVESTING	3095 S Trekell Rd	Casa Grande	AZ	85193	"Lyford, TX 78569"	520-836-6853	Farm Machine Operator	Cotton	10	11.87
+H-300-18142-007063	5/22/2018	"Ag Installers, Inc."	P.O. Box 443	Bouse	AZ	85325	"Arlington, WA 98223"	281-330-1541	Farm Workers/Laborer	Livestock	12	14.12
+H-300-18164-681657	6/13/2018	MANTEROLA SHEEP	20625 WEST CLAYTON ROAD	CASA GRANDE	AZ	85122	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	6	1584.22
+H-300-18164-681657	6/13/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"CASA GRANDE, AZ 85193"	208-595-2226	Sheepherder	Sheep	6	1584.22
+H-300-18142-749944	5/22/2018	Ardia LLC	"Physical: 16195 Ave B & County 16th Street, Somerton AZ 85350"	Somerton	AZ	85350	"Somerton, AZ 85350"	928-919-2567	Sheepherder	Sheep	6	1584.22
+H-300-18164-081558	6/28/2018	"AMIGO FARMS, INC."	4245 E 32ND ST	YUMA	AZ	85365	"Roll, AZ 85347"	928-726-3738	Field Worker (Irrigators)	General Farm Workers	8	11
+H-300-18164-938343	6/13/2018	"Ag Installers, Inc."	16107 Kensington Drive	Sugar land	TX	77479	"Bouse, AZ 85325"	713-557-3436	Farm Workers/Laborer	General Farm Workers	72	10.5
+H-300-18179-672579	6/28/2018	"CENTRAL ARIZONA FARMING, INC"	7332 E Butherus Dr.	Scottsdale	AZ	85260	"Tonopah, AZ 85354"	480-998-1444	"Farmworkers and Laborers, Crop"	General Farm Workers	93	10.5
+H-300-18178-315077	6/27/2018	Duncan Family Farms LLC	18969 W McDowell Rd	Buckeye	AZ	85396	"Buckeye, AZ 85396"	623-853-9880	Farmworker: Diversified	General Farm Workers	15	10.5
+H-300-18198-767446	7/17/2018	Joseph Auza Sheep Co.	"Physical: 353 East Wiley Way, Casa Grande AZ 85122"	Casa Grande	AZ	85122	"Arizona City, AZ 85223"	520-518-1606	Sheepherder	Open Range Livestock	8	1584
+H-300-18206-443325	7/25/2018	WESTERN RANGE ASSOCIATION	161 FIFTH AVENUE SOUTH	TWIN FALLS	ID	83301	"GOLD CANYON, AZ 85118"	208-595-2226	Sheepherder	Sheep	1	1584.22
+H-300-18206-443325	7/25/2018	FERREIRA LAND & CATTLE	3000 N REYMERT RD	GOLD CANYON	AZ	85118	"GOLD CANYON, AZ 85118"	208-595-2226	Sheepherder	Sheep	1	1584.22
+H-300-18225-298841	8/13/2018	Duncan Family Farms LLC	18969 W McDowell Rd	Buckeye	AZ	85396	"Buckeye, AZ 85396"	623-853-9880	Farmworker: Diversified	Herbs	10	10.5
+H-300-18200-949539	7/25/2018	"Kenly Farms, Inc."	5333 N 7th Street	Phoenix	AZ	85014	"Maricopa, AZ 85139"	602-955-0222	General Farmworker	Flowers	30	10.5
+H-300-18206-253045	7/25/2018	"Kenly Farms, Inc."	5333 N 7th Street	Phoenix	AZ	85014	"Maricopa, AZ 85139"	602-955-0222	General Farmworker	Flowers	30	10.5
+H-300-18212-997828	8/14/2018	"FOOTHILL PACKING, INC."	"HEADQUARTERS: 1582 MOFFETT STREET, STE. G, SALINAS, CA 93905"	YUMA	AZ	85365	"Thermal, CA 92274"	831-784-1453	"Field Workers: Citrus, Peaches, Dates"	Citrus	75	13.18
+H-300-18219-822436	8/7/2018	"Fresh Harvest, Inc."	"Corporate Office: 101 E. Main Street, Heber, CA 92249"	Somerton	AZ	85352	"Yuma, AZ 85365"	760-352-5212	"Farmworkers & Laborers, Citrus"	Citrus	60	10.5
+H-300-18220-459991	8/15/2018	PURPLE KARAT	4762 N 189TH AVENUE	LITCHFIELD PARK	AZ	85340	"LITCHFIELD PARK, AZ 85340"	623-266-4031	Salad Processing and farm labor	Lettuce	10	10.5
+H-300-18220-492345	8/8/2018	"El Rancho Grande, LLC"	6735 W. Frier Dr.	Glendale	AZ	85303	"Gila River Indian Community, NA N/A"	623-934-9415	Agricultural laborers/workers	Hay and Straw	8	11
+H-300-18219-389310	8/7/2018	"SILVER CANYON NURSERIES, INC."	2647 E. Southern Avenue	Phoenix	AZ	85040	"Dateland, AZ 85333"	602-268-9466	"Farmworkers, Laborers, Crop, Nursery, & Greenhouse"	Trees	20	10.5
+H-300-18221-838716	8/9/2018	MANTEROLA SHEEP COMPANY INC	"Physical: 20625 W. Clayton Rd., Casa Grande AZ 85193"	Casa Grande	AZ	85130	"Casa Grande, AZ 85193"	520-836-8597	Range Livestock Worker	Open Range Livestock	2	1584.22
+H-300-18234-962671	8/22/2018	Agro-Cargo LLC	17614 S Avenue 1 1/2 E	Yuma	AZ	85365	"Yuma, AZ 85365"	928-344-2892	General Farmworker	Lettuce	41	10.5
+H-300-18218-718376	8/20/2018	"RANCHO NUEVO HARVESTING, INC."	1225 LA BREA AVE	SANTA MARIA	CA	93458	"Yuma, AZ 85356"	805-347-1370	"Field Worker (Melon Harvest, General Labor)"	Melons	108	10.5
+H-300-18220-665047	8/23/2018	"FOOTHILL PACKING, INC."	"HEADQUARTERS: 582 MOFFETT STREET SUITE G, SALINAS, CA 93905"	YUMA	AZ	85365	"San Luis, AZ 85365"	831-784-1453	Field Workers	Spinach	33	10.95
+H-300-18226-195498	8/27/2018	"FOOTHILL PACKING, INC."	"HEADQUARTERS: 1582 MOFFETT STREET SUITE G, SALINAS, CA 93905"	YUMA	AZ	85365	"Dome Valley, AZ 85365"	831-784-1453	Field Workers	Citrus	200	10.95
+H-300-18236-658425	8/24/2018	R.C. Packing LLC	26769 El Camino Real North	Gonzalez	CA	93926	"Yuma, AZ 85364"	831-675-0308	Farmworker	Lettuce	240	10.5
+H-300-18201-774615	7/27/2018	"UNITED AG LABOR SERVICES, INC."	125 W MILL ST	SANTA MARIA	CA	93458	"TACNA, AZ 85352"	805-310-5970	LETTUCE HARVESTER	Lettuce	14	10.5
+H-300-18233-635788	8/23/2018	"Servicios Agricolas Mex, Inc."	15368 W. Westview Dr.	Goodyear	AZ	85395	"Scottsdale, AZ 85256"	623-374-1167	General Farmworkers	Broccoli	200	10.5
+H-300-18239-423615	8/28/2018	"The Growers Company,  Inc."	P.O. Box 3170	Somerton	AZ	85350	"Coalinga, CA 93234"	928-627-8080	General Farmworkers	Lettuce	100	13.18
+H-300-18233-305400	9/6/2018	ELKHORN PACKING CO. LLC	60 W MARKET ST. STE 150	SALINAS	CA	93901	"Yuma, AZ 85365"	831-676-3833	Field Worker (Mix Romaine and Romaine Hearts)	Romaine Lettuce	210	13.35

@@ -29,6 +29,32 @@
     
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
     
       
     
@@ -54,44 +80,6 @@
     
       
     
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
       
     
       
@@ -125,6 +113,26 @@
       
     
       
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
     
       
         
@@ -138,18 +146,6 @@
             
               
               <ul class="navigation-list-child-list ">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
                 
                   
                 
@@ -202,9 +198,29 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/general/data-diary.html" class="navigation-list-link">Data diaries</a>
+                      <a href="http://localhost:4000/cronkite-docs/general/file-formats.html" class="navigation-list-link">File formats</a>
                       
                     </li>
                   
@@ -214,7 +230,7 @@
                   
                     <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/general/file-formats.html" class="navigation-list-link">File formats</a>
+                      <a href="http://localhost:4000/cronkite-docs/general/data-diary.html" class="navigation-list-link">Data diaries</a>
                       
                     </li>
                   
@@ -266,8 +282,6 @@
                   
                 
                   
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/general/story-list.html" class="navigation-list-link">Story list</a>
@@ -275,31 +289,9 @@
                     </li>
                   
                 
-                  
-                
               </ul>
             
           </li>
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
         
       
     
@@ -315,6 +307,16 @@
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                 
@@ -415,23 +417,19 @@
                             
                           
                             
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html" class="navigation-list-link">Excel refresher</a>
                               </li>
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
                             
                           
                             
@@ -467,17 +465,25 @@
                             
                           
                             
+                          
+                            
+                          
+                            
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-filtersort.html" class="navigation-list-link">Filter and sort</a>
                               </li>
                             
                           
                             
+                          
+                            
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-formulas.html" class="navigation-list-link">Excel formulas</a>
                               </li>
-                            
-                          
                             
                           
                             
@@ -501,14 +507,6 @@
                         </ul>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -612,9 +610,15 @@
                             
                           
                             
+                          
+                            
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/practice/03-excel-rates.html" class="navigation-list-link">Rates and ratios with FBI data</a>
                               </li>
+                            
+                          
                             
                           
                             
@@ -634,13 +638,11 @@
                             
                           
                             
-                          
-                            
-                          
-                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/practice/07-excel-kpop.html" class="navigation-list-link">Formulas for boring Spotify playlists</a>
                               </li>
+                            
+                          
                             
                           
                             
@@ -710,9 +712,31 @@
                 
                   
                 
+                  
+                
               </ul>
             
           </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
         
       
     
@@ -724,10 +748,6 @@
             
               
               <ul class="navigation-list-child-list ">
-                
-                  
-                
-                  
                 
                   
                 
@@ -810,6 +830,20 @@
                   
                 
                   
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/r-stats/r-programming.html" class="navigation-list-link">Programming concepts</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                 
@@ -859,12 +893,42 @@
     
       
         
+      
+    
+      
+        
           <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/special" class="navigation-list-link">Special</a>
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/special/regex-beginning.html" class="navigation-list-link">Intro to Regular Expressions</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                 
@@ -890,24 +954,6 @@
                       <a href="http://localhost:4000/cronkite-docs/special/cleanup_pdf.html" class="navigation-list-link">PDF tools</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -992,13 +1038,11 @@
                 
                   
                 
+                  
+                
               </ul>
             
           </li>
-        
-      
-    
-      
         
       
     
@@ -1080,19 +1124,11 @@
                   
                 
                   
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/01-foia-help.html" class="navigation-list-link">Getting FOIA help</a>
                       
                     </li>
-                  
-                
-                  
-                
                   
                 
                   
@@ -1120,19 +1156,27 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/03-arizona.html" class="navigation-list-link">Arizona public records</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -1167,13 +1211,13 @@
                 
                   
                 
+                  
+                
+                  
+                
               </ul>
             
           </li>
-        
-      
-    
-      
         
       
     
@@ -1185,6 +1229,32 @@
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/cronkite-docs/workshops/newstrain/newstrain.html" class="navigation-list-link">NewsTrain Phoenix</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                 
                   
                 
@@ -1219,30 +1289,6 @@
                   
                 
                   
-                
-                  
-                    <li class="navigation-list-item ">
-                      
-                      <a href="http://localhost:4000/cronkite-docs/workshops/newstrain/newstrain.html" class="navigation-list-link">NewsTrain Phoenix</a>
-                      
-                    </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/workshops/writing.html" class="navigation-list-link">NICAR master class</a>
@@ -1251,13 +1297,17 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/workshops/phd-sources.html" class="navigation-list-link">Links to source data for doctoral students</a>
                       
                     </li>
-                  
-                
                   
                 
                   
@@ -1328,11 +1378,13 @@
                 
                   
                 
-                  
-                
               </ul>
             
           </li>
+        
+      
+    
+      
         
       
     
@@ -1478,7 +1530,7 @@
   "16": {
     "id": "16",
     "title": "PDF tools",
-    "content": "#Dealing with PDFs PDF’s are the bane of a data journalist’s existence. They come in all kinds of unfriendly formats. Is it an image or is it text? It doesn’t matter if you just want to search a pdf or turn it into a data set – if it starts as an image, you’ve got a big hurdle to jump called Optical Character Recognition, or OCR. Learn to check for image vs. text as soon as you get a document. THe easiest way is to try to select some text in your pdf reader. If you can’t, it’s probably a picture of text. If you can, then try to select some more. If you can select most of it, it’s probably text. Government agencies will give you both kinds. The easiest to use are those that were created directly from Word, Excel, or some other form. The hardest are forms that have been scanned into a computer (often out of order). OCR software can be expensive. If all you want to do is search, you can use DocumentCloud. That service automates the use of the free Tesseract engine. But beyond that, you’ll probably have to pay for a tool. See a list below. ##Searchable tables PDFs are designed to preserve the format on the page. You shouldn’t think of them as data files but as printed reports. Sometimes copying and pasting leaves you with unintelligible line breaks and smushed-together cells. You’ll usually have to use some kind of tool to deal with this. The key to trying to convert PDFs is to try every tool you can afford. You’ll never know which one works. Again, these will only work with pdf’s that are already searchable. Free tools CometDocs is a free service that lets you upload your pdf and will return to you an XL file in email. Your IRE membership gives you a paid version for free, which lets you keep all of your pdf’s on their site and puts you in the front of the line. Tabula, a new alpha-level project from ProPublica and the Mozilla fellows (and also Jeremy Merrill now at the NYT). It lets you show the program where a table is, and it does a little more sophisticated work to figure out where the cells are. It’s a little better with PDF’s with lines between rows than CometDocs. xpdf is an old but reliable command line tool that still works remarkably well. It’s often best for very fixed-width and consistent pdfs. It’s a bit of a pain to install on Unix-based (including Mac) systems, but once you have it it’s easy. See this tutorial from IRE to use it. You’ll have to log into IRE to get it. PDF Tables from ScraperWiki is free for now. It may restrict large-scale conversions. It uses a different algorithm that might sometimes preserve the position of cells best. There are also PDF plug-ins to Ruby and Python, which can sometimes work just fine. ###When free isn’t good enough Most of the pay products have two levels: one if you don’t need to OCR, and another if you do. If you’re going to pay, you might as well get the OCR. It’s not that much more and you’ll eventually need it. Sometimes it’s worth seeing if you can pay just a little more than that for what’s called “batch” conversion, or “hot folders.” That means that when you get 10,000 pdfs zipped up into one file, you won’t have to individually convert them all. Rob Barry created this tutorial using ABBYY to extract information from even the most difficult forms. *Able2Extract: $99.95 for non-OCR/ $129.95 for OCR. Intuitive and reasonably accurate. It has some annoyances, but saving as a text file often overcomes them (rather than going directly to Excel). *ABBYY FineReader Also $99.99 for personal use, available for Mac and Windows. Includes OCR. *OmniPage, $149.99 for individuals. This one is just slightly more powerful, but I’ve had better luck with it over time. The constant upgrades are really a pain. (Windows only) *Cogniview has PDF2XL, which has been a treat for very difficult pdfs. It has a hard learning curve and is only really useful on tables, unlike OmniPage and ABBYY. ($129.97). (Windows only)",
+    "content": "Dealing with PDFs PDF’s are the bane of a data journalist’s existence. They come in all kinds of unfriendly formats. Is it an image or is it text? It doesn’t matter if you just want to search a pdf or turn it into a data set – if it starts as an image, you’ve got a big hurdle to jump called Optical Character Recognition, or OCR. Learn to check for image vs. text as soon as you get a document. THe easiest way is to try to select some text in your pdf reader. If you can’t, it’s probably a picture of text. If you can, then try to select some more. If you can select most of it, it’s probably text. Government agencies will give you both kinds. The easiest to use are those that were created directly from Word, Excel, or some other form. The hardest are forms that have been scanned into a computer (often out of order). OCR software can be expensive. If all you want to do is search, you can use DocumentCloud. That service automates the use of the free Tesseract engine. But beyond that, you’ll probably have to pay for a tool. See a list below. Searchable tables PDFs are designed to preserve the format on the page. You shouldn’t think of them as data files but as printed reports. Sometimes copying and pasting leaves you with unintelligible line breaks and smushed-together cells. You’ll usually have to use some kind of tool to deal with this. The key to trying to convert PDFs is to try every tool you can afford. You’ll never know which one works. Again, these will only work with pdf’s that are already searchable. Free tools CometDocs is a free service that lets you upload your pdf and will return to you an XL file in email. Your IRE membership gives you a paid version for free, which lets you keep all of your pdf’s on their site and puts you in the front of the line. Tabula, a new alpha-level project from ProPublica and the Mozilla fellows (and also Jeremy Merrill now at the NYT). It lets you show the program where a table is, and it does a little more sophisticated work to figure out where the cells are. It’s a little better with PDF’s with lines between rows than CometDocs. xpdf is an old but reliable command line tool that still works remarkably well. It’s often best for very fixed-width and consistent pdfs. It’s a bit of a pain to install on Unix-based (including Mac) systems, but once you have it it’s easy. See this tutorial from IRE to use it. You’ll have to log into IRE to get it. PDF Tables from ScraperWiki is free for now. It may restrict large-scale conversions. It uses a different algorithm that might sometimes preserve the position of cells best. There are also PDF plug-ins to Ruby and Python, which can sometimes work just fine. When free isn’t good enough Most of the pay products have two levels: one if you don’t need to OCR, and another if you do. If you’re going to pay, you might as well get the OCR. It’s not that much more and you’ll eventually need it. Sometimes it’s worth seeing if you can pay just a little more than that for what’s called “batch” conversion, or “hot folders.” That means that when you get 10,000 pdfs zipped up into one file, you won’t have to individually convert them all. Rob Barry created this tutorial using ABBYY to extract information from even the most difficult forms. Able2Extract: $99.95 for non-OCR/ $129.95 for OCR. Intuitive and reasonably accurate. It has some annoyances, but saving as a text file often overcomes them (rather than going directly to Excel). ABBYY FineReader Also $99.99 for personal use, available for Mac and Windows. Includes OCR. OmniPage, $149.99 for individuals. This one is just slightly more powerful, but I’ve had better luck with it over time. The constant upgrades are really a pain. (Windows only) Cogniview has PDF2XL, which has been a treat for very difficult pdfs. It has a hard learning curve and is only really useful on tables, unlike OmniPage and ABBYY. ($129.97). (Windows only) When you’re ready to spend a fortune In the newsroom, Monarch from DataWatch has been a godsend – it is considered a report miner, not a pdf converter, and it is almost like magic. It also costs so much that it might as well be out of the realm of most reporters. The only reason I mention it is that if you find yourself in a bind with thousands of pages of difficult reports and you can’t see how you’ll convert them, you often have two choices: Pay for the software or pay for data entry. Another alternative is called TextConverter from SiMX, which has a $75/month option for limited work.",
     "url": "http://localhost:4000/cronkite-docs/special/cleanup_pdf.html",
     "relUrl": "/special/cleanup_pdf.html"
   },
@@ -1624,118 +1676,132 @@
   },
   "37": {
     "id": "37",
+    "title": "Programming concepts",
+    "content": "Two concepts in programming will help you understand how to accomplish a lot of the tasks you are trying to complete. They are functions and loops. A function is a set of instructions that is either built into the programming language, is added through a package or library, or is created by you. You can save them for later use, or apply them onthe fly. A loop is a way to repeat your instructions over and over. An example Suppose you want to make an omelet. There are several steps you have to take. You also need to know two things before you start: which ingredients you have on hand, and what kind of omelet you are supposed to make. A function that creates an omelet would generally look like this. (This is called pseudocode – it won’t work anywhere, but the general logic is laid out.) function make_omelet (k, i) { check for necessary ingredients (are all elements of k in i?) quit now if you don&#39;t have them all. return the error message prepare the ingredients (k) whisk the eggs melt some butter in a pan pour in the eggs add ingredients except cheese (k-cheese) flip the omelet if you have cheese in both k and i , fold in cheese remove from pan return the omelet } Now, when you want to make an omelet, you can just make your list of ingredients and the kind of omelet you want, and execute the function: Let’s start with setting up those items: ingredients_on_hand &lt;- c(&quot;butter&quot;, &quot;eggs&quot;, &quot;cheese&quot;, &quot;spinach&quot;, &quot;tomatoes&quot;) kind_of_omelet &lt;- c(&quot;spinach&quot;, &quot;cheese&quot;) make_omelet (kind_of_omelet, ingredients_on_hand) Loops Now, you’d have to repeat this over and over if you had a restaurant. You’d have a program hundreds of lines long – one for each customer. Instead, you could loop through the customers and do the same thing: for (c in customers) { request what kind they want make_omelet (kind, ingredients_on_hand) give omelet to customer c update your ingredients_on_hand list if you ran out of something } Applications Many of the functions we use are already built into R, or are in libraries that we borrow – someone else has already written them for you. Examples include: anything you use in a “mutate” statement reading in a csv or Excel file calculating the average or sum counting The more common applications are things we haven’t done yet: Gather identical spreadsheets into one dataset, as in this example using refugee statistics. Loop through a list of links, download a page, then scrape it to extract information. Here’s an example from the Maricopa County sheriff’s department mugshots. (It won’t work – the census changes each time, so the ID numbers are out of date.)",
+    "url": "http://localhost:4000/cronkite-docs/r-stats/r-programming.html",
+    "relUrl": "/r-stats/r-programming.html"
+  },
+  "38": {
+    "id": "38",
     "title": "R for journalism",
     "content": "R resources Here are several other sources for you to review if you want to try something different on your own: Matt Waite’s sports data analysis and visualization course from the Univ. of Nebraska. R for Data Science, an online textbook written by Hadley Wickham, inventor of the tidyverse. Intro to Data Science for the Social Sector, Jesse Lecy, from the ASU Program Evaluation and Data Analytics. This is much more a startup in R than a course in program evaluation. First 5 chapters of Sharon Machlis’ Practical R for Mass Communication and Journalism. The entire book should be available by early 2019. Andrew Ba Tran’s “R for Journalists” course, which was originally offered through the Knight Center at the University of Texas’s journalismcourses.org. I don’t know how to put the rendered HTML into this format, so here’s a link to the tutorials and R Markdown files that we’ve used in class: Recap Most of these exercises are in RStudio.cloud for ASU students. These items have links to zipped files that can be uploaded to RStudio.cloud as a whole project, and to .Rmd files (markdown documents) that aren’t yet converted into HTML. They may open as text in your browser – just save it to your local machine to have a file that you can work with in R. Where necessary, data files are also listed. Lesson 1: Getting around R &amp; intro to data frames RStudio zipped project Getting started with R Markdown and R: Document / RMarkdown / RStudio project Introduction to data frames: Document / RMarkdown Lesson 2: Select and filter In class, we went over Sharon Machlis’ first lesson on her site, listed above. We also went through the tutorial from the “swirl” package Filtering murder data (based on material from Andrew Ba Tran’s course listed above): Document / RMarkdown / RStudio zipped project Lesson 3: Group by and join In class, we went over the exercise that Andrew created that tried to tease out of the murder data the Green River Killer. Then we went over the idea of grouping and joining. RStudio zipped project Green River killer: Document / RMarkdown . Use the zipped project to get the data frame. More grouping and reorganizing: Document / RMarkdown Practice: We’re going to do a lab working on the built-in flight data in the tidyverse. For a complete tutorial using this dataset, and for more information on the things you can do with R in this context, watch the entire video from the Data School: “Hands on dplyr tutorial for faster data manipulation in R” Lesson 4: Intro to visualization This rstudio.cloud project is an introduction to the concepts of visualization using gapminder data, borrowed from several other tutorials on ggplot. It’s a way to start thinking about how to build charts in R. (final document)",
     "url": "http://localhost:4000/cronkite-docs/r-stats",
     "relUrl": "/r-stats"
   },
-  "38": {
-    "id": "38",
+  "39": {
+    "id": "39",
+    "title": "Intro to Regular Expressions",
+    "content": "Regular Expressions basics Regular expressions are used to find and replace text based on patterns rather than characters. They’re particularly useful when trying to pull apart and standardize variables in a database such as names, phone numbers and addresses to make grouping and joining more effective. A human can easily discern that the name John W. Smith, Jr. and Smith, John W Jr are probably the same. A computer sees them as completely different – they don’t start with the same characters, they have commas in different places, etc. A regular expression can help you pull apart names based on their pieces and then put them back together in another form. There are up to three parts to a regular expression: The pattern you are trying to find. Options that control whether the pattern should be case-sensitive and how it handles line endings and wild cards. I usually turn off case-sensitivity but leave the other options alone. An optional replacement, which could use part of what you’ve found in the original seeking phase. In practice, you’ll usually save the pieces of each pattern you’ve found into a variable, then put them back together differently. Justin Meyer had a good handout at a recent IRE conference that can serve as a guide. If you’re using R, you can use a regex using the stringr package (part of the tidyverse) using the functions str_detect , str_extract and their cousins. They look like this: str_detect(var_name, regex(&quot;pattern&quot;)) Pattern basics While each language implements regular expressions (or “regex”) a little differently, they are generally the same. You may need to look up how to reference these pieces in your language. Literal strings These are just letters, like “abc” or “Mary”. They are case-sensitive and no different than using text in a filter. You can tell the regex that you want to find your pattern at the beginning or end of a line: ^ = &quot;Find only at the beginning of a line&quot; $ = &quot;Find only at the end of a line&quot; Wild cards A wild card is a character you use to indicate the word “anything”. Here are some ways to use wild cards in regex: . = &quot;any single character of any type&quot; .? = &quot;a possible single character of any type (but it might not exist)&quot; .* = &quot;anything or nothing of any length&quot; .{1,3} = &quot;anything running between 1 and 3 characters long&quot; Regular expressions also have wild cards of specific types. Usually, they are commonly used like this: d = &quot;Any digit&quot; w = &quot;Any word character&quot; s = &quot;Any whitespace (tab, space, etc.)&quot; b = &quot;Any word boundary&quot; (period, comma, space, etc.) Character classes Sometimes you want to tell the regex what characters it is allowed to accept. For example, say you don’t know whether there is an alternative spelling for a name – you can tell the regex to either ignore a character, or take one of several. In R, we saw that there were alternative spellings for words like “summarize” – the British and the American spellings. You could, for example, use this pattern to pick up either spelling: summari[sz]e The bracket tells the regex that it’s allowed to take either one of those characters. You can also use ranges: [a-zA-Z0-9] means that any lower case, upper case or numeric character is allowed. Escaping Because they’re already being used for special purposes, some characters have to be “escaped” before you can search for them. Notably, they are parentheses (), periods, backslashes, dollar signs, question marks, dashes and carets. This means that to find a period or question mark, you have to use the pattern . or ? Sample data Here are three small text files that you can copy and paste from your browser into the regex101.com site. It’s a site that lets you test out regular expressions, while explaining to you what’s happening with them. A list of phone numbers in different formats A list of dates that you need to convert into a different form. A list of addresses that are in multiple lines, and you need to pull out the pieces. (Courtesy of IRE) A small chunk of the H2B visa applications from Arizona companies or worksites that has been kind of messed up for this demonstration, in tab-delimited format. A simple example You should try following along in regex 101 for this part. Looking for specific words or characters The easiest regex is one that has just the characters you’re looking for when you know that they are the right case. They’re called literals because you are literally looking for those letters or characters. If you weren’t sure if it was upper or lower case, you could change the global pattern flags (to the right of the pattern) from “gm” to “gmi”, which includes the instruction to IGNORECASE. Practice #1: Extract date parts (In Regex 101, change the “Flavor” to “Python” – otherwise, you have to escape more of the characters.) We want to turn dates that look like this: 1/24/2018 into something that looks like this: 2008-1-24 Copy and paste these numbers into the regex 101 window: 9/7/2017 9/11/1998 9/11/2017 9/19/2018 9/15/2017 10/13/2019 11/3/2017 First, you can use any digit using the pattern “ d”. Try to do it in pieces. First, see if you can find one or two digits at the beginning of the line. ^ d{1,2} Try coming up with the rest of it on your own before you type in the answer: ^ d{1,2}. d{1,2}. d{4} (This works because regular expressions normally are “greedy”. That is, if you tell it “one or two digits”, it will always take two if they exist.) ^( d{1,2}).( d{1,2}).( d{4}) Now each piece is numbered: 1 refers to the month, 2 refers to the day, and 3 refers to the year. Expand the “substitution” pane at the bottom of the screen, and try it: Practice #2: Extract pieces of phone numbers Here are some phone numbers in different formats: 623-374-1167 760.352.5212 831-676-3833 (831)-676-3833 623-374-1167 ext 203 831-775-0370 (602)-955-0222 x20 928-627-8080 831-784-1453 This is a little more complicated than it looks, so try piecing together what this one says: ( d{3})[-. )]+( d{3})[-.]+( d{4}) (This won’t work in the “substitute” area – it would be easier to create a new variable with the results than to replace the originals.) Anything within parentheses will be “captured” in a block. Practice #3: Extract address pieces (This comes from “Regular expressions for the rest of us”, from Christian McDonald of University of Texas, from the 2019 NICAR conference. This exercise is a great primer on regular expression.) Here are a few lines of the data, which you can copy and paste to go through McDonald’s exercise. (He uses the Javascript version of regular expressions, but for our purposes in this exercise, it doesn’t matter which one you use. If you choose Python, you’ll have one extra step, of putting a slash () before the quotes. The colors work a little better if you leave it on the default PHP method.) &quot;10111 N LAMAR BLVD AUSTIN, TX 78753 (30.370945933000485, -97.6925542359997)&quot; &quot;3636 N FM 620 RD AUSTIN, TX 78734 (30.377873241000486, -97.9523496219997)&quot; &quot;9919 SERVICE AVE AUSTIN, TX 78743 (30.205028616000448, -97.6625588019997)&quot; &quot;10601 N LAMAR BLVD AUSTIN, TX 78753 (30.37476574700048, -97.6903937089997)&quot; &quot;801 E WILLIAM CANNON DR Unit 205 AUSTIN, TX 78745 (30.190914575000477, -97.77193838799968)&quot; &quot;4408 LONG CHAMP DR AUSTIN, TX 78746 (30.340981111000474, -97.7983147919997)&quot; &quot;625 W BEN WHITE BLVD EB AUSTIN, TX 78745 (30.206884239000487, -97.7956469989997)&quot; &quot;3914 N LAMAR BLVD AUSTIN, TX 78756 (30.307477098000447, -97.74169675199965)&quot; &quot;15201 FALCON HEAD BLVD BEE CAVE, TX 78738 (30.32068282700044, -97.96890311999965)&quot; &quot;11905 FM 2244 RD Unit 100 BEE CAVE, TX 78738 (30.308363203000454, -97.92393357799966)&quot; &quot;3801 JUNIPER TRCE BEE CAVE, TX 78738 (30.308247975000484, -97.93511531999968)&quot; &quot;12800 GALLERIA CIR Unit 101 BEE CAVE, TX 78738 (30.307996778000472, -97.94065088199966)&quot; &quot;12400 W SH 71 Unit 510 BEE CAVE, TX 78733 (30.330682136000462, -97.86979886299969)&quot; &quot;716 W 6TH ST AUSTIN, TX 78701 (30.27019732500048, -97.75036306299967)&quot; &quot;3003 BEE CAVES RD ROLLINGWOOD, TX 78746 (30.271592738000436, -97.79583786499967)&quot; On your own This is a small list of H2A visa applications, which are requests for agricultural and seasonal workers, from companies or worksites in Arizona. Try writing some regular expression to extract diffrent pieces of it, since it’s a fixed-width file. Try importing it into Excel, then copying some of the cells to practice your regular expression skills. You might try Finding all of the LLC’s in the list (limited liability companies) of names. (You should turn on the case-insensitive flag in Regex 101 or set that flag in your program if you do.) See how far you can get in standardizing the addresses. Next week, we’ll see how this can work in OpenRefine.",
+    "url": "http://localhost:4000/cronkite-docs/special/regex-beginning.html",
+    "relUrl": "/special/regex-beginning.html"
+  },
+  "40": {
+    "id": "40",
     "title": "Scraping part 1",
     "content": "Web scraping - Part 1 Scraping data has two meanings in journalism. In one sense, it means extracting information from just one source, like a web page or a PDF document. In another sense, it means pulling data from multiple pages, like individual profiles of people. A typical workflow for might be: Find a list or a way to guess at a list for all of the pages you might want Write a program to “crawl” a website to save those pages. Extract the information from each page into a database. Sometimes, though, it’s not even necessary to go that far. Looking for data on the web can be as simple as good searching. You might find what Rob Gebeloff calls an “JSON miracle”. Or you might be able to just change a few words in a window to get just what you want. Understanding requests GET vs. POST Looking under the hood Using the Chrome Developer Tab (Inspector) Document object models Network resources - a json miracle Using information under the hood Overriding page limits A real JSON miracle Scraping with XPATH A simple scrape: Texas Death Row On your own Understanding requests When you use the search box WITHIN a website, you are usually searching an internal database that hasn’t been indexed by Google. Take a simple example. Go to the ASU website, and look for the directory of faculty and staff. On the search page, type “Cronkite” into the search box. Look at what happened to the back end of the link address, or URL: When you see xx=something&amp;yy=somethingelse you know that there is a query going on inside the site. Depending on which product is being used to build the site, it might have a question mark before the data. If you search the same site for my name, you should get this URL: https://isearch.asu.edu/profile/3189494. Notice that there is a number at the end This is common: most database programs create unique identifiers for each record, just the way we did in the Excel exercises. That suggests there might be someone with the number 3189495! Indeed, there is: GET vs. POST So far, the requests you’ve seen are all GET requests, meaning that the search criteria are built into the URL. There is also something called POST requests, which are usually more complicated and usually can’t be done just by typing into the browser. We’ll get to those later. Looking under the hood Using the Chrome Developer Tab (Inspector) Browsers like Chrome and Safari have built in tools that are designed for developers to test their sites, but can also be used to inspect what is happening on a published site. This is an extremely simple web page that has several characteristics: One standard library to format the page, called Bootstrap. Another standard library, called JQuery, to access and use data held in json form. Content written in plain HTML for a heading, a paragraph, and a couple of “divs”. A table created with a script using the json data. Right-click anywhere on the page and choose “Inspect”. It will open to a different part of the page depending on where you click. There are all kinds of things buried in here, including the structure of the page and all of the elements that it accesses both on the web and elsewhere. Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren’t displayed on your screen. Document object models Think of a web page as a tree - there are two big trunks (the head and the body), then there are little branches that are all from the same trunk. The DOM lets you scamper up and down the tree and across the branches using commands that are called XPATH commands. Look at the bottom of the page. The current element – the one that you have selected – is shown as a path up that tree. In this case, selected paragraph is three levels down: An XPATH command would look like this: body/p We’ll get more into that later on, but for now, just know it’s there. Network resources - a json miracle Now reload the page, and change to the Network tab. This lists all of the resources that are accessed over a network to build your page. It includes items referenced in the head, and items loaded by scripts elsewhere in the page. Here you can see that it references the original page’s HTML; bootstrap and JQuery resources; and something at the end called simple.json, which is initiated by the JQuery. Click on the json file, and take a look at what you see. (You may have to expand the little triangles to get to this): What you have is a json miracle! This is a little database that can be converted to a .csv or can be read into R without having to scrape anything! Most websites that use JQuery or similar libraries have a json dataset somewhere buried in them. Try right-clicking on the json object on the left side, and choose “Copy” -&gt; “As response”. Now go to a json-to-csv converter (I use this one) and paste into the box. Now you have a csv or Excel file ready to download, with a preview of what it looks like: Using information under the hood Consider this March 25, 2015 post on Buzzfeed: “Listen to Rihanna’s New Single” describes how Buzzfeed looked behind Rihanna’s website and found a link to a new song that was top secret in the industry and wouldn’t be released for another day. This is what happened: The author, trolling through the web page, found a link that contained the phrase “APPROVED-3.256” Copying and pasting that link into a browser showed the promo for her hit single. Griff Palmer, then of The New York Times, helped Declan Walsh prove that the same company was behind a ring of fake universities, identified by working backwards to find links to the same images, accreditation bodies and similar telltale signs. He eventually found more than 350 schools with signs of similarities. Getting used to reading underneath the slick presentation can reap stories and scoops. Overriding page limits Some websites can be tricked into giving you more at once than you think. One example is the Maricopa County Sheriff’s public mugshot site, which gives you information on the people who are in the county jail every day. Hover over the box with the “10” in it, and right-click to get the developers’ window by choosing “Inspect”. When you select it, you should be seeing all of the mugshots for that day. This doesn’t always work, depending on how the website was created. Sometimes looking at the page source shows more than in the document model, and sometimes all of the data isn’t loaded at the beginning. One hint is that if you click on “Next page” and there is no hesitation before it shows you the rest of the records, there is probably a dataset sitting on your browser. If it takes a second, it is probably going back to the original server to get more. A real JSON miracle Open your Inspector panel, and go to this list of Major League Baseball player statistics You’re interested in getting to the data shown on the left side of the screen, but you don’t want to have to page 21 times to get it. In your network tab, somewhere down the side is a file that begins with “stats.splayer?season=….” These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page. You should see a ver long “Request URL” on the right. If you scroll all the way down, you’ll see that request has been split up into its pieces, which we can see under “Query String Parameters” Here, we can see what characteristics we need to change to get more of the data at once. Go back up top, and copy and paste the “Request URL” into a new browser window. This will bring a new page with the first 50 rows of the table. Just go back into the browser’s address, and change the 50 at the end of the URL to 1000: It will take a little longer to load, but now you’ll have a JSON file with the first 1000 rows (you can see that there were a total of 1033 if you study the first few rows of information. You could change both the total number of records and the records to page to a higher number if you wanted, to get them all.) Copy and paste the new address into your nifty json to csv converter, and you’ll get a downloadable table ready for analysis. Scraping with XPATH There may be no JSON or XML miracle waiting for you. Instead, you might have to convert the HTML inside a page into a spreadsheet or database file. Samantha Sunne has a terrific tutorial showing you how to do this in Google Sheets. (It’s one of the rare things that Google Sheets can do that is missing in Excel.) We’re going to do it using XPATH in a Chrome extension called Scraper. This is the one you want: A simple scrape: Texas Death Row The Texas Death Row list is very easy to scrape. Select a couple of rows of data in table, and before you do anything else, look at your inspector. Look at the bottom of the screen, and it will show you the route that had to be taken to get to your selection. it starts with the html tag, goes to body, then a bunch of other tags, and eventually to a “tr” tag. Now go back to the table, make sure you have a few rows selected, right-click and choose “Scrape similar” That should bring up a list that looks pretty good – it has the id number, the name, dob, etc. in nice columns and rows, and an invitation to copy to your clipboard or export to google docs. But let’s look at a little of what is going on here, and how it knows what to do. Because this page is so simple, all that the scraper had to do was look for any TR tag (//tr), then it is asking for all of the TD tags below that. In other words, there were no other tables in the page that would confuse it. What if there were? You can use other items in the page to steer XPATH to the right place. For instance, this one could have been: //div[@class=&quot;overflow&quot;&gt;/table/tbody/tr[td] or //table[1]/tbody/tr[td] There is one mistake in this table. That is, the Link only shows the words “Offender Information”. We want the actual link. The reason is XPATH always assumes you want the text shown on the screen, not the underlying information, if you don’t say you want it. Try going into the Link area on left, and make this change: *[2] to *[2]/a/@href This means that you want the &lt;a href=…&gt; part of the underlying code. The “a” is the tag, and the @href is an attribute of that tag. Don’t worry too much about getting all the terminology down. The idea is to look underneath the hood of the page to see how to extract what you want. On your own Try scraping Craigslist for your town using the Chrome Scraper. Look at the elements in the Inspector to see what kind of hidden information you can extract. Here’s what I came up with for a list of items that could easily be extracted from a Craigslist listing using the thumbnail view:",
     "url": "http://localhost:4000/cronkite-docs/special/scrape-part1.html",
     "relUrl": "/special/scrape-part1.html"
   },
-  "39": {
-    "id": "39",
+  "41": {
+    "id": "41",
     "title": "Data sources and sourcing",
     "content": "Finding, acquiring and sourcing data An example: News21 “Hate in America” Data News 21 used Data the team didn’t use Finding data and documents Government agency sites News reports IRE.org tipsheets Academic articles Think tanks / interest groups Data collectors Vetting data provenance Data hunting exercise An example: News21 “Hate in America” In 2018, News 21 – the multi-university investigative reporting fellowship hosted by ASU’s Cronkite School of Journalism – chose “Hate in America” as its topic for the year. It was a risk because others had been reporting on the subject for more than a year, making it more difficult for News 21 to break new ground. It was also difficult because it became clear quite quickly that no one had documented every case of hate crimes or hate-driven incidents in the U.S. Data News 21 used That meant that the team had to find some creative way to quantify the problem. Some of the sources they used included: Raw data from the National Crime Victimization Survey, an annual survey of crime victims that asks whether hate was an element of the crime. Reporters Catherine Devine and Allie Bice could have used data from a report produced by the Justice Department, but instead analyzed the raw data in a new way to show that about twice as many incidents may have been motivated by hate than previously acknowledged. That analysis was thoroughly vetted by experts in the survey, in hate crimes, and in criminology. It also created a structure around the entire package and provided a newsy lead to the overview story A database created by a team of reporters who monitored two weeks’ of social media activity from users associated with white nationalists, new-Nazis and other far-right groups on sites including Twitter, Facebook, Gab and VK. It enabled Kia Gardener to write: News 21 monitored the daily social media activity of various far-right users, including white nationalists and neo-Nazis, from June 10 to June 24. Those tracked had more than 3 million followers combined. Reporters recorded and compiled more than 2,500 posts on popular platforms, such as Twitter and Facebook, and emerging social media platforms, including Gab and VK. About half the posts were directed at specific demographics or communities, from black Americans and Latinos to Jewish people and LGBTQ members.... Social Media: Where voices of hate find a place to preach, News 21, August 2018 Federal prosecutions of hate crimes under the various federal statutes. Reporter Lenny Martinez scraped all of the Justice Department’s hate crime-related press releases to find cases the government bragged about. Those cases were supplemented by a list of cases extracted from Westlaw federal case database. The team logged each case in a Google sheet to show what kinds of incidents were pursued by federal prosecutors, and where. ProPublica’s “Documenting Hate” project, which, with the Southern Poverty Law Center, tried to compile as many stories as they could about hate incidents. ProPublica’s database was a tip sheet, not a quantification. But it served one key goal of any data source: a source reporters could consult when seeking specific types of examples in specific locations. The FBI Uniform Crime Report’s Hate Crime series. They quickly learned that the data is seriously flawed because of non-response from local police departments and a squishy definition of what should be included. Another flaw was that others, including ProPublica, had thoroughly reported on those flaws and the trends in the data, meaning it failed the test of newsworthiness. Data the team didn’t use There were also sources that the team considered but didn’t pursue, sometimes because of the difficulty and sometimes because they were less useful to the project than expected: The Justice Department’s U.S. attorney case management system, which provided details on cases that the government chose not to pursue along with those they did. (A subsequent analysis showed that the vast majority of these cases were rejected by prosecutors, but vetting the analysis proved too difficult in the time available.) Databases of graffiti maintained by local police departments. This would have required public records requests to each department for records that usually aren’t clearly public. The team also contacted Google and other companies that publish street level images to see if it would be possible to isolate the hate symbols. Companies declined release images that their users had flagged as offensive. Historical questions from the Roper Center for Public Opinion Research and the General Social Survey that might have shed light on attitudes about race and religion over time. These proved to be difficult to match up over the years and didn’t really provide much insight. These are just some of the ways the News 21 team looked far and wide for any sources that could be methodically used to document their stories. As with any project of this type, the search often failed but along the way the whole team learned more and more about the topic and got to know experts in a way they wouldn’t have if they were just seeking quotes. Finding data and documents A big part of data reporting is finding, creating or acquiring records you can use electronically. Some sources of readily available data could include: Government agencies and open government sites Hobbyists and interest groups Data aggregators and data collectors Academic researchers who might share their data Microdata from surveys and some government programs, such as the Census, Medicare, the General Social Survey and several other standard sites. (This handout lists some of those standard sources.) Social data through API’s from Spotify, Twitter and other services. Details scraped from online data sources that aren’t available in bulk. There are also more difficult ways to find data: Public records requests Whistleblower leaks Home made databases created from documents, and free text or image document collections. Responses to a survey that you conduct yourself. Your own testing on issues such as water quality or soil contamination. For now, we’ll concentrate on how to find data that already exists in the public sphere and how to evaluate whether you can use it. Later on, we’ll work on how to identify data and documents you might want to acquire through public records requests. When you start on a project, you’ll usually rely on experts and advocates to lead you to a lot of the possible data sources. But you can also use these strategies to troll for interesting datasets that might make for good stories or practice. Listen to any caveats and warnings. You may decide that they’re not important, but you don’t want to be blindsided by them in the end. And be sure to ask what they would do if they were you – often, people who have expertise in data have story or project ideas that they can’t get funded or approved, and would be happy for someone else to do them. When you search using Google, try to use the advanced commands to more precisely hit your target. This tipsheet goes through all of the Google advanced search operators. The Verification Handbook for Investigative Reporting has a chapter from Henk Van Ess on advanced searching. Some of the sites he mentions no longer exist, but his strategy is sound. Government agency sites Try to guess what government agencies – state, local and federal – have an interest in your topic. Browse through their websites to find “Publications” or “Data and research”, or any searchable database. You’ll often find downloadable data there. Once you learn more, you can also evaluate how hard it will be to scrape the data you want. Don’t limit yourself to the jurisdications you care about. If one city or state has a good dataset, there is a strong chance that your local government will have the same thing. Look at federal agency sites to find a least common denominator database – they are usually compiled from more detailed state or local reports. Even if you can’t find the database, you might be able to find the name of a datset that is maintained internally in audits, footnotes of reports, or IT initiatives. Once you know a good agency to search, use advanced Google searches for filetype:csv or filetype:xlsx, and limit the site to an agency or city site to bring up datasets that they are letting users download. News reports One of the most useful sources to find the names of databases and their original sources is news reports that relied on the data, or refers to a data source quoted by experts. It doesn’t matter if you’re looking at your own area or others – most places have the same kinds of information collected and stories are similar across geographic areas. You should get good at using all of the resources as precisely as you can. That means getting very familiar with advanced searching in Google, and using LexisNexis and other news databases provided by the ASU library. These offer much more targeted searching than the usual Google search, and will result in much more on-point stories. When you find a good story, consider logging it in a spreadsheet or in doc, and identify: Who wrote it and when What government sources of data are explicitly mentioned. What analysis of that data was done by the news outlet, or what research it depended on. Any terms of art that seem to be used around your topic. For example, hate crimes are more frequently referred to as “bias” crimes in many articles – searching for “hate” might not surface them. IRE.org tipsheets Another source for information on news stories that used data reporting is IRE, which has two ways to search for more details: the ire.org tip sheets and story archive. Log into IRE.org and choose the tipsheets to look for guides from other reporters; choose the story database to look for stories on your general topic and then click into the form that the reporters filled out that go through their sources. You’ll often find a pair of them – a story, and a tip sheet – that were done by the same person the same year. (The database library is currently undergoing some review, so a lot of the data listed there could be out of date. But it might also point you to standard sources for data.) Academic articles Make sure to do a Google Scholar search for your topic. You will often find one or two researchers who have delved into your subject or a single source. This is often a great shortcut. For example, in the News 21 example, a search of hate crimes in Google Scholar identified an article called “Documenting Hate Crimes in the United States: Some consideration on data sources,” from APA PsycNet. Although this was specifically about sexual orientation and gender diversity, it cataloged the different ways that scholars try to document bias crimes. Once Devine settled on the crime victimization survey, another Google scholar search surfaced an expert on the survey who wrote about how it had changed over the years. He turned out to be the former chief of the Justice Department section that ran the survey, and was one of the project’s best sources. Another source led her to the book, “Statistics for Criminology and Criminal Justice.” One of the authors of that book also provided advice. Another value of this approach is that it will help you find the technical jargon for the topic you’re studying. It’s often very difficult to do literature searches without knowing that term. Think tanks / interest groups Try to find some interest groups that care a lot about your topic on all sides. They often have websites with recent research on your topic and might have experts you can consult. Take their advice cautiously because they often have a point to prove and are unabashed about twisting data to make their point. However, you can often use their raw data to draw your own conclusions. Some news organizations frown on this, so be sure to be transparent about who they are and what they’ve done. Another good way to use interest groups and think tanks is to get initial versions of public records from them while you wait for your own requests to be processed. At The Washington Post, we used an old version of a weapons trace database for a year while we fought the government for our own; we also used a copy of Agriculture subsidies acquired by the Environmental Working Group while we were waiting for our own public records requests to be completed. Sometimes, gathering the Tweets from advocates can provide a rich dataset, and it’s relatively easy to do. For example, I once used the Twitter posts from the Police Misconduct project out of the Cato Institute to get a list of all of the stories they’d compiled on the topic. Data collectors Several sites are trying to make businesses out of collected and maintaining databases. Others make available data that they have collected in the past. Be sure to look at the original source for any data you find there. You wouldn’t say a news article came from Google News or Lexis, and you wouldn’t say a dataset came from Google Data Search. If it’s not documented at all, you might have to contact the owner for more detail. Be careful of most of these. They’re often old, undocumented and poorly vetted. But they will give you a sense of what you might be able to get from a more reliable source, or give you ideas for your own data collection effort. enigma.com claims to have the “world’s broadest collection of public data” in a single place. For example, looking under United States -&gt; Arizona, you’ll see a database of Arizona liquor licenses, which was scraped from the state’s website two years ago. This is one of the rare curated sites. Enigma goes to great effort to document where and how they obtained their data, and to provide as much documentation as they can. They are also eager to work with journalists and will help however they can. data.world wants to be the Facebook or Instagram of data. It has both private and public accounts, and users upload data they want to share. This means it’s as varied as the people who are in it. If your newsroom is an AP member, you might have access to its data.world feed, which contains its curated and documented data that local newsrooms can use for their own stories. Some reporters also use data.world to store their public records. Some government agencies are posting their data directly to data.world. But in other cases, they’re undocumented hobbyists. Vet these the same way you would Google results. Journalists’ sites You can often find individual journalists or journalism organizations in various sharing sites, including Github (which doesn’t show up in default Google searches), data.world and other versioning. Look through their sites to see what they have collected – it’s there to share. Fivethirtyeight, ProPublica and the Los Angeles Times have particularly active data archives. Google data search is, well, the Google of data. In general, data search has limited sources and is more and more frequently logging data sets that are posted by state and local government sources. It makes no attempt to curate the search, though, so be cautious when you find something. One use for the dataset search is to see what other cities and counties have voluntarily released. When you see that, it often means your local or state government might have similar data you can request. For example, searching for police shootings brings up a dataset released by the Orlando Police Department, which contains far more detail than the same dataset released by Phoenix in 2018: Be sure to look for different terms meaning the same thing. For example, searching “use of force” brings you to completely different sets of data than “police shootings”. Vetting data provenance Before you even open a dataset, you should know how your dataset was collected, who it originally came from and how current it is. A future chapter will go through many of the ways reporters check data they’ve found for completeness, mistakes or other problems. At first blush, look for anything that precludes using the data because you can’t identify who is responsible for it or how it was collected. This is the same basic vetting you’d do on any source you hope to use. Look for: The original source. If you are getting it from a secondary source, look to see how hard it will be to get from original. If it’s from a secondary source, how reliable is it? Are you going to be comfortable crediting them for the data? If you can’t identify where or how the data was collected, you probably can’t use it. How others have used it and what criticisms were made of that use. The timeliness of the data. Anything more than two or three years old will be effectively useless for a news article. If it’s old, you should have a plan for how it will be updated. Data definitions, data dictionaries or record layouts. These are maps to the underlying data, and those definitions can prove difficult to understand. Data hunting exercise Try selecting a topic and log all of the data sources you can easily find on the subject. Be sure to log the link, any documentation you can find, and any concerns you have about the data. Finish with a proposal to use one of the sources you’ve found in a story.",
     "url": "http://localhost:4000/cronkite-docs/general/sourcing.html",
     "relUrl": "/general/sourcing.html"
   },
-  "40": {
-    "id": "40",
+  "42": {
+    "id": "42",
     "title": "Special",
     "content": "This is a set of specialized tools and tipsheets. They include things like scraping, mapping, visualization tools or data wrangling.",
     "url": "http://localhost:4000/cronkite-docs/special",
     "relUrl": "/special"
   },
-  "41": {
-    "id": "41",
+  "43": {
+    "id": "43",
     "title": "Story list",
     "content": "Readings Textbooks / handbooks About data reporting Newsroom numbers Visualation as a reporting tool Open source investigations Selected stories Scraping Backgrounding / public records Projects from me or my colleagues Textbooks / handbooks Computer-Assisted Reporting: A Practical Guide, by Brant Houston. This book is now in its 5th or 6th edition, even though it retains the quaint terminology of the 90s in the title. This version is from 2014. A newer one is on the way. “Data Literacy: A User’s Guide”, by David Herzog, 2015 “The data journalism handbook - an international guidebook to all forms of data journalism. “The Art of Access: Strategies for Acquiring Public Records”, by David Cullier and Charles N. Davis, 2010. A new edition will be published sometime in 2019, the author says. “Numbers in the Newsroom”, Sarah Cohen, 2nd edition. (But hey – arithmetic doesn’t change. It doesn’t matter which edition you get.) Samanth Sunne’s “Diving into Data Journalism” from the American Press Institute. About data reporting Mike Berens on the heart of data journalism, written when Bill Clinton was president. 60 data-driven ideas in 60 minutes, from Mary Jo Webster and Jodi Upton, NICAR 14. Serious Fun with Numbers, Dan Gilbert, Columbia Journalism Review. The story that won the Pulitzer is archived on the prize site: “The Money Prison”. “The Serial-Killer Detector”, The New Yorker, Nov. 27, 2017 about Tom Hargrove’s career as a data reporter and how it led to the Murder Accountability Project “A Data State of Mind”, Mary Jo Webster, Data-Driven Journalism, Sept. 2016 “Demystifying Data Journalism”, with Susan McGregor and Sarah Cohen at a Mashable conference. I think it’s 2012. Interview with data editor Janet Roberts on the Reuters approach to data reporting, 2018, from the Data Journalism Awards “How to Plan, Pitch and Do a Data-Driven Investigation”, Miguel Paz and Ryan McNeil, presentation from a CUNY course in 2016 (?). Many links are broken or private, but the ideas are still useful. Newsroom numbers Addressing Journalistic innumeracy, John Whibey, Journalist’s Resource website. Numbers in the newsroom: overcoming your fear of math. (Video of similar lecture) Visualation as a reporting tool Chapter from the original Data Journalism Handbook on finding insights through visualization, from Gregor Aisch, who is a longtime genius graphics reporter at the New York TImes. Financial Times’ “visual vocabulary”, as a pdf document or online at Github repo “Vizualization as a reporting tool”, from a conference at IRE (None of the links work on either the handout or the interview – don’t bother to try.) An interview with me from Poynter leading up to a conference The handout from the conference The slides that can provide the examples from the conference Slides from Peter Aldhous’s site on visualizing data for science investigations. Open source investigations “How to conduct an open-source investigation according to the founder of Bellingcat”, by Ned Bauman, New Yorker, August 30, 2018 Selected stories One way to keep up with stories is to subscribe to the Local Matters weekly newsletter, which curates stories done by more than 100 local newspapers, selected by reviewing their front pages on the Newseum site. Although it’s only newspapers, it gives you a good feel for the range of stories being done around the U.S. This is a fairly random set of stories that we often use in class to discuss how empirical journalism works. Sometimes we just read about a story – not the whole thing itself. There are probably thousands of stories that could be on this list but these are very well known or have some aspect that makes them good for class reading. The Bell, Calif., small-town corruption: “Is a City manager Worth $800,000?” and “Bell’s Money Flowed Uphill” “Cops among Florida’s worst Speeders”, by Sally Kestin and John Maines in the Ft. Lauderdale Sun-Sentinel, 2012. Dan Nguyen deconstructed the story for Stanford University and compiled a smallish dataset for practice. “Medicare Unmasked” from the Wall Street Journal (2014), in which reporters mined doctor billing records to find those who were fleecing the system. This link is to the Pulitzer Prize site because the Journal’s own site has kind of buried the big stories. Whether you use SQL or not, Dan Ngyuen’s tutorial using the data is a useful way to reconstruct a story like this. Elliot Jaspin’s story of finding racial cleansing in Census data. (very old!) Inside the Hidden World of Thefts, Joe Stephens and Mary Pat Flaherty, Washington Post, 2013. One of the first set of reporters to take advantage of new questions on the IRS 990 form available now in electronic form. Boston Globe 2018: “For some State Police, it’s a posting in Paradise,” by Kay Lazar and Todd Wallack. Be sure to read Todd’s tweetstorm on what it took to get this data, and how he got past bureaucratic and public records battles. Five-Thirty-Eight: Russian troll analysis on Twitter. Note the references to the original data, how it was collected, and the name of the project at Clemson – even if you don’t care about Russian trolls, it’s worth noting these kinds of resources for the future. ProPublica Illinois: “How Chicago Ticket Debt Sends Black Motorists Into Bankruptcy”, using several databases to show how Chicago’s aggressive ticketing is driving people into bankruptcy, by Melissa Sanchez and Sandhya Kambhampati, February 2018. The writing is a little rough, but the data work is solid and, most importantly, the stories were well reporting and identified. “L.A. is slammed with record costs for legal payouts”, Emily Alpert Reyes and Ben Welsh. Note the link at the bottom to github repo showing the data analysis. Scraping Todd Wallack from the Boston Globe on using a little programming to get to a story on liquor licensing. Be sure to read the story to understand how the data fits in with the story. (2018) Just wanted to say a few words about how data journalism can help reporters flesh out a story.&mdash; Todd Wallack (@TWallack) November 16, 2017 Backgrounding / public records Seattle Times’ award-winning coverage using backgrounding tools on deadline (2013?) WFAA’s coverage of a fertilizer plant explosion in 2013. You have to use your IRE login to get this, since WFAA doesn’t have archives. “I’ve sent out 1,018 Open Records Requests, and This is What I’ve Learned”, ProPublica Illinois, Sandhya Kambhampati, 2018 Projects from me or my colleagues I include projects that I worked on and that I oversaw as a data editor not because they’re so great, but because I understand the work that went into them. Sadly, The Washington Post’s site didn’t do a good job archiving some of them, so you have a pdf of the newspaper here. A Death in St. Augustine from Frontline / NYT as an example of weaving data into a narrative. On the Times’ site, it was published as Two Gunshots on a Summer Night, with a secondary story that is a little more data-wonky. Note the ending comparison – those came from our various datasets. (2013) “Police Chiefs, Looking to Diversify Forces, Face Structural Hurdles”, Matt Apuzzo and Sarah Cohen, The New York Times, Nov. 7, 2015. This is a routine story, not a project, which makes it a little easier to understand. The cleaned up data for this project is a good practice dataset, and you can see how I found Chief Riley. (2015)",
     "url": "http://localhost:4000/cronkite-docs/general/story-list.html",
     "relUrl": "/general/story-list.html"
   },
-  "42": {
-    "id": "42",
+  "44": {
+    "id": "44",
     "title": "Visualization as a reporting tool",
     "content": "Visualization as a reporting tool The slides and a tip sheet are included in this folder. Tools for data visualization### The R programming language’s ggplot2 is probably used most frequently by reporters to get quick visualizations that won’t be published. It’s each to make some of the most common charts, graphs and maps with default options that take advantage of a century of research into visual perception. It has a recent add-in called Shiny to make interactive visualizations, something it was missing in the past. D3 is used by reporters who already know Javascript (not many). It’s the language that has pretty much replaced Flash and Activescript. Most reporters, as opposed to those who produce visualizations for publication, use simpler tools. Keep in mind that the free, online versions of some of these tools will make your data public by default. Excel’s implementation of sparklines. They are an amazingly simple and effective way to see trends quickly. Tableau Public is a small-scale version of the expensive Tableau software used in business and industry. The more powerful desktop version is free for IRE members, but about $2,000 a seat if you pay. ManyEyes has a similar public approach, but is a little easier to use for very small scale visualizations. Google Fusion Tables have the advantage of geocoding (putting addresses on a map when you don’t know the coordinates.) It’s a little confusing, but there is a big user base and a lot of help. Timeflow, an alpha level product created at Duke University for exploratory investigative timelines and calendars. It will run off of a hard drive, but your security settings may still block it. Most other timeline programs are for publication rather than exploration (at least the ones we can afford) Simile Exhibit, a project out of MIT that attempts to make it easy to make timelines, Google maps and small searchable datasets in one place. It’s good for data that won’t change a lot, since you have to have a specific data format for it. It’s not very actively supported and still feels like an academic project, but it generally works. Visualizing text Voyant Tools lets you upload text or pdfs and get a high-level view of the contents. Here’s an example using Martin Luther King’s “I have a Dream” speech, or [this one] (http://voyeurtools.org/?corpus=1411347124307.8286&amp;stopList=stop.en.taporware.txt) from three Chicago Police Board decisions. ManyEyes has several visualizations that are just for text. The same example Wordseer. I haven’t tried this yet – it’s just recently available to the general public. But I’ve seen demos and it looks interesting. Although it’s not really visualization, ClearForest Gnosis, a plug-in for Mozilla, is helpful for color-coding the entities on your documents. There are a lot of other text visualization experiments in the digital humanities, especially history, linguistics and literature graduate programs. Keep an eye on the projects at the Digital Research Tools site, which is constantly updated.",
     "url": "http://localhost:4000/cronkite-docs/assets/docs/viz/viz-reporting.html",
     "relUrl": "/assets/docs/viz/viz-reporting.html"
   },
-  "43": {
-    "id": "43",
+  "45": {
+    "id": "45",
     "title": "Workshops",
     "content": "Holding page for index of workshops.",
     "url": "http://localhost:4000/cronkite-docs/workshops",
     "relUrl": "/workshops"
   },
-  "44": {
-    "id": "44",
+  "46": {
+    "id": "46",
     "title": "NICAR master class",
     "content": "To trace patterns of abuse and neglect in Invisible Lives, to aid in the task of deducing the anonymous dead in Invisible Deaths, and to keep track of a vast number of documents from varied sources, I made, and learned to love, Excel spreadsheets. -- Katherine Boo, 2000 Obscured behind the techno-babble is a simple truth: the best [data journalism] is born from the heart, not the machine -- Michael Berens, 1999 Preliminary Schedule     2:15 - Introductions and warmup 2:30 - The role of data ; cleaning cautions 3:00 - Data reporting for story: the promise of case level data. 3:30 - Building your chronology for narrative. 4:00 - Story structure - the big three 4:45 - Wordsmithing - precision with action Time Most stories that turn on narratives could be helped by creating your own data, especially a simple spreadsheet that can be sorted and filtered for exactly what you want. Partway through the story, we turn from the case of Michelle O’Connell to show that this was not the first time that the county sheriff had declined to investigate accusations of domestic violence. A year before that, Sheriff Shoar’s disciplinary posture had been called into question in a domestic violence case involving a deputy named Halford (Bubba) Harris II. Two supervisors learned of accusations that Mr. Harris had abused his wife. But no investigation was immediately opened, records show. One sergeant did prepare an affidavit documenting the accusations. But he was told by his supervisor to hold it back, so he stuck it under the visor in his squad car, where it remained, even after another officer became aware of further incidents, according to Mr. Harris’s internal affairs file. The case came to a head on Christmas Eve, when his wife fled their house and called the police. Internal affairs officers uncovered other possible acts of domestic violence before his hiring, records show. His wife said that before they married, he had held a knife to her throat and hit her. His ex-wife said he had threatened her with a gun. No charges were filed. Col. Todd R. Thompson, the sheriff’s director of law enforcement, recommended that Mr. Harris be fired, saying his actions were “particularly egregious and trouble me deeply.” In an interview, Mr. Harris insisted that he had never engaged in domestic abuse: “Is there proof?” “They’re telling one story,” he added. “I’ll tell you another one.” He said the state attorney brought no charges and noted that, though they divorced after the Christmas Eve incident, his wife later wrote a letter of support, calling him “a wonderful man and father.” Sheriff Shoar overruled the dismissal recommendation, citing mitigating factors, like an “exemplary” work record and an absence of citizen complaints. “I hope you understand how fortunate you are to receive a second chance,” the sheriff wrote to his deputy. After the decision leaked out and caused an uproar, Mr. Harris said, he was pressured to resign. He is now a deputy in a nearby county. – “Two Gunshots on a Summer Night” Much of this passage came from a series of internal affairs reports done after the last incident. Here is one of them Here is the spreadsheet we made out of the report. Characteristics that help you with writing: Include a fact-check and source column. Make sure you know if you can use the item. Use tags for people, places and topics, for filtering. Including timing notes so you don’t get paralyzed when you don’t know an exact date. Place PROVINCETOWN, Mass. — In a few weeks, artists, lawyers and bankers will be- gin arriving here for the busy summer sea- son on high-speed ferries that take 90 min- utes to make the trip from Boston. They will land at a recently refurbished munici- pal dock that was built with the help of a $1.95 million low-interest loan from the U.S. Department of Agriculture. A few blocks away, the Provincetown Art Association and Museum has used nearly $3 million in grants and loans from the Ag- riculture Department to add gallery space and renovate a historic sea captain’s house. A short drive back down the Cape, the de- partment is financing a new actors theater in Wellfleet and recently awarded a grant to a garden center in Hyannis to build a wind- mill. Although Cape Cod is only a short trip from Boston and Providence, R.I., and is home to some of the wealthiest beach towns in the United States, to the Agricul- ture Department it meets the definition of rural America. That means it qualifies for aid originally intended for farmland and backwoods areas that were isolated and poor, struggling to keep their heads above water. “Provincetown is many things to many people, and to USDA we’re rural,” said Keith A. Bergman, the town manager. “We’ll take it.” He isn’t alone. On Martha’s Vineyard, the USDA guar- anteed a $4.5 million loan for the popular Black Dog Tavern. The loan, which has since been repaid, was to refinance the tav- ern’s mortgage and expand Black Dog’s re- tail clothing stores. On Nantucket, where the population swells to the size of a small city in summer months, the Agriculture De- partment provides rental subsidies for families priced out of the local market. This is an example of a story in which the central finding is difficult to understand until you know the details of the cases. Chapters A typical structure when working in chapters is to find themes in the process that you’re describing. Take the process step by step, wherever the system can fall apart, and build a chapter around it. Sometimes include a map to the process for readers: Examples: In Housing Court evictions, the process starts with a misuse of the filing system, which lets landlords file a case without any proof. This is the first chapter, with a strong place focus. Then, a process server is supposed to let you know you’ve been served. This is another chapter, about how they lie on the forms, including a place where a server claimed he’d gone to 22 homes in 5 minutes, which would have been across three buildings and more than 20 stories. The lawyers show up for the plaintiffs, but the defendants are helpless. The third chapter is on the chaos of the court. etc. *",
     "url": "http://localhost:4000/cronkite-docs/workshops/writing.html",
     "relUrl": "/workshops/writing.html"
   },
-  "45": {
-    "id": "45",
+  "47": {
+    "id": "47",
     "title": "Filter and sort",
     "content": "Sorting and filtering to find stories A sorting miracle Sorting and filtering as a reporting tool Create a data table from your spreadsheet Sorting Adding fields to the sort Filtering Free text and date filters Creating your own flags with filters FAQ How do I turn off all of my sort and filters Where is the button to filter columns? I’m getting weird questions and alerts about sorting I want to get rid of my data table Show me a video Data files used in this tutorial: Salaries for city workers in Phoenix (source: Phoenix Open Data portal) Opioid-related EMS calls in Tempe, Az. (source and documentation: Tempe Open Data Portal) A sorting miracle After Ferguson, Mo., police killed Michael Brown in 2014, advocates and journalists began examining the racial and ethnic gap between police departments and the communities they served. The New York Times found a 7-year-old survey conducted by the Justice Department that allowed it to compare the data for major cities in a standalone graphic that it published later that year. When newer data reflecting departments’ makeup in 2012 was released a year later, Matt Apuzzo and Sarah Cohen hoped it would show some differences. It didn’t. So they were left trying to find news in the data that was clearly of public interest. After matching up the demographics of police departments with their cities, Cohen started sorting, filtering and Googling. Could there be news in the outliers on the list? Which departments most closely represented their communities? Which ones had unusually large gaps? She quickly stumbled on telling anecdote to frame the story: Inkster, Mich. had one of the least representative departments in the country, and had recently hired a new police chief to help mend the department’s fraught relationship with its largely African-American community. Where had he come from? Selma, Ala., one of the most representative police departments in the nation. Interviews with the chief, William T. Riley III, suggested one reason for some cities’ disparities: there was no state or federal money to pay for training new police officers. “There’s no doubt in my mind we have good police candidates in this city. No doubt,” said Chief Riley, who is African-American. “How hard can it be? You’re telling me everybody here can’t be a police officer?” The story, “Police Chiefs, Looking to Diversity Forces, Face Structural Hurdles” helped explain the persistent gap between the makeup of police in some areas and the communities they served. Sorting and filtering as a reporting tool Reporters frequently sort and filter for both stories and for data integrity and cleanup. One of the most common uses of sorting and filtering comes with spreadsheets you build yourself. If you keep your data tidy and make sure that each column has the same type of information – particularly dates – it does’t matter if you’ve had to collect it piecemeal and out of order. Sorting can magically turn it into a chronology, useful for spotting holes in sources’ stories and putting background information in context. If you build fact-checking and sourcing into your spreadsheet, filtering can hide from you any material that isn’t publishable while you’re writing, making it less likely to let poorly sourced or secondary source information into your story. Sorting and filtering can also: Show you rows containing the highest and lowest values of any column. That can be news or it can be errors or other problems with the data. Let you answer quick “how many?” questions, with a count of the rows that match your criteria. Together, sorting and filtering can narrow your dataset to just the items you want to examine more closely in your reporting. Create a data table from your spreadsheet In Excel, you may want to create a “data table” from your spreadsheet to help make sure you’re always sorting and filtering the correct rows. This is a way of enforcing just a little structure and rigor onto a spreadsheet, which usually lets you do whatever you want. There are several benefits to data tables: Formulas automatically copy throughout your data, whether or not there are empty values next to them. Sorting and filtering are always done on the proper list of rows, once you’re made sure to define the table correctly. You can use column names rather than addresses to reference a field. The column names always stay at the top of your screen, making it unnecessary to freeze panes (which can make navigation more difficult) It also looks better. Select your entire table, using Shift-CTL-* or by selecting the corners, then choose your table style: Sorting Sorting means rearranging the rows of a data table into a different order. Some reporters take a conceptual shortcut and call this “sorting columns”. That thinking will only get you into trouble – it lets you forget that you want to keep all of the rows in tact while changing the order in which you see them. In fact, in other languages it’s called “order by” or “arrange” by one or more columns – a much clearer way to think of it. In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the Phoenix city government. Gives you this: Adding fields to the sort You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the rows with lowest (or highest) values at the top. When those are the same, it will sort within that group by the second item you mention. And so on. So let’s say I want to see all of the “probable” opioid-related emergency calls in Tempe that were treated with Narcan, ordered chronologically. We’re in luck, because “Yes” comes at the end of the alphabet, letting us sort “From Z to A” to get them on top. Add more levels using the + sign in the dialog box: Notice that Excel understood that the first two fields were character fields, so it asks you if you want A-&gt;Z or Z-&gt;A (ascending or descending). But when it came to the incident date and time, it understood these were dates, so it asks if you want “Oldest to newest” instead. (The little arrows on the headers showing you they are sorted only happen when you have your data formatted as a table.) Filtering Filtering means picking out only some of the rows you want to see based on a criteria you select in a column. Think of it as casting a fishing net – the more filters you add, the fewer fish will be caught. The filtering buttons are shown when you create a data table. If they’re not, look in your Data tab at top press the button that looks like a funnel: Looking through your filters is an easy way to see the range of information you have in your dataset. For example, pulling down the button for filtering on the Narcan flag, you see only the options for “Yes” and “No”. But if you click on the dropdown box for the incident date and time, you’ll first see just the years, which you can expand to months, days, and even hours. Check and un-check any of the boxes that you want. Here’s a filter that picks out just the Narcan cases of probable overdoses, sorted chronologically: Excel tells you how many of the rows match your filter – 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you’re looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter. Free text and date filters When there are long phrases in a field, you can just type a word you’re looking for into the box: And when you have numbers or dates, you’ll get different choices. We don’t really have any numbers on this dataset to work with, but here are some choices for dates: Creating your own flags with filters Just from this example, you see why analysts often create some seemingly repetitive information. In this table, there is a list of medications given by the EMS crew, and Narcan might be one of them. To make it easier to analyze, they have also added a “Yes/No” flag just for Narcan, which we used for sorting and filtering. You can create your own flags using filters. (There are other ways to accomplish the same thing using formulas.) I wanted a simple “Yes” / “No” field for oxycodone. Going back to the text filter, we can see that there were 52 rows that contained a mention of Oxycodone in the “current medications” field. When I add a new header to the end, Excel automatically appends it to my data table. I can enter “Yes” into the first row, and copy down, and it will only fill in the visible cells. Remove your filter from the medications list, and it looks like this: Now I can filter for all of the blanks in that field, and fill them in with “No” to create the rest of the flag: Just be sure you document HOW you made your filter. What did you do with “(Blanks)” or anything that didn’t make sense? You should be able to recreate your flags exactly whenever you make them, and it’s easy to forget exactly what you did. FAQ How do I turn off all of my sort and filters In the data tab, chose “Clear” (the funnel with the red “X”) to remove all of the filters and sorts on your table. Where is the button to filter columns? Sometimes you don’t want to see all of your columns – there are too many and they’re getting confusing. There is no column filter in Excel. (You’ll see how to filter, or “Select”, columns from a dataset in standard programming languages later.) Instead, you can hide the columns you don’t want to see. When columns and rows are hidden, they generally won’t copy to a new sheet. I’m getting weird questions and alerts about sorting Slow down and read the alert. There are two common types of alerts in sorting, since it has the potential to wreck your spreadsheet. The first comes if you selected an entire column, and then just hit the button that says “A-Z” with the arrow. Excel won’t let you do that if it’s formatted as a table, but it will if it’s just a normal spreadsheet. This alert asks you if you REALLY want to sort only the column you’ve selected, separating its meaning from the rest of the rows. The answer is NO. Always. Expand the selection as Excel wants you do to by default. The other comes when you have numbers that are treated as text. This is a tricky question, and a properly tidied spreadsheet should avoid it most of the time. If you have the same type of data in each column, the answer to this question shouldn’t matter. If not, neither one will give you what you want. I want to get rid of my data table You can revert to the a plain old spreadsheet by selecting any cell within your table, then looking for the “Table” tab at the top of your screen. Choose the option that says “Convert to Range”. Show me a video This video goes through many of the details of sorting and filtering:",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides/xl-filtersort.html",
     "relUrl": "/excel/xlguides/xl-filtersort.html"
   },
-  "46": {
-    "id": "46",
+  "48": {
+    "id": "48",
     "title": "Excel formulas",
     "content": "Formulas in Excel There are lots of good tip sheets and reminders of how to use formulas in Excel. This page will walk you through an example, but consult these excellent resources if you get stuck: If you’re brand new to spreadsheets, or feel uncomfortable, start with Mary Jo Webster’s “Beginner Excel” tutorial. Jaimi Dowdell’s quick list of Excel formulas. It’s written for Windows, but nothing is different on a Mac in this list. The math review is going to use the City of Phoenix’s budgeted spending for the 2018 fiscal year, compared with previous years. (Source: https://www.phoenix.gov/budget/annualbudget) Files for this tutorial Get into good habits Common spreadsheet arithmetic Check the government’s math with SUM Change in spending Percent change Parts of a whole: percent of total While we’re at it: two kinds of averages The final spreadsheet FAQs Excel won’t let me copy my formula Should I use average or median? My percents are small numbers with decimal points Mac Users: There’s a little image of a cell covering up my spreadsheet Files for this tutorial A data diary for the processing that went into this spreadsheet for this tutorial. The Excel spreadsheet for this tutorial. Get into good habits Right-click on this link to the Phoenix budget summary that I prepared for you, and choose “Save As” to keep a copy on your computer rather than opening it directly into Excel. Once you’ve done that, right-click on the Download area of your browser and look for the file on your computer. Don’t double-click – we’re going to ask you to get out of that practice as much as possible, understanding that it’s a natural instinct. Start your documentation worksheet or document and describe, in plain language, every question you’ve asked, every answer and its source, and every step you’ve taken. Save a working copy with some sort of sequential name in a folder you can find again. Is there documentation that provides the source of the data, and the meaning of each column? Can you get it from the original document or dataset? Check your corners - how far to the right and how far down does the data go? Is it a contiguous square? Is it “tidy”? Does every column refer to one thing, and every row one instance of that thing? Does it have exactly 32,767 or 65,536 filled in rows; does it have exactly 256 filled in columns? Does it have unique identifiers for each row? If not, make them in a way that will guarantee you can re-sort back into the original order. Are totals or notes mixed into the same contiguous area as detail? If so, separate them from the data. Common spreadsheet arithmetic The budget document shows three years’ of data: The actual spending in the fiscal year that ended in 2016; the spending that was estimated for the end of fiscal year 2017; and the proposed spending for fiscal year 2018. The first page of the document shows these amounts for broad spending categories. You may want to widen the columns and format the numbers before you start: Check the government’s math with SUM Our first job is to make sure the government has provided us data that adds up. To do that, we’ll SUM all of the departments’ spending. To add up the numbers from 2016, enter the following formula in cell C11, just below the number provided by the government: =SUM(C2:C8) and hit the enter key Copy that formula to the right. Notice how the formula changes the addresses that it is using as you move to the right – it’s adjusted them to refer to the current column. What’s wrong? The numbers for the budget 2018 don’t add up. (Hint: look at the page called “notes” for an explanation.) Change in spending The increase or decrease in projected spending from 2017 to 2018 is just the difference between the two values, beginning in cell F3 new-old, or =E2-D2 When you copy it down, note how the references to each row also adjusted. In line 3, it’s E3-D3, and so on. Excel and other spreadsheets assume that, most of the time, you want these kinds of adjustments to be made. Percent change We can’t tell the rate of growth for each department until we calculate the percent change from one year to another. Now that we already have the change, the percent change is easy. The formula is: ( new - old ) / old We’ve already calculated the new-old part, so now all that’s required is to divide by the old value. In grade school, you also had to move the decimal place over two spots, since the concept of percent change is “out of 100”. Excel formats will do that for you. Remember, it’s always (new-old)/old , NOT the big one minus the little one. Doing it correctly, the answer could be negative, meaning the value fell. When you’re done, you can format the answer as a percentage to get it into whole numbers. Until you get used to it, there’s no harm in doing these calculations step by step. Excel won’t complain if you have extra columns. You can always hide them. It’s also worth comparing the picture you get by looking at raw numbers vs. percentages. In our case, the budget for public safety is expected to rise by a whopping $102 million, but it’s a smaller percentage increase than other, smaller departments. Parts of a whole: percent of total We’d also like to know what portion of the total spending is eaten up by each department. To do that, we need the percent of total. In our case, let’s use the total that the government gave us. In practice, you’d have to decide what to do if your figures didn’t match those provided by officials. You can’t assume that the total is wrong – you could be missing a category, or there could be a mistake in one of the line items. The formula for percent of total is: category / total Again, Excel will multiply by 100, or move the decimal place over for you once you format. But you have a problem: You either have to type in each row, or you get something like this if you try to copy: Excel has done its magic, adjusting the location of both the numerator and the denominator when you copied. You don’t have to type in each formula one by one, though. Instead, you’ll use anchors, known in spreadsheets as “absolute references”. Think of a dollar sign as an anchor or stickpin, holding down the location of part of your formula. If you put the stickpin before the letter in the formula, it holds the column in place. If you put it before the number, it holds the row in place. If you put it in both places, it holds the cell in place. So our new formula for the percent of total is: While we’re at it: two kinds of averages Although it doesn’t make a lot of sense in this context, we’ll go ahead and calculate the average or mean size of each department, and then calculate the median size. Simple average, or mean A simple average, also known as the mean, is skewed toward very high or very low values. Its formula is sum of pieces / # of pieces that were summed But in Excel, all we need is the word AVERAGE: =AVERAGE(C2:C9) Median There’s not really a good formula for the median. It’s the middle value of a list, once they’ve been put in sorted order. (If there is an even number of values, it’s the average of the two middle values.) This just treats a very high or very low value as just another number, and it doesn’t affect the summary very much. For example, if we have five people with the following incomes: $8,000 $10,000 $12,000 $15,000 $500,000 The average, $109,000, will not be a good summary of the list. In fact, no one on the list makes anything like that. But the median, $12,000, reflects the middle of the pack. With America’s income inequality, this is common in anything measured in dollars like home values or incomes. In Excel, you can get the median of a list of numbers by just using the formula, MEDIAN() = MEDIAN(C2:C9) The final spreadsheet At this point, write out a few questions you might want to ask an official if you only have a few minutes. Now that you have some data that might point to news, you can use it to ask the official to confirm your analysis and explain the underlying reasons. FAQs Excel won’t let me copy my formula Make sure your formula is locked in by either hitting “Enter” or “Escape”. This is a common problem if you’re in the habit of double-clicking instead of selecting a cell. There are a lot things you can’t do while Excel thinks you’re still entering information. Should I use average or median? It depends. Averages are easier to explain but can be misleading. Usually, if they’re very different, median will be a better representation of the typical person, city or department. Averages in these cases are more like totals. My percents are small numbers with decimal points Use the format as a % button to move the decimal point over two places and insert the percentage symbol. Mac Users: There’s a little image of a cell covering up my spreadsheet I have no idea what this is, but it happens. Save your spreadsheet, close it and then re-open. It usually goes away.",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides/xl-formulas.html",
     "relUrl": "/excel/xlguides/xl-formulas.html"
   },
-  "47": {
-    "id": "47",
+  "49": {
+    "id": "49",
     "title": "Simple data diary for Excel",
     "content": "A simple data diary for Excel A simple data diary for the beginning of the Excel math review module might look something like this: Data source Original file downloaded as a xx-page PDF from the Phoenix city budget site at https://www.phoenix.gov/budgetsite . The link was https://www.phoenix.gov/budgetsite/Budget%20Books/SummaryBudget2017-18.pdf. It’s undated as far as I can tell. The key tables were on pages 182-183 – that is listed as the “Expenditures” by program. Using Acrobat, extracted out those pages into a new file, ~/Documents/examples/ phx_budget_2017_table.pdf I tried to extract the tables using different programs: Able2Extract, Adobe Acrobat, Tabula. Then I realized that it is an image, not a text, pdf. Went back and OCR’d it using Adobe Acrobat, but when I sent it to a csv, it was a mess. I decided to type in the numbers myself rather than try to clean it up. The original spreadsheet Created a blank spreadsheet called ~/Documents/examples/phx_budget_summary.xlsx . Added a notes page to document where I got it from. categories sheet: Typed in the numbers from the 2016 actual, 2017 estimated and 2018 budget category totals. Selected them and checked against the totals shown at the bottom of the page. They were right, except for 2018. Then I realized I hadn’t typed in the “contingency” line. I decided not to type it in at all. The reason is that, the way I understand it for now, this is money they hope not to spend. It’s a reserve fund for something that’s unexpected that comes up. There’s no category for it in the past because if it was spent, it went into the proper category. Add to the TO DO list to find out if that’s the right way to treat it. Did the same thing for the individual programs on another sheet, but entered the categories into their own column, in a tidy fashion. Checked against the originals. They matched. Made sure to un-format any numbers so that if I want to export to another program, they’ll come in correctly. This spreadsheet won’t be changed unless the data is updated. Cleanup Formatted the numbers as dollars. Widened the columns Added a unique identifier to the detail rows in categories in case I need to sort. Created a row that checks the sums of the detail against the sum provided by the city. Saved the spreadsheet as phx_budget_summary_sc01.xlsx Questions What is the money for contingency? How has it been used in the past? What does “estimated” mean for 2017 – don’t they know how much was actually spent? When was this created? Is there any reason that comparing the estimated 2017 to budgeted 2018 would be misleading? Keep going You can finish the rest yourself, but the key is that everything you’ve done is logged, and anyone reading this can follow what you did. Including yourself.",
     "url": "http://localhost:4000/cronkite-docs/assets/docs/xl-mathreview-datadiary.html",
     "relUrl": "/assets/docs/xl-mathreview-datadiary.html"
   },
-  "48": {
-    "id": "48",
+  "50": {
+    "id": "50",
     "title": "Grouping with pivot tables",
     "content": "Grouping with pivot tables “Group By” is a universal concept in data – it means counting, summing or otherwise summarizing raw records into by group. If you have a list of people and the high school they attended, a group by operation will give you the number of people by high school. In Excel, grouping is done with pivot tables. Here are two excellent tutorials on pivot tables. There’s no need to re-create them here. The Data Journalism Textbook project’s Group By tutorial for Excel by Matt Waite. To get the data, go to the Data page in that project and right-click on the mountainlions.csv file. Then choose “Save As” to prevent it from opening in Github. Mary Jo Webster’s tutorial is pretty comprehensive with lots of screen shots. For a detailed walkthrough on a season of baseball scores, see the “Arizona Diamondback scores” tutorial under “Excel practice” Finding good practice datasets can take some practice. Here are a few that offer good potential. If you want to find your own, try to find data sets that contain individual records, not statistics. Baseball salaries Traffic stops obtained from St. Anthony, Minn., after a police officer fatally shot a black motorist named Philandro Castile.",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides/xl-pivot.html",
     "relUrl": "/excel/xlguides/xl-pivot.html"
   },
-  "49": {
-    "id": "49",
+  "51": {
+    "id": "51",
     "title": "Excel refresher",
     "content": "Spreadsheets and reporting Re-learning Excel from the ground up The spreadsheet grid Mouse shapes Selecting cells and areas Entering data Locking in headings Formatting tricks Getting started with a dataset First steps Interview your data Headings Unit of analysis Row numbers Example Keyboard shortcuts Spreadsheets and reporting You may have learned how to use Excel or Google Sheets in grade school or high school to make charts or present tables, but reporters use spreadsheets in different ways. The key reasons for reporters to use a spreadsheet are: To create our own databases that so that we can sort, filter and count events. Examples include a long-running court case; the details of each opioid death in a city; a list of police shootings and their documents; or even a list of your own public records requests or contact log. To use data created by others for fast, simple analysis and data cleanup. Many government agencies provide their information in spreadsheet form, so you’ll need to get used to using it. To perform simple, straightforward analysis on data and share with team members. This is becoming less common as more reporters learn programming languages, but it’s still common in newsrooms to share data, especially through Google Sheets. We’re going to work with Excel because it is still far more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members. Simple lists are much easier to share than various Excel attachments or Dropbox files. Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn’t. If you learn to take notes in a structured way, you’ll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you’ll have to type them all in at least twice anyway. And getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more. Re-learning Excel from the ground up The spreadsheet grid When you start up a spreadsheet, you’ll see letters across the top and numbers down the side. If you ever played Battleship, you’ll recognize the idea – every little square, or cell, is referenced by the intersection of its column letter and row number: B2 is the cell that is currently active. You can tell because it’s outlined in the sheet and it’s shown on the upper left corner. Mouse shapes BFWPS: The Big Fat White Plus Sign. This is the default shape, and you can never get into trouble when you see it. The Copy Tool, or the thin black cross. When you see this, you’ll copy anything that’s selected. This can be good or bad. The Evil Hand. (In Windows, this is the Evil Arrow). If you use this symbol, you will MOVE the selection to a new location. This is very rarely a good idea or something you intend. Selecting cells and areas Spreadsheets act only on the cells or regions you have selected. If you begin typing, you’ll start entering information into the currently selected cell. To select: Hold the BFWPS over the cell and clice ONCE – not twice. Check the formula bar to make sure you’ve selected what you think you’ve got. You can also look at the bottom right of your spreadsheet for more information. To select a group of cells and act on them all at once: Hover the BFWPS over one corner, click ONCE and drag to the diagonal corner. Make sure the Evil Hand is nowhere to be seen. The entire area will be shaded in except for the currently selected cell. Look at the upper right corner to see how many rows and columns you selected. To select a column or row : Hover the BFWPS over the letter at the top of the column. For a row, hover it over the row number in the margin Entering data Select the cell and start typing. The information you type won’t be locked into the cell until you hit the Return / Enter key, or move your selection to another cell. Hit “Escape” to cancel the entry. You can’t do a lot of things while you’re editing, so if you have a lot of greyed out menu items, look at your formula bar to see if you are still editing a cell. If you’re having trouble getting to a menu item or seeing the result of your work, try hitting “Escape” and try again. You may not have actually entered the information into the sheet. Locking in headings As your spreadsheet grows vertically with more rows, you’ll want to be able to see the title all the time. When it grows vertically with more columns, you’ll probably want to see what row you’re looking at by name whenever you can. This is called “Freezing Panes” – you freeze part of the page so it stays in place when you move around. Select the corner that you want frozen. For example, if you want the first three columns frozen (A:C) and the first row frozen (1), then select the cell in D2. This is the first cell that will move, and everything to the left of it and above it will stay on the screen. Formatting tricks Use the buttons or the format dialog box to make numbers easier to read. If a column is filled with a lot of text, select the column and look on the Home ribbon next to the formatting area for “Wrap Text”. This means that when you double-click to widen a column, it will get taller, not wider. This is good when you need to save valuable real estate on the screen. Getting started with a dataset SLOW DOWN! Don’t do anything until you understand what you have in front of you and can predict what your next mouse click will do to it. Most data we encounter was created by someone else for some purpose other than ours. This means that you can’t assume anything. It may not be complete. It may be inaccurate. It may mean something completely different than it appears at first blush. First steps Document where you got the spreadsheet and how you can get back to the original. Read anything you can about what it contains. Look for documentation that comes with the data. Save the original into a safe place with its original name and metadata. Work on a copy. If the spreadsheet shows #### instead of words or numbers, widen your columns. If it shows 7E-14 or something like that, format them as numbers, not “General”. Check your corners – look at the top left and bottom right. Is the data all in one area? Are there footnotes or other non-data sections mixed in? We’re going to want to fix that later. Interview your data Headings The most fraught part of data reporting is understanding what each column actually means. These often have cryptic, bureaucratic names. You may need to go back to the source of the data to be sure you actually understand them. If your data doesn’t have any headings, that’s going to be your first priority. In effect, you’ll need to build what we call a data dictionary or record layout if one hasn’t been provided. Unit of analysis A unit of analysis refers to the items that are listed in the rows of your dataset. Ideally, every row should be at the same unit of analysis – a person, an inspection, or a city, for example. Summaries should be separated by a blank row, or moved to a different sheet. Row numbers The data was probably given to you in some sort of natural sort order. Different computer systems sort differently – some are case-sensitive, others are not. Some put numbers before letters, others don’t. The order of the data may depend on a column you don’t have. For example, say an agency gave you the data in the order it came into the system, but didn’t give you that ID number. If you don’t do something now, you’ll never be able to get back to the original order, which could have meaning for both the agency and for fact-checking. Example These first steps, along with adding an ID row, are shown here. You can follow along with the same dataset. Read Interview your data from ProPublica data reporter and developer Derek Willis for more tips like these, even if you don’t quite yet know how to accomplish it all. Keyboard shortcuts For Mac users, it’s much easier to use Excel if you override the action of function keys while you’re in the program. In your Mac’s System Preferences, choose Keyboard, and select the box that says, “Use F1, F2, etc. as standard function keys.” (NOTE: If you have a MacBook Pro with a touch bar, this option isn’t there. Instead, go into the Shortcuts section of the keyboard options and turn off all of the options for Mission Control. Those are the ones that interfere with Excel.) Once you’ve done that, these keyboard shortcuts will work: To do this Windows or IMac Macbook Edit a cell F2 Ctl-U or F2 Toggle between absolute and relative references F4 Ctl-T or F4 Insert cut cells Ctl+ Ctl+ Delete a cell Ctl- Ctl- Select the top left of a spreadsheet Ctl-Home Ctl-Fn-Left arrow Move to the bottom right of a spreadsheet Ctl-End Ctl-Fn-Right arrow Select a region (a contiguous rectangle of cells that are filled out) Ctl -* Ctl-Shift_spacebar You should practice getting around a spreadsheet efficiently, since scrolling with the mouse while selecting is a lesson in frustration.",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html",
     "relUrl": "/excel/xlguides/xl-refresher.html"
   },
-  "50": {
-    "id": "50",
+  "52": {
+    "id": "52",
     "title": "Data types / tidy data",
     "content": "Understanding data types Tidy data Tidy example Not so tidy Fixing untidy data, part 1 Understanding data types When you start working with structured data, there is an important unspoken rule: Each column should contain the same type of data, often broken into three categories: text, numbers and dates. This video goes through the basic types of data that you’ll find within a table such as an Excel worksheet, and what opportunities and traps await you. Most programming languages enforce a singe data type for each field or variable in a data frame or table. Instead of keeping the wrong version, it will turn all of them in to characters if it isn’t sure. It will turn all of the characters to missing data if there are only a few. As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of “data frame” is used in R and Python to act like an Excel sheet. A json object can define a whole database in nested text. Those types will be covered in later modules. Tidy data “Like families, tidy datasets are all alike but every messy dataset is messy in its own way..” – Hadley Wickham, with apologies to Leo Tolstoy Hadley Wickham, who has done more to popularize the R programming language than almost anyone, wrote a seminal paper in 2014 called “Tidy Data”, which tackled the unspoken problem in data analysis: what does “clean” data mean, and what does “dirty” data mean? In it, he defined tidy data in this way: Every column is labeled and represents a variable, or something that differs from case to case. Examples include peoples’ names, counties, zip codes, height, age, income, or year. Every row, which may or may not be labeled, represents an observation, or an instance of each of the variables. An example might be your name, the county and zip code you live in, your height, age, income, and what year it is today. Each type of observational unit is in its own table, such as a page in an Excel file or a data frame in the R language. This suggests that every observation should be a the same unit of analysis. For example, there can be information about every student at your school in one table, and information about every department in your school in another. In other words, each column means one thing, each row is an instance of that thing. It means you’d rarely type two separate things into one cell, such as two names or two addresses. It also means you’ll often have a tall, narrow dataset – one with a few columns but many rows – rather than the short and wide datasets you often see. This makes it easy to sort, filter, and group your data into other information. It’s always easy to turn these tidy datasets into another form. It’s often difficult to turn messy datasets into something tidy. Look through Wickham’s list of ways that day is often untidy (about halfway down the document). Don’t worry about the programming in R that he suggests to fix the problems. Concentrate instead on the different ways that untidy data frequently appears. Tidy example Here’s an example, showing the beginning of a file obtained from New York State showing the names, locations and salaries of judges in the state’s Supreme Court (the main trial court in New York): It follows the simple rule that every column always means one and only one thing, and every row is an instance of that thing at the same level of analysis – the employee. It’s not perfect. The position titles don’t really show their level, but instead are sometimes used to show districts. In this sense, it’s not quite tidy: separating the title from the district would make it more useful. Not so tidy When you request data from the government, or seek out data on the Internet, you should look for tidy data. It is often the most pure form of the information available – it hasn’t been compiled into a report, or put together to make a nice printout. Instead, it is usually close to the way it’s been stored in the underlying database. Think of this when you see forms in the wild. They are often pretty tidy! A parking ticket is one instance of a thing, and each box filled out or left blank on the ticket is a characteristic of that thing. Sadly, the information and datasets you receive from others will often NOT adhere to tidy principles. Government “datasets” often have a lot of extra verbiage at the top and bottom, or are done in a hierarchical fashion, mixing detail and total at the same time. In this example, the Census Bureau seems to anticipate that you will print this data, not use it: If you just needed a few numbers from the release, this table is perfectly adequate. But if you wanted to combine it with other data or sort it in any way, it’s nearly useless. When you come across data that looks like this – with subtotals and different topics broken down the side, and many figures going across the top – look for other formats that might have been released, or talk with the agency to get something more useful. In this case, we’d look for the underlying data that created these tables. Here’s another example, this time from the Ohio Secretary of State, that lists the results of the 2016 election. Each page is one type of race – Congress, president, etc. – and each column shows the result for a candidate within a race. The rows are sometimes the precinct, and sometimes the total. There are totals mixed in with the precincts, and each of the candidates are listed left to right for every Congressional race. This makes it easy to read if you want to see who won. But each precinct would only have one race for U.S. Senate and one for the House, meaning that most of the values listed in this very, very wide spreadsheet are zero. Fixing untidy data, part 1 When you encounter untidy data like the example above, take out a piece of paper and sketch what a more tidy version of this spreadsheet might look like. What are the column headings, what does each row represent, and how might it be put together? It’s actually more complicated than it seems. Just remember that, so long as each table you create has a unique identifier that represents just one thing, you can always link them together. (Computer scientists shouldn’t confuse this with the “3rd normal form”. This is much less rigid about breaking out tables whenever there is repetition, but it does adhere to the idea of a single unit of analysis in each table.) This is an excellent exercise for you to do whenever you are working on data: envision success. If you had what you wanted, what might that look like? Here is an example spreadsheet of a series of ways that governments have provided data when it was requested. Go through them and think about how they might be useful – what might they look like? How could you use them to sort and filter? How could you add or count them effectively? Here’s a video that goes through what is wrong with them and how we fixed it.",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html",
     "relUrl": "/excel/xlguides/xl-tidydata.html"
   },
-  "51": {
-    "id": "51",
+  "53": {
+    "id": "53",
     "title": "Excel guides",
     "content": "",
     "url": "http://localhost:4000/cronkite-docs/excel/xlguides",
     "relUrl": "/excel/xlguides"
   },
-  "52": {
-    "id": "52",
+  "54": {
+    "id": "54",
     "title": "Excel practice",
     "content": "Here are some of the data files used in other tutorials: Phoenix city worker salaries Tempe opioid EMS calls Nebraska mountain lion sightings And some thoughts on where you can find more practice data: State and local open government web sites. Some are great, others, not so much. public.enigma.com and data.world, often cataloged in Google data Look at the data sourcing for more ideas.",
     "url": "http://localhost:4000/cronkite-docs/excel/xlpractice",
     "relUrl": "/excel/xlpractice"
   },
-  "53": {
-    "id": "53",
+  "55": {
+    "id": "55",
     "title": "More on scraping",
     "content": "More on scraping more tools Outwit hub (now about $50, but powerful) import.io - said to be the easiest out there, but I’ve had trouble using it. By the time I get through trying to learn a tool, I might as well have learned to program it. Key parts of Python that will help with difficult sites: Scrapy - a whole library of scraping tools that has its own manual and syntax. I think this one uses XPath though, so it will be easier to incorporate that in. Selenium, for when you need to actually run a browser. * Building on the tutorial that is at the http://sarahcnyt.github.io/ire-toronto site These examples came up recently and I needed to memorialize it for myself. It’s just to help me remember. Start with Chrome inspection tool, right click on the element you want, then copy the XPath to give you a start. Finding Text Between Tags &lt;td nowrap=&quot;&quot;&gt; &lt;font face=&quot;arial&quot; size=&quot;2&quot;&gt; &lt;b&gt;ABRAMSON, JOEL ELIOT &amp;nbsp; &amp;nbsp; &lt;br&gt; &lt;/b&gt; JOEL E. ABRAMSON, P.C. &amp;nbsp; &amp;nbsp; &lt;br&gt; 271 MADISON AVE FL 22 &amp;nbsp; &amp;nbsp; &lt;br&gt; NEW YORK, NY 10016 &amp;nbsp; &amp;nbsp; &lt;br&gt; (212)599-7700 &amp;nbsp; &amp;nbsp; &lt;/font&gt; &lt;/td&gt; If the whole chunk is the 2nd column, it’s [2] How can I get the name, which is outlined by the &lt; b &gt; (bold) tag? That text is the first text() element below the “font” tag, Any of these will work: [2]/font/text() or [2]//text() or [2]/font/b/text() A little less intuitively: *[2]font[1]/child::text() or *[2]/node()/node() or *[2]/font/node()[position=1] The bold tag is the first child of the font tag. Technically, the “node” is everything between the font tags, then the second node is everything between the bold tags. Here’s how to get the city, state, zipcode from that chunk. (Use the last-1 because some firms had two-line addresses and others had only one. It would fail in cases where the city, state was the last row. *[2]/font/text()[position()=last()-1] or *[2]//text()[count(following-sibling::br)=1] What if you had a slightly different piece of code, this one a line from the Florida State football roster &lt;tr class=&quot;odd&quot;&gt; &lt;td class=&quot;number&quot;&gt;3&lt;/td&gt; &lt;td class=&quot;name&quot;&gt; &lt;span class=&quot;sortname&quot; style=&quot;display:none;&quot;&gt;Darby Ronald&lt;/span&gt; &lt;a title=&quot;Ronald Darby&quot; href=&quot;/ViewArticle.dbml?ATCLID=209573037&amp;amp;DB_OEM_ID=32900&quot;&gt;Ronald Darby&lt;/a&gt; &lt;/td&gt; &lt;td class=&quot;position&quot;&gt;CB&lt;/td&gt; &lt;td class=&quot;height&quot; nowrap=&quot;&quot;&gt;5-11&lt;/td&gt; &lt;td class=&quot;weight&quot;&gt;195&lt;/td&gt; &lt;td class=&quot;year&quot;&gt; &lt;span style=&quot;display:none;&quot;&gt;3&lt;/span&gt; Jr. &lt;/td&gt; &lt;td class=&quot;hometown &quot;&gt;Oxon Hill, Md. / Potomac&lt;/td&gt; &lt;/tr&gt; I’ll come back to this example later, so it’s worth having the whole snippet here. But all I care about right now is to pick up the “Jr” separate from the “3” in the class year. The first part is obvious, assuming we’re starting from the row. *[6]/span or *[@class=&quot;year&quot;]/span How about getting just the word, without the number? *[6]/node()[position()=3] or position()=last would work. It’s the 3rd node, not the second, because there is a span element in between. If it were text(), it would be the second. Recap: To get everything as text, without the tags in between, just use the position or name. To get the first text element, use text() or text()[position()=1]. It’s the same thing. To get the last text element, use text()[position()=last] To get a list of all of the elements, which has an entry for each tag and another for its text representation, use node() instead of text(). If for some reason you only want the list of tags without what they contain, use element() Finding elements Key XPath selectors are: descendant-or-self, which refers to everything below as well as yourself. It helps when you don’t know what level it might be. For example, in the html above, finding the “sortname” class wouldn’t depend on you knowing that it was two levels below. descendant-or-self::node()[@class=&quot;sortname&quot;] count(preceding-sibling::p) would count how many &lt; p &gt; tags came before. The opposite is following-sibling::tag. Leave off the the tag if you want just the number of elements, but they will be at the same level. You can use the count as a test, so that if you want the first two paragraphs, it can be: * text()[count(preceding-sibling::p)&lt;3] attributes of a tag, like onclick() action This was an interesting one, from the NYC ACRIS real estate document database. In this case, we were looking in an exercise for a company called Prevezon. There were about 30 records, just enough to make clicking into them a pain. If you get fewer than 100 records, you can scrape all using Chrome scraper. The key, though, is the link to the detail page. That is under the input button as an onclick event. Here is how I made the XPATH to get to that. substring(*[1]/div/font/input[1]/@onclick, 23,16)) This says, for each of the 1st tds, look for div/font/input[1] – he first input item (there are two). Then find the @click attribute, and take the 16 characters beginning at 23. To create the actual link, you can use concat(“root html”, your substring)",
     "url": "http://localhost:4000/cronkite-docs/assets/docs/xpath.html",

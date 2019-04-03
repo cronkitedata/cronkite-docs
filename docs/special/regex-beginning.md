@@ -43,6 +43,7 @@ A wild card is a character you use to indicate the word "anything". Here are som
       .      = "any single character of any type"
       .?     = "a possible single character of any type (but it might not exist)"
       .*     = "anything or nothing of any length"
+      .+     = "anything one or more times"
       .{1,3} = "anything running between 1 and 3 characters long"
 
 Regular expressions also have wild cards of specific types. Usually, they are commonly used like this:
@@ -160,7 +161,7 @@ Anything within parentheses will be "captured" in a block.
 
 (This comes from "Regular expressions for the rest of us", from Christian McDonald of University of Texas, from the 2019 NICAR conference. [This exercise is a great primer on regular expression](../assets/docs/regex_for_rest_of_us.pdf).)
 
-Here are a few lines of the data, which you can copy and paste to go through McDonald's exercise. (He uses the Javascript version of regular expressions, but for our purposes in this exercise, it doesn't matter which one you use. If you choose Python,  you'll have one extra step, of putting a slash (\) before the quotes. The colors work a little better if you leave it on the default PHP method.)
+Here are a few lines of the data, which you can copy and paste to go through McDonald's exercise. (He uses the Javascript version of regular expressions, but for our purposes in this exercise, it doesn't matter which one you use. If you choose Python,  you'll have one extra step, of putting a slash (\\) before the quotes. The colors work a little better if you leave it on the default PHP method.)
 
     "10111 N LAMAR BLVD
     AUSTIN, TX 78753

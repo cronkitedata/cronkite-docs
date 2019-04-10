@@ -1,6 +1,7 @@
 ---
 title: Intro to Regular Expressions
 parent: Special
+nav_order: 4
 ---
 
 ## Regular Expressions basics

@@ -1,10 +1,8 @@
 ---
 parent: Public records
-title: Public records strategey
+title: Public records strategy
 nav_order: 2
 ---
-
-(TK: UPDATE LINKS)
 
 # Reporting from the outside in
 {: .no_toc}
@@ -15,9 +13,11 @@ In our case, your goal is to know exactly what you are looking for and what your
 
 I will provide you some examples of public records requests that were developed that way, and there is an example in your textbook. Generally, here is what you need to learn before you request electronic public records:
 
-* The specific agency that holds the records you want to acquire.
+* The specific agency that holds the records you want to acquire
+* How those records are maintained and used.
 * The formal name of the form or database that you want.
 * Which portions of the records are public under the relevant law.
+
 
 1. TOC
 {: toc}
@@ -25,7 +25,7 @@ I will provide you some examples of public records requests that were developed 
 
 ## Taming your topic
 
-Start by thinking of a story idea or a line of coverage that would benefit from some public records. These aren't just ideas that you think need some "numbers" -- if that's all you want, then a special interest group or expert can probably just give them to you. Instead, think of something that requires individual levels of information or a story that isn't just dependent on one or two facts.
+Start by thinking of a story idea or a line of coverage that would benefit from some public records held in database form. These aren't just ideas that you think need some "numbers" -- if that's all you want, then a public information officer or special interest group or expert can probably just give them to you. Instead, think of something that requires individual levels of information or a story that isn't just dependent on one or two facts.
 
 *Example*: You want to report on wildfires in Arizona. If you already have a story, you may just want to know how many lives, acres and dollars have been destroyed by wildfires in recent years. This fact is readily available from a variety of sources. But if you want to delve into the details of each fire, including exactly where it started, how it started and how it spread, you are likely to need more granular data: records on each fire.
 
@@ -35,15 +35,13 @@ You should do a thorough search on where you are on this story. Who else has don
 
 Sources to check include:
 
-* IRE resource center, [story database](https://ire.org/resource-center/stories/) and [story packs](https://ire.org/resource-center/story-packs/). To find stories, be sure to log into IRE using your membership account, and search in the main page search box, not the sidebar:
+* IRE resource center, [story database](https://ire.org/resource-center/stories/) and [story packs](https://ire.org/resource-center/51-story-packs/). To find stories, be sure to log into IRE using your membership account, and search in the main page search box, not the sidebar:
 
-<img src="{{site.baseurl}}/assets/images/ire-search-stories.gif" style="width:500px;">
-
-Most large non-profit news investigations of your topic will have an IRE entry. Once you find it and are logged in, you can download the contest entry that shows what sources they used and what problems they had reporting the story.
+<img src="{{site.baseurl}}/assets/images/51-ire-search-stories.gif" style="width:500px;">
 
 * Do a targeted Nexis or Proquest search through the library, limiting your results to long stories that contain keywords that will limit your results:
 
-![]({{site.baseurl}}/assets/images/nexisuni-news.png)
+![]({{site.baseurl}}/assets/images/51-nexisuni-news.png)
 
 * Do a *good* Google News and Google search. For example:
 
@@ -86,6 +84,6 @@ Before you request records, you have to understand:
 
 * What agency is responsible for them -- is it the state or a county? Which department? Which part of the department? You'll do that by browsing their website, looking at their budgets and searching for any audits or inspector general reports that describe the process.  You may also want to call the legislative staff of the committees in the State Legislature that oversee the program that collects the records.
 
-* What is and isn't public from those records? Don't just take what they say -- instead, study the law and determine if you have a right to some portion of the records.
+* What is and isn't public from those records? This has nothing to do with what is published on their websites, or whether it has personally identifiable information. Don't just take what they say -- instead, study the law and determine if you have a right to some portion of the records.
 
-* NOW you can call the agency and ask how you go about getting the records -- you should ask for them by name, and make sure you are talking to the right person.
+* NOW you can call the agency and ask how you go about getting the records -- you should ask for them by name, and make sure you are talking to the right person. Usually, you'll want to call and ask informally before ever submitting a public records request. They might just give it to you, or have something very close to what you want without one.

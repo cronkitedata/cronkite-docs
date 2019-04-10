@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   
 
-  <title>PDF tools - Data reporting @ Cronkite</title>
+  <title>Cleaning data with OpenRefine - Data reporting @ Cronkite</title>
   <link rel="stylesheet" href="http://localhost:4000/cronkite-docs/assets/css/just-the-docs.css">
 
   
@@ -993,9 +993,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_pdf.html" class="navigation-list-link active">PDF tools</a>
+                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_pdf.html" class="navigation-list-link">PDF tools</a>
                       
                     </li>
                   
@@ -1023,9 +1023,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" class="navigation-list-link">Cleaning data with OpenRefine</a>
+                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" class="navigation-list-link active">Cleaning data with OpenRefine</a>
                       
                     </li>
                   
@@ -1443,72 +1443,21 @@
                 
                   <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/special">Special</a></li>
                 
-                <li class="breadcrumb-nav-list-item"><span>PDF tools</span></li>
+                <li class="breadcrumb-nav-list-item"><span>Cleaning data with OpenRefine</span></li>
               </ol>
             </nav>
           
         
         <div id="main-content" class="page-content" role="main">
-          <h1 class="no_toc" id="dealing-with-pdfs">Dealing with PDFs</h1>
+          <p>Reporters often acquire data from sources that are collected in haphazard ways, or focus on fields that are filled out voluntarily. Think about all of the ways your name and address could appear on a mailing list, then add to the mix typos and errors, and you have a typical government database.</p>
 
-<p>PDF’s are the bane of a data journalist’s existence. They come in all kinds of unfriendly formats.</p>
+<p><a href="http://openrefine.org/download.html">OpenRefine</a>, an open source project that has been supported by Google in the past, was developed to help you work with data that comes in unstructured or poorly structured or standardized ways.  The Open Refine site points to lots of introductory exercises.</p>
 
-<h2 id="is-it-an-image-or-is-it-text">Is it an image or is it text?</h2>
-<p>It doesn’t matter if you just want to search a pdf or turn it into a data set – if it starts as an image, you’ve got a big hurdle to jump called Optical Character Recognition, or OCR.</p>
+<p>This one will just walk you through some of the most common features of OpenRefine. The next one will show you how to take a poorly structured data set and turn it into a database.</p>
 
-<p>Learn to check for image vs. text as soon as you get a document. THe easiest way is to try to select some text in your pdf reader. If you can’t, it’s probably a picture of text. If you can, then try to select some more. If you can select most of it, it’s probably text.</p>
+<p>We’re going to use a tab-separated file that was derived from the Arizona liquor licensing list downloaded from here: https://www.azliquor.gov/query/query.cfm</p>
 
-<p>Government agencies will give you both kinds. The easiest to use are those that were created directly from Word, Excel, or some other form. The hardest are forms that have been scanned into a computer (often out of order).</p>
-
-<p>OCR software can be expensive. If all you want to do is search, you can use <a href="http://documentcloud.org">DocumentCloud</a>. That service automates the use of the free Tesseract engine. But beyond that, you’ll probably have to pay for a tool. See a list below.</p>
-
-<h2 id="searchable-tables">Searchable tables</h2>
-<p>PDFs are designed to preserve the format on the page. You shouldn’t think of them as data files but as printed reports. Sometimes copying and pasting leaves you with unintelligible line breaks and smushed-together cells. You’ll usually have to use some kind of tool to deal with this.</p>
-
-<p>The key to trying to convert PDFs is to try every tool you can afford. You’ll never know which one works. Again, these will only work with pdf’s that are already searchable.</p>
-
-<h3 id="free-tools">Free tools</h3>
-<ul>
-  <li>
-    <p><a href="http://www.cometdocs.com">CometDocs</a> is a free service that lets you upload your pdf and will return to you an XL file in email. Your IRE membership gives you a paid version for free, which lets you keep all of your pdf’s on their site and puts you in the front of the line.</p>
-  </li>
-  <li>
-    <p><a href="http://tabula.nerdpower.org/">Tabula</a>, a new alpha-level project from ProPublica and the Mozilla fellows (and also Jeremy Merrill now at the NYT). It lets you show the program where a table is, and it does a little more sophisticated work to figure out where the cells are. It’s a little better with PDF’s with lines between rows than CometDocs.</p>
-  </li>
-  <li>
-    <p><a href="http://www.foolabs.com/xpdf/">xpdf</a> is an old but reliable command line tool that still works remarkably well. It’s often best for very fixed-width and consistent pdfs. It’s a bit of a pain to install on Unix-based (including Mac) systems, but once you have it it’s easy. See <a href="http://www.ire.org/resource-center/tipsheets/3440/">this tutorial</a> from IRE to use it. You’ll have to log into IRE to get it.</p>
-  </li>
-  <li>
-    <p><a href="http://pdftables.com">PDF Tables</a> from ScraperWiki is free for now. It may restrict large-scale conversions. It uses a different algorithm that might sometimes preserve the position of cells best.</p>
-  </li>
-</ul>
-
-<p>There are also PDF plug-ins to Ruby and Python, which can sometimes work just fine.</p>
-
-<h3 id="when-free-isnt-good-enough">When free isn’t good enough</h3>
-
-<p>Most of the pay products have two levels: one if you don’t need to OCR, and another if you do. If you’re going to pay, you might as well get the OCR. It’s not that much more and you’ll eventually need it.  Sometimes it’s worth seeing if you can pay just a little more than that for what’s called “batch” conversion, or “hot folders.” That means that when you get 10,000 pdfs zipped up into one file, you won’t have to individually convert them all.</p>
-
-<p>Rob Barry created <a href="extracting_image_pdfs.pdf">this tutorial</a> using ABBYY to extract information from even the most difficult forms.</p>
-
-<ul>
-  <li>
-    <p><a href="http://www.investintech.com/order_main.htm">Able2Extract</a>: $99.95 for non-OCR/ $129.95 for OCR. Intuitive and reasonably accurate. It has some annoyances, but saving as a text file often overcomes them (rather than going directly to Excel).</p>
-  </li>
-  <li>
-    <p><a href="http://finereader.abbyy.com/">ABBYY FineReader</a> Also $99.99 for personal use, available for Mac and Windows. Includes OCR.</p>
-  </li>
-  <li>
-    <p><a href="http://www.nuance.com/for-individuals/by-product/omnipage/index.htm">OmniPage</a>, $149.99 for individuals. This one is just slightly more powerful, but I’ve had better luck with it over time. The constant upgrades are really a pain.  (Windows only)</p>
-  </li>
-  <li>
-    <p><a href="http://www.cogniview.com/">Cogniview</a> has PDF2XL, which has been a treat for very difficult pdfs. It has a hard learning curve and is only really useful on tables, unlike OmniPage and ABBYY. ($129.97). (Windows only)</p>
-  </li>
-</ul>
-
-<h3 id="when-youre-ready-to-spend-a-fortune">When you’re ready to spend a fortune</h3>
-
-<p>In the newsroom, Monarch from DataWatch has been a godsend – it is considered a report miner, not a pdf converter, and it is almost like magic. It also costs so much that it might as well be out of the realm of most reporters. The only reason I mention it is that if you find yourself in a bind with thousands of pages of difficult reports and you can’t see how you’ll convert them, you often have two choices: Pay for the software or pay for data entry.  Another alternative is called TextConverter from SiMX, which has a $75/month option for limited work.</p>
+<p>There were some problems with the file, which were taken care of in an R script, mainly because there were line breaks within variables that OpenRefine couldn’t handle. This slice of the data only includes licenses for retailers – bars, restaurants, stores, hotels and clubs.</p>
 
 
 

@@ -1,4 +1,5 @@
 ---
+title: OpenRefine walkthrough
 nav_exclude: true
 ---
 

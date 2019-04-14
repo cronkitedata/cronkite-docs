@@ -30,7 +30,7 @@ Sometimes, it's hard to understand why public records and FOIA are so important 
 
 <blockquote> Today I would like to describe two of the biggest impediments to the effective use of FOIA among journalists, and I detail others in my written statement. But at core, they all suggest a widespread but wrong default position that records belong to the Government and not to the public. This position turns FOIA upside down. Instead of the Government convincing the public that certain information must be kept secret, in practice the public must convince officials that it should be released.  </blockquote>
 
-* "[Shared Values, Clashing Goals: Journalism and Open Government](https://xrds.acm.org/article.cfm?aid=2043246)", Sarah Cohen, XRDS, Winter 2011.
+* "[Shared Values, Clashing Goals: Journalism and Open Government]({{site.baseurl}}/assets/docs/p19-cohen.pdf)", Sarah Cohen, XRDS, Winter 2011.
 
 <blockquote>Reporters had historically gone undercover to learn about the workings of important institutions. However this [new FOIA law in the 1960s], combined with the widespread use of new copy machines, changed both the nature and ethics of investigative and beat reporting, ushering in a documents and data-based journalism that was less anecdotal and less ethically hazardous.
 </blockquote>

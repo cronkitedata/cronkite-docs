@@ -33,6 +33,14 @@
       
     
       
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/cronkite-docs/r-stats/refugees.html" class="navigation-list-link">Loop through sheets in a workbook</a>
+            
+          </li>
+        
+      
     
       
     
@@ -65,9 +73,11 @@
       
     
       
-        
+    
       
     
+      
+        
       
     
       
@@ -113,8 +123,6 @@
       
     
       
-    
-      
         
       
     
@@ -122,8 +130,6 @@
         
       
     
-      
-        
       
     
       
@@ -234,6 +240,8 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/general/sourcing.html" class="navigation-list-link">Data sources and sourcing</a>
@@ -289,12 +297,18 @@
     
       
         
+      
+    
+      
+        
           <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/excel" class="navigation-list-link">Excel</a>
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
                 
                   
                 
@@ -403,6 +417,8 @@
                             
                           
                             
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-refresher.html" class="navigation-list-link">Excel refresher</a>
                               </li>
@@ -417,13 +433,13 @@
                             
                           
                             
+                          
+                            
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/xlguides/xl-tidydata.html" class="navigation-list-link">Data types / tidy data</a>
                               </li>
-                            
-                          
-                            
-                          
                             
                           
                             
@@ -510,12 +526,26 @@
                   
                 
                   
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/excel/xlpractice" class="navigation-list-link">Excel practice</a>
                       
                         
                         <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
                           
                             
                           
@@ -584,18 +614,6 @@
                             
                           
                             
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
-                          
-                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/practice/03-excel-rates.html" class="navigation-list-link">Rates and ratios with FBI data</a>
                               </li>
@@ -612,9 +630,13 @@
                             
                           
                             
+                          
+                            
                               <li class="navigation-list-item ">
                                 <a href="http://localhost:4000/cronkite-docs/excel/practice/05-excel-police-uof.html" class="navigation-list-link">Build your own use of force database</a>
                               </li>
+                            
+                          
                             
                           
                             
@@ -698,21 +720,9 @@
                 
                   
                 
-                  
-                
-                  
-                
               </ul>
             
           </li>
-        
-      
-    
-      
-        
-      
-    
-      
         
       
     
@@ -788,17 +798,19 @@
                   
                 
                   
-                
-                  
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/r-stats/r-intro.html" class="navigation-list-link">Starting R</a>
                       
                     </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
                   
                 
                   
@@ -897,12 +909,22 @@
     
       
         
+      
+    
+      
+        
+      
+    
+      
+        
           <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/special" class="navigation-list-link">Special</a>
             
               
               <ul class="navigation-list-child-list ">
+                
+                  
                 
                   
                 
@@ -995,6 +1017,8 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" class="navigation-list-link">Cleaning data with OpenRefine</a>
@@ -1008,8 +1032,6 @@
                       <a href="http://localhost:4000/cronkite-docs/special/regex-beginning.html" class="navigation-list-link">Intro to Regular Expressions</a>
                       
                     </li>
-                  
-                
                   
                 
                   
@@ -1118,6 +1140,8 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/foia-help.html" class="navigation-list-link">Getting FOIA help</a>
@@ -1138,13 +1162,13 @@
                   
                 
                   
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/public-records-outside-in.html" class="navigation-list-link">Public records strategy</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -1184,13 +1208,13 @@
                   
                 
                   
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/foia/tips.html" class="navigation-list-link">FOIA resources</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -1273,13 +1297,15 @@
                   
                 
                   
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/workshops/newstrain/newstrain.html" class="navigation-list-link">NewsTrain Phoenix</a>
                       
                     </li>
-                  
-                
                   
                 
                   
@@ -1345,15 +1371,15 @@
                   
                 
                   
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/cronkite-docs/workshops/fundamental1day.html" class="navigation-list-link">1-day CAR workshop</a>
                       
                     </li>
-                  
-                
-                  
-                
                   
                 
                   
@@ -1806,6 +1832,13 @@
     "content": "More on scraping more tools Outwit hub (now about $50, but powerful) import.io - said to be the easiest out there, but I’ve had trouble using it. By the time I get through trying to learn a tool, I might as well have learned to program it. Key parts of Python that will help with difficult sites: Scrapy - a whole library of scraping tools that has its own manual and syntax. I think this one uses XPath though, so it will be easier to incorporate that in. Selenium, for when you need to actually run a browser. * Building on the tutorial that is at the http://sarahcnyt.github.io/ire-toronto site These examples came up recently and I needed to memorialize it for myself. It’s just to help me remember. Start with Chrome inspection tool, right click on the element you want, then copy the XPath to give you a start. Finding Text Between Tags &lt;td nowrap=&quot;&quot;&gt; &lt;font face=&quot;arial&quot; size=&quot;2&quot;&gt; &lt;b&gt;ABRAMSON, JOEL ELIOT &amp;nbsp; &amp;nbsp; &lt;br&gt; &lt;/b&gt; JOEL E. ABRAMSON, P.C. &amp;nbsp; &amp;nbsp; &lt;br&gt; 271 MADISON AVE FL 22 &amp;nbsp; &amp;nbsp; &lt;br&gt; NEW YORK, NY 10016 &amp;nbsp; &amp;nbsp; &lt;br&gt; (212)599-7700 &amp;nbsp; &amp;nbsp; &lt;/font&gt; &lt;/td&gt; If the whole chunk is the 2nd column, it’s [2] How can I get the name, which is outlined by the &lt; b &gt; (bold) tag? That text is the first text() element below the “font” tag, Any of these will work: [2]/font/text() or [2]//text() or [2]/font/b/text() A little less intuitively: *[2]font[1]/child::text() or *[2]/node()/node() or *[2]/font/node()[position=1] The bold tag is the first child of the font tag. Technically, the “node” is everything between the font tags, then the second node is everything between the bold tags. Here’s how to get the city, state, zipcode from that chunk. (Use the last-1 because some firms had two-line addresses and others had only one. It would fail in cases where the city, state was the last row. *[2]/font/text()[position()=last()-1] or *[2]//text()[count(following-sibling::br)=1] What if you had a slightly different piece of code, this one a line from the Florida State football roster &lt;tr class=&quot;odd&quot;&gt; &lt;td class=&quot;number&quot;&gt;3&lt;/td&gt; &lt;td class=&quot;name&quot;&gt; &lt;span class=&quot;sortname&quot; style=&quot;display:none;&quot;&gt;Darby Ronald&lt;/span&gt; &lt;a title=&quot;Ronald Darby&quot; href=&quot;/ViewArticle.dbml?ATCLID=209573037&amp;amp;DB_OEM_ID=32900&quot;&gt;Ronald Darby&lt;/a&gt; &lt;/td&gt; &lt;td class=&quot;position&quot;&gt;CB&lt;/td&gt; &lt;td class=&quot;height&quot; nowrap=&quot;&quot;&gt;5-11&lt;/td&gt; &lt;td class=&quot;weight&quot;&gt;195&lt;/td&gt; &lt;td class=&quot;year&quot;&gt; &lt;span style=&quot;display:none;&quot;&gt;3&lt;/span&gt; Jr. &lt;/td&gt; &lt;td class=&quot;hometown &quot;&gt;Oxon Hill, Md. / Potomac&lt;/td&gt; &lt;/tr&gt; I’ll come back to this example later, so it’s worth having the whole snippet here. But all I care about right now is to pick up the “Jr” separate from the “3” in the class year. The first part is obvious, assuming we’re starting from the row. *[6]/span or *[@class=&quot;year&quot;]/span How about getting just the word, without the number? *[6]/node()[position()=3] or position()=last would work. It’s the 3rd node, not the second, because there is a span element in between. If it were text(), it would be the second. Recap: To get everything as text, without the tags in between, just use the position or name. To get the first text element, use text() or text()[position()=1]. It’s the same thing. To get the last text element, use text()[position()=last] To get a list of all of the elements, which has an entry for each tag and another for its text representation, use node() instead of text(). If for some reason you only want the list of tags without what they contain, use element() Finding elements Key XPath selectors are: descendant-or-self, which refers to everything below as well as yourself. It helps when you don’t know what level it might be. For example, in the html above, finding the “sortname” class wouldn’t depend on you knowing that it was two levels below. descendant-or-self::node()[@class=&quot;sortname&quot;] count(preceding-sibling::p) would count how many &lt; p &gt; tags came before. The opposite is following-sibling::tag. Leave off the the tag if you want just the number of elements, but they will be at the same level. You can use the count as a test, so that if you want the first two paragraphs, it can be: * text()[count(preceding-sibling::p)&lt;3] attributes of a tag, like onclick() action This was an interesting one, from the NYC ACRIS real estate document database. In this case, we were looking in an exercise for a company called Prevezon. There were about 30 records, just enough to make clicking into them a pain. If you get fewer than 100 records, you can scrape all using Chrome scraper. The key, though, is the link to the detail page. That is under the input button as an onclick event. Here is how I made the XPATH to get to that. substring(*[1]/div/font/input[1]/@onclick, 23,16)) This says, for each of the 1st tds, look for div/font/input[1] – he first input item (there are two). Then find the @click attribute, and take the 16 characters beginning at 23. To create the actual link, you can use concat(“root html”, your substring)",
     "url": "http://localhost:4000/cronkite-docs/assets/docs/xpath.html",
     "relUrl": "/assets/docs/xpath.html"
+  },
+  "56": {
+    "id": "56",
+    "title": "Loop through sheets in a workbook",
+    "content": "Loop through sheets in a workbook Step 1: Read the full workbook I’ve opened this in Excel, and seen that it has sheets named after the years, with the first one a “cumulative” sheet that we don’t need. The first step is to read all of the sheets in, and get their names. In my computer, the Excel file is in a sub-folder under my working directory called “data” library(tidyverse) ## ── Attaching packages ────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 3.0.0 ✔ purrr 0.2.5 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.6 ## ✔ tidyr 0.8.1 ✔ stringr 1.3.1 ## ✔ readr 1.1.1 ✔ forcats 0.3.0 ## ── Conflicts ───────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() library(readxl) #this creates a list of names of sheets. sheets &lt;- excel_sheets(&quot;Refugee+Admissions+Report+FY2019_10_31.xls&quot;) %&gt;% set_names() # get rid of the first sheet of cumulative totals. sheets &lt;- sheets[-1] Create a shell into which we can pour the answer for countries and for regions. df_country &lt;- data.frame (region = character(), country = character(), admitted = integer(), month = character(), fiscal_year = character(), stringsAsFactors=FALSE ) df_region &lt;- data.frame (region = character(), ceiling = integer(), admitted = integer(), fiscal_year = character(), stringsAsFactors=FALSE ) Try one year in all one step. A trick: rowSums (is.na (tmp_df)) uses a trick that TRUE is the same thing as the number one. So if there are 16 columns, a row sum of is.na(row) is the number of cells that have na in them. #read in the name of the file, the range that could possibly have values, with a sheet called &#39;2017&#39;. In my computer, it&#39;s in a sub-folder called &quot;data&quot; tmp_df &lt;- read_excel(&quot;Refugee+Admissions+Report+FY2019_10_31.xls&quot;, range=&quot;A8:P105&quot;, sheet = &quot;2017&quot;) #change the field names. colnames (tmp_df) &lt;- c(&quot;region&quot;, &quot;country&quot;, &quot;ceiling&quot;, &quot;admitted&quot;, &quot;oct&quot;, &quot;nov&quot;, &quot;dec&quot;, &quot;jan&quot;, &quot;feb&quot;, &quot;mar&quot;, &quot;apr&quot;, &quot;may&quot;, &quot;jun&quot;, &quot;jul&quot;, &quot;aug&quot;, &quot;sep&quot;) #this says, add up the number of columns with NA in them, and if it&#39;s not the same as the number of columns, keep it. In other words, eliminate the ones that are entirely NA tmp_df &lt;- tmp_df %&gt;% #fill in the fiscal_year mutate (&quot;fiscal_year&quot; = &quot;2017&quot;) %&gt;% #how many empty cells are in each row? mutate (&quot;empty_col_ct&quot; = rowSums (is.na(tmp_df))) %&gt;% #keep only those that have fewer than 15 of the 16 empty cells. These are the extras. filter (empty_col_ct &lt; 15) %&gt;% #fill in the missing regions that we want to keep fill (region) %&gt;% #get rid of the ones that don&#39;t have a country. My problem in class was that I had it in quotes. filter (!is.na (country)) %&gt;% #and flip the months into a column gather (key=&quot;month&quot;, value=&quot;admitted&quot;, &quot;oct&quot;:&quot;sep&quot;) %&gt;% #just keeep the fields I want in the order I want select (region, country, admitted, month, fiscal_year) #we now have a narrow, tall dataset with the right variables in the right order. #attach it to the master dataset df_country &lt;- rbind(df_country, tmp_df) Try it in a loop. We now have the whole thing done in one step. All we have to do is loop through the names of the sheets, and then repeat it using that name to fill in the fiscal year. If you didn’t have that, you might need something else to identify the years – there might be some cell in the worksheet you can pick up or something else. I re-ran the creation chunk above to set the df_country to 0 observations. #let&#39;s make sure the data frame we want to use is empty -- it has no rows. df_country &lt;- df_country[0,] for (s in sheets) { #I&#39;m actually not sure if I understand what kind of object the sheets is, so this is just making sure it&#39;s a character field , which we&#39;ll use as fiscal year this_year &lt;- as.character(s) #read in the name of the file, the range that could possibly have values, with a sheet that changes each time, based on the current value of this_year tmp_df &lt;- read_excel(&quot;Refugee+Admissions+Report+FY2019_10_31.xls&quot;, range=&quot;A8:P105&quot;, sheet = this_year) #change the field names. colnames (tmp_df) &lt;- c(&quot;region&quot;, &quot;country&quot;, &quot;ceiling&quot;, &quot;admitted&quot;, &quot;oct&quot;, &quot;nov&quot;, &quot;dec&quot;, &quot;jan&quot;, &quot;feb&quot;, &quot;mar&quot;, &quot;apr&quot;, &quot;may&quot;, &quot;jun&quot;, &quot;jul&quot;, &quot;aug&quot;, &quot;sep&quot;) tmp_df &lt;- tmp_df %&gt;% #fill in the fiscal_year mutate (&quot;fiscal_year&quot; = this_year) %&gt;% #how many empty cells are in each row? mutate (&quot;empty_col_ct&quot; = rowSums (is.na(tmp_df))) %&gt;% #keep only those that have fewer than 15 of the 16 empty cells. These are the extras. filter (empty_col_ct &lt; 15) %&gt;% #fill in the missing regions that we want to keep fill (region) %&gt;% #get rid of the ones that don&#39;t have a country. My problem in class was that I had it in quotes. filter (!is.na (country)) %&gt;% #and flip the months into a column gather (key=&quot;month&quot;, value=&quot;admitted&quot;, &quot;oct&quot;:&quot;sep&quot;) %&gt;% #just keeep the fields I want in the order I want select (region, country, admitted, month, fiscal_year) %&gt;% #I realized we had a mistake, with the totals included. Let&#39;s get rid of them filter (!str_detect (country, &quot;Total&quot;)) #we now have a narrow, tall dataset with the right variables in the right order. #attach it to the master dataset df_country &lt;- rbind(df_country, tmp_df) #Now go on to the next sheet, unless there aren&#39;t anymore. } Voila! You now have df_country, with 15,036 observations and 5 variables. Let’s check it to make sure it worked properly. (If you got more, make sure you re-created the data set from two steps up) annual_totals &lt;- df_country %&gt;% group_by (country, fiscal_year) %&gt;% summarize (total_admitted = sum(admitted)) %&gt;% arrange (country, fiscal_year) #Lets look at the top few country-years.&quot; annual_totals %&gt;% arrange (desc (total_admitted)) %&gt;% head() #and say you wanted to see it with the years across the top and the countries down the side? annual_totals %&gt;% spread (key=fiscal_year, value = total_admitted, fill=0) Let’s make a searchable, sortable version #install.packages(&quot;DT&quot;) library(DT) annual_totals %&gt;% spread (key=fiscal_year, value = total_admitted, fill=0) %&gt;% datatable() ## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.",
+    "url": "http://localhost:4000/cronkite-docs/r-stats/refugees.html",
+    "relUrl": "/r-stats/refugees.html"
   }
   
 }

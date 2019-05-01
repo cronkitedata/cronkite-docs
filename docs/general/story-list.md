@@ -71,6 +71,11 @@ nav_order: 99
 
 * "[How to conduct an open-source investigation](https://www.newyorker.com/culture/culture-desk/how-to-conduct-an-open-source-investigation-according-to-the-founder-of-bellingcat) according to the founder of Bellingcat", by Ned Bauman, New Yorker, August 30, 2018
 
+* A Twitter thread on how BBC Africa uncovered the place, time, and people involved in a horrifying murder in Camaroon. BBC Africa Eye published, "[Anatomy of a Killer](https://www.youtube.com/watch?v=XbnLkc6r3yc)" based on the research.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">THREAD<br><br>In July 2018, a horrifying video began to circulate on social media. <br><br>2 women &amp; 2 young children are led away by a group of soldiers. They are blindfolded, forced to the ground, and shot 22 times. <a href="https://twitter.com/hashtag/BBCAfricaEye?src=hash&amp;ref_src=twsrc%5Etfw">#BBCAfricaEye</a> investigated this atrocity. This is what we found... <a href="https://t.co/oFEYnTLT6z">pic.twitter.com/oFEYnTLT6z</a></p>&mdash; BBC News Africa (@BBCAfrica) <a href="https://twitter.com/BBCAfrica/status/1044186344153583616?ref_src=twsrc%5Etfw">September 24, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>ß
+
+
 ## Selected stories
 
 One way to keep up with stories is to [subscribe to the Local Matters weekly newsletter](https://visitor.r20.constantcontact.com/manage/optin?v=001jNS0O4Ui3OO7md-9Ryd0WOKdq14U-VfK9aIRH18MLku7VRyaaHESUptkwHw-8FO3X8Dhpw6_U4bO-hrpYrIzmYZy_m-F01qUfYYiFg0mDpo%3D), which curates stories done by more than 100 local newspapers, selected by reviewing their front pages on the Newseum site.  Although it's only newspapers, it gives you a good feel for the range of stories being done around the U.S.

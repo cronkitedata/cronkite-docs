@@ -13,9 +13,11 @@ parent: General resources
 
 ## An example: News21 "Hate in America"
 
-In 2018, [News 21](https://news21.com) -- the multi-university investigative reporting fellowship hosted by ASU's Cronkite School of Journalism -- chose "Hate in America" as its topic for the year. It was a risk because others had been reporting on the subject for more than a year, making it more difficult for News 21 to break new ground. It was also difficult because it became clear quite quickly that no one had documented every case of hate crimes or hate-driven incidents in the U.S.
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/285102097" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+{: .mb-5}
+
+In 2018, [News 21](https://news21.com) -- the multi-university investigative reporting fellowship hosted by ASU's Cronkite School of Journalism -- chose "Hate in America" as its topic for the year. It was a risk because others had been reporting on the subject for more than a year, making it more difficult for News 21 to break new ground. It was also difficult because it became clear quite quickly that no one had documented every case of hate crimes or hate-driven incidents in the U.S.
 
 #### Data News 21 used
 

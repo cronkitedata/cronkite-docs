@@ -1478,17 +1478,17 @@
     </ol>
   </li>
   <li><a href="#looking-under-the-hood" id="markdown-toc-looking-under-the-hood">Looking under the hood</a>    <ol>
-      <li><a href="#using-the-chrome-developer-tab-inspector" id="markdown-toc-using-the-chrome-developer-tab-inspector">Using the Chrome Developer Tab (Inspector)</a>        <ol>
-          <li><a href="#document-object-models" id="markdown-toc-document-object-models">Document object models</a></li>
-          <li><a href="#network-resources---a-json-miracle" id="markdown-toc-network-resources---a-json-miracle">Network resources - a json miracle</a></li>
-        </ol>
-      </li>
+      <li><a href="#using-the-chrome-developer-tab-inspector" id="markdown-toc-using-the-chrome-developer-tab-inspector">Using the Chrome Developer Tab (Inspector)</a></li>
       <li><a href="#using-information-under-the-hood" id="markdown-toc-using-information-under-the-hood">Using information under the hood</a></li>
+      <li><a href="#overriding-page-limits" id="markdown-toc-overriding-page-limits">Overriding page limits</a></li>
     </ol>
   </li>
-  <li><a href="#overriding-page-limits" id="markdown-toc-overriding-page-limits">Overriding page limits</a></li>
-  <li><a href="#a-real-json-miracle" id="markdown-toc-a-real-json-miracle">A real JSON miracle</a></li>
+  <li><a href="#the-json-miracle" id="markdown-toc-the-json-miracle">The json miracle</a>    <ol>
+      <li><a href="#a-bigger-json-miracle" id="markdown-toc-a-bigger-json-miracle">A bigger JSON miracle</a></li>
+    </ol>
+  </li>
   <li><a href="#scraping-with-xpath" id="markdown-toc-scraping-with-xpath">Scraping with XPATH</a>    <ol>
+      <li><a href="#document-object-models-and-xpath" id="markdown-toc-document-object-models-and-xpath">Document object models and XPATH</a></li>
       <li><a href="#a-simple-scrape-texas-death-row" id="markdown-toc-a-simple-scrape-texas-death-row">A simple scrape: Texas Death Row</a></li>
       <li><a href="#on--your-own" id="markdown-toc-on--your-own">On  your own</a></li>
     </ol>
@@ -1525,53 +1525,21 @@
 <p>Browsers like Chrome and Safari have built in tools that are designed for developers to test their sites, but can also be used to inspect what is happening on a published site.</p>
 
 <p><a href="/cronkite-docs/assets/docs/simple-page.html">This is an extremely simple web page</a> that has several characteristics:</p>
+
 <ul>
-  <li>One standard library to format the page, called Bootstrap.</li>
-  <li>Another standard library, called JQuery, to access and use data held in json form.</li>
-  <li>Content written in plain HTML for a heading, a paragraph, and a couple of “divs”.</li>
-  <li>A table created with a script using the json data.</li>
+  <li>In the header, it has several scripts and references to outside resources. Don’t worry about that right now.</li>
+  <li>It has a defined style for a paragraph, called p.intro, which will be used later. A style is a way to format web pages using CSS, which you may have learned in high school or in a basic computing class in college.</li>
+  <li>I has a heading, two paragraphs and a &lt;div&gt; element that contains a table.</li>
+  <li>The table is created using a script from a json file held in the same directory.</li>
 </ul>
 
-<p>Right-click anywhere on the page and choose “Inspect”. It will open to a different part of the page depending on where you click.</p>
+<p>Right-click anywhere on the page and choose “Inspect”. It will open to a different part of the page depending on where you click. Expand and collapse the little arrows to show and hide the elements.</p>
 
 <p><img src="/cronkite-docs/assets/images/31-simple-page2.png" alt="" /></p>
 
-<p>There are all kinds of things buried in here, including the structure of the page and all of the elements that it accesses both on the web and elsewhere. Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren’t displayed on your screen.</p>
+<p>Only the “body” tag is opened in this image, but you can see the structure of the page and the tags, id, class and other details of each element. At the bottom, the Inspector tells you the route you’d take to find to the currently selected element on the page. In this case it means, “beginning at the top, go to the &lt;body&gt; tag, then look for a &lt;p&gt; tag that has a class of <em>intro</em>”</p>
 
-<h4 id="document-object-models">Document object models</h4>
-
-<p>Think of a web page as a tree - there are two big trunks (the head and the body), then there are little branches that are all from the same trunk. The DOM lets you scamper up and down the tree and across the branches using commands that are called XPATH commands.</p>
-
-<p>Look at the bottom of the page. The current element – the one that you have selected – is shown as a path up that tree. In this case, selected paragraph is three levels down:</p>
-
-<p><img src="/cronkite-docs/assets/images/31-simple-page2.png" alt="" /></p>
-
-<p>An XPATH command would look like this:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       body/p
-</code></pre></div></div>
-
-<p>We’ll get more into that later on, but for now, just know it’s there.</p>
-
-<h4 id="network-resources---a-json-miracle">Network resources - a json miracle</h4>
-
-<p>Now reload the page, and change to the Network tab.</p>
-
-<p><img src="/cronkite-docs/assets/images/31-simple-page3.png" alt="" /></p>
-
-<p>This lists all of the resources that are accessed over a network to build your page. It includes items referenced in the head, and items loaded by scripts elsewhere in the page. Here you can see that it references the original page’s HTML; bootstrap and JQuery resources; and something at the end called simple.json, which is initiated by the JQuery.</p>
-
-<p><img src="/cronkite-docs/assets/images/31-simple-page4.png" alt="" /></p>
-
-<p>Click on the json file, and take a look at what you see. (You may have to expand the little triangles to get to this):</p>
-
-<p><img src="/cronkite-docs/assets/images/31-simple-page5.png" alt="" /></p>
-
-<p>What you have is a json miracle! This is a little database that can be converted to a .csv or can be read into R without having to scrape anything! Most websites that use JQuery or similar libraries have a json dataset somewhere buried in them.</p>
-
-<p>Try right-clicking on the json object on the left side, and choose “Copy” -&gt; “As response”. Now go to a json-to-csv converter (<a href="http://www.convertcsv.com/json-to-csv.htm">I use this one</a>) and paste into the box. Now you have a csv or Excel file ready to download, with a preview of what it looks like:</p>
-
-<p><img src="/cronkite-docs/assets/images/31-simple-page6.png" alt="" /></p>
+<p>Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren’t displayed on your screen.</p>
 
 <h3 id="using-information-under-the-hood">Using information under the hood</h3>
 
@@ -1585,13 +1553,13 @@
 
 <p>Getting used to reading underneath the slick presentation can reap stories and scoops.</p>
 
-<h2 id="overriding-page-limits">Overriding page limits</h2>
+<h3 id="overriding-page-limits">Overriding page limits</h3>
 
 <p>Some websites can be tricked into giving you more at once than you think. One example is the <a href="https://www.mcso.org/Mugshot">Maricopa County Sheriff’s public mugshot site</a>, which gives you information on the people who are in the county jail every day.</p>
 
 <p><img src="/cronkite-docs/assets/images/31-mugshots1.png" alt="" /></p>
 
-<p>Hover over the box with the “10” in it, and right-click to get the developers’ window by choosing “Inspect”.</p>
+<p>Hover over the box with the “10” in it, and right-click to get the developers’ window by choosing “Inspect”. In your inspector, change one of the options you see from 100 to 1000. (Make sure to change the value=”100” part inside the option tag. That’s the part that the program will pay attention to – the other one is just what you see on the screen.)</p>
 
 <p><img src="/cronkite-docs/assets/images/31-mugshots2.png" alt="" /></p>
 
@@ -1601,7 +1569,34 @@
 
 <p>One hint is that if you click on “Next page” and there is no hesitation before it shows you the rest of the records, there is probably a dataset sitting on your browser. If it takes a second, it is probably going back to the original server to get more.</p>
 
-<h2 id="a-real-json-miracle">A real JSON miracle</h2>
+<h2 id="the-json-miracle">The json miracle</h2>
+
+<p>This time, you’ll look at the network resources tab of our simple web page.</p>
+<ul>
+  <li>Open the inspector</li>
+  <li><a href="/cronkite-docs/assets/docs/simple-page.html">Load the page</a> (or refresh it if you didn’t have the Inspector open already)</li>
+  <li>And select the Network tab. (You may have to look for little » arrows to find it.)</li>
+</ul>
+
+<p><img src="/cronkite-docs/assets/images/31-simple-page3.png" alt="" /></p>
+
+<p>This lists all of the resources that are accessed over a network to build your page. It includes items referenced in the head, and items loaded by scripts elsewhere in the page. Here you can see that it references the original page’s HTML; bootstrap and JQuery resources; and something at the end called simple.json, which is initiated by the JQuery.</p>
+
+<p><img src="/cronkite-docs/assets/images/31-simple-page4.png" alt="" /></p>
+
+<p>Click on the json file, and take a look at what you see. (You may have to expand the little triangles to get to this):</p>
+
+<p><img src="/cronkite-docs/assets/images/31-simple-page5.png" alt="" /></p>
+
+<p>What you have is a json miracle! If you <a href="/cronkite-docs/general/file-formats">reviewed the tutorial on file types</a>, this is one of the best-of-all-worlds scenarios.</p>
+
+<p>This is a little database that can be converted to a .csv or can be read into R without having to scrape anything! Most websites that use JQuery or similar libraries have a json dataset somewhere buried in them.</p>
+
+<p>Try right-clicking on the json object on the left side, and choose “Copy” -&gt; “As response”. Now go to a json-to-csv converter (<a href="http://www.convertcsv.com/json-to-csv.htm">I use this one</a>) and paste into the box. Now you have a csv or Excel file ready to download, with a preview of what it looks like:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-simple-page6.png" alt="" /></p>
+
+<h3 id="a-bigger-json-miracle">A bigger JSON miracle</h3>
 
 <p>Open your Inspector panel, and go to this <a href="http://mlb.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&amp;tab_level=child&amp;click_text=Sortable+Player+hitting&amp;game_type='R'&amp;season=2018&amp;season_type=ANY&amp;league_code='MLB'&amp;sectionType=sp&amp;statType=hitting&amp;page=1&amp;ts=1552429749141&amp;timeframe=&amp;playerType=ALL&amp;last_x_days=&amp;split=h">list of Major League Baseball player statistics</a></p>
 
@@ -1631,26 +1626,49 @@
 
 <p>Samantha Sunne <a href="https://docs.google.com/presentation/d/e/2PACX-1vTBBph8FTWX4A09C22oWMxZuiLm_hkcprIjPfRfusBDlPIyvSEJWERH1YHyjQZI29FcseD9aP1cYlrk/pub?start=false&amp;loop=false&amp;delayms=60000&amp;slide=id.g1199aeb248_0_120">has a terrific tutorial showing you how to do this in Google Sheets</a>. (It’s one of the rare things that Google Sheets can do that is missing in Excel.)</p>
 
-<p>We’re going to do it using XPATH in <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en">a Chrome extension called Scraper</a>. This is the one you want:</p>
+<h3 id="document-object-models-and-xpath">Document object models and XPATH</h3>
+
+<p>Think of a web page as a tree - there are two big trunks (the head and the body), then there are little branches that are all from the same trunk. The document object model - or DOM - defines that structure using tags, attributes and element names.</p>
+
+<p>Go back to our <a href="/assets/docs/simple-page.html">simple web page</a>, and open the Chrome developer tool using by right-clicking anywhere on the page and choosing “Inspect”. The current element – the one that you have selected – is shown as a path up that tree. In this case, selected paragraph the third level down:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-simple-page2.png" alt="" /></p>
+
+<p>XPATH is a language that lets you select any of these tags. It starts from the top and moves down until it finds what you’re looking for. In this case, the first &lt;p&gt; tag on the page would simply be referenced this way:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       body/p (starting from the top ahdn)
+         or
+       //p  (the first p it finds anywhere)
+</code></pre></div></div>
+
+<p>Using the Chrome browser, install <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd?hl=en">an extension called Scraper</a>. This is the one you want:</p>
 
 <p><img src="/cronkite-docs/assets/images/31-scraper.png" alt="" /></p>
 
+<p>XPATH can get quite complicated because it’s so powerful. For example, say you don’t know which paragraph you’re looking for but you know it’s just after the second H1 heading. Your XPATH command then might be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  /h1[2]/p
+</code></pre></div></div>
+
 <h3 id="a-simple-scrape-texas-death-row">A simple scrape: Texas Death Row</h3>
-<p>The <a href="https://www.tdcj.state.tx.us/death_row/dr_offenders_on_dr.html">Texas Death Row</a> list is very easy to scrape.</p>
 
-<p>Select a couple of rows of data in table, and before you do anything else, look at your inspector. Look at the bottom of the screen, and it will show you the route that had to be taken to get to your selection. it starts with the html tag, goes to body, then a bunch of other tags, and eventually to a “tr” tag.</p>
+<p>The list of inmates on <a href="https://www.tdcj.state.tx.us/death_row/dr_offenders_on_dr.html">Texas’s Death Row</a> is a very simple list that is easy to scrape.</p>
 
-<p>Now go back to the table, make sure you have a few rows selected, right-click and choose “Scrape similar”</p>
+<p>Select some cells in the table, and before you do anything else, look at your inspector. Look at the bottom of the screen, and it will show you the route that had to be taken to get to your selection. it starts with the html tag, goes to body, then a bunch of other tags, and eventually to a “tr” tag.</p>
+
+<p>Now go back to the table, make sure you have a few rows roughly selected, right-click and choose “Scrape similar”</p>
 
 <p><img src="/cronkite-docs/assets/images/31-scrape-similar.png" alt="" /></p>
 
-<p>That should bring up a list that looks pretty good – it has the id number, the name, dob, etc. in nice columns and rows, and an invitation to copy to your clipboard or export to google docs. But let’s look at a little of what is going on here, and how it knows what to do.</p>
+<p>That should bring up a list that looks pretty good – it has the id number, the name, dob, etc. in nice columns and rows, and an invitation to copy to your clipboard or export to google docs. (If you get nothing, check to see if the kind of scrape is XPATH rather than JQuery. If it isn’t close down Chrome and try again. I don’t know how to fix that when it happens.)</p>
+
+<p>Here are the details when it works:</p>
 
 <p><img src="/cronkite-docs/assets/images/31-scrape-window.png" alt="" /></p>
 
 <p>Because this page is so simple, all that the scraper had to do was look for any TR tag (//tr), then it is asking for all of the TD tags below that. In other words, there were no other tables in the page that would confuse it. What if there were? You can use other items in the page to steer XPATH to the right place. For instance, this one could have been:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    //div[@class="overflow"&gt;/table/tbody/tr[td]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    //div[@class="overflow"]/table/tbody/tr[td]
 
        or
 
@@ -1659,15 +1677,15 @@
 
 <p>There is one mistake in this table. That is, the Link only shows the words “Offender Information”. We want the actual link. The reason is XPATH always assumes you want the text shown on the screen, not the underlying information, if you don’t say you want it. Try going into the Link area on left, and make this change:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   \*[2]
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   *[2]
 
    to
 
 
-   \*[2]/a/@href
+   *[2]/a/@href
 </code></pre></div></div>
 
-<p>This means that you want the &lt;a href=…&gt; part of the underlying code. The “a” is the tag, and the @href is an attribute of that tag. Don’t worry too much about getting all the terminology down. The idea is to look underneath the hood of the page to see how to extract what you want.</p>
+<p>This means that we are looking for the link (an &lt;a href=…&gt; tag) below the table cells. The “a” refers to the tag itself (a link) and the @href refers to an attribute of that tag, or its URL. Anything that is a tag is just shown as is. Anything that’s referenced INSIDE the tag is an attribute, and it’s preceded by an @ symbol.</p>
 
 <h3 id="on--your-own">On  your own</h3>
 

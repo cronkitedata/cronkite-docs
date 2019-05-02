@@ -64,6 +64,15 @@ Only the "body" tag is opened in this image, but you can see the structure of th
 
 Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren't displayed on your screen.
 
+#### An important note
+
+Sometimes you'll see "Responsive" at the top of the screen when you go into the Inspector. This means that Chrome is testing sites for mobile-friendly responsiveness. If you were building a website, that would be good. But because you're trying to extract information from a website, it's bad. Make sure to turn that off by clicking on the image of a phone in your inspector:
+
+![]({{site.baseurl}}/assets/images/31-turn-off-phone.png)
+
+
+
+
 ### Using information under the hood
 
 Consider this March 25, 2015 post on Buzzfeed:  ["Listen to Rihanna's New Single"](http://www.buzzfeed.com/kelleydunlap/rihanna-reveals-new-music-arriving-tomorrow#.cw2x8QWpx) describes how Buzzfeed looked behind Rihanna's website and found a link to a new song that was top secret in the industry and wouldn't be released for another day.
@@ -121,11 +130,13 @@ Try right-clicking on the json object on the left side, and choose "Copy" -> "As
 
 Open your Inspector panel, and go to this [list of Major League Baseball player statistics](http://mlb.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&tab_level=child&click_text=Sortable+Player+hitting&game_type='R'&season=2018&season_type=ANY&league_code='MLB'&sectionType=sp&statType=hitting&page=1&ts=1552429749141&timeframe=&playerType=ALL&last_x_days=&split=h)
 
+(Once again, be sure your "Responsive" setting is off by clicking on the little phone in Inspector. Otherwise you'll be sent to the mobile site, which is different.)
+
 You're interested in getting to the data shown on the left side of the screen, but you don't want to have to page 21 times to get it.
 
 ![]({{site.baseurl}}/assets/images/31-mlb1.png)
 
-In your network tab, somewhere down the side is a file that begins with "stats.splayer?season=...."  These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page.
+In your network tab, somewhere down the side is a file that begins with "stats.splayer?season=...."  These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page. (Often, you'll look for something that has "ajax", "jsaon", "xml", or "xthr" in the name. Other times, just scroll through and look for requests or responses that look like data.)
 
 You should see a ver long "Request URL" on the right. If you scroll all the way down, you'll see that request has been split up into its pieces, which we can see under "Query String Parameters"
 

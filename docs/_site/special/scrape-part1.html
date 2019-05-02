@@ -1478,7 +1478,10 @@
     </ol>
   </li>
   <li><a href="#looking-under-the-hood" id="markdown-toc-looking-under-the-hood">Looking under the hood</a>    <ol>
-      <li><a href="#using-the-chrome-developer-tab-inspector" id="markdown-toc-using-the-chrome-developer-tab-inspector">Using the Chrome Developer Tab (Inspector)</a></li>
+      <li><a href="#using-the-chrome-developer-tab-inspector" id="markdown-toc-using-the-chrome-developer-tab-inspector">Using the Chrome Developer Tab (Inspector)</a>        <ol>
+          <li><a href="#an-important-note" id="markdown-toc-an-important-note">An important note</a></li>
+        </ol>
+      </li>
       <li><a href="#using-information-under-the-hood" id="markdown-toc-using-information-under-the-hood">Using information under the hood</a></li>
       <li><a href="#overriding-page-limits" id="markdown-toc-overriding-page-limits">Overriding page limits</a></li>
     </ol>
@@ -1541,6 +1544,12 @@
 
 <p>Getting used to looking at pages like this helps you understand what is in a web page, but also lets you see things that aren’t displayed on your screen.</p>
 
+<h4 id="an-important-note">An important note</h4>
+
+<p>Sometimes you’ll see “Responsive” at the top of the screen when you go into the Inspector. This means that Chrome is testing sites for mobile-friendly responsiveness. If you were building a website, that would be good. But because you’re trying to extract information from a website, it’s bad. Make sure to turn that off by clicking on the image of a phone in your inspector:</p>
+
+<p><img src="/cronkite-docs/assets/images/31-turn-off-phone.png" alt="" /></p>
+
 <h3 id="using-information-under-the-hood">Using information under the hood</h3>
 
 <p>Consider this March 25, 2015 post on Buzzfeed:  <a href="http://www.buzzfeed.com/kelleydunlap/rihanna-reveals-new-music-arriving-tomorrow#.cw2x8QWpx">“Listen to Rihanna’s New Single”</a> describes how Buzzfeed looked behind Rihanna’s website and found a link to a new song that was top secret in the industry and wouldn’t be released for another day.</p>
@@ -1600,11 +1609,13 @@
 
 <p>Open your Inspector panel, and go to this <a href="http://mlb.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&amp;tab_level=child&amp;click_text=Sortable+Player+hitting&amp;game_type='R'&amp;season=2018&amp;season_type=ANY&amp;league_code='MLB'&amp;sectionType=sp&amp;statType=hitting&amp;page=1&amp;ts=1552429749141&amp;timeframe=&amp;playerType=ALL&amp;last_x_days=&amp;split=h">list of Major League Baseball player statistics</a></p>
 
+<p>(Once again, be sure your “Responsive” setting is off by clicking on the little phone in Inspector. Otherwise you’ll be sent to the mobile site, which is different.)</p>
+
 <p>You’re interested in getting to the data shown on the left side of the screen, but you don’t want to have to page 21 times to get it.</p>
 
 <p><img src="/cronkite-docs/assets/images/31-mlb1.png" alt="" /></p>
 
-<p>In your network tab, somewhere down the side is a file that begins with “stats.splayer?season=….”  These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page.</p>
+<p>In your network tab, somewhere down the side is a file that begins with “stats.splayer?season=….”  These are often hard to find, but that is where the JSON file that we looked at earlier resides on this page. (Often, you’ll look for something that has “ajax”, “jsaon”, “xml”, or “xthr” in the name. Other times, just scroll through and look for requests or responses that look like data.)</p>
 
 <p>You should see a ver long “Request URL” on the right. If you scroll all the way down, you’ll see that request has been split up into its pieces, which we can see under “Query String Parameters”</p>
 

@@ -1,6 +1,7 @@
 ---
 parent: General resources
 title: "Newsroom math"
+nav_order: 3
 ---
 
 # Numbers in the newsroom
@@ -57,7 +58,7 @@ For journalists, numbers -- or facts -- make up the third leg of a stool support
 
 * As guesses. Sometimes it's a good guess, sometimes it's an off-the-cuff guess. And sometimes it's a hopeful guess. But even the most accurate of numbers can be guesses, such as the [2017 election in Virginia that swung the state legislature by a single vote](https://www.reuters.com/article/us-usa-politics-virginia/democrat-wins-by-one-vote-in-virginia-legislative-election-recount-idUSKBN1ED2XQ) in Newport News. If there are slight differences between numbers, maybe they're not worth writing about.
 
-Once you find the humanity in your numbers, by cutting them down to size and relegating them to their proper role, you'll find yourself less fearful. You'll be able to characterize what you've learned rather than numb your readers with every number in your notebook. You may even find that finding facts on your own is fun.  
+Once you find the humanity in your numbers, by cutting them down to size and relegating them to their proper role, you'll find yourself less fearful. You'll be able to characterize what you've learned rather than numb your readers with every number in your notebook. You may even find that finding facts on your own is fun.
 
 ## Reading and viewing
 

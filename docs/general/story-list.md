@@ -1,7 +1,7 @@
 ---
 title: Story list
 parent: General resources
-nav_order: 99
+nav_order: 1
 ---
 
 # Readings

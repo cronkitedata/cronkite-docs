@@ -1,3 +1,9 @@
+---
+title: Looping example in R
+parent: R for Journalism
+nav-order: 10
+---
+
 Loop through sheets in a workbook
 ================
 
@@ -22,6 +28,7 @@ library(tidyverse)
     ## ✖ dplyr::lag()    masks stats::lag()
 
 ``` r
+
 library(readxl)
 
 #this creates a list of names of sheets.
@@ -35,20 +42,20 @@ sheets <- sheets[-1]
 Create a shell into which we can pour the answer for countries and for regions.
 
 ``` r
-df_country <- data.frame (region = character(), 
+df_country <- data.frame (region = character(),
                           country = character(),
                           admitted = integer(),
                           month = character(),
                           fiscal_year = character(),
                           stringsAsFactors=FALSE
 )
-                          
+
 df_region <- data.frame (region = character(),
-                         ceiling = integer(), 
-                         admitted = integer(), 
+                         ceiling = integer(),
+                         admitted = integer(),
                          fiscal_year = character(),
                          stringsAsFactors=FALSE
-                         )
+                      )
 ```
 
 ### Try one year in all one step.
@@ -68,13 +75,13 @@ colnames (tmp_df) <- c("region", "country", "ceiling", "admitted", "oct", "nov",
 
 #this says, add up the number of columns with NA in them, and if it's not the same as the number of columns, keep it. In other words, eliminate the ones that are entirely NA
 tmp_df <- tmp_df %>%
-          #fill in the fiscal_year 
+          #fill in the fiscal_year
           mutate ("fiscal_year" = "2017") %>%
-          #how many empty cells are in each row?      
+          #how many empty cells are in each row?
           mutate ("empty_col_ct" = rowSums (is.na(tmp_df))) %>%
           #keep only those that have fewer than 15 of the 16 empty cells. These are the extras.
           filter (empty_col_ct < 15) %>%
-          #fill in the missing regions that we want to keep 
+          #fill in the missing regions that we want to keep
           fill (region) %>%
           #get rid of the ones that don't have a country. My problem in class was that I had it in quotes.
           filter (!is.na (country)) %>%
@@ -105,18 +112,18 @@ for (s in sheets) {
   this_year <- as.character(s)
   #read in the name of the file, the range that could possibly have values, with a sheet that changes each time, based on the current value of this_year
   tmp_df <- read_excel("Refugee+Admissions+Report+FY2019_10_31.xls", range="A8:P105", sheet = this_year)
-  
+
   #change the field names.
   colnames (tmp_df) <- c("region", "country", "ceiling", "admitted", "oct", "nov", "dec", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep")
-  
+
   tmp_df <- tmp_df %>%
-    #fill in the fiscal_year 
+    #fill in the fiscal_year
     mutate ("fiscal_year" = this_year) %>%
-    #how many empty cells are in each row?      
+    #how many empty cells are in each row?
     mutate ("empty_col_ct" = rowSums (is.na(tmp_df))) %>%
     #keep only those that have fewer than 15 of the 16 empty cells. These are the extras.
     filter (empty_col_ct < 15) %>%
-    #fill in the missing regions that we want to keep 
+    #fill in the missing regions that we want to keep
     fill (region) %>%
     #get rid of the ones that don't have a country. My problem in class was that I had it in quotes.
     filter (!is.na (country)) %>%
@@ -126,12 +133,12 @@ for (s in sheets) {
     select (region, country, admitted, month, fiscal_year) %>%
     #I realized we had a mistake, with the totals included. Let's get rid of them
     filter (!str_detect (country, "Total"))
-  
+
   #we now have a narrow, tall dataset with the right variables in the right order.
-  
+
   #attach it to the master dataset
   df_country <- rbind(df_country, tmp_df)
-  
+
   #Now go on to the next sheet, unless there aren't anymore.
 
 }
@@ -144,7 +151,7 @@ annual_totals <-
 df_country %>%
   group_by (country, fiscal_year) %>%
   summarize (total_admitted = sum(admitted)) %>%
-  arrange (country, fiscal_year) 
+  arrange (country, fiscal_year)
 
 #Lets look at the top few country-years."
 annual_totals %>%
@@ -159,7 +166,7 @@ annual_totals %>%
 ``` r
 #and say you wanted to see it with the years across the top and the countries down the side?
 annual_totals %>%
-  spread (key=fiscal_year, value = total_admitted, fill=0) 
+  spread (key=fiscal_year, value = total_admitted, fill=0)
 ```
 
 <script data-pagedtable-source type="application/json">

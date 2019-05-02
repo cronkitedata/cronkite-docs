@@ -1,7 +1,7 @@
 ---
-title: Data diaries
+title: Replication and the data diary
 parent: General resources
-nav_order: 2
+nav_order: 7
 ---
 
 
@@ -90,7 +90,7 @@ Some projects require many steps to get to a dataset that can be analyzed. You m
 
  * Why they might be wrong.
 
-## Examples of documentation  
+## Examples of documentation
 
 [A published Jupyter notebook for an analysis of FEC enforcement](http://nbviewer.jupyter.org/github/datadesk/ferc-enforcement-analysis/blob/master/02_analyze.ipynb) actions from the Los Angeles Times' data desk.  Ben Welsh, the author of that notebook, says that there are previous versions with unpublishable work.
 

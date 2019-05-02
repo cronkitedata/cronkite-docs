@@ -1,6 +1,6 @@
 ---
 title: "Data sources and sourcing"
-nav_order: 3
+nav_order: 2
 parent: General resources
 ---
 
@@ -14,6 +14,8 @@ parent: General resources
 ## An example: News21 "Hate in America"
 
 In 2018, [News 21](https://news21.com) -- the multi-university investigative reporting fellowship hosted by ASU's Cronkite School of Journalism -- chose "Hate in America" as its topic for the year. It was a risk because others had been reporting on the subject for more than a year, making it more difficult for News 21 to break new ground. It was also difficult because it became clear quite quickly that no one had documented every case of hate crimes or hate-driven incidents in the U.S.
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/285102097" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 #### Data News 21 used
 
@@ -58,7 +60,7 @@ These are just some of the ways the News 21 team looked far and wide for any sou
 
 A big part of data reporting is finding, creating or acquiring records you can use electronically.
 
-Some sources of readily available data could include:  
+Some sources of readily available data could include:
 
 * Government agencies and open government sites
 * Hobbyists and interest groups
@@ -76,9 +78,9 @@ There are also more difficult ways to find data:
 * Responses to a survey that you conduct yourself.
 * Your own testing on issues such as water quality or soil contamination.
 
-For now, we'll concentrate on how to find data that already exists in the public sphere and how to evaluate whether you can use it. Later on, we'll work on how to identify data and documents you might want to acquire through public records requests.  
+For now, we'll concentrate on how to find data that already exists in the public sphere and how to evaluate whether you can use it. Later on, we'll work on how to identify data and documents you might want to acquire through public records requests.
 
-When you start on a project, you'll usually rely on experts and advocates to lead you to a lot of the possible data sources. But you can also use these strategies to troll for interesting datasets that might make for good stories or practice.  
+When you start on a project, you'll usually rely on experts and advocates to lead you to a lot of the possible data sources. But you can also use these strategies to troll for interesting datasets that might make for good stories or practice.
 
 Listen to any caveats and warnings. You may decide that they're not important, but you don't want to be blindsided by them in the end. And be sure to ask what they would do if they were you -- often, people who have expertise in data have story or project ideas that they can't get funded or approved, and would be happy for someone else to do them.
 

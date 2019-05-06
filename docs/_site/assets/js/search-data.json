@@ -1438,7 +1438,7 @@
           
             <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
               
-                <li class="d-inline-block my-0"><a href="https://cronkite.asu.edu/about/faculty-and-leadership/faculty/cohenbio">Sarah Cohen / Knight Chair / Cronkite School</a></li>
+                <li class="d-inline-block my-0"><a href="https://isearch.asu.edu/profile/3189494">Sarah Cohen / Knight Chair / Cronkite School</a></li>
               
             </ul>
           
@@ -1621,7 +1621,7 @@
   "24": {
     "id": "24",
     "title": "Home",
-    "content": "Most of the materials for the Cronkite School’s data journalism course taught by Knight Chair Sarah Cohen are kept here. It’s also a holding center for some other presentations, like FOIA workshops. This site is replacing a lot of the other repos I’ve made over the years to collect data reporting and public records materials. I’m trying to get more organized. It’s also an attempt to rein in dead links and outdated materials that no longer work. The sections are: General resources A collection of data reporting resources, including re-introductions to math and stats, some best practices and links to stories and projects that can exemplify the data reporting genre, especially in investigative and enterprise journalism. There is also a series of links on background in data journalism. Excel Tutorials and exercises using Excel for daily chores. These are conceptual as well as technical – you’ll find some of those concepts in repeated in other sections. R stats Some resources and markdown files for learning basic R to replace some of your Excel workflow. Specialized tools Anything that is used for one purpose, such as OpenRefine for data cleaning, or the Chrome Scraper for scraping. Public records Resources to understand and acquire public records using U.S. federal and state laws. It also includes backgrounding tips and tricks. Workshops Where I stash my presentations for various workshops. Some are links to other repos",
+    "content": "Most of the materials for the Cronkite School’s data journalism course taught by Knight Chair Sarah Cohen are kept here, along with other presentations and workshop materials. The sections are: General resources A collection of data reporting resources, including re-introductions to math and stats, some best practices and links to stories and projects that can exemplify the data reporting genre, especially in investigative and enterprise journalism. Excel Tutorials and exercises using Excel for daily chores. These are conceptual as well as technical – you’ll find some of those concepts in repeated in other sections. R stats Some resources and markdown files for learning basic R to replace some of your Excel workflow. Specialized tools Anything that is used for one purpose, such as OpenRefine for data cleaning, or the Chrome Scraper for scraping. Public records Resources to understand and acquire public records using U.S. federal and state laws. It also includes backgrounding tips and tricks. Workshops Where I stash my presentations for various workshops. Some are links to other repos",
     "url": "http://localhost:4000/cronkite-docs/",
     "relUrl": "/"
   },

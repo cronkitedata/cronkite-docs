@@ -10,17 +10,17 @@ nav_order: 1
 
 ## Spreadsheets and reporting
 
-You may have learned how to use Excel or Google Sheets in grade school or high school to make charts or present tables, but reporters use spreadsheets in different ways.
+Spreadsheets are everywhere, so it's worth re-learning how to use them well. Reporters usually use spreadsheets in three ways:
 
-The key reasons for reporters to use a spreadsheet are:
+* To create original databases  of events for sorting, filtering and counting.  Examples include a long-running court case; the details of each opioid death in a city; a list of police shootings and their documents; or even a list of your own public records requests or contact log.
 
-* To create our own databases that so that we can sort, filter and count events. Examples include a long-running court case; the details of each opioid death in a city; a list of police shootings and their documents; or even a list of your own public records requests or contact log.
-* To use data created by others for fast, simple analysis and data cleanup. Many government agencies provide their information in spreadsheet form, so you'll need to get used to using it.
+* To use data created by others for fast, simple analysis and data cleanup. Many government agencies provide their information in spreadsheet form, but they often require some rejiggering before you can use them.
+
 * To perform simple, straightforward analysis on data and share with team members. This is becoming less common as more reporters learn programming languages, but it's still common in newsrooms to share data, especially through Google Sheets.
 
-We're going to work with Excel because it is still far more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members. Simple lists are much easier to share than various Excel attachments or Dropbox files.
+Excel because it is still more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members.
 
-Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn't. If you learn to take notes in a structured way, you'll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you'll have to type them all in at least twice anyway. And getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more.
+Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn't. If you learn to take notes in a structured way, you'll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you'll have to type them all in at least twice anyway. Also, getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more.
 
 
 ## Re-learning Excel from the ground up
@@ -29,7 +29,7 @@ Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You sho
 
 
  <img src="{{site.baseurl}}/assets/images/xldayone-battleship.png" style="float: right; padding-left: 10px">
-When you start up a spreadsheet, you'll see letters across the top and numbers down the side. If you ever played Battleship, you'll recognize the idea -- every little square, or cell, is referenced by the intersection of its column letter and row number:  
+When you start up a spreadsheet, you'll see letters across the top and numbers down the side. If you ever played Battleship, you'll recognize the idea -- every little square, or cell, is referenced by the intersection of its column letter and row number:
 
  B2 is the cell that is currently active. You can tell because it's outlined in the sheet and it's shown on the upper left corner.
 
@@ -48,7 +48,7 @@ Spreadsheets act only on the cells or regions you have selected. If you begin ty
 
 To select: Hold the BFWPS over the cell and clice ONCE -- *not twice*. Check the formula bar to make sure you've selected what you think you've got. You can also look at the bottom right of your spreadsheet for more information.
 
-_To select a group of cells and act on them all at once_: Hover the BFWPS over one corner, click ONCE and drag to the diagonal corner. Make sure the Evil Hand is nowhere to be seen. The entire area will be shaded in except for the currently selected cell. Look at the upper right corner to see how many rows and columns you selected.  
+_To select a group of cells and act on them all at once_: Hover the BFWPS over one corner, click ONCE and drag to the diagonal corner. Make sure the Evil Hand is nowhere to be seen. The entire area will be shaded in except for the currently selected cell. Look at the upper right corner to see how many rows and columns you selected.
 
 <img src="{{site.baseurl}}/assets/images/xldayone-select.gif" width="375">
 
@@ -91,7 +91,7 @@ Most data we encounter was created by someone else for some purpose other than o
 * Document where you got the spreadsheet and how you can get back to the original.
 * Read anything you can about what it contains. Look for documentation that comes with the data.
 * Save the original into a safe place with its original name and metadata. Work on a copy.
-* If the spreadsheet shows #### instead of words or numbers, widen your columns. If it shows 7E-14 or something like that, format them as numbers, not "General".  
+* If the spreadsheet shows #### instead of words or numbers, widen your columns. If it shows 7E-14 or something like that, format them as numbers, not "General".
 * Check your corners -- look at the top left and bottom right. Is the data all in one area? Are there footnotes or other non-data sections mixed in? We're going to want to fix that later.
 
 ### Interview your data

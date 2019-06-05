@@ -33,7 +33,8 @@ She quickly stumbled on telling anecdote to frame the story: Inkster, Mich. had 
 
 The story, "[Police Chiefs, Looking to Diversity Forces, Face Structural Hurdles](https://www.nytimes.com/2015/11/08/us/politics/police-chiefs-looking-to-diversify-forces-face-structural-hurdles.html)" helped explain the persistent gap between the makeup of police in some areas and the communities they served.
 
-
+<blockquote class="embedly-card"><h4><a href="https://nyti.ms/1WENOEM">Police Chiefs, Looking to Diversify Forces, Face Structural Hurdles</a></h4><p>INKSTER, Mich. - When William T. Riley III became the police chief of this small city west of Detroit this summer, he found a department that bore little resemblance to the city it served. Nearly three-fourths of Inkster's 25,000 residents are black. Its mayor and all six City Council members are, too.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 ## Sorting and filtering as a reporting tool
 
@@ -114,9 +115,10 @@ Excel tells you how many of the rows match your filter -- 202 of 650 in this cas
 
 #### Free text and date filters
 
-When there are long phrases in a field, you can just type a word you're looking for into the box:
+The filter box suggests that you can just type your search term to filter for words. It works -- sometimes! On any large dataset, it will only filter the first 10,000 choices, which will give you wrong counts if you rely on the number at the bottom of the screen. For that reason, get into the habit of doing it the right way. Use the drop-down menu on the box to choose the word "Contains" (or "Begins with") and type your words there:
 
-![filter long text]({{site.baseurl}}/assets/images/06-filtersort-longtextfilter.png)
+![filter long text]({{site.baseurl}}/assets/images/06-filtersort-string.png)
+
 
 And when you have numbers or dates, you'll get different choices. We don't really have any numbers on this dataset to work with, but here are some choices for dates:
 

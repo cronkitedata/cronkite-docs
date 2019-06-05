@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Cleaning data with OpenRefine - Data reporting @ Cronkite</title>
+    <title>Starting R - Data reporting @ Cronkite</title>
 
     
   
@@ -23,17 +23,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Cleaning data with OpenRefine | Data reporting @ Cronkite</title>
+<title>Starting R | Data reporting @ Cronkite</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Cleaning data with OpenRefine" />
+<meta property="og:title" content="Starting R" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A collection of materials used in the data reporting class at ASU’s Cronkite School of Journalism" />
 <meta property="og:description" content="A collection of materials used in the data reporting class at ASU’s Cronkite School of Journalism" />
-<link rel="canonical" href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" />
-<meta property="og:url" content="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" />
+<link rel="canonical" href="http://localhost:4000/cronkite-docs/r-stats/r-test-embed.html" />
+<meta property="og:url" content="http://localhost:4000/cronkite-docs/r-stats/r-test-embed.html" />
 <meta property="og:site_name" content="Data reporting @ Cronkite" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html","headline":"Cleaning data with OpenRefine","description":"A collection of materials used in the data reporting class at ASU’s Cronkite School of Journalism","@type":"WebPage","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/cronkite-docs/r-stats/r-test-embed.html","headline":"Starting R","description":"A collection of materials used in the data reporting class at ASU’s Cronkite School of Journalism","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -801,7 +801,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="http://localhost:4000/cronkite-docs/r-stats" class="navigation-list-link">R for journalism</a>
             
@@ -861,9 +861,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://localhost:4000/cronkite-docs/r-stats/r-test-embed.html" class="navigation-list-link">Starting R</a>
+                      <a href="http://localhost:4000/cronkite-docs/r-stats/r-test-embed.html" class="navigation-list-link active">Starting R</a>
                       
                     </li>
                   
@@ -958,7 +958,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="http://localhost:4000/cronkite-docs/special" class="navigation-list-link">Special</a>
             
@@ -1058,9 +1058,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" class="navigation-list-link active">Cleaning data with OpenRefine</a>
+                      <a href="http://localhost:4000/cronkite-docs/special/cleanup_openrefine.html" class="navigation-list-link">Cleaning data with OpenRefine</a>
                       
                     </li>
                   
@@ -1508,74 +1508,19 @@
             <nav class="breadcrumb-nav">
               <ol class="breadcrumb-nav-list">
                 
-                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/special">Special</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/cronkite-docs/r-stats">R for journalism</a></li>
                 
-                <li class="breadcrumb-nav-list-item"><span>Cleaning data with OpenRefine</span></li>
+                <li class="breadcrumb-nav-list-item"><span>Starting R</span></li>
               </ol>
             </nav>
           
         
         <div id="main-content" class="page-content" role="main">
-          <p>(Lecture notes only)</p>
+          <blockquote>
+“In every project you have at least one other collaborator: future-you. You don’t want future-you to curse past-you.” - Hadley Wickham
+</blockquote>
 
-<p>Reporters often acquire data from sources that are collected in haphazard ways, or focus on fields that are filled out voluntarily. Think about all of the ways your name and address could appear on a mailing list, then add to the mix typos and errors, and you have a typical government database.</p>
-
-<p><a href="http://openrefine.org/download.html">OpenRefine</a>, an open source project that has been supported by Google in the past, was developed to help you work with data that comes in unstructured or poorly structured or standardized ways.  The Open Refine site points to lots of introductory exercises.</p>
-
-<p>Here are two files that are good practice for getting around OpenRefine:</p>
-
-<ul>
-  <li>
-    <p>The same <a href="https://www.phoenixopendata.com/dataset/0c02bbfd-08d9-41e9-a00c-97848a9f7350/resource/3a5c2950-88e3-4cb4-b436-c78d2a266c75/download/open-data-staff-salaries-as-of-12-31-2018.csv">Phoenix city salaries</a>. Just copy and paste that link into OpenRefine (you don’t have to download the file).</p>
-  </li>
-  <li>
-    <p>A <a href="/cronkite-docs/assets/data/csv/az_liquor_license.txt">slice of Arizona liquor license</a> records, <a href="https://www.azliquor.gov/query/query.cfm">downloaded from the state</a>, slightly cleaned and filtered in R, then saved to a tab-separated file.</p>
-  </li>
-</ul>
-
-<h2 id="practice-with-openrefine">Practice with OpenRefine</h2>
-
-<ul>
-  <li>How to start it up - if the browser doesn’t open, use localhost:3333 .</li>
-  <li>How to load a csv directly from the Web - go over the options in the first import screen.</li>
-  <li>Data screen -
-    <ul>
-      <li>Defaults to 10 rows - Usually change to 50.</li>
-      <li>Show a text facet.</li>
-      <li>Show converting text to number, and what a numeric facet looks like.</li>
-      <li>Cluster options - show how to quickly see what is in the dataset, and how to change them.</li>
-      <li>Filter with facets.</li>
-      <li>Use regular expressions in filter</li>
-      <li>Create field based on another, then use clustering and filtering to clean it up. Example: We dont know what department they are in, but some occupations would only be in one.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>Do some work on liquor licenses on your own if you’re interested.</p>
-
-<h2 id="clean-up-medicare">Clean up Medicare</h2>
-
-<p>The file came from here: http://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/
-Put everything together into <a href="/cronkite-docs/assets/docs/openrefine/all-longterm-managed-care.xlsx">one horrible spreadsheet</a>.
-Walk through how to think about it and clean it up. <a href="https://cronkitedata.github.io/cronkite-docs/assets/docs/openrefine/openrefine">Walkthrough is here</a>.</p>
-
-<ul>
-  <li>Record vs. row.</li>
-  <li>Remove UPSTATE TOTALS (I learned this the hard way - just had to go back and fix it the first time through.)</li>
-  <li>Show as rows, with 6636.</li>
-  <li>Regex : Extract month and year. NYS or NYS, or NYS JANUARY, or NYS JANUARY with no comma - use regex in filter.</li>
-  <li>Once you know you have them - add column based on this column.</li>
-  <li>Then fill down on that one.</li>
-  <li>
-    <p>Now value.match(
-            /.*NYS<a href=".*\d{4}.*/">, </a>[0])</p>
-  </li>
-  <li>Now value.replace spaces and commas with one space.</li>
-  <li>now value.toDate(‘MMM yyyy’)</li>
-  <li>Show how to go backwards.</li>
-</ul>
-
-<p>Then go through the rest of the tutorial.</p>
+<iframe src="01-1-notebooks.html" frameborder="0" width="100%" height="100%" style="overflow:hidden;height:300px;width:100%"></iframe>
 
 
 

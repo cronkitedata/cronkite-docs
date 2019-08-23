@@ -1,8 +1,10 @@
 ---
 title: Intro to coding
-parent: General resources
+parent: General topics
 nav_order: 6
 ---
+
+<!-- Add link to the drag queen coding class. See if there are other good first-day programming aides I should add.-->
 
 # Programming basics
 {: .no_toc}

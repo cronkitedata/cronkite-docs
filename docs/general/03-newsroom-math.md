@@ -1,5 +1,5 @@
 ---
-parent: General resources
+parent: General topics
 title: "Newsroom math"
 nav_order: 3
 ---
@@ -70,6 +70,26 @@ Once you find the humanity in your numbers, by cutting them down to size and rel
 
 * "[Avoiding Numeric Novcain: Writing Well with Numbers](https://www.poynter.org/news/avoiding-numeric-novocain-writing-well-numbers)," by Chip Scanlan, Poynter.com
 
+* T. Christian Miller's "Writing the data-driven story" (link TK)
+
+* A viral Twitter thread:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What happens in your head when you do 27+48?</p>&mdash; Gene Belcher (@Wparks91) <a href="https://twitter.com/Wparks91/status/1143666051793788928?ref_src=twsrc%5Etfw">June 25, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+### Special topic reading
+
+* Dealing with the margin of error in surveys and polls, from the Journalists' Resource at Nieman.
+
+### Simple Census stories
+
+These stories came out when the 2018 estimates of population were released by the Census, depending just on some smart re-ordering and percent change calculations. It's an easy way to get practice at basic math.
+
+* ["Georgia's small towns continue to shrink"](https://www.ajc.com/news/state--regional/georgia-small-towns-continue-shrink-new-census-estimates-show/UtBP7y33fkDXUZqABgq2BM/), Jennifer Peebles, Atlanta Journal-Constitution, May 23, 2019
+
+* "[Texas gained almost nine Hispanic residents for each additional white resident last year](https://www.texastribune.org/2019/06/20/texas-hispanic-population-pace-surpass-white-residents/)", Alexa Ura and Connie Hanzang Jin, The Texas Tribune, June 20, 2019
+
+
 ## How high school algebra won a Pulitzer Prize
 If you were at all paying attention in pre-college science classes, you have probably seen this equation:
 
@@ -98,12 +118,15 @@ Twenty percent of police officers had exceeded 90 miles per hour on toll roads. 
 The story was a stunning find, and the newspaper documented case after case of police officers violating the law and escaping punishment. And, in 2013, they won the Pulitzer Prize for Public Service.
 
 All with simple high school algebra.
+
 ## Exercises
+
+* Imagine that someone gave you $1 million and you could spend it on anything you want. Write down a list of things that would add up to about that amount. That should be easy. Now, imagine someone gave you $1 billion and you could spend it on whatever you want, but anything left over after a  year had to be returned. How would you spend it? (You can give away money, but it can't be more than 50% of a charity's annual revenues. So you can't give 10 $100 million gifts!) See how far you get trying to spend it. A few homes, a few yachts, a few student loan repayments? You've hardly gotten started.
 
 * In class: Create a spreadsheet with basic numeric information about your school, such as enrollment this year and last; graduation rates; and tuition. Use basic math to show change, percent change and averages.
 
 * Imagine it is Jan. 1, 2018 and you are tasked with writing the annual weather story, summarizing the high and low points of the previous year. Using this  daily summary of temperatures, rain and wind for Phoenix, try to find three interesting facts for your story. If you want to [download your own data from NOAA]( https://www.ncdc.noaa.gov/cdo-web/datasets), choose "Local Climatalogical Data," and keep only the rows that refer to "SOD," or "Summary of Day".
 
-* Download the population estimates for the nation and find the fastest-growing and fastest-shrinking counties in the nation over  past five years.
+* Download the population estimates for the nation and calculate percent changes, percent of total, actual change and any other basic stats. Now find a story.
 
-*-- Sarah Cohen and Matt Waite, July 2018*
+*-- Sarah Cohen and Matt Waite, Updated August 2019*

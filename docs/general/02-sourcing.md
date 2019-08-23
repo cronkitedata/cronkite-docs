@@ -1,7 +1,7 @@
 ---
 title: "Data sources and sourcing"
 nav_order: 2
-parent: General resources
+parent: General topics
 ---
 
 # Finding, acquiring and sourcing data

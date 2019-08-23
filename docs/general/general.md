@@ -1,5 +1,5 @@
 ---
-title: General resources
+title: General topics
 nav_order: 2
 has_children: true
 permalink: /general

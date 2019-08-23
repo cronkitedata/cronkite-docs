@@ -1,11 +1,13 @@
 ---
-title: Story list
-parent: General resources
+title: Resources
+parent: General topics
 nav_order: 1
 ---
 
-# Readings
+# Resources
 {: .no_toc}
+
+These readings / videos / podcasts are techniques and examples of data reporting that don't refer to specific skills or programs.
 
 
 1. TOC
@@ -14,17 +16,21 @@ nav_order: 1
 
 ## Textbooks / handbooks
 
-* [Computer-Assisted Reporting: A Practical Guide](https://www.amazon.com/Computer-Assisted-Reporting-Practical-Brant-Houston/dp/0765642190), by Brant Houston. This book is now in its 5th or 6th edition, even though it retains the quaint terminology of the 90s in the title. This version is from 2014. A newer one is on the way.
+* [Data for Journalists](https://www.amazon.com/Data-Journalists-Brant-Houston/dp/0815370407/ref=pd_sbs_14_3/138-2399076-4848836), by Brant Houston. This is the fifth edition of the class "Computer Assisted Reporting" book first published more than 20 years ago. An adaptation of some of the material is in  ["Eight Simple Ways to Let the Spreadsheet do the Math"](https://gijn.org/2019/05/21/eight-simple-ways-to-let-the-spreadsheet-do-the-math-so-you-can-focus-on-the-story/), on the GIJN website
 
 * “[Data Literacy: A User’s Guide](https://www.amazon.com/Data-Literacy-David-Herzog/dp/1483333469)”, by David Herzog, 2015
 
 * "[The data journalism handbook](https://datajournalismhandbook.org/) - an international guidebook to all forms of data journalism.
 
-* "[The Art of Access: Strategies for Acquiring Public Records](https://www.amazon.com/Art-Access-Strategies-Acquiring-Records/dp/1604265507)", by David Cullier and Charles N. Davis, 2010. A new edition will be published sometime in 2019, the author says.
+* "[The Art of Access: Strategies for Acquiring Public Records](https://www.amazon.com/Art-Access-Strategies-Acquiring-Records/dp/1604265507)", by David Cullier and Charles N. Davis, 2019.
 
-* "[Numbers in the Newsroom](https://store.ire.org/products/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition-e-version)", Sarah Cohen, 2nd edition. (But hey -- arithmetic doesn't change. It doesn't matter which edition you get.)
+* "[Numbers in the Newsroom](https://store.ire.org/products/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition-e-version)", Sarah Cohen, 2nd edition. (But hey -- arithmetic doesn't change. It doesn't matter which edition you get.) I don't think they print it anymore. A very old shorter handout is called ["Danger! Numbers in the Newsroom"]({{site.baseurl}}/assets/docs/danger.pdf)
 
 * Samanth Sunne's ["Diving into Data Journalism"](https://www.americanpressinstitute.org/publications/reports/strategy-studies/data-journalism/) from the American Press Institute.
+
+* [Data Journalism Heist](https://leanpub.com/DataJournalismHeist), by Paul Bradshaw. This book is geared toward journalists in the U.K., but the way Paul thinks about getting in and out of data quickly is useful.
+
+* There are so many good visualization textbooks and handbooks that it's hard to choose just a few. Alberto Cairo's ["The Functional Art"](http://www.thefunctionalart.com/p/about-book.html) is a good beginning point to understand the basics of visual encoding and also the use of visual exploration as well as communication.  The first three chapters are available for free on his website.
 
 
 
@@ -46,34 +52,19 @@ nav_order: 1
 
 * ["How to Plan, Pitch and Do a Data-Driven Investigation"](https://docs.google.com/presentation/d/1uLJwYjVcyR8-STf9odEl_jTCSy7viAjhEJju2lAfLCs), Miguel Paz and Ryan McNeil, presentation from a CUNY course in 2016 (?). Many links are broken or private, but the ideas are still useful.
 
-### Newsroom numbers
+* Bonus: [Anna Lytical's introduction to coding](https://www.youtube.com/playlist?list=PLeQfFYu4ZfybpGQfAyl4gQbqxFgDZuAAU) YouTube series (currently only 2 episodes). Anna Lytical is a [drag queen persona](https://www.blog.google/inside-google/googlers/billy-jacobson-anna-lytical) of Google software engineer Billy Jacobson
+
+## Numbers & visualization
 
 * [Addressing Journalistic innumeracy](https://journalistsresource.org/studies/society/news-media/journalistic-innumeracy-math-phobia-sequence-resources-to-sharpen-your-mind#), John Whibey, Journalist's Resource website.
 
-* [Numbers in the newsroom](newsroom-math): overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture)
-
-### Visualation as a reporting tool
+* This site's [Numbers in the newsroom](newsroom-math) page: overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture). It has some exercises that you can do at the bottom of the page.
 
 * Chapter from the original Data Journalism Handbook on [finding insights through visualization](http://datajournalismhandbook.net/1.0/en/understanding_data_7.html), from Gregor Aisch, who is a longtime genius graphics reporter at the New York TImes.
 
 * Financial Times' "visual vocabulary", as a [pdf document](https://github.com/ft-interactive/chart-doctor/blob/master/visual-vocabulary/Visual-vocabulary.pdf) or [online at Github repo](http://ft-interactive.github.io/visual-vocabulary/)
 
-* "Vizualization as a reporting tool", from a conference at IRE (None of the links work on either the handout or the interview -- don't bother to try.)
-
-  * An [interview with me](https://www.poynter.org/news/using-data-visualization-reporting-tool-can-reveal-storys-shape) from Poynter leading up to a conference
-  * [The handout]({{site.baseurl}}/assets/docs/viz/viz-reporting-tool.pdf) from the conference
-  * [The slides]({{site.baseurl}}/assets/docs/viz/viz-reporting-examples.pdf) that can provide the examples from the conference
-
-
 * Slides from [Peter Aldhous's site](http://paldhous.github.io/ucsc/2016/investigative-policy/week5.html) on visualizing data for science investigations.
-
-### Open source investigations
-
-* "[How to conduct an open-source investigation](https://www.newyorker.com/culture/culture-desk/how-to-conduct-an-open-source-investigation-according-to-the-founder-of-bellingcat) according to the founder of Bellingcat", by Ned Bauman, New Yorker, August 30, 2018
-
-* A Twitter thread on how BBC Africa uncovered the place, time, and people involved in a horrifying murder in Camaroon. BBC Africa Eye published, "[Anatomy of a Killer](https://www.youtube.com/watch?v=XbnLkc6r3yc)" based on the research.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">THREAD<br><br>In July 2018, a horrifying video began to circulate on social media. <br><br>2 women &amp; 2 young children are led away by a group of soldiers. They are blindfolded, forced to the ground, and shot 22 times. <a href="https://twitter.com/hashtag/BBCAfricaEye?src=hash&amp;ref_src=twsrc%5Etfw">#BBCAfricaEye</a> investigated this atrocity. This is what we found... <a href="https://t.co/oFEYnTLT6z">pic.twitter.com/oFEYnTLT6z</a></p>&mdash; BBC News Africa (@BBCAfrica) <a href="https://twitter.com/BBCAfrica/status/1044186344153583616?ref_src=twsrc%5Etfw">September 24, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>ß
 
 
 ## Selected stories
@@ -101,8 +92,6 @@ This is a fairly random set of stories that we often use in class to discuss how
 
 * “[L.A. is slammed with record costs for legal payouts](http://www.latimes.com/local/lanow/la-me-ln-city-payouts-20180627-story.html)”, Emily Alpert Reyes and Ben Welsh. Note the [link at the bottom to github repo](https://github.com/datadesk/la-settlements-analysis) showing the data analysis.
 
-### Scraping
-
 * Todd Wallack from the Boston Globe on using a little programming to get to a story on liquor licensing. Be sure to [read the story](https://t.co/6DuYIGp67u) to understand how the data fits in with the story. (2018)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just wanted to say a few words about how data journalism can help reporters flesh out a story.</p>&mdash; Todd Wallack (@TWallack) <a href="https://twitter.com/TWallack/status/931175887269134336?ref_src=twsrc%5Etfw">November 16, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -117,8 +106,31 @@ This is a fairly random set of stories that we often use in class to discuss how
 
 ## Projects from me or my colleagues
 
-I include projects that I worked on and that I oversaw as a data editor not because they're so great, but because I understand the work that went into them. Sadly, The Washington Post's site didn't do a good job archiving some of them, so you have a pdf of the newspaper here.
+I'll add projects that me or my colleagues have worked on not because they're great, but because I understand the work that wento them. Sadly, The Washington Post's site didn't do a good job archiving some of them, so you have a pdf of the newspaper here.
 
 * [A Death in St. Augustine](http://www.pbs.org/wgbh/pages/frontline/death-in-st-augustine/) from Frontline / NYT as an example of weaving data into a narrative. On the Times' site, it was published as [Two Gunshots on a Summer Night](http://www.nytimes.com/projects/2013/two-gunshots/index.html), with a [secondary story](http://www.nytimes.com/projects/2013/police-domestic-abuse/index.html) that is a little more data-wonky. Note the ending comparison -- those came from our various datasets. (2013)
 
-* ["Police Chiefs, Looking to Diversify Forces, Face Structural Hurdles"](https://www.nytimes.com/2015/11/08/us/politics/police-chiefs-looking-to-diversify-forces-face-structural-hurdles.html), Matt Apuzzo and Sarah Cohen, The New York Times, Nov. 7, 2015. This is a routine story, not a project, which makes it a little easier to understand. The [cleaned up data]() for this project is a good practice dataset, and you can see how I found Chief Riley. (2015)
+* ["Police Chiefs, Looking to Diversify Forces, Face Structural Hurdles"](https://www.nytimes.com/2015/11/08/us/politics/police-chiefs-looking-to-diversify-forces-face-structural-hurdles.html), Matt Apuzzo and Sarah Cohen, The New York Times, Nov. 7, 2015. This is a routine story, not a project, which makes it a little easier to understand. The [cleaned up data]({{site.baseurl}}/assets/data/xlexamples/lemas2012_proportions.xlsx) for this project is a good practice dataset, and you can see how I found Chief Riley. (2015)
+
+
+## Open source investigations
+
+At some point, I'll probably create a section for open source investigations. OSI is a term borrowed from intelligence agencies, which refer to investigations that are based on publicly available data, either for free or purchased. Many of these stories piece together visual clues to find answers. Some, especially in the human rights arenas, mix the archival data, images and social media with interviews of participants. It's much more common internationally than in the US.
+
+### An example of an open source investigation:
+
+This is a Twitter thread on how BBC Africa uncovered the place, time, and people involved in a horrifying murder in Camaroon. BBC Africa Eye published, "[Anatomy of a Killer](https://www.youtube.com/watch?v=XbnLkc6r3yc)" based on the research.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">THREAD<br><br>In July 2018, a horrifying video began to circulate on social media. <br><br>2 women &amp; 2 young children are led away by a group of soldiers. They are blindfolded, forced to the ground, and shot 22 times. <a href="https://twitter.com/hashtag/BBCAfricaEye?src=hash&amp;ref_src=twsrc%5Etfw">#BBCAfricaEye</a> investigated this atrocity. This is what we found... <a href="https://t.co/oFEYnTLT6z">pic.twitter.com/oFEYnTLT6z</a></p>&mdash; BBC News Africa (@BBCAfrica) <a href="https://twitter.com/BBCAfrica/status/1044186344153583616?ref_src=twsrc%5Etfw">September 24, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### OSI resources
+
+* "[How to conduct an open-source investigation](https://www.newyorker.com/culture/culture-desk/how-to-conduct-an-open-source-investigation-according-to-the-founder-of-bellingcat) according to the founder of Bellingcat", by Ned Bauman, New Yorker, August 30, 2018
+
+* [Finding people of interest on Facebook](https://osintcurio.us/2019/08/22/the-new-facebook-graph-search-part-1/), by the anonymouse "technisette" on *We are OSINTCurio.us*. You can also use [Henk Van Ess's form](https://graph.tips/beta/) to create a link.
+
+* [Tell, Explain, Describe](https://nixintel.info/osint/tell-explain-describe-asking-the-right-questions-to-get-the-right-answers-quiztime-25th-june-2019/) ... Asking the right questions to get the right answers", from @nixintel
+
+* Follow @quiztime to see OSI challenges for geolocation puzzles each week. Here's an example solution, again from Steve aka @nixintel.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EG0hCme89js" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

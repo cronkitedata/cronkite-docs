@@ -16,7 +16,7 @@ categories: formulas
 
 Your job is to find a story in this data by using change, percent change, percent of total to find something newsworthy. C
 
-As you do your analysis, consider the unit of analysis (county) and what the various components might tell you. Did a county grow because of migration from other areas, or because there was a relatively high birth rates? Is the county dying off?
+As you do your analysis, consider what the various components might tell you. Did a county grow because of migration from other areas, or because there was a relatively high birth rates? Is the county dying off?
 
 ### First steps
 
@@ -33,10 +33,11 @@ Make sure to read the documentation and any definitions you can find before you 
 
 See if you can find some questions to ask on your own of this data. Is there something that might be interesting to look into? Remember that we're often interested in:
 
-* Unexpected or newly discovered highs and lows (of change, or of some other characteristic)
+* Unexpected highs and lows (of change, or of some other characteristic)
 * Individual values that buck a trend seen in the rest (outliers)
 * Myths or myth-busting.
 * Signs of distress or happiness.
+* Newly discovered long-term trends
 
 ### Write a lede for a day story
 Try writing a lede paragraph for a story. Normally, you would interview people or go to a place and observe before you wrote, but you should be able to craft a short, declarative sentence or paragraph that conveys the key finding you want to write about.

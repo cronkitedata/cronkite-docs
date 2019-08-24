@@ -35,12 +35,14 @@ When you start up a spreadsheet, you'll see letters across the top and numbers d
 
 
 
+
 ### Mouse shapes
 
 ----- | ----
  BFWPS: The Big Fat White Plus Sign. This is the default shape, and you can never get into trouble when you see it. | ![BFwPS]({{site.baseurl}}/assets/images/xldayone-bfwps.png)
 The Copy Tool, or the thin black cross. When you see this, you'll copy anything that's selected. This can be good or bad. | ![copy]({{site.baseurl}}/assets/images/xldayone-copy.png)
  The Evil Hand. (In Windows, this is the Evil Arrow). If you use this symbol, you will MOVE the selection to a new location. This is very rarely a good idea or something you intend. | ![evil hand]({{site.baseurl}}/assets/images/xldayone-evilhand.png)
+
 
 ### Selecting cells and areas
 
@@ -54,6 +56,20 @@ _To select a group of cells and act on them all at once_: Hover the BFWPS over o
 
 <img src="{{site.baseurl}}/assets/images/xldayone-columnselect.png" width="100" style="float: right; padding-left: 10px">
 _To select a column or row_ : Hover the BFWPS over the letter at the top of the column. For a row, hover it over the row number in the margin
+
+
+### Reading the screen
+
+The areas of the spreadsheet have different visual clues, and learning to read them will make your life much easier.
+
+This image shows some key areas on the screen when you're just viewing the sheet:
+
+![screen image]({{site.baseurl}}/assets/images/xldayone-screen1.png)
+
+This is how it changes when you're editing
+
+![screen image]({{site.baseurl}}/assets/images/xldayone-screen2.png)
+
 
 ### Entering data
 

@@ -1,6 +1,6 @@
 ---
 title: Data types / tidy data
-nav_order: 2
+nav_order: 3
 parent: Excel guides
 grand_parent: Excel
 ---

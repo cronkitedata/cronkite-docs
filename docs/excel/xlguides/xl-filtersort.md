@@ -1,6 +1,6 @@
 ---
 title: "Filter and sort"
-nav_order: 6
+nav_order: 4
 parent: Excel guides
 grand_parent: Excel
 ---

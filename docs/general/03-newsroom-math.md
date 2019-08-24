@@ -70,16 +70,13 @@ Once you find the humanity in your numbers, by cutting them down to size and rel
 
 * "[Avoiding Numeric Novcain: Writing Well with Numbers](https://www.poynter.org/news/avoiding-numeric-novocain-writing-well-numbers)," by Chip Scanlan, Poynter.com
 
-* T. Christian Miller's "Writing the data-driven story" (link TK)
+* T. Christian Miller's "[Writing the data-driven story]({{site.baseurl}}/assets/docs/data-writing-tmiller.pdf)"
 
 * A viral Twitter thread:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What happens in your head when you do 27+48?</p>&mdash; Gene Belcher (@Wparks91) <a href="https://twitter.com/Wparks91/status/1143666051793788928?ref_src=twsrc%5Etfw">June 25, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-### Special topic reading
-
-* Dealing with the margin of error in surveys and polls, from the Journalists' Resource at Nieman.
+* Dealing with the margin of error in surveys and polls, from the Journalists' Resource at Nieman.  (link TK)
 
 ### Simple Census stories
 

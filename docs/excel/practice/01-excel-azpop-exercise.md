@@ -24,23 +24,24 @@ Make sure to read the documentation and any definitions you can find before you 
 
 1. Start a document or page on the spreadsheet for your data diary
 2. Read the documentation available at the bottom of this page.
-3. Try to find some stories written on similar data, either in Arizona or elsewhere, to see how reporters generally treat population data releases. One example, based on data released by the state, [is from Tucson.com](https://tucson.com/news/local/where-are-arizona-s-new-residents-living-look-to-the/article_08d309ef-8faa-5c15-9ae3-7e345b49e3a0.html).
+3. If you don't know where to start, try looking for some other stories about population changes, either in Arizona or elsewhere. They should give you ideas about what kinds of trends you might find. If you can find when the Census released the most recent estimates, you might find stories around that date from around the country.
 4. Open the file and do your usual checking: Look at the corners of the data, insert an ID number, and make sure you understand what every column means.
-5. What level of analysis is your data? In other words, if you wrote a census, what nouns would you use to describe individual findings?
+5. Make sure you understand the nouns you have to use when you describe the data. What is the unit of analysis, or the level of detail? What do the numbers measure?
 6. Should columns be added together to form a total? Are there subtotals shown?
 
 ### Ask some questions
 
 See if you can find some questions to ask on your own of this data. Is there something that might be interesting to look into? Remember that we're often interested in:
-* Biggest and smallest change
-* Individual rows that buck a trend seen in the rest (outliers)
+
+* Unexpected or newly discovered highs and lows (of change, or of some other characteristic)
+* Individual values that buck a trend seen in the rest (outliers)
 * Myths or myth-busting.
+* Signs of distress or happiness.
 
 ### Write a lede for a day story
 Try writing a lede paragraph for a story. Normally, you would interview people or go to a place and observe before you wrote, but you should be able to craft a short, declarative sentence or paragraph that conveys the key finding you want to write about.
 
 Although you don't have an opportunity to fact-check this lede, do NOT make anything up or assume anything to fill in holes. Stick to what you can elicit just from the data.
-
 
 ## Data Documentation
 

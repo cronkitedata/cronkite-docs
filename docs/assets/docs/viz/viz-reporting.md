@@ -8,6 +8,11 @@ The [slides](reportingviz.pptx?raw=true) and a [tip sheet](viztips.pdf?raw=true)
 
 ### Tools for data visualization###
 
+Flourish
+
+
+
+
 The R programming language's [ggplot2](http://ggplot2.org/) is probably used most frequently by reporters to get quick visualizations that won't be published. It's each to make some of the most common charts, graphs and maps with default options that take advantage of a century of research into visual perception. It has a recent add-in called [Shiny](http://shiny.rstudio.com/) to make interactive visualizations, something it was missing in the past.
 
 [D3](http://d3js.org/) is used by reporters who already know Javascript (not many). It's the language that has pretty much replaced Flash and Activescript.
@@ -17,12 +22,6 @@ Most reporters, as opposed to those who produce visualizations for publication, 
 * Excel's implementation of [sparklines](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR). They are an amazingly simple and effective way to see trends quickly.
 
 * [Tableau Public](http://www.tableausoftware.com/public/) is a small-scale version of the expensive Tableau software used in business and industry. The more powerful desktop version is free for IRE members, but about $2,000 a seat if you pay.
-
-* [ManyEyes](http://www-958.ibm.com/software/analytics/manyeyes/) has a similar public approach, but is a little easier to use for very small scale visualizations.
-
-* [Google Fusion Tables](https://support.google.com/fusiontables/answer/184641?hl=en) have the advantage of geocoding (putting addresses on a map when you don't know the coordinates.) It's a little confusing, but there is a big user base and a lot of help.
-
-* [Timeflow](https://github.com/FlowingMedia/TimeFlow/wiki), an alpha level product created at Duke University for exploratory investigative timelines and calendars. It will run off of a hard drive, but your security  settings may still block it. Most other timeline programs are for publication rather than exploration (at least the ones we can afford)
 
 * [Simile Exhibit](http://www.simile-widgets.org/exhibit/), a project out of MIT that attempts to make it easy to make timelines, Google maps and small searchable datasets in one place. It's good for data that won't change a lot, since you have to have a specific data format for it. It's not very actively supported and still feels like an academic project, but it generally works.
 

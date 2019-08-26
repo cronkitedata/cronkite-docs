@@ -1,6 +1,6 @@
 ---
 title: Replication and the data diary
-parent: General resources
+parent: General topics
 nav_order: 4
 ---
 

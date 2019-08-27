@@ -24,7 +24,7 @@ These readings / videos / podcasts are techniques and examples of data reporting
 
 * "[The Art of Access: Strategies for Acquiring Public Records](https://www.amazon.com/Art-Access-Strategies-Acquiring-Records/dp/1604265507)", by David Cullier and Charles N. Davis, 2019.
 
-* "[Numbers in the Newsroom](https://store.ire.org/products/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition-e-version)", Sarah Cohen, 2nd edition. (But hey -- arithmetic doesn't change. It doesn't matter which edition you get.) I don't think they print it anymore. A very old shorter handout is called ["Danger! Numbers in the Newsroom"]({{site.baseurl}}/assets/docs/danger.pdf)
+* "[Numbers in the Newsroom](hhttps://www.ire.org/product/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition)", Sarah Cohen, 2nd edition. (But hey -- arithmetic doesn't change. It doesn't matter which edition you get.) I don't think they print it anymore. A very old shorter handout is called ["Danger! Numbers in the Newsroom"]({{site.baseurl}}/assets/docs/danger.pdf)
 
 * Samanth Sunne's ["Diving into Data Journalism"](https://www.americanpressinstitute.org/publications/reports/strategy-studies/data-journalism/) from the American Press Institute.
 
@@ -58,7 +58,7 @@ These readings / videos / podcasts are techniques and examples of data reporting
 
 * [Addressing Journalistic innumeracy](https://journalistsresource.org/studies/society/news-media/journalistic-innumeracy-math-phobia-sequence-resources-to-sharpen-your-mind#), John Whibey, Journalist's Resource website.
 
-* This site's [Numbers in the newsroom](newsroom-math) page: overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture). It has some exercises that you can do at the bottom of the page.
+* This site's [Numbers in the newsroom](03-newsroom-math) page: overcoming your fear of math. ([Video](https://youtu.be/lZjsCycecNc) of similar lecture). It has some exercises that you can do at the bottom of the page.
 
 * Chapter from the original Data Journalism Handbook on [finding insights through visualization](http://datajournalismhandbook.net/1.0/en/understanding_data_7.html), from Gregor Aisch, who is a longtime genius graphics reporter at the New York TImes.
 

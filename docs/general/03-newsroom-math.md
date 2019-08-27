@@ -64,7 +64,7 @@ Once you find the humanity in your numbers, by cutting them down to size and rel
 
 * [Listen to the lecture](https://www.youtube.com/channel/UCjQvhsNMw872Zjyv8aErzmw) on YouTube on overcoming your fear of numbers.
 
-* Read ["Numbers in the Newsroom,"](https://store.ire.org/products/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition-e-version) a $10 beat book from Investigative Reporters and Editors. Concentrate on the first two chapters.
+* Read ["Numbers in the Newsroom,"](https://www.ire.org/product/numbers-in-the-newsroom-using-math-and-statistics-in-news-second-edition) a $10 beat book from Investigative Reporters and Editors. Concentrate on the first two chapters.
 
 * [Matt Waite's math review](https://github.com/mattwaite/MathForBeginningReporters/blob/master/math_and_data_for_beginning_reporting.md)
 

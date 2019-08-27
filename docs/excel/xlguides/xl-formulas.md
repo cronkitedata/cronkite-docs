@@ -22,29 +22,40 @@ The math review is going to use the City of Phoenix's budgeted spending for the 
 
 
 
-## Files for this tutorial
+## Before you start
 
-* [A data diary]({{site.baseurl}}/assets/docs/xl-mathreview-datadiary) for the processing that went into this spreadsheet for this tutorial.
+### Files needed for this tutorial
+
+* [An example data diary]({{site.baseurl}}/assets/docs/xl-mathreview-datadiary) for the processing that went into this spreadsheet for this tutorial.
 * [The Excel spreadsheet]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) for this tutorial.
 
+### Get into good habits
 
-## Get into good habits
+You should get into the habit of creating unique identifiers, checking your corners and looking for documentation before you ever start working with a spreadsheet. Look at the handouts on [the data diary]({{site.baseurl}}/general/04-data-diary) and on [an Excel refresher](xl-refresher) if you don't remember what that means.
 
-* Right-click on [this link to the Phoenix budget summary]({{site.baseurl}}/assets/data/xlexamples/phx_budget_summary.xlsx) that I prepared for you, and choose "Save As" to keep a copy on your computer rather than opening it directly into Excel. Once you've done that, right-click on the Download area of your browser and look for the file on your computer. Don't double-click -- we're going to ask you to get out of that practice as much as possible, understanding that it's a natural instinct.
+## Formulas in spreadsheets
 
-* Start your documentation worksheet or document and describe, in plain language, every question you've asked, every answer and its source, and every step you've taken.
+Whether you use Excel or Google sheets, remember that every formula begins with the equals sign **(=)**. Rather than the values you want to work with in the formula, you'll use *references* to other cells in the sheet.
 
-* Save a working copy with some sort of sequential name in a folder you can find again.
+The easiest formulas are simple arithmetic: adding, subtracting, multiplying and dividing two or more cells. You'll just use simple operators to do this:
 
-* Is there documentation that provides the source of the data, and the meaning of each column?  Can you get it from the original document or dataset?
+ operator | symbol | example
+--|--|--|
+addition | + | =A2+B2
+subtraction | - | =A2-B2
+multiplication | \* | =A2*B2
+division | / | =A2/B2
 
-* Check your corners - how far to the right and how far down does the data go? Is it a contiguous square? Is it "tidy"? Does every column refer to one thing, and every row one instance of that thing?
+Here's what a spreadsheet looks like while editing some simple arithmetic:
 
-* Does it have exactly 32,767 or 65,536 filled in rows; does it have exactly 256 filled in columns?
+![formula]({{site.baseurl}}/assets/images/xl_mathreview_00.png)
 
-* Does it have unique identifiers for each row? If not, make them in a way that will guarantee you can re-sort back into the original order.
+The other kind of formula is a *function*. You'll learn more about that later, but it's a set of commands lumped together as a convenience. Some of the most common are =SUM(start:finish), =AVERAGE(start:finish) and =MEDIAN(start:finish), where "start" means the first cell you want to include, and finish means the last cell.
 
-* Are totals or notes mixed into the same contiguous area as detail? If so, separate them from the data.
+Here's an eample of adding up all of the rows in a list by county:
+
+![formula]({{site.baseurl}}/assets/images/xl_mathreview_00A.png)
+
 
 ## Common spreadsheet arithmetic
 
@@ -84,6 +95,8 @@ When you copy  it down, note how the references to each row also adjusted. In li
 We can't tell the *rate* of growth for each department until we calculate the percent change from one year to another. Now that we already have the change, the percent change is easy. The formula is:
 
       ( new - old ) / old
+
+      .. or just scream "NOO"
 
 We've already calculated the new-old part, so now all that's required is to divide by the old value. In grade school, you also had to move the decimal place over two spots, since the concept of percent change is "out of 100". Excel formats will do that for you.
 
@@ -171,6 +184,6 @@ It depends. Averages are easier to explain but can be misleading. Usually, if th
 
 Use the format as a % button to move the decimal point over two places and insert the percentage symbol.
 
-#### Mac Users: There's a little image of a cell covering up my spreadsheet
+#### Mac Users: There's a little image of a cell covering up my spreadsheetß
 
 I have no idea what this is, but it happens. Save your spreadsheet, close it and then re-open. It usually goes away.

@@ -20,7 +20,7 @@ Here are two excellent tutorials on pivot tables. There's no need to re-create t
 
 
 * The Data Journalism Textbook project's [Group By tutorial for Excel](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md
-) by Matt Waite. To get the data, go to the [Data page in that project](https://github.com/datajtext/DataJournalismTextbook/tree/master/Data) and right-click on the mountainlions.csv file. Then choose "Save As" to prevent it from opening in Github.
+) by Matt Waite. It's not obvious how to get the data from that site, so [here is a copy of the .csv file]({{site.baseurl}}/assets/data/csv/mountainlions.csv). (If you don't know what a csv file is, go back to the [tutorial on file types]({{site.baseurl}}/general/05-file-formats.html))
 
 * [Mary Jo Webster's tutorial](http://mjwebster.github.io/DataJ/pivottables.html) is pretty comprehensive with lots of screen shots.
 

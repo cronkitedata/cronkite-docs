@@ -36,6 +36,8 @@ CMS's data sources are confusing. They could be found in [cms.gov](http://data.c
 [CMS drug spending](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Information-on-Prescription-Drugs/index.html) has average prices paid in Medicare Part D, Part B and Medicaid. It also has the most recent year total spending.
 [data.medicaid.gov](http://data.medicaid.gov) has more details on drug utilization.
 
+[Washington Post Opioid data](https://www.washingtonpost.com/national/2019/08/12/post-released-deas-data-pain-pills-heres-what-local-journalists-are-using-it/) : Prescriptions for opioids from 2006 to 2012, released as part of a lawsuit. Another option is to check with your AP representative about access to its compilation on data.world (a great source if you don't have it already), available to members. 
+
 **Nursing homes**
  * A lot of people use the CMS's Nursing Home Compare tool and data, but Propublica has made it much easier: Use its [Nursing Home Inspect](https://projects.propublica.org/nursing-homes/) tool, with downloadable data of unredacted inspection forms. It has documentation on sourcing and the meaning of the files.
  * The "[full statement of deficiencies](https://downloads.cms.gov/files/Full-Statement-of-Deficiencies-April-2018.zip)" for April 2018. Look at the bottom of [https://www.cms.gov/medicare/provider-enrollment-and-certification/certificationandcomplianc/fsqrs.html](https://www.cms.gov/medicare/provider-enrollment-and-certification/certificationandcomplianc/fsqrs.html) to see a newer link. (The "download" directory isn't public, so you can't just tour it.)

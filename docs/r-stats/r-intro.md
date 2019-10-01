@@ -1,5 +1,5 @@
 ---
-title: Starting R
+title: Intro to R
 parent: R for journalism
 nav_order: 1
 ---

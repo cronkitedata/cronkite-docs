@@ -1,7 +1,5 @@
 ---
 title: "Introduction to R Notebooks"
-author: "Sarah Cohen"
-date: "`r Sys.Date()`"
 output:
   html_document:
     df_print: paged
@@ -11,16 +9,24 @@ output:
 
 ## Packages required for this notebook
 
+Whenever you start an R project you will probably have to load some packages, or libraries. These are extensions to the base language that have been contributed over the years to make certain data jobs easier. We will almost always need these two packages:
+
 1. tidyverse
-2. prettydoc
-3. rmarkdown
+2. rmarkdown
 
-Install them now if you don't have them. (You can use the Tools menu)
 
+Once installed on your computer, they don't have to be installed again. to install them, use the following code. (Don't run this if you've already done it.)
+
+```{r eval=FALSE, warning=FALSE, cache=TRUE}
+
+install.packages("tidyverse")
+install.packages("rmarkdown")
+
+```
 
 ## Introducing R Notebooks
 
-Markdown is an easy way to make documents that can be rendered in a variety of formats, including Web pages, PDFs, slides and other forms. It began as a way to write Wikipedia entries. With markdown, authors could edit simple text documents without worrying about HTML or other coding. 
+This document is called an R Notebook. It's written in a format called "markdown", which is an easy way to make make documents that can be rendered in a variety of formats, including web pages, PDFs, slides and other forms. It began as a way to write Wikipedia entries. With markdown, authors could edit simple text documents without worrying about HTML or other coding. 
 
 There are several flavors of markdown and R has its own version, but the basics are the same as an authoring language. 
 
@@ -32,7 +38,14 @@ The nice people at R Studio have created [a full tutorial on R Markdown](https:/
 
 With a notebook, you can preview your document without running all of the code. A markdown document always requires you re-run after making changes. This can take a long time. 
 
-The top of a markdown document has what's called "front matter", which tells R how to treat the file, what it's called and how to style it. 
+The top of a markdown document has what's called "front matter", which tells R how to treat the file, what it's called and how to style it. It's a set of instructions that sit at the very top as a simple example looks like this. It's in yet another language called YAML, which is a series of instructions to give top-level information about the document.
+
+              ---
+              title: "This is an R doc"
+              output: 
+                  html_notebook: default
+                  html_document: default
+              ---
 
 Most of it is self-explanatory, but you can have different outputs at the same time. Be sure to add the "html_notebook: default" if you want to be able to preview rather than run the whole document. 
 
@@ -51,8 +64,6 @@ Unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of 
 WARNING: If you print or display a very large dataset this document will become very, very large and it will take down your computer. Try to avoid this. If you do it by mistake, delete the output and try again.
 </div>
 
-
-
 ## Using code chunks
 
 So far, this is just a simple Markdown document, which contains headings and one link. You can also write lists like this: 
@@ -70,7 +81,7 @@ Add a new chunk by clicking the *Insert Chunk* , *R* button on the toolbar or by
 Place your cursor anywhere in the shaded chunk and press Cmd-Shft-Enter or CTL-Shft-Enter to run the whole chunk. 
 
 
-```{r}
+```{r warning=FALSE}
 
 # this is a comment - it does nothing.
 # this reminds you that if it isn't installed already, you'll need to install a package
@@ -87,56 +98,73 @@ options(digits=2)
 
 ```
 
-I'm never sure why but sometimes these commands lead to notes about how the packages loaded and sometimes they don't. Don't worry about it unless you get an error. 
+I'm never sure why but sometimes these commands lead to notes about how the packages loaded and sometimes they don't. Don't worry about it unless you get an error. (The note about "dplyr::filter() masks...." just means that, by default, we'll use the tidyverse version of the word "filter", rather than the usual default version. Don't worry about it for now.)
 
 ## Introducing R
 
-Let's try something simple: Adding 2+2. Insert a code chunk, and just type the formula: 
+#### Some arithmetic
+
+Let's try something simple: Type this:
+
+      2+2. 
+
+into the code chunk below, then then run the code chunk by pressing CMD-SHFT-Enter or by hitting the little green arrow: 
 
 ```{r}
 
-2+2
+#type the formula here:
+
 
 ```
 
 You should see [1] 4 above this line. The [1] refers to which piece of the output it is showing. The 4 is your answer. 
 
-(There's a complicated reason for the [1].  R thinks that everything is a list, or vector. Sometimes it's just got one element, but it shows you which one anyway.
+#### Creating a named variable
 
-Let's try creating something more complicated -- a variable, which is then used in another formula.
+Let's try creating something more complicated -- a variable, which is then used in another formula. Create the following variables: 
+
+A variable is created using the <-, or what's called an "assignment operator". Think of it as "goes into". So
+
+      addition <- 2 + 2
+
+means "two plus two *goes into* the variable called "addition"
+
+YOUR TURN: 
+
+In the code chunk below, create some additional variables:
+
+1. "multiplication" should equal 5 times 5
+2. "division" should equal 100 divided by 2
+3. "words" should equal the phrase "some words"
+
+Then run the code chunk. Look to the upper right of your screen to find the Environment tab, and you should see your new variables. 
 
 ```{r}
 
-addition <- 2 + 2
-multiplication <- 2 * 2
-division <- 10 / 2
-words <- "some words"
+addition <- 2+2
 
-print (addition)
-print (multiplication)
-print (division)
-print (words)
+# Type in a few more variables here:
+
 
 ```
 
-Look to the right. If "Environment" tab isn't shown, select it. You should see that you have some "Global Environment" variables with the names you just created. 
+
+When you create a variable, R doesn't automatically show the value. Instead, look to the right. If "Environment" tab isn't shown, select it. You should see that you have some "Global Environment" variables with the names you just created, with the answer to the formula.
 
 Be careful not to create variable names that are the same as R keywords. For now, it's easiest to remember by avoiding a name that pops up as you're typing. 
-## Your turn
 
-Assignment: 
 
-Create an R Notebook that contains the following: 
+#### Use variables in new variables
 
-* A heading that says, "My First R Notebook"
-* A sentence that describes yourself.
-* A code chunk that calculates the percent change of a value that went from 100 in the previous period to 120 in the current period. (Note: R doesn't automatically add the two decimal points. You'll have to mulitply by 100.)
+
+This code chunk creates one variable called "difference", which is then used to create a new variable called "pct_difference".  
 
 ```{r}
 
 difference <- 120-100
 pct_difference <- difference / 100 * 100
 
+#now print out the value of pct_difference
 pct_difference
 
 ```
@@ -151,13 +179,47 @@ To make a vector, use the syntax c(), where "c" stands for "combine"
       c(1, 2, 3)
       c("one", "two", "three")
 
-Try it in this code chunk
+Try creating two variables (you pick the names) that contain the two vectors above.
 
 ```{r}
 
-num_vec <- c(1,2,3)
-char_vec <- c("one", "two", "three")
+#put your formulas here
+
 
 ```
+
+
+## Important traps
+
+### NA values
+
+A missing value in R is shown as NA. Whenever you try to do anything with any vector or data frame that contains missing values, everything will turn out missing. You have to explicitly tell R to ignore them: 
+
+```{r}
+
+indata <- c(1, 2, 3, 4, NA)
+sum(indata)
+
+
+```
+
+Instead, you hae to tell R to ignore them:
+
+```{r}
+sum(indata, na.rm=TRUE)
+```
+### Factors
+
+There is actually another type of data element -- a factor -- which will often trip you up. We don't have to deal with it right now, but it will come into play as you work with graphics and with some other data sets. 
+
+Generally, R thinks that relatively short text strings are unique "factors". These are categories, and once they're set up they can't be changed. It's a way of being more efficient in large data sets. You'll sometimes see an option that says
+
+    stringsAsFactors=FALSE
+
+That's good.
+
+
+That's it for now! 
+Try previewing, then knitting your document. 
 
 

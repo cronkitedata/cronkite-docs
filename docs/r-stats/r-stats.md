@@ -18,25 +18,17 @@ Here are several other sources for you to review if you want to try something di
 
 I don't know how to put the rendered HTML into this format, so here's a link to the tutorials and R Markdown files that we've used in class:
 
-## Recap
-
-Most of these exercises are in RStudio.cloud for ASU students. These items have links to zipped files that can be uploaded to RStudio.cloud as a whole project, and to .Rmd files (markdown documents) that aren't yet converted into HTML. They may open as text in your browser -- just save it to your local machine to have a file that you can work with in R. Where necessary, data files are also listed.
 
 ### Lesson 1: Getting around R & intro to data frames
-[RStudio zipped project](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-markdown-r.zip)
 
-* Getting started with R Markdown and R: [Document](01-1-notebooks.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-1-notebooks.Rmd?raw=true) / RStudio project
+* [Getting started with R Markdown and R](01-1-notebooks.html)
 
-* Introduction to data frames: [Document](01-2-dataframes.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/01-2-dataframes.Rmd?raw=true)
+* [Introduction to data frames](01-2-dataframes.html)
 
 ### Lesson 2: Select and filter
-In class, we went over Sharon Machlis' first lesson on her site,  listed above. We also went through the tutorial from the ["swirl" package](https://swirlstats.com/students.html)
-
 * Filtering murder data (based on material from Andrew Ba Tran's course listed above): [Document](02-murders-filter.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-murders-filter.Rmd?raw=true) / [RStudio zipped project](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-select-filter.zip)
 
 ### Lesson 3: Group by and join
-
-In class, we went over the exercise that Andrew created that tried to tease out of the murder data the Green River Killer. Then we went over the idea of grouping and joining.
 
 [RStudio zipped project](03-groupby-merge.zip)
 

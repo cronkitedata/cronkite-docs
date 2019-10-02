@@ -40,13 +40,24 @@ If you don't want to install R and RStudio on you computer, you can sign up for 
 
 If you want to install on your laptop, try these steps. Bring in your laptop if you're having trouble.
 
-* Mac only: [Install the Command Line Tools](https://developer.apple.com/download/more/).  You won't need this until we get to more complex graphics, so skip this step if you're having trouble.
+**MAC USERS: Install command line tools for Mac**
+* This is a pain, but it only has to happen once. There are some things that won't work if you skip this step.
+
+In your terminal (found under Utilities in the Applications folder), type:
+
+    xcode-select --install
+
+You'll get an error message saying that it can't be done because you don't have command line tools, and would you  like to install them now? Say yes. Once it's done, just close out your terminal. You never really wanted the thing that you asked to install in the first place.
+
+**EVERYONE**
 * Install [R for your computer](https://rweb.crmda.ku.edu/cran/). Use the most recent binaries for your operating system.
 * Install [R Studio Desktop](https://www.rstudio.com/products/rstudio/download/#download) for your computer ONLY AFTER YOU HAVE INSTALLED R. Use the free community version.
 
 ## First steps with R
 
 We'll be interacting with R using R Studio, which is a simple way to see all of the different pieces of any project.
+
+
 
 ### The Console
 
@@ -64,13 +75,29 @@ The console just gives you the answer from your latest command.
 
 We will do very little in the console, but it's a good place to test little commands that you aren't sure of.
 
-### Directory confusion
 
-One big problem when you start working with R is identifying what directory is currently active. To find out, type
+### Packages
 
-    getwd()
+Packages in R are just what they sound like -- packages of programs that users have found useful to extend the base R language. R is almost useless without them.
 
-into the console. (You can also get and set working directories through menu items in R Studio. )
+To use a package, you first have to install it. As a rule, you'll install packages in the CONSOLE, but load them for use in the R program or notebook. This will make more sense as we move along.
+
+Once you've installed them in your computer or on RStudio.cloud, you won't have to install them again. (If you work on a Cronkite school lab, you may have to reinstall whenever you log in. You'll know if it's gone away by an error message if you try to use it.)
+
+       install.packages("tidyverse")
+       install.packages("rmarkdown")
+
+For a first look at R, we'll want to install the Swirl package as well:
+
+      install.packages("swirl")
+
+
+
+### Work in projects
+
+The easiest way to keep yourself organized is to work in R Studio projects rather than individual files. This means you don't have to worry about what directories or folders your computer thinks you are using at any one time, and creates a compact package. If you're using RStudio.cloud, every project is already self-contained.
+
+Instead of creating a new file when you start R, create a new project, and tell R where to put the directory when prompted.  
 
 ### Error messages
 
@@ -88,7 +115,3 @@ When you see an error, try to piece together what it means. In this case, it has
 3.  "to binary operator" tells you that it doesn't like non-numeric with a plus sign.
 
 Later on, we'll go through some common error messages and what they tell you about where to look. You often have to look at the line ABOVE the one that generated an error to find where it is.
-
-### New project
-
-One good practice is to create projects for all of your R work on a given topic or dataset. When you create a project then open it, it makes sure that everything you need is in the working directory. It also makes sure you can just copy the whole project onto a new computer and it will likely work. (You may have to reinstall some packages)

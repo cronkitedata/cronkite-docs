@@ -26,11 +26,13 @@ This is opioid emergency data we used in class a while back. To read it, we're u
 
 Try running this chunk, then looking up to the Environment area of your console. You should see an object called opiod_calls_orig, which you can click on to look inside.
 
+(NOTE: The city of Tempe removed its opioid EMS call csv from the web, so this link is to a saved version of it on this site.)
+
 ```{r warning=FALSE}
 
 #the location on the Web for the data set's csv download
 
-my_link <- "https://data.tempe.gov/dataset/5673ca24-e099-4bdc-a4dd-2bbcec759899/resource/43d02a7a-91e7-4b86-9ae1-1e143369f8b6/download/opioidemscalls.csv"
+my_link <- "https://cronkitedata.github.io/cronkite-docs/assets/data/csv/opioidemscalls.csv"
 
 #use it in a read_csv command
 

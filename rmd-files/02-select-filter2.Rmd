@@ -1,0 +1,56 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+## Load the murder data for Arizona
+
+Don't forget to load up the tidyverse using the library() command. 
+Then, you just have to tell R where to find the document. You can either copy it into the directory of your project, give it the full path, or use it as a URL. Here's an example using it as a URL -- just note the file=url(...) instead of file="..." command.
+
+I've fixed up the file a little for you, including codes for some of the categories and lower case names. That's why it's v2
+
+
+```{r}
+library(tidyverse)
+
+#load ("murder_data_v2.Rdata")
+load (url("https://cronkitedata.github.io/cronkite-docs/r-stats/murder_data_v2.RData"))
+
+#print out the structure of the dataset
+str(murder_data_v2)
+
+```
+
+There is a new kind of variable, called a "Factor". This is used when there are categories that won't change. For example, the sex is either "Female", "Male" or "Unknown" .  For now, don't worry about it -- the tidyverse is very forgiving of treating them the same as character fields. 
+
+To get the choices of a character or factor variable, use  a new verb -- "distinct"
+
+
+```{r}
+
+murder_data %>% select ( Weapon) %>%
+    mutate (weapon_code = as.integer(Weapon)) %>%
+    group_by (weapon_code, Weapon) %>%
+    summarise (n())
+
+
+```
+
+```{r}
+
+distinct(murder_data, VicSex)
+
+```
+
+```{r}
+
+#just rename the old data frame
+murder_data_v2 <- new_murder_data
+save (murder_data_v2, file="~/Documents/Github/cronkite-docs/docs/r-stats/murder_data_v2.RData")
+
+load ("~/Documents/Github/cronkite-docs/docs/r-stats/murder_data_v2.RData")
+
+```
+

@@ -2,11 +2,9 @@
 title: "Data Wrangling in R Part One"
 output:
   html_document:
-    df_print: paged
+    default
   html_notebook:
-    df_print: paged
-    toc: yes
-    toc_depth: '4'
+    default
 ---
 
 (This tutorial is based on work done by Andrew Ba Tran on the learn-r.journalism.com course.)

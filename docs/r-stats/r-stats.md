@@ -31,7 +31,10 @@ I don't know how to put the rendered HTML into this format, so here's a link to 
 
 ### Lesson 3: Group by and join
 
-* Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murders.Rda)
+* Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murders.Rda)  . When you're done with this one, be sure to save your merged data frame using this command, either in an R chunk or in the console:
+
+    save(murders_with_counties, file="murders_with_counties.Rda")
+
 
 * More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true) / Additiona [data file]({{site.baseurl}}/assets/data/r-data/murders_with_counties.Rda)
 

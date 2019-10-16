@@ -1,0 +1,137 @@
+---
+title: "Group, gather and spread in R"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+NOTE: This notebook assumes you've done the previous one in this lesson, the Green River killer exercise. It depends on having some of the datasets that that exercise created. 
+
+
+## Libraries used in this notebook
+
+Go ahead and re-load the saved murders and murders_with_counties in case...
+
+```{r}
+library(tidyverse)
+load ("murders.Rda")
+load ("murders_with_counties.Rda")
+
+```
+
+This lesson goes more thoroughly through grouping, adding in some powerful properties that R has to tidy and untidy data. 
+
+## Group by reminder
+
+We're still working with our expanded murder data (the one with Oregon, Washington and Idaho added in).
+
+Example: 
+
+```{r}
+
+murders %>%
+  group_by (victim_race) %>%
+  summarize ( num_of_cases = n() ) %>%
+  arrange (desc (num_of_cases) )
+
+
+```
+
+What if we wanted to know white-on-white , black-on-black, etc? Try adding another level: 
+
+```{r}
+#type your code here, creating a new dataset called murders_by_race
+
+murders_by_race <-
+  murders %>%
+  group_by( victim_race, offender_race) %>%
+  summarise (num_of_cases = n())
+
+```
+
+
+This can get hard to read, which is why we can now "spread" this across columns, the way you would in a pivot table
+
+Understanding exactly what's happening in "spread" and "gather" can be really confusing. (NOTE: A very new version of the tidyverse was released recently, which replaces "spread" and "gather" with "pivot wider" and "pivot longer". They're the same idea, but are easier for people coming from Excel to understand. The spread and gather commands still work, though.)
+
+
+It's easier to work from example: 
+
+```{r}
+
+murders_by_race %>%
+spread( key=victim_race, value=num_of_cases)
+
+
+```
+
+
+This puts the values of victim_race across the top, and fills it in with the number of cases. 
+
+
+## Dealing with missing values
+
+There's actually some missing information in this table, but it's not coded as "NA". Instead, the ages are shown as 999 when they're unknown. 
+
+This will introduce the idea of *mutate* . Mutate just means "calculate this". I don't know why we have to use it -- we just do. Anytime you want to ALTER a value, or create a NEW value, you have to use mutate. 
+
+First, let's just do a simple thing - how much difference is there in the ages between the victims and the offenders? 
+
+```{r}
+
+murders_with_counties %>%
+  filter ( solved == "Yes") %>%
+  #now calculate the difference
+  mutate (age_diff = offender_age - victim_age) %>%
+  arrange( desc(age_diff))
+
+
+```
+
+Save murders_with_counties to your project this way: 
+
+```{r}
+
+save(murders_with_counties, file="murders_with_counties.Rda")
+
+```
+
+
+
+
+### Introducing "case_when" 
+
+The problem here is that the age is sometimes wrong -- it's 999 if they don't know the age. In this case, we need to change them conditionally. We've seen if_then statements. The alternative is case_when, which is used when there is more than one alternative. We'll use this here, because we're suspicious of the ages that say 0. 
+
+```{r}
+age_differences <- 
+  murders_with_counties %>%
+  mutate (victim_age = if_else (victim_age %in% c(0, 999), NA_real_, victim_age) ,
+          offender_age = if_else (offender_age %in% c(0, 999), NA_real_, offender_age) , 
+          age_difference = offender_age - victim_age
+        )
+
+
+age_differences
+
+```
+
+
+## Summarize by year
+
+Try summarizing by year and metro area, so that you can calculate the change in murders from one year to the next. 
+
+Limit your analysis just to the last three years in the data. 
+
+```{r}
+
+#type your code here. 
+
+
+
+```
+
+
+
+

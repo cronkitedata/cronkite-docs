@@ -26,16 +26,16 @@ I don't know how to put the rendered HTML into this format, so here's a link to 
 * [Introduction to data frames](01-2-dataframes.html)
 
 ### Lesson 2: Select and filter
-* Filtering murder data (based on material from Andrew Ba Tran's course listed above): [Document](02-murders-filter.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-murders-filter.Rmd?raw=true) / [RStudio zipped project](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-select-filter.zip)
+* Filtering murder data (based on material from Andrew Ba Tran's course listed above): [Document](02-murders-filter.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-murders-filter.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murder_data.Rda)
+
 
 ### Lesson 3: Group by and join
 
-[RStudio zipped project](03-groupby-merge.zip)
+* Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murders.Rda)
 
-* Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) . Use the zipped project to get the data frame.
-* More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true)
+* More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true) / Additiona [data file]({{site.baseurl}}/assets/data/r-data/murders_with_counties.Rda)
 
-Practice: We're going to do a lab working on the built-in flight data in the tidyverse. For a complete tutorial using this dataset, and for more information on the things you can do with R in this context, watch the entire video from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"
+Practice: A complete video tutorial using the built-in dataset for flight times from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"
 
 ### Lesson 4: Intro to visualization
 

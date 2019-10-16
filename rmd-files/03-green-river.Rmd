@@ -1,9 +1,12 @@
 ---
 title: "Merging tables"
 output: 
-    html_document: default
+    html_document: 
+       df_print: paged
     html_notebook: default
 ---
+
+
 (With thanks to Andrew Ba Tran, whose [R for Journalists course](https://learn.r-journalism.com/en/) this is based upon.)
 
 This notebook will go over grouping and merging in R, and will give you a bonus: How to get data from a website using a simple table command. 
@@ -23,48 +26,32 @@ Ridgway told investigators he killed as many as 75-80 women along Route 99 in so
 
 ## Packages used in this tutorial
 
+
+We haven't loaded an Excel spreadsheet yet -- just files from the web and a CSV. Although "readxl" is part of the tidyverse, you have to activate it separately using the library command: 
+
 ```{r}
 library(tidyverse)
-library(rvest)
-library(DT)
+library(readxl)
+
 
 #this is the new version
 load("murders.Rda")
 
 ```
 
-*rvest* is the scraping library that many people use in R. It's part of the tidyverse, so it allows for simplified syntax. 
-
 ## Step 1 : We need county names! 
 
 Your data has a field called cntyfips -- that's a common way of looking at geographic variables. It's a standard code that's used by agencies to make sure that it's always the same, no matter how a county is spelled. 
 
-Luckily, there is a list of county FIPS codes right on the web in a web page, through the USDA: 
-https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697
+Luckily, it's easy to get data for counties through the Census and other sites. I downloa](https://socialexplorer.com), which is an easy way for ASU students to grab Census related data. 
 
-It looks like this: 
+This time, instead of importing a csv, I'll import an Excel spreadsheet called countypops.xlsx, saved in my project.  These are average county-level population estimates for the years 2013 through 2016 from the American Community Survey. 
 
-![](images/usda_fips.png)
-
-We're going to use rvest to turn that web page into a dataset. Don't worry for now what it means -- just know that it works in thie case, and it can work for you too! 
 
 ```{r}
-# where is my web page? 
 
-my_url <- "https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697"
-
-#in steps 
-counties <-
-  read_html (url (my_url)) %>%
-  html_nodes(xpath = "//div[@id='detail']/table") %>%
-  html_table() 
-
-counties <- counties[[1]]
-
-  
-datatable(head(counties))
-
-
+counties <- read_excel("countypops.xlsx")
+str(counties)
 
 ```
 
@@ -88,15 +75,20 @@ They way you join is to add it to your list of operations the same way we did be
 ```{r}
 murders_with_counties <-
   murders %>%
-     inner_join ( counties, by= c("cntyfips"= "FIPS")) %>%
+     inner_join ( counties, by= c("cntyfips"= "fips_num")) %>%
      #let's just keep some of the variables in a different order
-     select (id, ori, agency, state, cntyfips, county="Name", 
+     #and renaming the county_name field so that it's a little shorter
+     select (id, ori, agency, state, cntyfips, county=county_name, 
              solved, year, situation, weapon, 
              victim_age, victim_sex, victim_race, vic_relate_to_offender, 
              circumstance, offender_age, offender_race) 
 
 
-
+#let's see which agencies are in which counties: 
+#
+murders_with_counties %>%
+  group_by (state, county, agency) %>%
+  summarise (murders = n())
 
 ```
 
@@ -129,13 +121,15 @@ What do we have to find?
 * Victims were young runaways or prostitutes
 
 
+I've introduced a new idea: str_detect(county, "King"). This  means that the code should look for upper-cased King anywhere in the county field. If I wanted to it start with King, I would use str_detect("^King")
+
 ```{r}
 # type your code here 
 
 murders_with_counties %>%
   
   filter ( year >= 1982  &
-           str_detect (county, "King") &
+           str_detect (county, "^King") &
            state == "Washington" & 
            str_detect (weapon, "Strangulation") &
            victim_sex != "Male"
@@ -150,6 +144,56 @@ murders_with_counties %>%
 ## Important caveat
 
 Of course, this isn't really finding a serial killer, and we don't know if what we found is right. But it's a way to start narrowing down what to look for when you get a tip.
+
+## Group by and merge
+
+Another thing you might use group_by and join is to merge once you've added up something. In this case, let's say we want to get the approximate murder rate for each county in our sample of several states. 
+
+### Step 1: Summarise by county
+
+In this case, we want to get a county-level data frame that is made up of the number of murders by county from 2013 through 2016, the years of our population data. 
+
+```{r}
+
+county_murders <- 
+  murders %>%
+  filter (between (year, 2013, 2016)) %>%
+  group_by (cntyfips, state) %>%
+  summarise (murder_ct = n())
+  
+
+```
+
+Now merge it with the population data, and calculate a rate per 100,000 residents!
+
+```{r}
+
+county_murders %>%
+  # I don't know why, but the names of these fields have to be in quotes
+  inner_join (counties, by=c("cntyfips"="fips_num")) %>%
+  select (state, county_name, cntyfips, murder_ct, total_pop_2013to16) %>%
+  mutate ( murder_rate = murder_ct / total_pop_2013to16 * 100000) %>%
+  arrange (desc (murder_rate))
+
+```
+
+Let's do it again, only this time fiter out little counties of fewer than 20,000 people. 
+
+```{r}
+
+county_murders %>%
+  # I don't know why, but the names of these fields have to be in quotes
+  inner_join (counties, by=c("cntyfips"="fips_num")) %>%
+  select (state, county_name, cntyfips, murder_ct, total_pop_2013to16) %>%
+  filter (total_pop_2013to16 >= 20000) %>%
+  mutate ( murder_rate = murder_ct / total_pop_2013to16 * 100000) %>%
+  arrange (desc (murder_rate))
+
+
+```
+
+One thing that sticks out here: Arizona only has 15 counties -- there are 87 across the four states we've looked at. But Arizona is 5 of the top 10. 
+
 
 
 

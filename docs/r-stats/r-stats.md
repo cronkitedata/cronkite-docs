@@ -41,5 +41,4 @@ I don't know how to put the rendered HTML into this format, so here's a link to 
 Practice: A complete video tutorial using the built-in dataset for flight times from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"
 
 ### Lesson 4: Intro to visualization
-
-This [rstudio.cloud project](https://rstudio.cloud/spaces/10907/project/270748) is an introduction to the concepts of visualization using gapminder data, borrowed from several other tutorials on ggplot. It's a way to start thinking about how to build charts in R. ([final document](04-intro-visualization.html))
+A very basic introduction to visualization using ggplot2 in R, with built-in Gapminder data: [final document](04-ggplot-intro.html) / [rmarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/04-ggplot-intro.Rmd)

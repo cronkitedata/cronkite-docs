@@ -34,7 +34,7 @@ If you can't answer these questions, review the video again.
 
         2,148,232*
 
-Most programming languages enforce a singe data type for each field or variable in a data frame or table. Instead of keeping the wrong version, it will turn all of them in to characters if it isn't sure. It will turn all of the characters to missing data if there are only a few.
+Most programming languages enforce a single data type for each field or variable in a data frame or table. Instead of keeping the wrong version, it will turn all of them in to characters if it isn't sure. It will turn all of the characters to missing data if there are only a few.
 
 As you get into programming, there are much more complicated data types that are really powerful. For example, a data type of "data frame" is used in R and Python to act like an Excel sheet. A json object can define a whole database in nested text. Those types will be covered in later modules.
 
@@ -53,6 +53,8 @@ In it, he defined tidy data in this way:
 * Every row, which may or may not be labeled, represents an _observation_, or an instance of each of the variables. An example might be your name, the county and zip code you live in, your height, age, income, and what year it is today.
 
 * Each _type_ of observational unit is in its own table, such as a page in an Excel file or a data frame in the R language. This suggests that every observation should be a the same unit of analysis. For example, there can be information about every student at your school in one table, and information about every department in your school in another.
+
+Think of a row as the subject of a sentence, and the column as an object: "More *schools* (observations/rows) had low *vaccination rates* (variable/column) this *year* (variable/column) than last".
 
 In other words, each column means one thing, each row is an instance of that thing. It means you'd rarely type two separate things into one cell, such as two names or two addresses. It also means you'll often have a tall, narrow dataset -- one with a few columns but many rows -- rather than the short and wide datasets you often see. This makes it easy to sort, filter, and group your data into other information.
 

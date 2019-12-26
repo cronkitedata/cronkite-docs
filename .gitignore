@@ -1,3 +1,6 @@
 
 .DS_Store
 .Rproj.user
+._site
+Gemfile_lock
+.jekyll-cache/

@@ -45,7 +45,7 @@ One of the most common uses of sorting and filtering comes with spreadsheets you
 Sorting and filtering can also:
 
 * Show you rows containing the highest and lowest values of any column. That can be news or it can be errors or other problems with the data.
-* Let you answer quick "how many?" questions, with a count of the rows that match your criteria.
+* Let you answer quick "how many?" questions, with a count of the rows that match your criteria. (In the next lesson, you'll see that pivot tables, or group-by queries, are much more powerful for this in most cases.)
 * Together, sorting and filtering can narrow your dataset to just the items you want to examine more closely in your reporting.
 
 
@@ -56,7 +56,7 @@ In Excel, you may want to create a "data table" from your spreadsheet to help ma
 
 * Formulas automatically copy throughout your data, whether or not there are empty values next to them.
 * Sorting and filtering are always done on the proper list of rows, once you're made sure to define the table correctly.
-* You can use column names rather than addresses to reference a field.
+* You can use column names rather than addresses to reference a field. (This can be good or bad.)
 * The column names always stay at the top of your screen, making it unnecessary to freeze panes (which can make navigation more difficult)
 
 It also looks better.
@@ -64,6 +64,10 @@ It also looks better.
 Select your entire table, using Shift-CTL-* or by selecting the corners, then choose your table style:
 
 ![create table]({{site.baseurl}}/assets/images/06-filtersort-createtable.gif)
+
+#### A data table trap
+
+One trap of the data table is that usually, Excel assumes you want to use the name of the column to create a formula. This can get old fast, since it no longer adjusts the column name to reflect moving to the next one. To turn off this behavior, go into Excel's preferences and choose "Tables and Filters". Then turn off the option that says "Use table names in formulas".
 
 ### Sorting
 
@@ -134,7 +138,7 @@ You can create your own flags using filters. (There are other ways to accomplish
 
 Now I can filter for all of the blanks in that field, and fill them in with "No" to create the rest of the flag:
 
-![Flag yes]({{site.baseurl}}/assets/images/06-filtersort-makeflag2.png)
+![Flag no]({{site.baseurl}}/assets/images/06-filtersort-makeflag2.png)
 
 Just be sure you document HOW you made your filter. What did you do with "(Blanks)" or anything that didn't make sense? You should be able to recreate your flags exactly whenever you make them, and it's easy to forget exactly what you did.
 
@@ -159,6 +163,10 @@ The first comes if you selected an entire column, and then just hit the button t
 ![filter date]({{site.baseurl}}/assets/images/06-filtersort-faq1.png)
 
 The other comes when you have numbers that are treated as text. This is a tricky question, and a properly tidied spreadsheet should avoid it most of the time. If you have the same type of data in each column, the answer to this question shouldn't matter. If not, neither one will give you what you want.
+
+### I can't copy formulas from left to right properly
+
+This is because Excel is using the name of a column, not its cell position, to create tables. Go into your Excel preferences, choose Tables & Filters, then turn off the option that says "Use table names in formulas".
 
 ### I want to get rid of my data table
 

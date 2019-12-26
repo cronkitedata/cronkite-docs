@@ -41,7 +41,7 @@ See if you can find some questions to ask on your own of this data. Is there som
 
 ### Data trap - negative numbers
 
-It's very hard to do percents of whole when there is a mix of positive and negative numbers. One way to deal with this is to figure out what would have happened if it had stayed the same.  
+It's very hard to do percents of whole when there is a mix of positive and negative numbers. One way to deal with this is to figure out what would have happened if it had stayed the same.
 
 For example, Cochise County's total population fell over the five year period, mainly because people moved away. It also has a high death rate. Try to think of ways to compute ratios or other figures that will let you write a coherent sentence. In this case, you may want to have a ratio of births to deaths, or a percent change based on a single column.
 
@@ -71,14 +71,14 @@ The [full methodology](https://www2.census.gov/programs-surveys/popest/technical
 
 * Populations are kept for all of the years.
 
-* Net change in population, births, deaths,  international migration, domestic migration, and residuals are the totals for the years 2013 through 2017.
+* Net change in population, births, deaths,  international migration, domestic migration, and residuals are the totals for the years 2013 through 2018.
 
 * The data was checked to makes sure that:
 
          births - deaths  = natural change
          international + domestic migration = net migration
          natural change + net migration + residual = population change
-         population 2013 + population change = population 2017
+         population 2013 + population change = population 2018
 
 
 "Residuals" refers to change that they think happened, but can't figure out where it came from. (This is modeled based on a lot of factors, but in the end it has to add up to the U.S. population. That means that there are errors along the way. Residuals are a way to document that. Small counties have relatively high residuals, meaning they are less sure that the population is really what they've estimated. They won't know until the Census is done in 2020.)

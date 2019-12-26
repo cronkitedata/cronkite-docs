@@ -35,6 +35,8 @@ In this module you'll learn:
 * The questions you'll need to be able to answer before you publish
 * A format for recording your work.
 
+(There are disagreements among reporters about how much to try to make our work replicable in the same way scientists do. [Matt Waite's rant](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/Replication/introduction.md) on the subject prompted me to [write a rebuttal](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/Replication/response.md).)
+
 ## Getting started
 
 Before you even start work on a new dataset, open up a new document and just start writing down what you do. For a quick daily story, you might be able to keep your work in one short document. For a longer project, you may find it easier to break your documents apart into logical pieces.

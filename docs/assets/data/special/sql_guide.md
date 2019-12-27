@@ -1,3 +1,6 @@
+---
+nav-exclude: true
+---
 
 ## Filtering in sql
 

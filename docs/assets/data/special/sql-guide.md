@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "SQL intro"
-permalink: /sql-guide/
+nav-exclude: true
 ---
 
 SQL queries can be far more sophisticated and targeted than the ones you made in Excel.

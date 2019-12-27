@@ -1,8 +1,7 @@
 ---
 layout: page
 title: "Installing and using DB Browser and SQLite"
-permalink: /db-browser/
-categories: tutorials
+nav-exclude: true
 ---
 
 We're going to be using DB Browser, which is a way of importing CSV files into a SQL database, and a way of managing those databases.

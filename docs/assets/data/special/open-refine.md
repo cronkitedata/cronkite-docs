@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Open Refine resources and guidelines
+nav-exclude: true
 ---
 
 ## What is Open Refine and why would you use it?

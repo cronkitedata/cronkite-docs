@@ -1,8 +1,5 @@
 ---
-layout: page
-title: "Joining tables in SQLite"
-permalink: /sql-join/
-categories: tutorials
+nav-exclude:true
 ---
 
 Files for this exercise:
@@ -27,7 +24,7 @@ Reporters sometimes call these "enterprise" joins, referring to the enterprise s
 ## Relational database
 
 
-Usually, a government agency will hold its data in what is called a *relational database*. This means that there are different tables for different units of analysis. Relational databases also sometimes hold "lookup tables", which translate codes to words. An example is the federal campaign finance database. In its original form, there are no names of candidates and committees. Instead, there is one table that defines committees, such as "Clinton for America". There is a 9-character code that always indicates that committee, and a different table holds the details, such as the name of the committee, the code for the candidate, the treasurer, the mailing address, etc. Another table holds the candidates, such as "Hillary Clinton", and indicates what year and position she was running for.  
+Usually, a government agency will hold its data in what is called a *relational database*. This means that there are different tables for different units of analysis. Relational databases also sometimes hold "lookup tables", which translate codes to words. An example is the federal campaign finance database. In its original form, there are no names of candidates and committees. Instead, there is one table that defines committees, such as "Clinton for America". There is a 9-character code that always indicates that committee, and a different table holds the details, such as the name of the committee, the code for the candidate, the treasurer, the mailing address, etc. Another table holds the candidates, such as "Hillary Clinton", and indicates what year and position she was running for.
 
 Many complex datasets contain dozens of tables, each with a slightly different type of entry, and all with the goal of streamlining and standardizing data entry, maintenance and controlling the size of the database. Putting them together can be painstaking. Brant Houston, in his book Computer-Assisted Reporting, likens it to building bridges between islands of information.
 

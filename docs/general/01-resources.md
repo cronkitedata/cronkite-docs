@@ -14,9 +14,14 @@ These readings / videos / podcasts are techniques and examples of data reporting
 {: toc}
 
 
+Adding from other courses, temporarily here:
+
+* Trader Joe's susan mcgregor [video](https://www.youtube.com/watch?v=fRYdCwuacyg)
+["Eight Simple Ways to Let the Spreadsheet do the Math"](https://gijn.org/2019/05/21/eight-simple-ways-to-let-the-spreadsheet-do-the-math-so-you-can-focus-on-the-story/), on the GIJN website
+
 ## Textbooks / handbooks
 
-* [Data for Journalists](https://www.amazon.com/Data-Journalists-Brant-Houston/dp/0815370407/ref=pd_sbs_14_3/138-2399076-4848836), by Brant Houston. This is the fifth edition of the class "Computer Assisted Reporting" book first published more than 20 years ago. An adaptation of some of the material is in  ["Eight Simple Ways to Let the Spreadsheet do the Math"](https://gijn.org/2019/05/21/eight-simple-ways-to-let-the-spreadsheet-do-the-math-so-you-can-focus-on-the-story/), on the GIJN website
+* [Data for Journalists](https://www.amazon.com/Data-Journalists-Brant-Houston/dp/0815370407/ref=pd_sbs_14_3/138-2399076-4848836), by Brant Houston. This is the fifth edition of the class "Computer Assisted Reporting" book first published more than 20 years ago. An adaptation of some of the material is in
 
 * “[Data Literacy: A User’s Guide](https://www.amazon.com/Data-Literacy-David-Herzog/dp/1483333469)”, by David Herzog, 2015
 

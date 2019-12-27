@@ -1,5 +1,5 @@
 ---
-nav-exclude:true
+nav_exclude: true
 ---
 
 Files for this exercise:

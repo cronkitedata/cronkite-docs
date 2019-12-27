@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "SQL intro"
-nav-exclude: true
+nav_exclude: true
 ---
 
 SQL queries can be far more sophisticated and targeted than the ones you made in Excel.

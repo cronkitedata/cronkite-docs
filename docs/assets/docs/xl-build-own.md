@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Lecture notes - building your own database"
-categories: excel notes
-classes: wide
+nav_exclude: true
 ---
 
 ## What to consider when building a database

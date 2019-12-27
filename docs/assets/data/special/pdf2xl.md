@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Turning pdfs into spreadsheets'
-nav-exclude: true
+nav_exclude: true
 ---
 
 Adobe Acrobat PDF has become a common format for government officials to distribute reports and even data. They like it because they can read it -- there is no need for anyone to understand a computer program like Excel. They also think that there is no way you can manipulate the data. It's become a common way to transfer documents across the bureaucracy and present them to the public.

@@ -3,6 +3,8 @@ title: Outside in reporting
 nav_exclude: true
 ---
 
+## Reporting from the outside in
+
 Many reporters approach a long-term project by researching "from the outside in". This means circling around a topic using publicly available information and people on the fringes of the topic before they approach a key source.
 
 In our case, your goal is to know exactly what you are looking for and what your rights are *before* you ever contact the agency.
@@ -27,13 +29,13 @@ Sources to check include:
 
 * IRE resource center, [story database](https://ire.org/resource-center/stories/) and [story packs](https://ire.org/resource-center/story-packs/). To find stories, be sure to log into IRE using your membership account, and search in the main page search box, not the sidebar:
 
-<img src="assets/images/ire-search-stories.gif" style="width:500px;">
+<img src=' {{ "assets/images/ire-search-stories.gif" | relative_url }}  style="width:500px;'>
 
 Most large non-profit news investigations of your topic will have an IRE entry. Once you find it and are logged in, you can download the contest entry that shows what sources they used and what problems they had reporting the story.
 
 * Do a targeted Nexis or Proquest search through the library, limiting your results to long stories that contain keywords that will limit your results:
 
-![](assets/images/nexisuni-news.png)
+![]({{"assets/images/nexisuni-news.png" | relative_url )
 
 * Do a *good* Google News and Google search. For example:
 
@@ -50,7 +52,7 @@ Look for:
 * Interest groups that cover your topic. You can use the [Encyclopedia of Associations](https://arizona-asu-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01ASU_ALMA511068794940003841&context=L&vid=01ASU&search_scope=Everything&isFrbr=true&tab=default_tab&lang=en_US) through the library, or look at Project VoteSmart's special interest group list for national organizations. Then look at their websites to see if this is a topic they care about.
 * People who have been involved in the issue. Retired agency employees - especially inspectors - are usually quite knowledgable and are interested in helping the public understand what they used to do. You might also look for lawyers who represent people hurt by the system you want to examine, or victims themselves.
 * Academic researchers who are invested in your topic. Use Google Scholar to find them. Be sure to read through any relevant articles they have published before you call them.
-* Back to IRE, this time for the Tip Sheets section. (search it the same way you do stories, using the box in the center, not )
+* Back to IRE, this time for the Tip Sheets section.
 
 In each of these sources, you should focus not on their findings or opinions, but on HOW they do their work, and what documents or data they rely on.
 
@@ -62,11 +64,7 @@ Federal records are often a subset of what's collected at the state level, which
 
 Some places to look:
 * Public records aggregators : [data.world](https://data.world), [enigma.io's public site](https://public.enigma.io), [muckrock.org](https://www.muckrock.com/). There may be data aggregators for your specific topic as well.
-* Open records portals in the federal government and some other states and cities.  Other places that have released data in the past include California (state), Oakland, New York State, New York City, Washington DC and Chicago. Think of these as the minimum you should be able to get in most areas.
-
-### Narrow your topic and your story ideas
-
-Now that you have a little background and can guess how difficult it will be to get records, you're ready to narrow your story ideas and your plan for acquiring the records. For our purposes, remember that the records cannot be readily available on the Internet, and should come from state or local government agencies in Arizona.
+* Open records portals in the federal government and some other states and cities.  Other places that have released data in the past include California (state), Oakland, New York State, New York City, Washington DC, Austin and Chicago. Think of these as the minimum you should be able to get in most areas.
 
 ## Burrowing in on your agencies
 

@@ -69,9 +69,8 @@ CSV and its cousins are the international language of data. They work with every
 
 Excel and Google sheets quite annoyingly like to think they know what's in your data, and don't let you specify the way the fields are read. This means that if it sees a number, it will treat it as a number even if it's a Zip Code. It will also turn fields that look like dates into dates, even when they shouldn't. This comes up frequently in two places. In anything related to schools that list the grades that school includes, you'll often see '9-12' turned into September 12th or September 2012. In some cities, addresses with dashes also get corrupted, turning 12-21 into December 12th. (This is very frequent in Queens, NY)
 These are very specific problems, but they are impossible to fix if you lose the original CSV file.
-
-TK - a video of how to do control Excel imports
-
+(This problem isn't limited to journalists -- one study showed that [about 80 percent of scientific studies](
+https://www.washingtonpost.com/news/wonk/wp/2016/08/26/an-alarming-number-of-scientific-papers-contain-excel-errors/?postshare=4161472211255740) are accompanied by spreadsheets that have turned gene names into dates.)
 
 
 You can usually just change the extension from .csv to .txt and then you'll be allowed to specify what you want the program to do.
@@ -86,6 +85,9 @@ In this case, programs won't know what to do. Some, like Python, try to be smart
          Donald ""You're fired!"" Trump
 
 This is a common problem when someone has exported the data into a text file from some proprietary format like Excel.
+
+Because CSV and other tabular text data can have these kinds of problems, you should ALWAYS check the number of rows that were imported against the original file -- a well documented dataset should tell you how  many rows to expect. If you always check the corners of a spreadsheet or the top and bottom of a file, you should be able to see problems. Pay attention to any error messages or unexpectedly empty areas of the imported file. Journalists have created [a utility called csvkit](https://csvkit.readthedocs.io/en/1.0.2/)  (for Macs or in Python) to make these kinds of tests on your original text file. As a last resort, open it in a text editor like Notepad or UEdit and check the number of lines.
+{.bg-blue-000}
 
 ### Fixed-width text
 

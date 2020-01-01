@@ -5,29 +5,43 @@ grand_parent: Excel
 nav_order: 5
 ---
 
-
-
 # Grouping with pivot tables
 {: .no_toc}
 
+Grouping is a fundamental concept in data analysis. It means *summarizing* individual items into categories, otherwise known as *aggregating*.
 
+Many reporters confuse grouping with "sorting" because  that's how we express the concept in plain language, as in "I want to sort my deck of cards into piles".
 
-"Group By" is a universal concept in data -- it means counting, summing or otherwise summarizing raw records into by group. If you have a list of people and the high school they attended, a *group by* operation will give you the number of people by high school.
+But in data analysis, sorting and and grouping are very different things. *Sorting* involves arranging a table's rows into some order based on the values in a column. In other languages, this is called *arranging* or *ordering*, much clearer concepts. *Grouping*, on the other hand, means to summarize -- count, sum, or average, for example -- by category.  Grouping means "make piles and compute statistics for each one."
 
-In Excel, grouping is done with *pivot tables*.
+Examples include:
 
-Here are two excellent tutorials on pivot tables. There's no need to re-create them here.
+* The number of crimes each month
+* The total value of campaign contributions in each state
+* The average height of men vs. women in your class
 
+Think of grouping as answering the questions, "How many?" and "How much?". They are particularly powerful when your question also has the words "the most" or the "the least" or "of each".  Some examples:
 
-* The Data Journalism Textbook project's [Group By tutorial for Excel](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md
-) by Matt Waite. It's not obvious how to get the data from that site, so [here is a copy of the .csv file]({{site.baseurl}}/assets/data/csv/mountainlions.csv). (If you don't know what a csv file is, go back to the [tutorial on file types]({{site.baseurl}}/general/05-file-formats.html))
+* Which Zip Code had *the most* crimes?
+* What month had *the least* total rainfall?
+* In playing cards, *how many of each suit* do I have in my hand?
 
-* [Mary Jo Webster's tutorial](http://mjwebster.github.io/DataJ/pivottables.html) is pretty comprehensive with lots of screen shots.
+While filters give you a count of the number of items that match a specific question, such as "I want to see all of the mountain lions in my county", pivot tables count and sum items in categories all at once.
 
-For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/12-excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)"
+## Tutorial
 
+Matt Waite has a [simple tutorial on pivot tables](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md).   \|  [Data file]({{site.baseurl}}/assets/data/xlexamples/mountainlions.xlsx).
 
-Finding good practice datasets can take some practice. Here are a few that offer good potential.  If you want to find your own, try to find data sets that contain individual records, not statistics.
+In that Waite calculates the number of mountain lion sightings in each Nebraska county:
 
-  * [Baseball salaries]({{site.baseurl}}/assets/data/xlexamples/MLB2011.xlsx)
-  * [Traffic stops]({{site.baseurl}}/assets/data/xlexamples/saintanthony_police.xlsx) obtained from St. Anthony, Minn., after a police officer fatally shot a black motorist named Philandro Castile.
+![mountain lions]({{site.baseurl}}/assets/images/07-xlpivot-mountainlions.png)
+
+## Detailed walkthrough
+
+For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/12-excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)" on this site.
+
+## Practice questions
+
+1. When might you use a group by / pivot table versus a filtering or sorting operation? What kinds of data lend themselves to each method?
+
+2. Think about how you might create flags or more general groups to do your analysis. In the filtering tutorial, there were "Yes/No" flags on whether or a not a patient had been given Narcan. That makes it easy to create a pivot table.

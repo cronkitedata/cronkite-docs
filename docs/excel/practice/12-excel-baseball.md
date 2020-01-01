@@ -14,14 +14,16 @@ categories: pivot tables
 
 A pivot table is a powerful way to summarize data in Excel. It's designed to answer questions that start with the words, "how many?" or "how much?".
 
-Before you start, [review the tutorial written by Matt Waite](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md)
-) of the University of Nebraska to get a basic understanding of summarizing data using pivot tables.  
+## Getting the basics first
 
-Here is the [dataset on Github](https://github.com/datajtext/DataJournalismTextbook/blob/master/Data/mountainlions.csv) . To download it, press the Option / Alt button on your keyboard while clicking on the "Raw" button at the top of the list. This will download it as a .txt file, which is just another extension for a text file.)
+Before you start, [review the tutorial written by Matt Waite](https://github.com/datajtext/DataJournalismTextbook/blob/master/Modules/GroupBy/group_by_with_excel.md) ([data in Excel form here]({{ "assets/data/xlexamples/mountainlions.xlsx" | relative_url }})
+) of the University of Nebraska to get a basic understanding of summarizing data using pivot tables.  There is a video in the middle of that tutorial that walks through the process.
 
 ## Files for this tutorial:
 
 **[Arizona Diamondback scores for 2018]({{site.baseurl}}/assets/data/xlexamples/diamondbacks.xlsx)**
+
+**[Arizona Diamondback stats for 2019]({{site.baseurl}}/assets/data/xlexamples/diamondbacks19.xlsx)**  . Consider using this one instead and try to follow along with your own version.
 
 This file has four pages:
 * _games_: The main data page showing the results the Arizona Diamondbacks' 2018 season, including the win-loss record, scores, attendance and other details. This data is formatted as a data table, and follows tidy data principles.
@@ -31,17 +33,6 @@ This file has four pages:
 
 ![main table]({{site.baseurl}}/assets/images/07-xlpivot-diamondbacks1.png)
 
-## Grouping
-
-Every data analysis program can do some form of "grouping". Many reporters confuse "sorting" with   "grouping" because that's how we express it in plain language. But in Excel, sorting and grouping are very different things. *Sorting* involves arranging a table's rows into some order based on the values in a column. In other languages, this is called *arranging* or *ordering*, much clearer concepts. *Grouping*, on the other hand, means to summarize -- count, sum, or average, for example -- using the value of a discrete categorical value. Examples include:
-
-* The number of crimes each month
-* The total value of campaign contributions in each state
-* The average height of men vs. women in your class
-
-The simple pivot table tutorial shown above displays the number of mountain lion sightings in each Nebraska county:
-
-![mountain lions]({{site.baseurl}}/assets/images/07-xlpivot-mountainlions.png)
 
 ### Counting baseball games
 
@@ -70,16 +61,11 @@ There are several ways to get a new pivot table:
 
 <img src="{{site.baseurl}}/assets/images/07-xlpivot-diamondbacks3.png" alt="where to put it" style="width:55%; float:left;padding: 10px 20px 20px 20px;">
 
-
-
 Excel will guess what data you want to summarize -- check to make sure it's right (in our case, Table 2), and then select where to put the table. You'll usually leave it on the default, which is to make a new page in your workbook.
-
 
 <p style="clear:both"></p>
 
 Now you can pour your data into the empty shell.
-
-
 
 ![empty pivot table]({{site.baseurl}}/assets/images/07-xlpivot-diamondbacks4.png)
 {: .m-3 }
@@ -102,7 +88,7 @@ You can compute more than one number. For example, this table shows you that alm
 Automatic percentages are computed using the same box, but in a slightly different form. Drag the number field into the Values area again, but this time click on "Show Data As...", and, in this case, choose "Percent of Column Total":
 
 ![% of column]({{site.baseurl}}/assets/images/07-xlpivot2.gif)
-{: .m-3})
+{: .m-3}
 
 
 ## More complicated pivot tables
@@ -117,11 +103,15 @@ You aren't stuck with using only one field -- you can have as many as  you can f
 
 You probably ran into crosstabs when you studied statistics, or in a political science course if you analyzed poll results. The idea of a crosstab is to compare two (or more) variables in two dimensions: columns and rows.
 
-At the simplest level, it's just a count of how many items fall into each category. In this case, let's look at how many wins and losses the team had playing at home and away. Just drag **at** field into the Column box to get a 2-dimensional table, grouped by both home/away and win/lose.
+At the simplest level, it's just a count of how many items fall into each category. In this case, let's look at how many wins and losses the team had playing at home and away.
+
+ Just drag **at** field into the Column box to get a 2-dimensional table, grouped by both home/away and win/lose.
 
 ![col row]({{site.baseurl}}/assets/images/07-xlpivot-diamondbacks5.png)
 
-It happens that the Diamondbacks won just over half of the games they played, which were split equally between games played in Phoenix and games played elsewhere. These numbers look like the team does a little better on the road, but it's hard to be sure.
+Baseball records make for an easy example because there will always be an equal number of home and away games -- there are 81 games in both categories.
+
+It happens that the Diamondbacks won just over half of the games they played. These numbers look like the team does a little better on the road, but it's hard to know exactly how much better based on raw numbers.
 
 That's where percentages - or rates - come into play. We'd like to be able to say whether the team is more or less likely to win at home or on the road, and by how much.
 
@@ -139,7 +129,13 @@ At first, just use Philip Meyer's rule of thumb:
 <div style="margin: 20px 20px 20px 20px;background-color:lightgrey;"> Put the category that happens first in time (the <i>independent variable</i>) in the column area, the category that comes later in the row area, and compute the column percentages.
 </div>
 
-In our example, it will look like this when you're done:
+Here's how it works:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3EDcv-8fRM8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+Here's how it looks when you're done:
 
 ![outcomes]({{site.baseurl}}/assets/images/07-xlpivot-diamondbacks6.png)
 

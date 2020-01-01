@@ -35,7 +35,7 @@ Most large non-profit news investigations of your topic will have an IRE entry. 
 
 * Do a targeted Nexis or Proquest search through the library, limiting your results to long stories that contain keywords that will limit your results:
 
-![]({{"assets/images/nexisuni-news.png" | relative_url )
+![newsuni image]({{"assets/images/nexisuni-news.png"}} | relative_url )
 
 * Do a *good* Google News and Google search. For example:
 

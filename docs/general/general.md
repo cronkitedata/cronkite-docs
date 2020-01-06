@@ -7,7 +7,7 @@ permalink: /general
 
 These are tutorials and resources that don't depend on any particular method or technology. Some are just links to resources, others are longer tipsheets or tutorials.
 
-As you go through them, remember that as journalists we'll often be using these tools differently than true experts. We're seeking stories, not studies. Borrowing from Paul Meyer's "Data Journalism Heist", we're often looking for news by seeking:
+As you go through them, remember that as journalists we'll often be using these tools differently than true experts. We're seeking stories, not studies. Borrowing from Paul Bradshaw's "[Data Journalism Heist](https://leanpub.com/DataJournalismHeist)", we're often looking for news by seeking:
 
 * Comparison of what powerful people and institutions claim vs. what they do
 * *Unexpected* highs and lows (of change, or of some other characteristic)

@@ -41,9 +41,7 @@ See if you can find some questions to ask on your own of this data. Is there som
 
 ### Data trap - negative numbers
 
-It's very hard to do percents of whole when there is a mix of positive and negative numbers. One way to deal with this is to figure out what would have happened if it had stayed the same.
-
-For example, Cochise County's total population fell over the five year period, mainly because people moved away. It also has a high death rate. Try to think of ways to compute ratios or other figures that will let you write a coherent sentence. In this case, you may want to have a ratio of births to deaths, or a percent change based on a single column.
+It's very hard to do percents of whole when there is a mix of positive and negative numbers. In the Fortune 500, for example, they don't even try to compare one year's loss with another year's profit. The easiest thing to do is write around it -- by that, I mean focus on the thing that shrank while mentioning it offset other gains.
 
 ### Write a lede for a day story
 

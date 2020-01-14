@@ -1,7 +1,7 @@
 ---
 title: Intro to coding
 parent: General topics
-nav_order: 6
+nav_order: 7
 ---
 
 <!-- Add link to the drag queen coding class. See if there are other good first-day programming aides I should add.-->

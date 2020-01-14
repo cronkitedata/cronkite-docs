@@ -1,7 +1,7 @@
 ---
 parent: General topics
 title: "Newsroom math"
-nav_order: 3
+nav_order: 4
 ---
 
 # Numbers in the newsroom

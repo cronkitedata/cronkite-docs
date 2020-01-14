@@ -9,6 +9,8 @@ nav_order: 7
 # Programming basics
 {: .no_toc}
 
+(NOTE: A better version of this doc is included in the [R Study Guide](https://cronkitedata.github.io/rstudyguide/A02-programming.html), in the first appendix.)
+
 1. TOC
 {:toc}
 

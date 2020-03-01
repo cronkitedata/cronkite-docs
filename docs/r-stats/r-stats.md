@@ -5,6 +5,9 @@ nav_order: 4
 permalink: /r-stats
 ---
 
+Almost everything R related has been moved to the [R Study Guide](https://cronkitedata.github.io/rstudyguide)
+
+
 ## R resources
 
 Here are several other sources for you to review if you want to try something different on your own:
@@ -18,27 +21,6 @@ Here are several other sources for you to review if you want to try something di
 
 I don't know how to put the rendered HTML into this format, so here's a link to the tutorials and R Markdown files that we've used in class:
 
-
-### Lesson 1: Getting around R & intro to data frames
-
-* [Getting started with R Markdown and R](01-1-notebooks.html)
-
-* [Introduction to data frames](01-2-dataframes.html)
-
-### Lesson 2: Select and filter
-* Filtering murder data (based on material from Andrew Ba Tran's course listed above): [Document](02-murders-filter.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/02-murders-filter.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murder_data.Rda)
-
-
-### Lesson 3: Group by and join
-
-* Green River killer: [Document](03-green-river.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-green-river.Rmd?raw=true) / [Data file]({{site.baseurl}}/assets/data/r-data/murders.Rda)  . When you're done with this one, be sure to save your merged data frame using this command, either in an R chunk or in the console:
-
-    save(murders_with_counties, file="murders_with_counties.Rda")
-
-
-* More grouping and reorganizing: [Document](03-group-by.html) / [RMarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/03-groupby-merge.Rmd?raw=true) / Additiona [data file]({{site.baseurl}}/assets/data/r-data/murders_with_counties.Rda)
-
-Practice: A complete video tutorial using the built-in dataset for flight times from the Data School: "[Hands on dplyr tutorial for faster data manipulation in R](https://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)"
 
 ### Lesson 4: Intro to visualization
 A very basic introduction to visualization using ggplot2 in R, with built-in Gapminder data: [final document](04-ggplot-intro.html) / [rmarkdown](https://github.com/cronkitedata/cronkite-docs/blob/master/rmd-files/04-ggplot-intro.Rmd)

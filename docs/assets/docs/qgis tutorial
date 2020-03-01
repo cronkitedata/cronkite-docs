@@ -1,0 +1,16 @@
+QGIS tutorial
+
+Using qgis long-term release as of 2/22/20
+
+I. Getting around the screen.
+II. Adding an existing map file (shp, kml, etc.)
+  a) How to know what the projection is?
+  b) adding open street map to the background layer?
+  c) Converting a polygon to point using the centroid?
+  d) Joining with a data file.
+  e) Spatial join from polygon to point  - the easiest. Applies characteristics from one to the other so you can aggregate them. Example: You have a list of cities, you want to aggregate them by county. A common thing to do is to have addresses, and you want to aggregate them by Census Tract. You'll often use census shapefiles in your work.
+  f) Spatial join from point to polygon - you want to aggregate points by counting or summing their characteristics into the polygon they fall.
+
+
+  Looks like you can use any street layer from the MMQGIS plugin. I don't know if they'll be able to apply the plugin in class the labs. We'll see.
+  

@@ -1,15 +1,20 @@
 <html>
 <head>
   <title>This is a fake page to look at in inspector</title>
+  <!-- use Bootstrap styles -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="screen">
+  <!-- use JQuery to create the table -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  </script>
+  <!-- read the simple.json JSON file, loop through it, and fill in the table body -->
   <script>
     $(function() {
      var presidents = [];
      $.getJSON('simple.json', function(json) {
          $.each(json.presidents, function(i, f) {
-            var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-             "<td>" + f.lastName + "</td>" + "</tr>"
+            var tblRow = "<tr>" + 
+                           "<td>" + f.firstName + "</td>" + 
+                           "<td>" + f.lastName + "</td>" + 
+                         "</tr>"
              $(tblRow).appendTo("#president_data tbody");
        });
      });

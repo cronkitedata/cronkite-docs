@@ -80,8 +80,6 @@ There are also more difficult ways to find data:
 * Responses to a survey that you conduct yourself.
 * Your own testing on issues such as water quality or soil contamination.
 
-For now, we'll concentrate on how to find data that already exists in the public sphere and how to evaluate whether you can use it. Later on, we'll work on how to identify data and documents you might want to acquire through public records requests.
-
 When you start on a project, you'll usually rely on experts and advocates to lead you to a lot of the possible data sources. But you can also use these strategies to troll for interesting datasets that might make for good stories or practice.
 
 Listen to any caveats and warnings. You may decide that they're not important, but you don't want to be blindsided by them in the end. And be sure to ask what they would do if they were you -- often, people who have expertise in data have story or project ideas that they can't get funded or approved, and would be happy for someone else to do them.
@@ -139,31 +137,16 @@ Be sure to look at the original source for any data you find there. You wouldn't
 
 Be careful of most of these. They're often old, undocumented and poorly vetted. But they will give you a sense of what you might be able to get from a more reliable source, or give you ideas for your own data collection effort.
 
-----
 
-**[enigma.com](https://public.enigma.com)**  claims to have the "world's broadest collection of public data" in a single place.  For example, looking under United States -> Arizona, you'll see a database of Arizona liquor licenses, which was scraped from the state's website two years ago.
-
-
- ![enigma image]({{site.baseurl}}/assets/images/03-sourcing-enigma-az.png)
-
-
- This is one of the rare curated sites. Enigma goes to great effort to document where and how they obtained their data, and to provide as much documentation as they can.  They are also eager to work with journalists and will help however they can.
-
-----
-
-**[data.world](https://data.world)** wants to be the Facebook or Instagram of data. It has both private and public accounts, and users upload data they want to share. This means it's as varied as the people who are in it.
+*[data.world](https://data.world)** wants to be the Facebook or Instagram of data. It has both private and public accounts, and users upload data they want to share. This means it's as varied as the people who are in it.
 
 If your newsroom is an AP member, you might have access to its data.world feed, which contains its curated and documented data that local newsrooms can use for their own stories. Some reporters also use data.world to store their public records. Some government agencies are posting their data directly to data.world. But in other cases, they're undocumented hobbyists.
 
 Vet these the same way you would Google results.
 
-----
+*Journalists' sites**  You can often find individual journalists or journalism organizations in various sharing sites, including Github (which doesn't show up in default Google searches), data.world and other versioning. Look through their sites to see what they have collected -- it's there to share.  Fivethirtyeight,  [ProPublica](https://www.propublica.org/datastore/) and the [Los Angeles Times](https://github.com/datadesk) have particularly active data archives.
 
- **Journalists' sites**  You can often find individual journalists or journalism organizations in various sharing sites, including Github (which doesn't show up in default Google searches), data.world and other versioning. Look through their sites to see what they have collected -- it's there to share.  Fivethirtyeight,  [ProPublica](https://www.propublica.org/datastore/) and the [Los Angeles Times](https://github.com/datadesk) have particularly active data archives.
-
-----
-
-**[Google data search](https://toolbox.google.com/datasetsearch)** is, well, the Google of data. In general, data search has limited sources and is more and more frequently logging data sets that are posted by state and local government sources.
+*[Google data search](https://toolbox.google.com/datasetsearch)** is, well, the Google of data. In general, data search has limited sources and is more and more frequently logging data sets that are posted by state and local government sources.
 
 It makes no attempt to curate the search, though, so be cautious when you find something.
 
@@ -190,7 +173,3 @@ Look for:
 * The timeliness of the data. Anything more than two or three years old will be effectively useless for a news article. If it's old, you should have a plan for how it will be updated.
 
 * Data definitions, data dictionaries or record layouts. These are maps to the underlying data, and those definitions can prove difficult to understand.
-
-## Data hunting exercise
-
-Try selecting a topic and log all of the data sources you can easily find on the subject. Be sure to log the link, any documentation you can find, and any concerns you have about the data. Finish with a proposal to use one of the sources you've found in a story.

@@ -3,13 +3,30 @@ title: "Lecture notes - building your own database"
 nav_exclude: true
 ---
 
+## Examples of building your own database
+
+Here's a [slide show](https://slides.com/sarahcnyt/finding-the-elusive-data) that I created a long time ago with classic examples of building your own database, along with a few that I've done in the past.
+
+More tip sheets are (some require IRE sign-in)
+
+* "[Rolling your own data: Nuisance Abatements](https://ire.org/resource-center/tipsheets/4840/)", tipsheet from Sarah Ryley.
+* "[Build your own database](https://ire.org/resource-center/tipsheets/3060/)", John Maines, tipsheet from 2008
+* "[The Power of Building Your Own Database](https://ire.org/resource-center/tipsheets/1598/)," Sarah Cohen, David Heath and Anthony DeBarros.
+* "[How We Built a Database from Thousands of Police Reports](https://source.opennews.org/articles/how-we-built-database-thousands-police-reports/)", Mary Jo Webster, Source, Aug. 23, 2018.
+
+Two examples in class:
+
+* Bubba Harris internal affairs report,
+* Obama first 100 days. (The viz doesn't work anymore, but I can show the spreadsheet.)
+
+
 ## What to consider when building a database
 
 ### What do you want to do with it?
 
 There are lots of reasons to build a database for yourself as part of the reporting process. Examples include logging the events of a long-running story or court case so that you can instantly create a chronology that can help you see and tell the story. Another is so that you can count incidents, such as deaths, as they happen. A third is that you may want to publish the results of a series of public records requests, including the details.
 
-Make sure you decide before you start how much of your work you plan to publish. It's a lot harder to make sure everything is correct when you publish than if you're just looking to help your reporting. For example, this spreadsheet was used to work on stories about Obama's first 100 days in 2009. We never planned to publish it. You might notice right away that we've spelled Michelle Obama's name incorrectly a few times! Instead, it was used to count items in a graphic[.](https://www.dropbox.com/s/dhdawoyoljclfqe/newfirst100.html?dl=0)
+Make sure you decide before you start how much of your work you plan to publish. It's a lot harder to make sure everything is correct when you publish than if you're just looking to help your reporting. For example, this spreadsheet was used to work on stories about Obama's first 100 days in 2009. We never planned to publish it. You might notice right away that we've spelled Michelle Obama's name incorrectly a few times! Instead, it was used to count items in a graphic.
 
 There is a big difference between building a database that you plan to publish in its entirety and one that you'll use for limited purposes. Before you begin, think through what you would want to do with the database.
 

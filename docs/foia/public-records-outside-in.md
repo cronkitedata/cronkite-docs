@@ -45,7 +45,7 @@ Sources to check include:
 
 * Do a *good* Google News and Google search. For example:
 
-      news investigation allintitle: wildfires
+      intitle:wildfire intext:(wildfire AND investigation AND analysis)
 
 In each of these sources, pay attention not only to what they've found, but to the experts they quote, the organizations they mention and the documents or data they source in graphics and in the stories.
 
@@ -69,7 +69,9 @@ Look on websites of other cities, states and the federal government to find what
 Federal records are often a subset of what's collected at the state level, which is in turn a subset of what's collected by counties or cities. As an example, water quality measures are taken one by one by individual water utilities sampling specific households. Those records are often on paper. They are typed into a database, then usually forwarded to a state agency, which standardizes the format at sends them along to the federal EPA. At every stage, some details are lost.
 
 Some places to look:
-* Public records aggregators : [data.world](https://data.world), [enigma.io's public site](https://public.enigma.io), [muckrock.org](https://www.muckrock.com/). There may be data aggregators for your specific topic as well.
+
+* Public records aggregators : [data.world](https://data.world), [muckrock.org](https://www.muckrock.com/). There may be data aggregators for your specific topic as well.
+
 * Open records portals in the federal government and some other states and cities.  Other places that have released data in the past include California (state), Oakland, New York State, New York City, Washington DC and Chicago. Think of these as the minimum you should be able to get in most areas.
 
 ### Narrow your topic and your story ideas

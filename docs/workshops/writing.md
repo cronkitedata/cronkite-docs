@@ -103,4 +103,34 @@ Examples:
 * Then, a process server is supposed to let you know you've been served. This is another chapter, about how they lie on the forms, including a place where a server claimed he'd gone to 22 homes in 5 minutes, which would have been across three buildings and more than 20 stories.
 * The lawyers show up for the plaintiffs, but the defendants are helpless. The third chapter is on the chaos of the court.
 * etc.
-*
+
+
+## The microcosm
+
+Tell the entire story through a microcosm. This is often done by, for example, going through the history of a block or a building to show how something came about. Another way is to put a compelling example in a chronology.  But it can also be done using any great example. I once did a story (a very long time ago) about how candidate Obama had turned one-time donors into monthly or weekly donors, eventually eating up a good chunk of money from people who had very little. We told it using the microcosm of all student donors from one university, including quotes from people who didn't even realize they'd been giving so much.
+
+## The firehose
+
+I don't know what else this is called, but it's a way to do a story in which no single example is compelling, no microcosm or place works to tell the story, but it's useful to have an accumulation of examples that show how widespread (and usually inexplicable) the problem is. This often comes with money stories -- esp. the use of government money. Two examples of this from my time at the Post:
+
+<blockquote><p>In the aftermath of the Sept. 11, 2001, attacks on New York and Washington, lawmakers doled out the money quickly, with few restrictions and vague guidelines. Left to interpret needs on their own -- and with little regional coordination -- cash-strapped local and state officials plugged budget holes, spent millions on pet projects and steered contracts to political allies.</p>
+<p>The District funded a politically popular jobs program, outfitted police with leather jackets and assessed environmental problems on property prime for redevelopment. In Maryland, the money is buying Prince George's County prosecutors an office security system. In Virginia, a small volunteer fire department spent $350,000 on a custom-made fire boat. The Metropolitan Washington Council of Governments used some of the money for janitorial services.</p>
+
+-- "[Anti-terrorism funds buy a wide array of pet projects](https://www.washingtonpost.com/archive/politics/2003/11/23/anti-terrorism-funds-buy-wide-array-of-pet-projects/35c61084-9ea6-42bc-a666-f1e6390b2a6d/)," Jo Becker, Sarah Cohen and Spencer Hsu, The Washington Post, November 2003.
+</blockquote>
+
+Parts of the story had examples of questionable spending and a little bit of favoratism, but none of it was compelling enough to drive an entire story.
+
+Another example:
+
+<blockquote>
+In the five-year struggle to finish the war in Iraq, military leaders and their troops have said a particular weapon is among the most effective in their arsenal:
+
+American cash.
+
+Soldiers walk the streets carrying thousands of dollars to pay Iraqis for doorways battered in American raids and limbs lost during firefights. Sheiks appeal to commanders to use larger pools of money locked away in Humvees and safes at military bases for new schools, health clinics, water treatment plants and generators, knowing that the military can bypass Iraqi and U.S. bureaucratic hurdles.
+
+Army documents show that $48,000 was spent on 6,000 pairs of children's shoes; an additional $50,000 bought 625 sheep for people described in records as "starving poor locals" in a Baghdad neighborhood. Soldiers ordered $100,000 worth of dolls and $500,000 in action figures made to look like Iraqi Security Forces. About $14,250 was spent on "I Love Iraq" T-shirts. More than $75,000 sent a delegation to a women's and civil rights conference in Cairo. And $12,800 was spent for two pools to cool bears and tigers at Zawra Park Zoo in Baghdad.
+</blockquote>
+
+-- "[Money as a Weapon](https://cronkitedata.github.io/cronkite-docs/assets/docs/cerp.pdf)" Dana Hedgpeth and Sarah Cohen, The Washington Post, August 2008. 

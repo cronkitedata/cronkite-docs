@@ -13,9 +13,6 @@ grand_parent: Excel
 
 
 
-Data files used in this tutorial:
-* Salaries for [city workers in Phoenix]({{site.baseurl}}/assets/data/xlexamples/phoenix_salaries.xlsx) (source: [Phoenix Open Data portal](https://www.phoenixopendata.com/dataset/staff-salaries))
-* [Opioid-related EMS calls]({{site.baseurl}}/assets/data/xlexamples/opioidemscalls.xlsx) in Tempe, Az. (source and documentation: [Tempe Open Data Portal](https://data.tempe.gov/dataset/opiod-ems-calls))
 
 
 
@@ -48,7 +45,13 @@ Sorting and filtering can also:
 * Let you answer quick "how many?" questions, with a count of the rows that match your criteria. (In the next lesson, you'll see that pivot tables, or group-by queries, are much more powerful for this in most cases.)
 * Together, sorting and filtering can narrow your dataset to just the items you want to examine more closely in your reporting.
 
+## Tutorial
 
+### Data file used in this tutorial:
+
+[Opioid-related EMS calls]({{site.baseurl}}/assets/data/xlexamples/opioidemscalls.xlsx) in Tempe, Az.  This dataset was downloaded from the Tempe Open Data site in 2018. Beginning in 2019, it stopped publishing some of the details in this example, but it still has the basic information on its [open data portal](https://data.tempe.gov/datasets/e16768f13d084bb688120e6ddfbaa113). It contains a list of every 911 call that emergency workers thought were associated with opioid overdoses. It contains information on the date, time, demographics of the victim, what was wrong and what they were treated with in the ambulance. Some repetitive columns were removed.
+
+It's a great spreadsheet for practice on dates and on text columns, but doesn't really have any numbers to work with.
 
 ### Create a data table from your spreadsheet
 
@@ -61,7 +64,7 @@ In Excel, you may want to create a "data table" from your spreadsheet to help ma
 
 It also looks better.
 
-Select your entire table, using Shift-CTL-* or by selecting the corners, then choose your table style:
+Select your entire table, using Shift-CTL-* or by selecting the corners. **Be sure NOT to select-all using Cmd-A or Ctl-A. You'll select all 1,048,576 rows!** Once you're sure you have it selected properly, choose "Format as Table" from the main toolbar, then choose your preferred look.
 
 ![create table]({{site.baseurl}}/assets/images/06-filtersort-createtable.gif)
 
@@ -73,19 +76,21 @@ One trap of the data table is that usually, Excel assumes you want to use the na
 
 Sorting means rearranging the rows of a data table into a different order. Some reporters take a conceptual shortcut and call this "sorting columns". That thinking will only get you into trouble -- it lets you forget that you want to keep all of the rows in tact while changing the order in which you see them. In fact, in other languages it's called "order by" or "arrange" by one or more columns --  a much clearer way to think of it.
 
-In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from Largest to Smallest gives you the highest-paid employees in the Phoenix city government.
+In Excel, look for the sort options under the Data tab at the top of your screen. In this case, sorting from oldest to newest gives you a list of the calls in chronological order, including the time of day.
 
-![sort dialog]({{site.baseurl}}/assets/images/06-filtersort-sortdialog.png)
+![sort dialog]({{site.baseurl}}/assets/images/06-filtersort-bydate.png)
 
 Gives you this:
 
-![sort result]({{site.baseurl}}/assets/images/06-filtersort-bysalary.png)
+![sort result]({{site.baseurl}}/assets/images/06-filtersort-bydate-result.png)
 
 #### Adding fields to the sort
 
 You can sort by more than one column to see just the information you want at the top. When you add conditions, Excel sorts by the first column, putting the rows with lowest (or highest) values at the top. When those are the same, it will sort *within* that group by the second item you mention. And so on.
 
 So let's say I want to see all of the "probable" opioid-related emergency calls in Tempe that were treated with Narcan, ordered chronologically. We're in luck, because "Yes" comes at the end of the alphabet, letting us sort "From Z to A" to get them on top.
+
+(Back to the opioids data)
 
 ![sort first level]({{site.baseurl}}/assets/images/06-filtersort-addlevel.png)
 
@@ -172,8 +177,8 @@ This is because Excel is using the name of a column, not its cell position, to c
 
 You can revert to the a plain old spreadsheet by selecting any cell within your table, then looking for the "Table" tab at the top of your screen. Choose the option that says "Convert to Range".
 
-### Show me a video
+## Video of sorting and filtering with salaries
 
-This video goes through many of the details of sorting and filtering:
+This video goes through many of the details of sorting and filtering. [Follow along using this spreadsheet of Phoenix city salaries]({{site.baseurl}}/assets/data/xlexamples/phoenix_salaries.xlsx). It's from a different year, but the idea is just the same.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QByd8L7owsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 2em;"></iframe>

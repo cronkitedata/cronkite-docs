@@ -26,38 +26,7 @@ Think of pivot tables and grouping  as answering the questions, "How many?" and 
 
 While [filters](xl-filtersort) give you a count of the number of items that match a specific question, such as "I want to see all of the homicides in my city", pivot tables can show you whether your city has more homicides than others in the dataset.
 
-
-### The Skittles challenge
-
-To understand how pivot tables work, go out and buy a package of Skittles. Pour them onto a table and separate them into piles based on color. Reds go in one corner, blues (or purples) in another. Write down each color on a piece of paper. Those are your groups.
-
-Now count how many Skittles are in each pile and write down that number next to the color. *Now* you have a summary of your package of Skittles.
-
-![Skittles]({{site.baseurl}}/assets/images/07-xlpivot-skittles.jpg)
-
-If you bought a small bag of Skittles, you should have had about 60 Skittles. In a spreadsheet, a list of them might look like this -- the only thing you have in your list is the color of each individual Skittle.
-
-          1. Red
-          2. Blue
-          3. Red
-          4. Yellow ....
-          58. Blue
-          59. Green
-          60. Orange
-
-When you finished grouping and counting, though, you might have a summary that looks like this - the list has been collapsed into one row for each color, with the number of Skittles of each color shown next to it, answering the questions "how many?", and "which color has the most Skittles?":
-
-        Red     18
-        Orange   8
-        Blue    15
-        Yellow  10
-        Green    9
-
-        Total   60
-
-
-This brings up an important element of summarizing and grouping: If you misspelled some of the colors in the original list of 60, or if you sometimes called the grape Skittles "purple" instead of "blue", you would have extra rows in your result. You'd have to clean up your list, or further collapse your categories, to get the true counts.
-
+These can be tricky, but if you master them, you'll be able to answer most of the reporting questions that come up in a newsroom, and will have a new way to start your reporting with better questions.
 
 ### Confusing grouping with sorting or arranging
 
@@ -65,23 +34,55 @@ Many reporters confuse this summarization with "sorting". One reason is that thi
 
 But in data analysis, sorting and and grouping are very different things. *Sorting* involves arranging a table's rows into some order based on the values in a column. In other languages, this is called *arranging* or *ordering*, much clearer concepts. *Grouping*, which is what pivot tables do, is a path to summarizing using count, sum, or average, for example by category.  It means "make piles and compute statistics for each one."
 
+### When to use filter vs. pivot tables
+
+Sometimes, you can get the same information from a filter as from a pivot table, but they really are different animals.
+
+A filter is used to *display* your selected items as a list. You'll get to see all of the detail and every column. As a convenience, Excel shows you how many items are in that filtered list. That's great when you want to just look at them, or get more information about them. For instance, if you had a list of crimes by ZIP code, you might just want to see the list in your neighborhood -- where, exactly, were they? When did they happen? Was it at night or the morning? What crimes happened on which blocks?
+
+A pivot table is used when you just want to see summary information -- does my ZIP code have more crime than others? Are robberies more common than car theft in my Zip code, and how does that compare to others?
+
+The other time filters will likely be useful is when you have long text fields that aren't standardized into some kind of category. For example, a description of each crime would be unique, so there's really nothing to summarize.
+
+In practice, you'll go back and forth between summary and detail. They're both important, just different.
+
 ## Tutorial
 
-#### Data file
+### Data file
 
 Once again, we'll use the [data file from the opioid EMS calls in Tempe]({{site.baseurl}}/assets/data/xlexamples/opioidemscalls_v2.xlsx) to do some summarizing.  This one is edited from the one we used in filtering to add some categories ripe for summarization. Look on the "diary" tab if you're interested in how I created the "weekend" flag.
 
+### Setting up the pivot table
+
+Start with your cursor somewhere in your data table, and choose *Insert*, then *Pivot table*
+
+![insert menu]({{site.baseurl}}/assets/images/07-xlpivot-insert.png)
+
+If all goes well, it will look like your data disappeared. It didn't -- you're just on a new page. Here's what it looks like:
+
+![pivot menu]({{site.baseurl}}/assets/images/07-xlpivot-pivotscreen.png)
+
+
 ### Counting , or "how many"?
 
-Most of the time, you'll be working with questions of "how many?". Reporters rarely deal with lists that have a lot of numbers in them -- those are often financial lists, like bank records, or medical or testing records. Without any numbers to work with, we'll almost always want to count. Here's an example of how to count the number of ASU students in the EMS data:
+Most of the time, you'll be working with questions of "how many?". Reporters rarely deal with lists that have a lot of numbers in them -- those are often financial lists, like bank records, or medical or testing records. Without any numbers to work with, we'll almost always want to count. Here's an example of how to count the number of opioid EMS calls that involved homeless people:
+
+Here's how you set it up to count the number of calls involving homeless people, hiding those that weren't identified either way:
+
+![pivot gif]({{site.baseurl}}/assets/images/07-xlpivot-homeless.gif)
 
 
-Try working with some other variables -- how many homeless people? How many on weekends? How many had Narcan? All you have to do is change the column name in the "Row" area, and you can count anything!
+Keep your nouns in mind. This is a list of *calls* , not a list  of *people*. We don't know if each call is a different person. That's why I change the headings - to remind myself of what noun I'm working with.
+
+Try working with some other variables -- how many involving ASU students? How many on weekends? And how many were given Narcan, the antidote to an opioid overdose.  All you have to do is change the column name in the "Row" area, and you can count anything!
 
 
 ### Adding complexity: Percents of totals
 
-It's hard to compare raw numbers unless they're really small. Instead, we'd like to know what *percent* of all calls were from ASU students or what *percent* had Narcan. To do that, you'll repeat the computation in the "Value" area, but change the way it's displayed from the raw number to "Percent of column".
+It's hard to compare raw numbers unless they're really small. Instead, we'd like to know what *percent* of all calls were of homeless people, and what *percent* of all calls involve homeless people.  To do that, you'll repeat the computation in the "Value" area, but change the way it's displayed from the raw number to "Percent of column":
+
+![pivot percent gif]({{site.baseurl}}/assets/images/07-xlpivot-percentages.gif)
+
 
 ### Answering interesting questions
 
@@ -90,40 +91,16 @@ Most questions that we have around summaries aren't as simple as "how many" or "
 Try to think of some interesting questions on your own, but they often come down to disparate treatment. For instance, if you think that getting Narcan is something of a privilege -- something you get because someone is trying to save your life -- you might wonder if homeless people get it as often as those who were not homeless. Here's how you'd answer that question:
 
 
-Once you compute this, you might want to control for some things that might not be the same across the populations. For example, Narcan only works on opioid overdoses. So we can pull the opioid column into the "Filter" area, and limit the analysis only to those calls where opioids are suspected. Or we can limit it further by looking only at overdoses.
+![crosstab]({{site.baseurl}}/assets/images/07-xlpivot-xtab.png)
 
+Technically, you'd read this to say, "About one quarter of the calls involving homeless people were given Narcan compared with more than half of the calls involving non-homeless people."  You could also say "Narcan was administered less than half as often on patients who were suspected to be homeless as those who were not."
 
+Once you compute this, you might want to control for some things that might not be the same across the populations. For example, Narcan only works on opioid overdoses.  Try adding the "probable_opioid" column into the filter area and limit the analysis only to those that are quite clearly opioid calls.
 
 It only works well in examples like this, where there are enough instances in every corner of the box that you care about. But it's worth trying.
 
-Of course, you can't just go into publication with these results. These are a starting point, not the end, of your reporting. You'd need to begin reporting with EMS workers, homeless advocates, experts in overdoses, and others to find out if there are good reasons for this pattern. You'd also want to probe to find out any reason it might be misleading -- it might, in fact, be something caused by a third factor that isn't in our dataset. Be on the lookout for all the reasons your initial results might be wrong, but this gives you a place to start asking questions -- the key to good reporting.
+Of course, you can't just go into publication with these results. This marks the beginning of your reporting, not the end. You'd want to talk with EMS workers, homeless advocates, experts in overdoses, and others to find out if there are good reasons for this pattern. You'd also want to probe to find out any reason it might be misleading -- it might, in fact, be something caused by a third factor that isn't in our dataset. Be on the lookout for all the reasons your initial results might be wrong, but this gives you a place to start asking questions -- the key to good reporting.
 
+## Another walkthrough with baseball results
 
-
-
-
-
- As a simple start, let's see how many of the opioid calls were from ASU students:
-
-I. Go over the relationship of the list to the pivot table.
-II. Do a simple one-variable count. Pay attention to the GROUP vs. the SUMMARIZE. Compare to skittles.
-
-Things that are annoying:
-- Labeling. You can type in whatever you want, but if you change the table, the labels don't change with it! It's easier to re-label the values sometimes.
-- Dirty data -- in this case we have N/A, Unknown, Yes, and No. What's the difference? We wish there would only be one row for "unknown" or would want to just get rid of them.
--
-
-
-
-
-
-
-## Detailed walkthrough
-
-For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/12-excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)" on this site.
-
-## Practice questions
-
-1. When might you use a group by / pivot table versus a filtering or sorting operation? What kinds of data lend themselves to each method?
-
-2. Think about how you might create flags or more general groups to do your analysis. In the filtering tutorial, there were "Yes/No" flags on whether or a not a patient had been given Narcan. That makes it easy to create a pivot table.
+For a detailed walkthrough on a season of baseball scores, see the "[Arizona Diamondback scores]({{site.baseurl}}/excel/practice/12-excel-baseball)" tutorial under "[Excel practice]({{site.baseurl}}/excel/xlpractice)".

@@ -1,7 +1,7 @@
 ---
 title: Replication and the data diary
 parent: General topics
-nav_order: 5
+nav_order: 6
 ---
 
 <!-- Add Irena's documentation for the wildfire story. -->

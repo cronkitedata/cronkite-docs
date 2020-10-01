@@ -14,10 +14,6 @@ These readings / videos / podcasts are techniques and examples of data reporting
 {: toc}
 
 
-Adding from other courses, temporarily here:
-
-* Trader Joe's susan mcgregor [video](https://www.youtube.com/watch?v=fRYdCwuacyg)
-["Eight Simple Ways to Let the Spreadsheet do the Math"](https://gijn.org/2019/05/21/eight-simple-ways-to-let-the-spreadsheet-do-the-math-so-you-can-focus-on-the-story/), on the GIJN website
 
 ## Textbooks / handbooks
 

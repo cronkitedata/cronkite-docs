@@ -1,5 +1,5 @@
 ---
-title: "Data sources and sourcing"
+title: "Finding data for your story"
 nav_order: 3
 parent: General topics
 ---
@@ -85,8 +85,7 @@ When you start on a project, you'll usually rely on experts and advocates to lea
 Listen to any caveats and warnings. You may decide that they're not important, but you don't want to be blindsided by them in the end. And be sure to ask what they would do if they were you -- often, people who have expertise in data have story or project ideas that they can't get funded or approved, and would be happy for someone else to do them.
 
 When you search using Google, try to use the advanced commands to more precisely hit your target.
-[This tipsheet](https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?usp=sharing) goes through all of the Google advanced search operators. The [Verification Handbook for Investigative Reporting](https://verificationhandbook.com/book2/chapter2.php) has a chapter from Henk Van Ess on advanced searching. Some of the sites he mentions no longer exist, but his strategy is sound.
-
+[This tipsheet](https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?usp=sharing) goes through all of the Google advanced search operators. It's missing one of the more important ones, which Google doesn't official support but it works: AFTER: and BEFORE: operators, such as `AFTER:2020-01-01` is after Jan. 1, 2020. It has to be in that form.
 
 ### Government agency sites
 

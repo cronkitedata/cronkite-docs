@@ -1,8 +1,11 @@
 ---
 title: Putting the "j" back in "data journalism"
-parent: General topics
+parent: general
+has_children: true
 nav_order: 1
 ---
+
+Getting started in data journalism often feels as if you've left the newsroom and entered the land of statistics, computer programming and data science. Before you even start, try to get grounded in the basics of journalism's use of these tools. When you read or watch or listen to stories that are based on data analysis or presentation, pay attention to both the data methods and the storytelling. Both are key to successful pieces.
 
 ## Analyze for story, not study
 
@@ -15,6 +18,8 @@ As journalists we'll often be using these tools differently than true experts. W
 * Find signs of distress, happiness or dishonesty or any other emotion.
 * Uncover *new* or *under-reported* long-term trends.
 * Find data suggesting your area is *the same* or *different* than most others of its kind.
+
+Bradshaw also did a recent study of data journalism pieces: "[Here are the angles journalists use most often to tell the stories in data](https://onlinejournalismblog.com/2020/08/11/here-are-the-7-types-of-stories-most-often-found-in-data/)", in Online Journalism Blog. I'm not sure I agree, only because he's looking mainly at visualizations rather than stories. One of the most telling elements of this piece is one that he excl
 
 ## Read like a writer
 

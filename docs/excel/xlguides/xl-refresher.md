@@ -22,6 +22,7 @@ Excel because it is still more robust than Google sheets for much of our work. G
 
 Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn't. If you learn to take notes in a structured way, you'll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you'll have to type them all in at least twice anyway. Also, getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more.
 
+Here is a video that walks through what you can do with spreadsheets in journalism: ["Eight Simple Ways to Let the Spreadsheet do the Math"](https://gijn.org/2019/05/21/eight-simple-ways-to-let-the-spreadsheet-do-the-math-so-you-can-focus-on-the-story/)
 
 ## Re-learning Excel from the ground up
 

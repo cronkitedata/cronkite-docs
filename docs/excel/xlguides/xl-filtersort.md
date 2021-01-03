@@ -11,11 +11,6 @@ grand_parent: Excel
 1. TOC
 {: toc}
 
-
-
-
-
-
 ## A sorting miracle
 
 After Ferguson, Mo., [police killed Michael Brown in 2014](https://en.wikipedia.org/wiki/Shooting_of_Michael_Brown), advocates and journalists began examining the racial and ethnic gap between police departments and the communities they served. The New York Times found a 7-year-old survey conducted by the Justice Department that allowed it to [compare the data for major cities in a standalone graphic](https://www.nytimes.com/interactive/2014/09/03/us/the-race-gap-in-americas-police-departments.html) that it published later that year.
@@ -53,9 +48,9 @@ Sorting and filtering can also:
 
 It's a great spreadsheet for practice on dates and on text columns, but doesn't really have any numbers to work with.
 
-### Create a data table from your spreadsheet
+### Data as tables
 
-In Excel, you may want to create a "data table" from your spreadsheet to help make sure you're always sorting and filtering the correct rows. This is a way of enforcing just a little structure and rigor onto a spreadsheet, which usually lets you do whatever you want. There are several benefits to data tables:
+This dataset is set up as an Excel table, which has a few characteristics that are useful for analyzing database-like spreadhseets.  They enforce a little structure and rigor onto a spreadsheet, which usually lets you do whatever you want. There are several benefits to data tables:
 
 * Formulas automatically copy throughout your data, whether or not there are empty values next to them.
 * Sorting and filtering are always done on the proper list of rows, once you're made sure to define the table correctly.
@@ -63,6 +58,10 @@ In Excel, you may want to create a "data table" from your spreadsheet to help ma
 * The column names always stay at the top of your screen, making it unnecessary to freeze panes (which can make navigation more difficult)
 
 It also looks better.
+
+#### How to create a table from a spreadsheet
+
+Our table is already formatted this way, but here's how it's done:
 
 Select your entire table, using Shift-CTL-* or by selecting the corners. **Be sure NOT to select-all using Cmd-A or Ctl-A. You'll select all 1,048,576 rows!** Once you're sure you have it selected properly, choose "Format as Table" from the main toolbar, then choose your preferred look.
 
@@ -90,7 +89,6 @@ You can sort by more than one column to see just the information you want at the
 
 So let's say I want to see all of the "probable" opioid-related emergency calls in Tempe that were treated with Narcan, ordered chronologically. We're in luck, because "Yes" comes at the end of the alphabet, letting us sort "From Z to A" to get them on top.
 
-(Back to the opioids data)
 
 ![sort first level]({{site.baseurl}}/assets/images/06-filtersort-addlevel.png)
 
@@ -104,6 +102,16 @@ Notice that Excel understood that the first two fields were *character* fields, 
 
 (The little arrows on the headers showing you they are sorted only happen when you have your data formatted as a table.)
 
+#### Returning to the original order
+
+When we went through best practices, one of the first steps was to add a column that included the original sort order as provided in the original data.
+
+In this case, it's the same as the incident date and time (inc_date), but you can't count on that. Once you've sorted and re-saved your spreadsheet, there's no going back.
+
+
+ Now  you can see why it might be important to have that leftmost column of numbers to get you back to some natural order of the dataset.
+
+
 ### Filtering
 
 Filtering means picking out only some of the rows you want to see based on a criteria you select in a column. Think of it as casting a fishing net -- the more filters you add, the fewer fish will be caught.
@@ -116,11 +124,24 @@ Looking through your filters is an easy way to see the range of information you 
 
 ![filter dialog]({{site.baseurl}}/assets/images/06-filtersort-twofilters.png)
 
-Check and un-check any of the boxes that you want. Here's a filter that picks out just the Narcan cases of probable overdoses, sorted chronologically:
+Check and un-check any of the boxes that you want. Here's a filter that picks out just the Narcan cases of probable overdoses, sorted chronologically. To get this:
+
+* Sort the table by inc_date (meaning the incident date)
+* Pick "Yes" from the narcan_given column,
+* Pick "Yes" from the probable_opioid_use column
+
 
 ![filter result]({{site.baseurl}}/assets/images/06-filtersort-filteron.png)
 
-Excel tells you how many of the rows match your filter -- 202 of 650 in this case, shown at the very bottom of the screen. (That count goes away sometimes after a few minutes. Just turn the filter on and off again to see it.) It also gives you several clues that you're looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.
+For a brief moment, Excel tells you how many of the rows match your filter -- 202 of 650 in this case, shown at the very bottom of the screen.
+
+(That count goes away as soon as you do anything else with the spreadsheet. You can just turn the filter off and on again to make it come back. We'll see in pivot tables how to more effectively count some columns)
+
+It also gives you several clues that you're looking at filtered data: The row numbers have turned blue, and and there are dark lines between them when rows are skipped; the drop-down arrows now show a little funnel, indicating that you are using that column for a filter.
+
+#### Removing filters
+
+Don't forget to remove filters before you start asking a new question. You can click twice on the little funnel at the top to clear everything, or click on the little red "x" next to "Clear". This is an important habit to get into -- you'd hate to think you're looking at all of the narcan incidents when you already have a filter on ASU students as well! 
 
 #### Free text and date filters
 
@@ -180,5 +201,8 @@ You can revert to the a plain old spreadsheet by selecting any cell within your 
 ## Video of sorting and filtering with salaries
 
 This video goes through many of the details of sorting and filtering. [Follow along using this spreadsheet of Phoenix city salaries]({{site.baseurl}}/assets/data/xlexamples/phoenix_salaries.xlsx). It's from a different year, but the idea is just the same.
+
+Note that in this case, the original order of the dataset was alphabetical, except lower-case names came at the very end. It would be very hard to get back to this order in a spreadsheet if you didn't have that leftmost column of numbers that indicated the original order.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QByd8L7owsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 2em;"></iframe>

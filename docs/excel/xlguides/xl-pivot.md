@@ -90,7 +90,6 @@ Most questions that we have around summaries aren't as simple as "how many" or "
 
 Try to think of some interesting questions on your own, but they often come down to disparate treatment. For instance, if you think that getting Narcan is something of a privilege -- something you get because someone is trying to save your life -- you might wonder if homeless people get it as often as those who were not homeless. Here's how you'd answer that question:
 
-
 ![crosstab]({{site.baseurl}}/assets/images/07-xlpivot-xtab.png)
 
 Technically, you'd read this to say, "About one quarter of the calls involving homeless people were given Narcan compared with more than half of the calls involving non-homeless people."  You could also say "Narcan was administered less than half as often on patients who were suspected to be homeless as those who were not."
@@ -100,6 +99,12 @@ Once you compute this, you might want to control for some things that might not 
 It only works well in examples like this, where there are enough instances in every corner of the box that you care about. But it's worth trying.
 
 Of course, you can't just go into publication with these results. This marks the beginning of your reporting, not the end. You'd want to talk with EMS workers, homeless advocates, experts in overdoses, and others to find out if there are good reasons for this pattern. You'd also want to probe to find out any reason it might be misleading -- it might, in fact, be something caused by a third factor that isn't in our dataset. Be on the lookout for all the reasons your initial results might be wrong, but this gives you a place to start asking questions -- the key to good reporting.
+
+#### The headings annoyance
+
+By default, Excel uses a format for pivot tables that hides the names of the columns and rows. You can fix this by changing the design of the table from "Compact" to "Tabular":
+
+![tabular]({{site.baseurl}}/assets/images/07-xlpivot-homeless-labels.gif)
 
 ## Another walkthrough with baseball results
 

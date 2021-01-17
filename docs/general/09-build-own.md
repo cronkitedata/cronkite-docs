@@ -12,7 +12,7 @@ parent: General topics
 
 ## The evolution of a home-made database
 
-The day in December 2014 that a San Bernadino couple killed 14 people, The New York Times published a short story called ["How Often Do Mass Shootings Occur?](https://www.nytimes.com/2015/12/03/us/how-often-do-mass-shootings-occur-on-average-every-day-records-show.html) On Average, Every Day, Records Show".
+The day in December 2015 that a San Bernadino couple killed 14 people, The New York Times published a short story called ["How Often Do Mass Shootings Occur?](https://www.nytimes.com/2015/12/03/us/how-often-do-mass-shootings-occur-on-average-every-day-records-show.html) On Average, Every Day, Records Show".
 
 That daily story spurred the Times to embark on a project to document each mass shooting in America for a year. Five months later, it published this story:
 

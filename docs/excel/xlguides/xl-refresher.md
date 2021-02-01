@@ -18,7 +18,7 @@ Spreadsheets are everywhere, so it's worth re-learning how to use them well. Rep
 
 * To perform simple, straightforward analysis on data and share with team members. This is becoming less common as more reporters learn programming languages, but it's still common in newsrooms to share data, especially through Google Sheets.
 
-Excel because it is still more robust than Google sheets for much of our work. Google sheets are difficult to navigate, have limited options for filtering and have other limitations. However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members.
+Many reporters till use Excel rather than Google Sheets because it's still more robust for much of our work. Google sheets can be difficult to navigate, have limited options for filtering and have other limitations. (There are others areas where Google Sheets shine compared to Excel, especially when used by teams to share and update information as a group. ) However, the basic concepts still apply and Google sheets are better for some tasks, including interacting with Web pages and working collaboratively with team members.
 
 Some reporters flinch at typing in 30 or 100 entries into a spreadsheet. You shouldn't. If you learn to take notes in a structured way, you'll always be able to find and verify your work. If you try to calculate a sum of 30 numbers on a calculator, you'll have to type them all in at least twice anyway. Also, getting used to these easy tasks on a spreadsheet keeps you fluent for when you need to do more.
 
@@ -82,7 +82,7 @@ If you're having trouble getting to a menu item or seeing the result of your wor
 
 ### Locking in headings
 
-As your spreadsheet grows vertically with more rows, you'll want to be able to see the title all the time. When it grows vertically with more columns, you'll probably want to see what row you're looking at by name whenever you can. This is called "Freezing Panes" -- you freeze part of the page so it stays in place when you move around.
+As your spreadsheet grows vertically with more rows, you'll want to be able to see the top all the time. When it grows horizontally with more columns, you'll probably want to see columns in the left, such as names.  This is called "Freezing Panes" -- you freeze part of the page so it stays in place when you move around.
 
 Select the corner that you want frozen. For example, if you want the first three columns frozen (A:C) and the first row frozen (1), then select the cell in D2. This is the first cell that will move, and everything to the left of it and above it will stay on the screen.
 
@@ -116,7 +116,8 @@ Most data we encounter was created by someone else for some purpose other than o
 #### Headings
 The most fraught part of data reporting is understanding what each *column* actually means. These often have cryptic, bureaucratic names. You may need to go back to the source of the data to be sure you actually understand them.
 
-If your data doesn't have any headings, that's going to be your first priority. In effect, you'll need to build what we call a *data dictionary* or *record layout* if one hasn't been provided.
+If your data doesn't have any headings, that's going to be your first priority. In effect, you'll need to build what we call a *data dictionary* or *record layout* if one hasn't been provided. Many reporters create these as a page in a dataset, and they look like this (we'll get to the details of what they mean later) :
+
 
 #### Unit of analysis
 
